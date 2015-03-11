@@ -3,7 +3,7 @@ module.exports = function (grunt) {
         less: {
             development: {
                 files: {
-                    "resources/css/site.css": "src/less/site.less"
+                    "dist/resources/css/site.css": "src/resources/less/site.less"
                 }
             }
         },
@@ -13,14 +13,14 @@ module.exports = function (grunt) {
             },
             your_target: {
                 files: {
-                    'resources/css': ['resources/css/site.css']
+                    'dist/resources/css': ['dist/resources/css/site.css']
                 }
             }
         },
         cssmin: {
             css: {
-                src: 'resources/css/site.css',
-                dest: 'resources/css/site.min.css'
+                src: 'dist/resources/css/site.css',
+                dest: 'dist/resources/css/site.min.css'
             }
         },
         imagemin: {
@@ -31,9 +31,9 @@ module.exports = function (grunt) {
                 },
                 files: [{
                     expand: true,
-                    cwd: 'src/images/',
+                    cwd: 'src/resources/images/',
                     src: ['**/*.{png,jpg,gif,svg}'],
-                    dest: 'resources/images/'
+                    dest: 'dist/resources/images/'
                 }]
             }
         },
@@ -42,8 +42,8 @@ module.exports = function (grunt) {
                 separator: ';'
             },
             dist: {
-                src: ['src/js/plugins.js', 'src/js/api.js'],
-                dest: 'resources/js/site.js'
+                src: ['src/resources/js/plugins.js', 'src/resources/js/api.js'],
+                dest: 'dist/resources/js/site.js'
             }
         },
         uglify: {
@@ -52,7 +52,7 @@ module.exports = function (grunt) {
                     sourceMap: false
                 },
                 files: {
-                    'resources/js/site.min.js': ['resources/js/site.js']
+                    'dist/resources/js/site.min.js': ['dist/resources/js/site.js']
                 }
             }
         },
@@ -60,50 +60,50 @@ module.exports = function (grunt) {
             build: {
                 files: {
                     // files go here, like so:
-                    'index.html': 'src/html/index.html',
-                    'homepage.html': 'src/html/homepage.html'
+                    'dist/index.html': 'src/index.html',
+                    'dist/homepage.html': 'src/homepage.html'
                 }
             }
         },
         browserSync: {
             bsFiles: {
                 src :[
-                    "resources/css/*.css",
-                    "resources/js/*.js",
-                    "*.html"
+                    "dist/resources/css/*.css",
+                    "dist/resources/js/*.js",
+                    "dist/*.html"
                 ]
             },
             options: {
                 watchTask: true,
                 server: {
-                    baseDir: "./"
+                    baseDir: "./dist/"
                 }
             }
         },
         watch: {
             css: {
-                files: ['src/less/*.less', 'src/bootstrap/*.less', 'resources/css/*.css'],
+                files: ['src/resources/less/*.less', 'src/resources/bootstrap/*.less', 'dist/resources/css/*.css'],
                 tasks: ['less', 'cmq', 'cssmin'],
                 options: {
                     nospawn: true
                 }
             },
             js: {
-                files: ['src/js/*.js', 'resources/js/site.js'],
+                files: ['src/resources/js/*.js', 'dist/resources/js/site.js'],
                 tasks: ['concat', 'uglify'],
                 options: {
                     nospawn: true
                 }
             },
             images: {
-                files: ['src/images/**/*.{png,jpg,gif,svg}'],
+                files: ['src/resources/images/**/*.{png,jpg,gif,svg}'],
                 tasks: ['newer:imagemin:dynamic'],
                 options: {
                     nospawn: true
                 }
             },
             html: {
-                files: ['src/html/**/*.html'],
+                files: ['src/**/*.html'],
                 tasks: ['bake:build'],
                 options: {
                     nospawn: true
