@@ -1159,6 +1159,9 @@ h2 {
 
 p {
 	font-family: "Monosten A";
+	font-size: 14px;
+	font-size: 1.4rem;
+	line-height: 20px;
 }
 
 .text-left {
@@ -1224,18 +1227,22 @@ html {
 }
 
 body {
+	-webkit-transition: padding 0.5s ease-in;
+	-o-transition: padding 0.5s ease-in;
+	transition: padding 0.5s ease-in;
+	background-color: #ff2919;
 	color: #666666;
 }
 
-#index {
-	text-align: center;
-	margin-top: 50px;
-	width: 100%;
+body.padding-active {
+	padding: 8px;
 }
 
-#index a {
-	font-size: 16px;
-	font-size: 1.6rem;
+html.sb-active body {
+	padding-left: 0;
+	-webkit-transition: none;
+	-o-transition: none;
+	transition: none;
 }
 
 nav {
@@ -1243,29 +1250,12 @@ nav {
 }
 
 nav > div {
-	padding-left: 20%;
+	padding-left: 15%;
 	width: 100%;
 }
 
-nav > div .icon-cross {
-	font-size: 34px;
-	font-size: 3.4rem;
-	-webkit-transition: color 0.5s ease-in-out;
-	-o-transition: color 0.5s ease-in-out;
-	transition: color 0.5s ease-in-out;
-	color: #ffffff;
-	cursor: pointer;
-	display: inline-block;
-	margin-top: 108px;
-}
-
-nav > div .icon-cross:hover {
-	color: #ff2919;
-	text-decoration: none;
-}
-
 nav > div .main-nav li {
-	margin-top: 54px;
+	margin-top: 28px;
 }
 
 nav > div .main-nav a {
@@ -1280,7 +1270,7 @@ nav > div .main-nav a {
 }
 
 nav > div .main-nav a:hover {
-	color: #ff2919;
+	color: #666666;
 	text-decoration: none;
 }
 
@@ -1291,12 +1281,12 @@ nav > div .follow-us {
 	color: #ffffff;
 	display: inline-block;
 	line-height: 20px;
-	margin-top: 108px;
-	width: 45%;
+	margin-top: 56px;
+	width: 70%;
 }
 
 nav > div .social-nav {
-	margin-top: 54px;
+	margin-top: 28px;
 }
 
 nav > div .social-nav li {
@@ -1314,49 +1304,37 @@ nav > div .social-nav li a {
 }
 
 nav > div .social-nav li a:hover {
-	color: #ff2919;
+	color: #666666;
 	text-decoration: none;
 }
 
 .wrapper {
 	background-color: #eaecec;
-	border: solid 8px #ff2919;
 	float: left;
 	width: 100%;
 }
 
-header[role=banner] .row > div {
-	min-height: 1px;
-	padding-left: 0;
-	padding-right: 0;
-	position: relative;
-	z-index: 10;
-}
-
-header[role=banner] .row > div span {
+header[role=banner] span {
 	font-size: 34px;
 	font-size: 3.4rem;
 	position: absolute;
-	top: 109px;
+	top: 21px;
+	z-index: 100;
 }
 
-header[role=banner] .row > div span.icon-burger {
-	-webkit-transition: color 0.5s ease-in-out;
-	-o-transition: color 0.5s ease-in-out;
-	transition: color 0.5s ease-in-out;
+header[role=banner] span.icon-burger {
 	color: #0c0c0c;
 	cursor: pointer;
-	left: 0;
+	left: 21px;
 }
 
-header[role=banner] .row > div span.icon-burger:hover,
-html.sb-active header[role=banner] .row > div span.icon-burger {
-	color: #ff2919;
+html.sb-active header[role=banner] span.icon-burger:before {
+	content: "\e602";
 }
 
-header[role=banner] .row > div span.icon-updroid-logo {
+header[role=banner] span.icon-updroid-logo {
 	color: #0c0c0c;
-	right: 0;
+	right: 21px;
 }
 
 .home-header {
@@ -1365,25 +1343,49 @@ header[role=banner] .row > div span.icon-updroid-logo {
 }
 
 .home-header .row {
-	height: 1110px;
-	padding-bottom: 220px;
-	padding-top: 220px;
-	position: relative;
+	height: 531px;
+	padding-bottom: 140px;
+	padding-top: 91px;
+	position: relative; /*.icon-arrow-down {
+            .font-size(3.4);
+            .transition(color 0.5s ease-in-out);
+            bottom: 93px;
+            color: @icon-color;
+            cursor: pointer;
+            left: 8.3%;
+            position: absolute;
+            z-index: 10;
+
+            @media (min-width: @screen-sm-min) {
+                bottom: 63px;
+            }
+
+            @media (min-width: @screen-lg-min) {
+                bottom: 93px;
+            }
+
+            &:hover {
+                color: @icon-hover-color;
+            }
+        }*/
 }
 
 .home-header .row > div {
+	float: left;
+	width: 100%;
 	position: relative;
 	min-height: 1px;
 	padding-left: 0;
 	padding-right: 0;
+	padding: 60% 21px 0 21px;
 }
 
 .home-header .row > div p {
-	padding-top: 20px;
+	padding-top: 14px;
 }
 
 .home-header .row > div .btn {
-	margin-top: 20px;
+	margin-top: 14px;
 }
 
 .home-header .row h1 {
@@ -1396,33 +1398,19 @@ header[role=banner] .row > div span.icon-updroid-logo {
 	background-position: left top;
 	background-repeat: no-repeat;
 	background-size: contain;
+	height: 50%;
+	left: 21px;
 	position: absolute;
+	top: 91px;
+	width: 84%;
 }
 
 .home-header .row img {
-	left: 50px;
+	left: 0;
 	position: absolute;
-	top: 460px;
+	top: 30%;
 	z-index: 100;
-	width: 68%;
-}
-
-.home-header .row .icon-arrow-down {
-	font-size: 34px;
-	font-size: 3.4rem;
-	-webkit-transition: color 0.5s ease-in-out;
-	-o-transition: color 0.5s ease-in-out;
-	transition: color 0.5s ease-in-out;
-	bottom: 93px;
-	color: #0c0c0c;
-	cursor: pointer;
-	left: 8.3%;
-	position: absolute;
-	z-index: 10;
-}
-
-.home-header .row .icon-arrow-down:hover {
-	color: #ff2919;
+	width: 70%;
 }
 
 .image-gallery {
@@ -1432,12 +1420,12 @@ header[role=banner] .row > div span.icon-updroid-logo {
 
 .image-gallery .row > div {
 	float: left;
-	width: 33.33333333%;
+	width: 100%;
 	min-height: 1px;
 	padding-left: 0;
 	padding-right: 0;
 	background-color: #ffffff;
-	padding-bottom: 33.3%;
+	padding-bottom: 100%;
 	position: relative;
 }
 
@@ -1446,14 +1434,14 @@ header[role=banner] .row > div span.icon-updroid-logo {
 }
 
 .image-gallery .row > div header {
-	padding-left: 25%;
-	padding-right: 25%;
-	padding-top: 25%;
+	padding-left: 21px;
+	padding-right: 10%;
+	padding-top: 30%;
 	position: absolute;
 }
 
 .image-gallery .row > div header p {
-	margin-top: 20px;
+	margin-top: 21px;
 }
 
 .image-gallery .row > div img {
@@ -1465,44 +1453,50 @@ header[role=banner] .row > div span.icon-updroid-logo {
 
 .image-gallery .row > div span {
 	font-family: "Monosten A";
-	left: 20px;
+	font-size: 14px;
+	font-size: 1.4rem;
+	line-height: 20px;
+	left: 21px;
 	position: absolute;
 }
 
 .image-gallery .row > div span:first-of-type {
-	top: 20px;
+	top: 21px;
 }
 
 .image-gallery .row > div span:last-of-type {
-	bottom: 20px;
+	bottom: 21px;
 }
 
 .commander {
 	background-image: url('/resources/images/bg-commander.gif');
-	background-position: left center;
+	background-position: right 35px;
 	background-repeat: no-repeat;
-	background-size: contain;
+	background-size: 600px;
 	float: left;
-	padding-bottom: 270px;
-	padding-top: 115px;
+	padding-bottom: 70px;
+	padding-top: 301px;
 	width: 100%;
 }
 
 .commander .row > div {
+	float: left;
+	width: 100%;
 	position: relative;
 	min-height: 1px;
 	padding-left: 0;
 	padding-right: 0;
+	padding: 0 21px;
 }
 
 .commander .row > div p {
-	padding-right: 35px;
-	padding-top: 20px;
+	padding-top: 14px;
 }
 
 .robotics {
 	background-color: #ffffff;
 	float: left;
+	padding-top: 35px;
 	width: 100%;
 }
 
@@ -1511,31 +1505,34 @@ header[role=banner] .row > div span.icon-updroid-logo {
 }
 
 .robotics .row > div:first-of-type {
+	float: left;
+	width: 100%;
 	position: relative;
 	min-height: 1px;
 	padding-left: 0;
 	padding-right: 0;
-}
-
-.robotics .row > div:first-of-type h2 {
-	padding-right: 35px;
+	padding-left: 21px;
+	padding-right: 21px;
 }
 
 .robotics .row > div:first-of-type p {
-	padding-right: 35px;
-	padding-top: 20px;
+	padding-top: 14px;
 }
 
 .robotics .row > div:nth-of-type(2) {
+	float: left;
+	width: 100%;
 	position: relative;
 	min-height: 1px;
 	padding-left: 0;
 	padding-right: 0;
+	padding-left: 21px;
+	padding-right: 21px;
+	padding-top: 14px;
 }
 
 .robotics .row > div:nth-of-type(2) p {
-	padding-right: 35px;
-	padding-top: 20px;
+	padding-top: 14px;
 }
 
 .robotics .row > div:nth-of-type(2) p:first-of-type {
@@ -1543,31 +1540,42 @@ header[role=banner] .row > div span.icon-updroid-logo {
 }
 
 .robotics .row > div:last-of-type {
+	float: left;
+	width: 100%;
 	position: relative;
 	min-height: 1px;
 	padding-left: 0;
 	padding-right: 0;
-	bottom: 0;
-	position: absolute;
-	right: 8.3%;
+	padding-left: 21px;
+	padding-right: 21px;
 }
 
 .robotics .row > div:last-of-type p {
-	padding-top: 20px;
+	padding-top: 14px;
 }
 
 .robotics .row > div:last-of-type .btn {
-	margin-top: 20px;
+	margin-top: 14px;
+}
+
+.robotics .row img {
+	margin-left: 21px;
+	margin-top: 35px;
+	width: 90%;
 }
 
 footer[role=contentinfo] {
 	background-color: #ffffff;
 	float: left;
-	padding-bottom: 25px;
+	padding-bottom: 21px;
+	padding-right: 21px;
+	padding-top: 21px;
 	width: 100%;
 }
 
 footer[role=contentinfo] p {
+	float: left;
+	width: 100%;
 	position: relative;
 	min-height: 1px;
 	padding-left: 0;
@@ -1841,7 +1849,7 @@ footer[role=contentinfo] p {
 /* Slidebar widths on medium screens. */
 
 .sb-slidebar {
-	width: 33.3%;
+	width: 34%;
 }
 
 .sb-width-thin {
@@ -1869,12 +1877,12 @@ p {
 	font-size: 1.7rem;
 }
 
-nav > div .icon-cross {
-	margin-top: 74px;
+nav > div {
+	padding-left: 13%;
 }
 
 nav > div .main-nav li {
-	margin-top: 37px;
+	margin-top: 42px;
 }
 
 nav > div .main-nav a {
@@ -1884,30 +1892,29 @@ nav > div .main-nav a {
 }
 
 nav > div .follow-us {
-	margin-top: 74px;
+	margin-top: 84px;
 }
 
 nav > div .social-nav {
-	margin-top: 37px;
+	margin-top: 42px;
 }
 
-header[role=banner] .row > div {
-	float: left;
-	width: 83.33333333%;
+header[role=banner] span {
+	top: 28px;
 }
 
-header[role=banner] .row > div {
-	margin-left: 8.33333333%;
+header[role=banner] span.icon-burger {
+	left: 28px;
 }
 
-header[role=banner] .row > div span {
-	top: 74px;
+header[role=banner] span.icon-updroid-logo {
+	right: 28px;
 }
 
 .home-header .row {
-	height: 678px;
-	padding-bottom: 150px;
-	padding-top: 150px;
+	height: 602px;
+	padding-bottom: 147px;
+	padding-top: 77px;
 }
 
 .home-header .row > div {
@@ -1919,42 +1926,66 @@ header[role=banner] .row > div span {
 	margin-left: 66.66666667%;
 }
 
+.home-header .row > div {
+	padding: 0;
+}
+
 .home-header .row > div p {
-	padding-top: 15px;
+	padding-top: 14px;
 }
 
 .home-header .row > div .btn {
-	margin-top: 15px;
+	margin-top: 14px;
 }
 
 .home-header .row h1 {
 	height: 378px;
 	left: 8.3%;
-	top: 150px;
+	top: 77px;
 	width: 83.4%;
 }
 
 .home-header .row img {
 	left: 38px;
-	top: 305px;
+	top: 230px;
 	width: 67%;
 }
 
-.home-header .row .icon-arrow-down {
-	bottom: 63px;
+.image-gallery .row > div {
+	float: left;
+	width: 33.33333333%;
+}
+
+.image-gallery .row > div {
+	padding-bottom: 33.3%;
+}
+
+.image-gallery .row > div header {
+	padding-left: 25%;
+	padding-right: 25%;
+	padding-top: 25%;
 }
 
 .image-gallery .row > div span {
 	font-size: 13px;
 	font-size: 1.3rem;
+	left: 14px;
 	line-height: 18px;
+}
+
+.image-gallery .row > div span:first-of-type {
+	top: 14px;
+}
+
+.image-gallery .row > div span:last-of-type {
+	bottom: 14px;
 }
 
 .commander {
 	background-position: right center;
 	background-size: 138%;
-	padding-bottom: 300px;
-	padding-top: 90px;
+	padding-bottom: 301px;
+	padding-top: 91px;
 }
 
 .commander .row > div {
@@ -1966,9 +1997,17 @@ header[role=banner] .row > div span {
 	margin-left: 8.33333333%;
 }
 
+.commander .row > div {
+	padding: 0;
+}
+
+.commander .row > div p {
+	padding-right: 35px;
+}
+
 .robotics {
-	padding-bottom: 150px;
-	padding-top: 95px;
+	padding-bottom: 147px;
+	padding-top: 91px;
 }
 
 .robotics .row > div:first-of-type {
@@ -1978,6 +2017,19 @@ header[role=banner] .row > div span {
 
 .robotics .row > div:first-of-type {
 	margin-left: 8.33333333%;
+}
+
+.robotics .row > div:first-of-type {
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.robotics .row > div:first-of-type h2 {
+	padding-right: 35px;
+}
+
+.robotics .row > div:first-of-type p {
+	padding-right: 35px;
 }
 
 .robotics .row > div:nth-of-type(2) {
@@ -1990,7 +2042,12 @@ header[role=banner] .row > div span {
 }
 
 .robotics .row > div:nth-of-type(2) {
-	padding-top: 20px;
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.robotics .row > div:nth-of-type(2) p {
+	padding-right: 35px;
 }
 
 .robotics .row > div:last-of-type {
@@ -1998,11 +2055,26 @@ header[role=banner] .row > div span {
 	width: 25%;
 }
 
-.robotics .row img {
+.robotics .row > div:last-of-type {
+	bottom: 0;
+	padding-left: 0;
+	padding-right: 0;
 	position: absolute;
-	right: 20px;
-	top: 305px;
+	right: 8.3%;
+}
+
+.robotics .row img {
+	margin-left: 0;
+	margin-top: 0;
+	position: absolute;
+	right: 21px;
+	top: 294px;
 	width: 32%;
+}
+
+footer[role=contentinfo] {
+	padding-right: 0;
+	padding-top: 0;
 }
 
 footer[role=contentinfo] p {
@@ -2281,7 +2353,7 @@ td.visible-sm {
 /* Slidebar widths on large screens. */
 
 .sb-slidebar {
-	width: 33.3%;
+	width: 34%;
 }
 
 .sb-width-thin {
@@ -2297,8 +2369,25 @@ td.visible-sm {
 	font-size: 1.6rem;
 }
 
+nav > div {
+	padding-left: 20%;
+}
+
+nav > div .main-nav li {
+	margin-top: 35px;
+}
+
+nav > div .follow-us {
+	margin-top: 70px;
+	width: 45%;
+}
+
+nav > div .social-nav {
+	margin-top: 35px;
+}
+
 .home-header .row {
-	height: 794px;
+	height: 718px;
 }
 
 .home-header .row > div {
@@ -2311,11 +2400,11 @@ td.visible-sm {
 }
 
 .home-header .row > div p {
-	padding-top: 20px;
+	padding-top: 21px;
 }
 
 .home-header .row > div .btn {
-	margin-top: 20px;
+	margin-top: 21px;
 }
 
 .home-header .row h1 {
@@ -2324,15 +2413,27 @@ td.visible-sm {
 
 .home-header .row img {
 	left: 50px;
-	top: 355px;
+	top: 280px;
 	width: 67%;
+}
+
+.image-gallery .row > div span {
+	left: 21px;
+}
+
+.image-gallery .row > div span:first-of-type {
+	top: 21px;
+}
+
+.image-gallery .row > div span:last-of-type {
+	bottom: 21px;
 }
 
 .commander {
 	background-position: left center;
 	background-size: contain;
-	padding-bottom: 270px;
-	padding-top: 115px;
+	padding-bottom: 273px;
+	padding-top: 112px;
 }
 
 .commander .row > div {
@@ -2344,9 +2445,25 @@ td.visible-sm {
 	margin-left: 33.33333333%;
 }
 
+.commander .row > div p {
+	padding-top: 21px;
+}
+
 .robotics {
-	padding-bottom: 110px;
-	padding-top: 110px;
+	padding-bottom: 112px;
+	padding-top: 112px;
+}
+
+.robotics .row > div:first-of-type p {
+	padding-top: 21px;
+}
+
+.robotics .row > div:nth-of-type(2) {
+	padding-top: 21px;
+}
+
+.robotics .row > div:nth-of-type(2) p {
+	padding-top: 21px;
 }
 
 .robotics .row > div:last-of-type {
@@ -2354,10 +2471,18 @@ td.visible-sm {
 	width: 16.66666667%;
 }
 
+.robotics .row > div:last-of-type p {
+	padding-top: 21px;
+}
+
+.robotics .row > div:last-of-type .btn {
+	margin-top: 21px;
+}
+
 .robotics .row img {
 	position: absolute;
-	right: 20px;
-	top: 145px;
+	right: 21px;
+	top: 147px;
 	width: 32%;
 }
 
@@ -2661,7 +2786,7 @@ td.visible-lg {
 /* Slidebar widths on extra large screens. */
 
 .sb-slidebar {
-	width: 33.3%;
+	width: 34%;
 }
 
 .sb-width-thin {
@@ -2689,12 +2814,8 @@ p {
 	font-size: 1.8rem;
 }
 
-nav > div .icon-cross {
-	margin-top: 108px;
-}
-
 nav > div .main-nav li {
-	margin-top: 54px;
+	margin-top: 56px;
 }
 
 nav > div .main-nav a {
@@ -2704,35 +2825,39 @@ nav > div .main-nav a {
 }
 
 nav > div .follow-us {
-	margin-top: 108px;
+	margin-top: 112px;
 }
 
 nav > div .social-nav {
-	margin-top: 54px;
+	margin-top: 56px;
 }
 
-header[role=banner] .row > div span {
-	top: 109px;
+header[role=banner] span {
+	top: 49px;
+}
+
+header[role=banner] span.icon-burger {
+	left: 49px;
+}
+
+header[role=banner] span.icon-updroid-logo {
+	right: 49px;
 }
 
 .home-header .row {
-	height: 1031px;
-	padding-bottom: 220px;
-	padding-top: 220px;
+	height: 922px;
+	padding-bottom: 210px;
+	padding-top: 119px;
 }
 
 .home-header .row h1 {
 	height: 591px;
-	top: 220px;
+	top: 119px;
 }
 
 .home-header .row img {
-	top: 460px;
+	top: 360px;
 	width: 68%;
-}
-
-.home-header .row .icon-arrow-down {
-	bottom: 93px;
 }
 
 .image-gallery .row > div span {
@@ -2764,8 +2889,8 @@ header[role=banner] .row > div span {
 }
 
 .robotics .row img {
-	right: 55px;
-	top: 200px;
+	right: 56px;
+	top: 203px;
 	width: 28%;
 }
 

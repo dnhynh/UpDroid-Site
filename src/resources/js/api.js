@@ -25,7 +25,12 @@ var Utils =
 var Homepage =
 {
     "Init": function () {
-
+        this.BorderFade();
+    },
+    "BorderFade": function () {
+        setTimeout(function () {
+            $("body").addClass("padding-active");
+        }, 2000);
     }
 };
 
