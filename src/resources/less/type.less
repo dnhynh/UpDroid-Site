@@ -61,16 +61,8 @@
 	-moz-osx-font-smoothing: grayscale;
 }
 
-.icon-twitter:before {
-    content: "\f099";
-}
-
-.icon-facebook:before {
-    content: "\f09a";
-}
-
-.icon-instagram:before {
-    content: "\f16d";
+.icon-arrow-up:before {
+    content: "\e605";
 }
 
 .icon-arrow-down:before {
@@ -93,17 +85,41 @@
     content: "\e604";
 }
 
+.icon-twitter:before {
+    content: "\f099";
+}
+
+.icon-facebook:before {
+    content: "\f09a";
+}
+
+.icon-instagram:before {
+    content: "\f16d";
+}
+
 h1 {
     .font-avenir-next-bold();
     .font-size(3.0);
     color: @heading-color;
+    letter-spacing: -1px;
     line-height: 32px;
+
+    @media (min-width: @screen-sm-min) {
+        .font-size(2.6);
+        line-height: 27px;
+    }
+
+    @media (min-width: @screen-lg-min) {
+        .font-size(3.1);
+        line-height: 32px;
+    }
 }
 
 h2 {
     .font-avenir-next-bold();
 	.font-size(3.0);
     color: @heading-color;
+    letter-spacing: -1px;
 	line-height: 32px;
 
     @media (min-width: @screen-sm-min) {

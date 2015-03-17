@@ -8,6 +8,61 @@
 		{
 			"selection": [
 				{
+					"order": 9,
+					"id": 0,
+					"prevSize": 32,
+					"code": 58885,
+					"name": "arrow-up",
+					"tempChar": ""
+				}
+			],
+			"id": 2,
+			"metadata": {
+				"name": "Untitled Set 2",
+				"importSize": 32
+			},
+			"height": 1024,
+			"prevSize": 32,
+			"icons": [
+				{
+					"id": 0,
+					"paths": [
+						"M373.063 319.856l139.067-139.067 482.932 482.932-139.067 139.067-482.932-482.932z",
+						"M168.027 802.725l-139.047-139.086 482.978-482.841 139.047 139.086-482.978 482.841z"
+					],
+					"attrs": [
+						{},
+						{}
+					],
+					"isMulticolor": false,
+					"grid": 0,
+					"tags": [
+						"arrow-up"
+					],
+					"colorPermutations": {
+						"6868681": [
+							0,
+							0
+						]
+					}
+				}
+			],
+			"invisible": false,
+			"colorThemes": [
+				[
+					[
+						68,
+						68,
+						68,
+						1
+					]
+				]
+			],
+			"colorThemeIdx": 0
+		},
+		{
+			"selection": [
+				{
 					"id": 0,
 					"order": 0
 				},
@@ -589,7 +644,7 @@
 					"prevSize": 28,
 					"code": 61593,
 					"name": "twitter",
-					"tempChar": ""
+					"tempChar": ""
 				},
 				{
 					"id": 145,
@@ -597,7 +652,7 @@
 					"prevSize": 28,
 					"code": 61594,
 					"name": "facebook",
-					"tempChar": ""
+					"tempChar": ""
 				},
 				{
 					"id": 146,
@@ -1337,7 +1392,7 @@
 					"prevSize": 28,
 					"code": 61805,
 					"name": "instagram",
-					"tempChar": ""
+					"tempChar": ""
 				},
 				{
 					"id": 330,
@@ -8471,7 +8526,7 @@
 					"prevSize": 32,
 					"code": 58880,
 					"name": "arrow-down",
-					"tempChar": ""
+					"tempChar": ""
 				},
 				{
 					"order": 2,
@@ -8479,7 +8534,7 @@
 					"prevSize": 32,
 					"code": 58881,
 					"name": "burger",
-					"tempChar": ""
+					"tempChar": ""
 				},
 				{
 					"order": 3,
@@ -8487,7 +8542,7 @@
 					"prevSize": 32,
 					"code": 58882,
 					"name": "cross",
-					"tempChar": ""
+					"tempChar": ""
 				},
 				{
 					"order": 4,
@@ -8495,7 +8550,7 @@
 					"prevSize": 32,
 					"code": 58883,
 					"name": "plus",
-					"tempChar": ""
+					"tempChar": ""
 				},
 				{
 					"order": 5,
@@ -8503,7 +8558,7 @@
 					"prevSize": 32,
 					"code": 58884,
 					"name": "updroid-logo",
-					"tempChar": ""
+					"tempChar": ""
 				}
 			],
 			"id": 0,

@@ -242,7 +242,7 @@ body {
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size: 14px;
 	line-height: 1.42857143;
-	color: #666666;
+	color: #7e7e7e;
 	background-color: #ffffff;
 }
 
@@ -297,7 +297,9 @@ img {
 	border: 1px solid #dddddd;
 	border-radius: 4px;
 	-webkit-transition: all 0.2s ease-in-out;
+	-moz-transition: all 0.2s ease-in-out;
 	-o-transition: all 0.2s ease-in-out;
+	-ms-transition: all 0.2s ease-in-out;
 	transition: all 0.2s ease-in-out;
 	display: inline-block;
 	max-width: 100%;
@@ -821,7 +823,8 @@ summary,
 time,
 mark,
 audio,
-video {
+video,
+.about-header span {
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -1109,16 +1112,8 @@ html.sb-static .sb-slidebar,
 	-moz-osx-font-smoothing: grayscale;
 }
 
-.icon-twitter:before {
-	content: "\f099";
-}
-
-.icon-facebook:before {
-	content: "\f09a";
-}
-
-.icon-instagram:before {
-	content: "\f16d";
+.icon-arrow-up:before {
+	content: "\e605";
 }
 
 .icon-arrow-down:before {
@@ -1141,19 +1136,34 @@ html.sb-static .sb-slidebar,
 	content: "\e604";
 }
 
+.icon-twitter:before {
+	content: "\f099";
+}
+
+.icon-facebook:before {
+	content: "\f09a";
+}
+
+.icon-instagram:before {
+	content: "\f16d";
+}
+
 h1 {
 	font-family: "Avenir Next LT W01 Bold";
 	font-size: 30px;
 	font-size: 3rem;
 	color: #0c0c0c;
+	letter-spacing: -1px;
 	line-height: 32px;
 }
 
-h2 {
+h2,
+.about-header span {
 	font-family: "Avenir Next LT W01 Bold";
 	font-size: 30px;
 	font-size: 3rem;
 	color: #0c0c0c;
+	letter-spacing: -1px;
 	line-height: 32px;
 }
 
@@ -1197,14 +1207,15 @@ p {
 	font-size: 18px;
 	font-size: 1.8rem;
 	text-align: center;
+	-webkit-transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+	-moz-transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+	-o-transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+	-ms-transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+	transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
 	display: inline-block;
 	height: 50px;
 	line-height: 50px;
 	text-decoration: none;
-	-webkit-transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
-	-moz-transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
-	-o-transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
-	transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
 	width: 100%;
 }
 
@@ -1228,10 +1239,12 @@ html {
 
 body {
 	-webkit-transition: padding 0.5s ease-in;
+	-moz-transition: padding 0.5s ease-in;
 	-o-transition: padding 0.5s ease-in;
+	-ms-transition: padding 0.5s ease-in;
 	transition: padding 0.5s ease-in;
 	background-color: #ff2919;
-	color: #666666;
+	color: #7e7e7e;
 }
 
 body.padding-active {
@@ -1241,7 +1254,9 @@ body.padding-active {
 html.sb-active body {
 	padding-left: 0;
 	-webkit-transition: none;
+	-moz-transition: none;
 	-o-transition: none;
+	-ms-transition: none;
 	transition: none;
 }
 
@@ -1263,7 +1278,9 @@ nav > div .main-nav a {
 	font-size: 30px;
 	font-size: 3rem;
 	-webkit-transition: color 0.5s ease-in-out;
+	-moz-transition: color 0.5s ease-in-out;
 	-o-transition: color 0.5s ease-in-out;
+	-ms-transition: color 0.5s ease-in-out;
 	transition: color 0.5s ease-in-out;
 	color: #ffffff;
 	line-height: 32px;
@@ -1298,7 +1315,9 @@ nav > div .social-nav li a {
 	font-size: 34px;
 	font-size: 3.4rem;
 	-webkit-transition: color 0.5s ease-in-out;
+	-moz-transition: color 0.5s ease-in-out;
 	-o-transition: color 0.5s ease-in-out;
+	-ms-transition: color 0.5s ease-in-out;
 	transition: color 0.5s ease-in-out;
 	color: #ffffff;
 }
@@ -1311,12 +1330,19 @@ nav > div .social-nav li a:hover {
 .wrapper {
 	background-color: #eaecec;
 	float: left;
+	overflow: hidden;
+	position: relative;
 	width: 100%;
 }
 
 header[role=banner] span {
 	font-size: 34px;
 	font-size: 3.4rem;
+	-webkit-transition: opacity 0.5s ease-in-out;
+	-moz-transition: opacity 0.5s ease-in-out;
+	-o-transition: opacity 0.5s ease-in-out;
+	-ms-transition: opacity 0.5s ease-in-out;
+	transition: opacity 0.5s ease-in-out;
 	position: absolute;
 	top: 21px;
 	z-index: 100;
@@ -1335,6 +1361,10 @@ html.sb-active header[role=banner] span.icon-burger:before {
 header[role=banner] span.icon-updroid-logo {
 	color: #0c0c0c;
 	right: 21px;
+}
+
+header[role=banner].inactive span {
+	opacity: 0;
 }
 
 .home-header {
@@ -1564,12 +1594,149 @@ header[role=banner] span.icon-updroid-logo {
 	width: 90%;
 }
 
+.about-header {
+	background-image: url('/resources/images/bg-about-us.jpg');
+	background-position: left top;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	float: left;
+	width: 100%;
+}
+
+.about-header .container {
+	position: relative;
+}
+
+.about-header .row {
+	padding-bottom: 210px;
+	padding-top: 329px;
+	position: relative;
+}
+
+.about-header .row h1 {
+	position: relative;
+	min-height: 1px;
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.about-header .row > p {
+	font-family: "Avenir Next LT W01 Bold";
+	float: left;
+	width: 41.66666667%;
+	position: relative;
+	min-height: 1px;
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.about-header .row div > p {
+	position: relative;
+	min-height: 1px;
+	padding-left: 0;
+	padding-right: 0;
+	padding-right: 42px;
+}
+
+.about-header .row div > p:first-of-type {
+	position: relative;
+	min-height: 1px;
+	padding-left: 0;
+	padding-right: 0;
+	clear: left;
+	padding-right: 42px;
+}
+
+.about-header span {
+	position: absolute;
+	right: 0;
+	top: 140px;
+}
+
+.people > div {
+	float: left;
+	width: 100%;
+}
+
+.people > div:nth-of-type(odd) {
+	background-color: #f1f4f4;
+}
+
+.people > div:nth-of-type(odd) .row > div {
+	position: relative;
+	min-height: 1px;
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.people > div:nth-of-type(odd) .row > div:before {
+	background-color: #fff;
+	content: '';
+	position: absolute;
+	right: 12.5%;
+	top: 0;
+	width: 25%;
+}
+
+.people > div:nth-of-type(even) {
+	background-color: #fff;
+}
+
+.people > div:nth-of-type(even) .row > div {
+	position: relative;
+	min-height: 1px;
+	padding-left: 0;
+	padding-right: 0;
+	background-color: #d0d3d1;
+	padding-left: 8.3%;
+}
+
+.people > div:nth-of-type(even) .row > div:before {
+	background-color: #fff;
+	content: '';
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 35%;
+}
+
+.people .row > div {
+	padding-right: 22%;
+	position: relative;
+}
+
+.people .row > div h2 {
+	padding-top: 49px;
+	width: 230px;
+}
+
+.people .row > div p {
+	padding-top: 28px;
+	width: 200px;
+}
+
+.people .row > div q {
+	font-family: "Avenir Next LT W01 Bold";
+	font-size: 20px;
+	font-size: 2rem;
+	display: inline-block;
+	line-height: 20px;
+	padding-top: 28px;
+}
+
+.people .row > div img {
+	bottom: 0;
+	position: absolute;
+	right: 35px;
+}
+
 footer[role=contentinfo] {
 	background-color: #ffffff;
 	float: left;
 	padding-bottom: 21px;
 	padding-right: 21px;
 	padding-top: 21px;
+	position: relative;
 	width: 100%;
 }
 
@@ -1581,6 +1748,26 @@ footer[role=contentinfo] p {
 	padding-left: 0;
 	padding-right: 0;
 	text-align: right;
+}
+
+.icon-arrow-up {
+	font-size: 34px;
+	font-size: 3.4rem;
+	-webkit-transition: bottom 0.3s ease-in-out, opacity 0.3s ease-in-out;
+	-moz-transition: bottom 0.3s ease-in-out, opacity 0.3s ease-in-out;
+	-o-transition: bottom 0.3s ease-in-out, opacity 0.3s ease-in-out;
+	-ms-transition: bottom 0.3s ease-in-out, opacity 0.3s ease-in-out;
+	transition: bottom 0.3s ease-in-out, opacity 0.3s ease-in-out;
+	bottom: -20px;
+	color: #0c0c0c;
+	cursor: pointer;
+	opacity: 0;
+	position: absolute;
+	z-index: 100;
+}
+
+.icon-arrow-up.active {
+	opacity: 1;
 }
 
 @media all and (device-width: 768px) and (device-height: 1024px) and (orientation: portrait) {
@@ -1860,7 +2047,14 @@ footer[role=contentinfo] p {
 	width: 55%;
 }
 
-h2 {
+h1 {
+	font-size: 26px;
+	font-size: 2.6rem;
+	line-height: 27px;
+}
+
+h2,
+.about-header span {
 	font-size: 26px;
 	font-size: 2.6rem;
 	line-height: 27px;
@@ -2072,9 +2266,65 @@ header[role=banner] span.icon-updroid-logo {
 	width: 32%;
 }
 
+.about-header .row h1 {
+	float: left;
+	width: 41.66666667%;
+}
+
+.about-header .row h1 {
+	margin-left: 8.33333333%;
+}
+
+.about-header .row > p {
+	float: left;
+	width: 41.66666667%;
+}
+
+.about-header .row > p {
+	margin-left: 8.33333333%;
+}
+
+.about-header .row > p {
+	font-size: 18px;
+	font-size: 1.8rem;
+	line-height: 18px;
+}
+
+.about-header .row div > p {
+	float: left;
+	width: 41.66666667%;
+}
+
+.about-header .row div > p:first-of-type {
+	float: left;
+	width: 50%;
+}
+
+.about-header .row div > p:first-of-type {
+	margin-left: 8.33333333%;
+}
+
+.people > div:nth-of-type(odd) .row > div {
+	float: left;
+	width: 41.66666667%;
+}
+
+.people > div:nth-of-type(even) .row > div {
+	float: left;
+	width: 50%;
+}
+
+.people > div:nth-of-type(even) .row > div {
+	margin-left: 25%;
+}
+
+.people .row > div:first-of-type {
+	margin-left: 8.33333333%;
+}
+
 footer[role=contentinfo] {
 	padding-right: 0;
-	padding-top: 0;
+	padding-top: 70px;
 }
 
 footer[role=contentinfo] p {
@@ -2084,6 +2334,15 @@ footer[role=contentinfo] p {
 
 footer[role=contentinfo] p {
 	margin-left: 58.33333333%;
+}
+
+.icon-arrow-up {
+	left: 28px;
+}
+
+.icon-arrow-up.active {
+	bottom: 28px;
+	left: 28px;
 }
 
 }
@@ -2120,6 +2379,10 @@ td.visible-sm {
 }
 
 .hidden-sm {
+	display: none !important;
+}
+
+.icon-arrow-up {
 	display: none !important;
 }
 
@@ -2486,6 +2749,69 @@ nav > div .social-nav {
 	width: 32%;
 }
 
+.about-header .row {
+	padding-bottom: 140px;
+	padding-top: 329px;
+}
+
+.about-header .row h1 {
+	float: left;
+	width: 83.33333333%;
+}
+
+.about-header .row h1 {
+	margin-left: 8.33333333%;
+}
+
+.about-header .row > p {
+	font-size: 20px;
+	font-size: 2rem;
+	line-height: 20px;
+	margin-bottom: 70px;
+	margin-top: 70px;
+}
+
+.about-header .row div > p {
+	float: left;
+	width: 33.33333333%;
+}
+
+.about-header .row div > p:first-of-type {
+	float: left;
+	width: 33.33333333%;
+}
+
+.people > div:nth-of-type(odd) .row > div:before {
+	height: 300px;
+}
+
+.people > div:nth-of-type(even) .row > div:before {
+	height: 300px;
+}
+
+.people .row > div {
+	height: 300px;
+}
+
+.people .row > div h2 {
+	width: 190px;
+}
+
+.people .row > div p {
+	width: 160px;
+}
+
+.people .row > div q {
+	font-size: 18px;
+	font-size: 1.8rem;
+	line-height: 18px;
+	width: 140px;
+}
+
+.people .row > div img {
+	height: 260px;
+}
+
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -2797,7 +3123,14 @@ td.visible-lg {
 	width: 35%;
 }
 
-h2 {
+h1 {
+	font-size: 31px;
+	font-size: 3.1rem;
+	line-height: 32px;
+}
+
+h2,
+.about-header span {
 	font-size: 31px;
 	font-size: 3.1rem;
 	line-height: 32px;
@@ -2894,6 +3227,57 @@ header[role=banner] span.icon-updroid-logo {
 	width: 28%;
 }
 
+.about-header .row {
+	padding-bottom: 210px;
+	padding-top: 329px;
+}
+
+.about-header .row > p {
+	font-size: 24px;
+	font-size: 2.4rem;
+	line-height: 24px;
+}
+
+.people > div:nth-of-type(odd) .row > div:before {
+	height: 350px;
+}
+
+.people > div:nth-of-type(even) .row > div:before {
+	height: 350px;
+}
+
+.people .row > div {
+	height: 350px;
+}
+
+.people .row > div h2 {
+	width: 230px;
+}
+
+.people .row > div p {
+	width: 200px;
+}
+
+.people .row > div q {
+	font-size: 20px;
+	font-size: 2rem;
+	line-height: 20px;
+	width: 180px;
+}
+
+.people .row > div img {
+	height: 310px;
+}
+
+.icon-arrow-up {
+	left: 49px;
+}
+
+.icon-arrow-up.active {
+	bottom: 49px;
+	left: 49px;
+}
+
 }
 
 @media (max-width: 767px) {
@@ -2928,6 +3312,10 @@ td.visible-xs {
 }
 
 .hidden-xs {
+	display: none !important;
+}
+
+.icon-arrow-up {
 	display: none !important;
 }
 
