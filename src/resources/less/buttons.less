@@ -21,7 +21,6 @@
         .font-size(1.8);
     }
 
-
     &:hover {
         text-decoration: none;
     }
@@ -31,7 +30,11 @@
     background-color: @btn-red-bg-color;
     color: @btn-red-text-color;
 
-    &:hover {
+    html.touch &:hover {
+        color: @btn-red-text-color;
+    }
+
+    html.no-touch &:hover {
         background-color: @btn-red-hover-bg-color;
         color: @btn-red-bg-color;
     }

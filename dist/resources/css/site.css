@@ -1228,7 +1228,11 @@ p {
 	color: #ffffff;
 }
 
-.btn-red:hover {
+html.touch .btn-red:hover {
+	color: #ffffff;
+}
+
+html.no-touch .btn-red:hover {
 	background-color: #f1f4f4;
 	color: #ff2919;
 }
@@ -1245,6 +1249,7 @@ body {
 	transition: padding 0.5s ease-in;
 	background-color: #ff2919;
 	color: #7e7e7e;
+	padding: 8px;
 }
 
 body.padding-active {
@@ -1286,7 +1291,11 @@ nav > div .main-nav a {
 	line-height: 32px;
 }
 
-nav > div .main-nav a:hover {
+html.touch nav > div .main-nav a:hover {
+	color: #ffffff;
+}
+
+html.no-touch nav > div .main-nav a:hover {
 	color: #666666;
 	text-decoration: none;
 }
@@ -1322,7 +1331,11 @@ nav > div .social-nav li a {
 	color: #ffffff;
 }
 
-nav > div .social-nav li a:hover {
+html.touch nav > div .social-nav li a:hover {
+	color: #ffffff;
+}
+
+html.no-touch nav > div .social-nav li a:hover {
 	color: #666666;
 	text-decoration: none;
 }
@@ -1376,28 +1389,7 @@ header[role=banner].inactive span {
 	height: 531px;
 	padding-bottom: 140px;
 	padding-top: 91px;
-	position: relative; /*.icon-arrow-down {
-            .font-size(3.4);
-            .transition(color 0.5s ease-in-out);
-            bottom: 93px;
-            color: @icon-color;
-            cursor: pointer;
-            left: 8.3%;
-            position: absolute;
-            z-index: 10;
-
-            @media (min-width: @screen-sm-min) {
-                bottom: 63px;
-            }
-
-            @media (min-width: @screen-lg-min) {
-                bottom: 93px;
-            }
-
-            &:hover {
-                color: @icon-hover-color;
-            }
-        }*/
+	position: relative;
 }
 
 .home-header .row > div {
@@ -1595,10 +1587,6 @@ header[role=banner].inactive span {
 }
 
 .about-header {
-	background-image: url('/resources/images/bg-about-us.jpg');
-	background-position: left top;
-	background-repeat: no-repeat;
-	background-size: 100%;
 	float: left;
 	width: 100%;
 }
@@ -1608,8 +1596,8 @@ header[role=banner].inactive span {
 }
 
 .about-header .row {
-	padding-bottom: 210px;
-	padding-top: 329px;
+	padding-bottom: 28px;
+	padding-top: 140px;
 	position: relative;
 }
 
@@ -1618,33 +1606,46 @@ header[role=banner].inactive span {
 	min-height: 1px;
 	padding-left: 0;
 	padding-right: 0;
+	padding: 0 21px;
 }
 
 .about-header .row > p {
 	font-family: "Avenir Next LT W01 Bold";
 	float: left;
-	width: 41.66666667%;
+	width: 100%;
 	position: relative;
 	min-height: 1px;
 	padding-left: 0;
 	padding-right: 0;
+	margin-top: 21px;
+	padding: 0 21px;
+}
+
+.about-header .row div {
+	float: left;
+	width: 100%;
 }
 
 .about-header .row div > p {
+	float: left;
+	width: 100%;
 	position: relative;
 	min-height: 1px;
 	padding-left: 0;
 	padding-right: 0;
-	padding-right: 42px;
+	margin-top: 21px;
+	padding: 0 21px;
 }
 
 .about-header .row div > p:first-of-type {
+	float: left;
+	width: 100%;
 	position: relative;
 	min-height: 1px;
 	padding-left: 0;
 	padding-right: 0;
-	clear: left;
-	padding-right: 42px;
+	margin-top: 21px;
+	padding: 0 21px;
 }
 
 .about-header span {
@@ -1654,12 +1655,11 @@ header[role=banner].inactive span {
 }
 
 .people > div {
+	background-image: url('/resources/images/bg-person-mobile.gif');
+	background-position: center top;
+	background-repeat: repeat-x;
 	float: left;
 	width: 100%;
-}
-
-.people > div:nth-of-type(odd) {
-	background-color: #f1f4f4;
 }
 
 .people > div:nth-of-type(odd) .row > div {
@@ -1669,50 +1669,33 @@ header[role=banner].inactive span {
 	padding-right: 0;
 }
 
-.people > div:nth-of-type(odd) .row > div:before {
-	background-color: #fff;
-	content: '';
-	position: absolute;
-	right: 12.5%;
-	top: 0;
-	width: 25%;
-}
-
-.people > div:nth-of-type(even) {
-	background-color: #fff;
-}
-
 .people > div:nth-of-type(even) .row > div {
 	position: relative;
 	min-height: 1px;
 	padding-left: 0;
 	padding-right: 0;
-	background-color: #d0d3d1;
-	padding-left: 8.3%;
-}
-
-.people > div:nth-of-type(even) .row > div:before {
-	background-color: #fff;
-	content: '';
-	position: absolute;
-	right: 0;
-	top: 0;
-	width: 35%;
 }
 
 .people .row > div {
-	padding-right: 22%;
+	float: left;
+	width: 100%;
+	min-height: 1px;
+	padding-left: 0;
+	padding-right: 0;
+	height: 600px;
 	position: relative;
 }
 
 .people .row > div h2 {
-	padding-top: 49px;
-	width: 230px;
+	padding-left: 21px;
+	padding-top: 350px;
+	width: 100%;
 }
 
 .people .row > div p {
+	padding-left: 21px;
 	padding-top: 28px;
-	width: 200px;
+	width: 80%;
 }
 
 .people .row > div q {
@@ -1721,13 +1704,17 @@ header[role=banner].inactive span {
 	font-size: 2rem;
 	display: inline-block;
 	line-height: 20px;
+	padding-left: 21px;
 	padding-top: 28px;
+	width: 80%;
 }
 
 .people .row > div img {
-	bottom: 0;
+	height: 280px;
+	margin-right: -138px;
 	position: absolute;
-	right: 35px;
+	right: 50%;
+	top: 20px;
 }
 
 footer[role=contentinfo] {
@@ -2071,6 +2058,10 @@ p {
 	font-size: 1.7rem;
 }
 
+body {
+	padding: 0;
+}
+
 nav > div {
 	padding-left: 13%;
 }
@@ -2266,6 +2257,18 @@ header[role=banner] span.icon-updroid-logo {
 	width: 32%;
 }
 
+.about-header {
+	background-image: url('/resources/images/bg-about-us.jpg');
+	background-position: left top;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.about-header .row {
+	padding-bottom: 140px;
+	padding-top: 329px;
+}
+
 .about-header .row h1 {
 	float: left;
 	width: 41.66666667%;
@@ -2275,6 +2278,10 @@ header[role=banner] span.icon-updroid-logo {
 	margin-left: 8.33333333%;
 }
 
+.about-header .row h1 {
+	padding: 0;
+}
+
 .about-header .row > p {
 	float: left;
 	width: 41.66666667%;
@@ -2282,6 +2289,11 @@ header[role=banner] span.icon-updroid-logo {
 
 .about-header .row > p {
 	margin-left: 8.33333333%;
+}
+
+.about-header .row > p {
+	margin-top: 0;
+	padding: 0;
 }
 
 .about-header .row > p {
@@ -2290,11 +2302,21 @@ header[role=banner] span.icon-updroid-logo {
 	line-height: 18px;
 }
 
+.about-header .row div {
+	margin-top: 35px;
+}
+
 .about-header .row div > p {
 	float: left;
 	width: 41.66666667%;
 }
 
+.about-header .row div > p {
+	margin-top: 0;
+	padding-left: 0;
+	padding-right: 42px;
+}
+
 .about-header .row div > p:first-of-type {
 	float: left;
 	width: 50%;
@@ -2304,22 +2326,81 @@ header[role=banner] span.icon-updroid-logo {
 	margin-left: 8.33333333%;
 }
 
-.people > div:nth-of-type(odd) .row > div {
+.about-header .row div > p:first-of-type {
+	clear: left;
+	margin-top: 0;
+	padding-left: 0;
+	padding-right: 42px;
+}
+
+.people > div {
+	background-image: url('/resources/images/bg-person.gif');
+	background-repeat: no-repeat;
+}
+
+.people > div:nth-of-type(even) {
+	background-image: url('/resources/images/bg-person-alt.gif');
+	background-position: center top;
+	background-repeat: no-repeat;
+}
+
+.people .row > div {
 	float: left;
-	width: 41.66666667%;
+	width: 83.33333333%;
 }
 
-.people > div:nth-of-type(even) .row > div {
-	float: left;
-	width: 50%;
-}
-
-.people > div:nth-of-type(even) .row > div {
-	margin-left: 25%;
-}
-
-.people .row > div:first-of-type {
+.people .row > div {
 	margin-left: 8.33333333%;
+}
+
+.people .row > div {
+	height: 400px;
+}
+
+.people .row > div h2 {
+	padding-left: 0;
+	padding-top: 105px;
+	width: 220px;
+}
+
+.people .row > div p {
+	padding-left: 0;
+	width: 220px;
+}
+
+.people .row > div q {
+	font-size: 18px;
+	font-size: 1.8rem;
+	line-height: 20px;
+	padding-left: 0;
+	width: 220px;
+}
+
+.people .row > div img {
+	bottom: 0;
+	height: 370px;
+	margin-right: 0;
+	right: 42px;
+	top: auto;
+}
+
+.people .row > div:nth-of-type(2) h2 {
+	float: right !important;
+	clear: both;
+}
+
+.people .row > div:nth-of-type(2) p {
+	float: right !important;
+	clear: both;
+}
+
+.people .row > div:nth-of-type(2) q {
+	float: right !important;
+	clear: both;
+}
+
+.people .row > div:nth-of-type(2) img {
+	right: 210px;
 }
 
 footer[role=contentinfo] {
@@ -2749,9 +2830,8 @@ nav > div .social-nav {
 	width: 32%;
 }
 
-.about-header .row {
-	padding-bottom: 140px;
-	padding-top: 329px;
+.about-header {
+	background-size: 100%;
 }
 
 .about-header .row h1 {
@@ -2771,6 +2851,10 @@ nav > div .social-nav {
 	margin-top: 70px;
 }
 
+.about-header .row div {
+	margin-top: 0;
+}
+
 .about-header .row div > p {
 	float: left;
 	width: 33.33333333%;
@@ -2781,12 +2865,56 @@ nav > div .social-nav {
 	width: 33.33333333%;
 }
 
+.people > div {
+	background-image: none;
+}
+
+.people > div:nth-of-type(odd) {
+	background-color: #f1f4f4;
+}
+
+.people > div:nth-of-type(odd) .row > div {
+	float: left;
+	width: 41.66666667%;
+}
+
 .people > div:nth-of-type(odd) .row > div:before {
+	background-color: #fff;
+	content: '';
 	height: 300px;
+	position: absolute;
+	right: 12.5%;
+	top: 0;
+	width: 25%;
+}
+
+.people > div:nth-of-type(even) {
+	background-color: #fff;
+	background-image: none;
+}
+
+.people > div:nth-of-type(even) .row > div {
+	float: left;
+	width: 50%;
+}
+
+.people > div:nth-of-type(even) .row > div {
+	margin-left: 25%;
+}
+
+.people > div:nth-of-type(even) .row > div {
+	background-color: #d0d3d1;
+	padding-left: 8.3%;
 }
 
 .people > div:nth-of-type(even) .row > div:before {
+	background-color: #fff;
+	content: '';
 	height: 300px;
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 35%;
 }
 
 .people .row > div {
@@ -2794,6 +2922,7 @@ nav > div .social-nav {
 }
 
 .people .row > div h2 {
+	padding-top: 49px;
 	width: 190px;
 }
 
@@ -2802,14 +2931,32 @@ nav > div .social-nav {
 }
 
 .people .row > div q {
-	font-size: 18px;
-	font-size: 1.8rem;
-	line-height: 18px;
 	width: 140px;
 }
 
 .people .row > div img {
 	height: 260px;
+	right: 35px;
+}
+
+.people .row > div:nth-of-type(2) {
+	margin-left: 0%;
+}
+
+.people .row > div:nth-of-type(2) h2 {
+	float: left !important;
+}
+
+.people .row > div:nth-of-type(2) p {
+	float: left !important;
+}
+
+.people .row > div:nth-of-type(2) q {
+	float: left !important;
+}
+
+.people .row > div:nth-of-type(2) img {
+	right: 35px;
 }
 
 }
@@ -3261,7 +3408,7 @@ header[role=banner] span.icon-updroid-logo {
 .people .row > div q {
 	font-size: 20px;
 	font-size: 2rem;
-	line-height: 20px;
+	line-height: 22px;
 	width: 180px;
 }
 
@@ -3312,6 +3459,10 @@ td.visible-xs {
 }
 
 .hidden-xs {
+	display: none !important;
+}
+
+.about-header span {
 	display: none !important;
 }
 

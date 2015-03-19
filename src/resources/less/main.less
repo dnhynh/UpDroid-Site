@@ -11,6 +11,11 @@ body {
     .transition(padding 0.5s ease-in); // Fade in border
     background-color: @container-border-color;
     color: @text-color;
+    padding: 8px;
+
+    @media (min-width: @screen-sm-min) {
+        padding: 0;
+    }
 
     &.padding-active {
         padding: 8px;
@@ -72,7 +77,11 @@ nav {
                     line-height: 32px;
                 }
 
-                &:hover {
+                html.touch &:hover {
+                    color: @nav-text-color;
+                }
+
+                html.no-touch &:hover {
                     color: @nav-text-hover-color;
                     text-decoration: none;
                 }
@@ -126,7 +135,11 @@ nav {
                     .transition(color 0.5s ease-in-out);
                     color: @nav-text-color;
 
-                    &:hover {
+                    html.touch &:hover {
+                        color: @nav-text-color;
+                    }
+
+                    html.no-touch &:hover {
                         color: @nav-text-hover-color;
                         text-decoration: none;
                     }
@@ -316,29 +329,6 @@ header[role=banner] {
                 width: 68%;
             }
         }
-
-        /*.icon-arrow-down {
-            .font-size(3.4);
-            .transition(color 0.5s ease-in-out);
-            bottom: 93px;
-            color: @icon-color;
-            cursor: pointer;
-            left: 8.3%;
-            position: absolute;
-            z-index: 10;
-
-            @media (min-width: @screen-sm-min) {
-                bottom: 63px;
-            }
-
-            @media (min-width: @screen-lg-min) {
-                bottom: 93px;
-            }
-
-            &:hover {
-                color: @icon-hover-color;
-            }
-        }*/
     }
 }
 
@@ -645,23 +635,30 @@ header[role=banner] {
 
 // About us content
 .about-header {
-    background-image: url('/resources/images/bg-about-us.jpg');
-    background-position: left top;
-    background-repeat: no-repeat;
-    background-size: 100%;
     float: left;
     width: 100%;
+
+    @media (min-width: @screen-sm-min) {
+        background-image: url('/resources/images/bg-about-us.jpg');
+        background-position: left top;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    @media (min-width: @screen-md-min) {
+        background-size: 100%;
+    }
 
     .container {
         position: relative;
     }
 
     .row {
-        padding-bottom: 210px;
-        padding-top: 329px;
+        padding-bottom: 28px;
+        padding-top: 140px;
         position: relative;
 
-        @media (min-width: @screen-md-min) {
+        @media (min-width: @screen-sm-min) {
             padding-bottom: 140px;
             padding-top: 329px;
         }
@@ -676,13 +673,25 @@ header[role=banner] {
             .make-sm-column-offset(1);
             .make-md-column(10);
             .make-md-column-offset(1);
+            padding: 0 21px;
+
+            @media (min-width: @screen-sm-min) {
+                padding: 0;
+            }
         }
 
         >p {
             .font-avenir-next-bold();
-            .make-xs-column(5);
+            .make-xs-column(12);
             .make-sm-column(5);
             .make-sm-column-offset(1);
+            margin-top: 21px;
+            padding: 0 21px;
+
+            @media (min-width: @screen-sm-min) {
+                margin-top: 0;
+                padding: 0;
+            }
 
             @media (min-width: @screen-sm-min) {
                 .font-size(1.8);
@@ -703,23 +712,51 @@ header[role=banner] {
         }
 
         div {
+            float: left;
+            width: 100%;
+
+            @media (min-width: @screen-sm-min) {
+                margin-top: 35px;
+            }
+
+            @media (min-width: @screen-md-min) {
+                margin-top: 0;
+            }
+
             >p {
+                .make-xs-column(12);
                 .make-sm-column(5);
                 .make-md-column(4);
-                padding-right: 42px;
+                margin-top: 21px;
+                padding: 0 21px;
+
+                @media (min-width: @screen-sm-min) {
+                    margin-top: 0;
+                    padding-left: 0;
+                    padding-right: 42px;
+                }
 
                 &:first-of-type {
+                    .make-xs-column(12);
                     .make-sm-column(6);
                     .make-sm-column-offset(1);
                     .make-md-column(4);
-                    clear: left;
-                    padding-right: 42px;
+                    margin-top: 21px;
+                    padding: 0 21px;
+
+                    @media (min-width: @screen-sm-min) {
+                        clear: left;
+                        margin-top: 0;
+                        padding-left: 0;
+                        padding-right: 42px;
+                    }
                 }
             }
         }
     }
 
     span {
+        .hidden-xs;
         &:extend(h2);
         position: absolute;
         right: 0;
@@ -730,26 +767,40 @@ header[role=banner] {
 // List of people
 .people {
     >div {
+        background-image: url('/resources/images/bg-person-mobile.gif');
+        background-position: center top;
+        background-repeat: repeat-x;
+
         float: left;
         width: 100%;
 
+        @media (min-width: @screen-sm-min) {
+            background-image: url('/resources/images/bg-person.gif');
+            background-repeat: no-repeat;
+        }
+
+        @media (min-width: @screen-md-min) {
+            background-image: none;
+        }
+
         // Odd rows of people
         &:nth-of-type(odd) {
-            background-color: @people-bg-color;
+            @media (min-width: @screen-md-min) {
+                background-color: @people-bg-color;
+            }
 
             .row >div {
-                .make-sm-column(5);
+                .make-md-column(5);
 
                 &:before {
-                    background-color: #fff;
-                    content: '';
-                    position: absolute;
-                    right: 12.5%;
-                    top: 0;
-                    width: 25%;
-
                     @media (min-width: @screen-md-min) {
+                        background-color: #fff;
+                        content: '';
                         height: 300px;
+                        position: absolute;
+                        right: 12.5%;
+                        top: 0;
+                        width: 25%;
                     }
 
                     @media (min-width: @screen-lg-min) {
@@ -761,24 +812,35 @@ header[role=banner] {
 
         // Even rows of people
         &:nth-of-type(even) {
-            background-color: #fff;
+            @media (min-width: @screen-sm-min) {
+                background-image: url('/resources/images/bg-person-alt.gif');
+                background-position: center top;
+                background-repeat: no-repeat;
+            }
+
+            @media (min-width: @screen-md-min) {
+                background-color: #fff;
+                background-image: none;
+            }
 
             .row >div {
-                .make-sm-column(6);
-                .make-sm-column-offset(3);
-                background-color: #d0d3d1;
-                padding-left: 8.3%;
+                .make-md-column(6);
+                .make-md-column-offset(3);
+
+                @media (min-width: @screen-md-min) {
+                    background-color: #d0d3d1;
+                    padding-left: 8.3%;
+                }
 
                 &:before {
-                    background-color: #fff;
-                    content: '';
-                    position: absolute;
-                    right: 0;
-                    top: 0;
-                    width: 35%;
-
                     @media (min-width: @screen-md-min) {
+                        background-color: #fff;
+                        content: '';
                         height: 300px;
+                        position: absolute;
+                        right: 0;
+                        top: 0;
+                        width: 35%;
                     }
 
                     @media (min-width: @screen-lg-min) {
@@ -791,8 +853,15 @@ header[role=banner] {
 
     // Person styling
     .row >div {
-        padding-right: 22%;
+        .make-xs-column(12);
+        .make-sm-column(10);
+        .make-sm-column-offset(1);
+        height: 600px;
         position: relative;
+
+        @media (min-width: @screen-sm-min) {
+            height: 400px;
+        }
 
         @media (min-width: @screen-md-min) {
             height: 300px;
@@ -802,15 +871,19 @@ header[role=banner] {
             height: 350px;
         }
 
-        &:first-of-type {
-            .make-sm-column-offset(1);
-        }
-
         h2 {
-            padding-top: 49px;
-            width: 230px;
+            padding-left: 21px;
+            padding-top: 350px;
+            width: 100%;
+
+            @media (min-width: @screen-sm-min) {
+                padding-left: 0;
+                padding-top: 105px;
+                width: 220px;
+            }
 
             @media (min-width: @screen-md-min) {
+                padding-top: 49px;
                 width: 190px;;
             }
 
@@ -820,8 +893,14 @@ header[role=banner] {
         }
 
         p {
+            padding-left: 21px;
             padding-top: 28px;
-            width: 200px;
+            width: 80%;
+
+            @media (min-width: @screen-sm-min) {
+                padding-left: 0;
+                width: 220px;;
+            }
 
             @media (min-width: @screen-md-min) {
                 width: 160px;;
@@ -837,32 +916,98 @@ header[role=banner] {
             .font-size(2.0);
             display: inline-block;
             line-height: 20px;
+            padding-left: 21px;
             padding-top: 28px;
+            width: 80%;
+
+            @media (min-width: @screen-sm-min) {
+                .font-size(1.8);
+                line-height: 20px;
+                padding-left: 0;
+                width: 220px;
+            }
 
             @media (min-width: @screen-md-min) {
-                .font-size(1.8);
-                line-height: 18px;
                 width: 140px;
             }
 
             @media (min-width: @screen-lg-min) {
                 .font-size(2.0);
-                line-height: 20px;
+                line-height: 22px;
                 width: 180px;
             }
         }
 
         img {
-            bottom: 0;
+            height: 280px;
+            margin-right: -138px;
             position: absolute;
-            right: 35px;
+            right: 50%;
+            top: 20px;
+
+            @media (min-width: @screen-sm-min) {
+                bottom: 0;
+                height: 370px;
+                margin-right: 0;
+                right: 42px;
+                top: auto;
+            }
 
             @media (min-width: @screen-md-min) {
                 height: 260px;
+                right: 35px;
             }
 
             @media (min-width: @screen-lg-min) {
                 height: 310px;
+            }
+        }
+
+        // 2nd person in each row
+        &:nth-of-type(2) {
+            .make-md-column-offset(0);
+
+            h2 {
+                @media (min-width: @screen-sm-min) {
+                    .pull-right;
+                    clear: both;
+                }
+
+                @media (min-width: @screen-md-min) {
+                    .pull-left;
+                }
+            }
+
+            p {
+                @media (min-width: @screen-sm-min) {
+                    .pull-right;
+                    clear: both;
+                }
+
+                @media (min-width: @screen-md-min) {
+                    .pull-left;
+                }
+            }
+
+            q {
+                @media (min-width: @screen-sm-min) {
+                    .pull-right;
+                    clear: both;
+                }
+
+                @media (min-width: @screen-md-min) {
+                    .pull-left;
+                }
+            }
+
+            img {
+                @media (min-width: @screen-sm-min) {
+                    right: 210px;
+                }
+
+                @media (min-width: @screen-md-min) {
+                    right: 35px;
+                }
             }
         }
     }
