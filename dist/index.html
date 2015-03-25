@@ -2,8 +2,9 @@
 <html lang="en">
 <head>
     <title>UpDroid</title>
-    <meta property="og:title" content=""/>
-    <meta property="og:description" content=""/>
+    <meta name="description" content="Easy to program. Incredibly powerful." />
+    <meta property="og:title" content="Updroid"/>
+    <meta property="og:description" content="Easy to program. Incredibly powerful."/>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <link rel="stylesheet" type="text/css" href="/resources/css/site.min.css"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
@@ -11,31 +12,28 @@
     <!--[if (gte ie 6)&(lte ie 8)]>
     <script type="text/javascript" src="/resources/js/ie.min.js"></script>
     <![endif]-->
-    <script src="/resources/js/head.min.js" type="text/javascript"></script>
-    <link href="/favicon.ico" type="image/ico" rel="icon"/>
-    <link rel="apple-touch-icon" sizes="57x57" href="/resources/images/icons/apple-touch-icon-57x57.png"/>
-    <link rel="apple-touch-icon" sizes="114x114" href="/resources/images/icons/apple-touch-icon-114x114.png"/>
-    <link rel="apple-touch-icon" sizes="72x72" href="/resources/images/icons/apple-touch-icon-72x72.png"/>
-    <link rel="apple-touch-icon" sizes="144x144" href="/resources/images/icons/apple-touch-icon-144x144.png"/>
-    <link rel="apple-touch-icon" sizes="60x60" href="/resources/images/icons/apple-touch-icon-60x60.png"/>
-    <link rel="apple-touch-icon" sizes="120x120" href="/resources/images/icons/apple-touch-icon-120x120.png"/>
-    <link rel="apple-touch-icon" sizes="76x76" href="/resources/images/icons/apple-touch-icon-76x76.png"/>
-    <link rel="apple-touch-icon" sizes="152x152" href="/resources/images/icons/apple-touch-icon-152x152.png"/>
-    <link rel="apple-touch-icon" sizes="180x180" href="/resources/images/icons/apple-touch-icon-180x180.png"/>
+    <script src="/resources/js/modernizr.min.js" type="text/javascript"></script>
+    <link rel="shortcut icon" href="/resources/icons/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="57x57" href="/resources/icons/apple-touch-icon-57x57.png" />
+    <link rel="apple-touch-icon" sizes="60x60" href="/resources/icons/apple-touch-icon-60x60.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="/resources/icons/apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="/resources/icons/apple-touch-icon-76x76.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="/resources/icons/apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon" sizes="120x120" href="/resources/icons/apple-touch-icon-120x120.png" />
 </head>
 <body>
 <nav class="sb-slidebar sb-left sb-style-push">
     <div>
-        <ul class="main-nav">
+        <ul class="main-nav" id="main-navigation">
             <li><a href="/">Home</a></li>
             <li><a href="/about-us/">About us</a></li>
             <li><a href="/contact-us/">Contact us</a></li>
         </ul>
         <span class="follow-us">Follow us to keep up to date.</span>
         <ul class="social-nav">
-            <li><a href=""><span class="icon-facebook"></span></a></li>
-            <li><a href=""><span class="icon-twitter"></span></a></li>
-            <li><a href=""><span class="icon-instagram"></span></a></li>
+            <li><a href="" target="_blank"><span class="icon-facebook"></span></a></li>
+            <li><a href="" target="_blank"><span class="icon-twitter"></span></a></li>
+            <li><a href="" target="_blank"><span class="icon-instagram"></span></a></li>
         </ul>
     </div>
 </nav>
@@ -48,7 +46,13 @@
         <div class="home-header">
             <div class="container">
                 <header class="row">
-                    <h1>UpDroid</h1>
+                    <h1>
+                        UpDroid
+                        <span class="parallax-1" id="parallax-1"></span>
+                        <span class="parallax-2" id="parallax-2"></span>
+                        <span class="parallax-3" id="parallax-3"></span>
+                        <span class="parallax-4" id="parallax-4"></span>
+                    </h1>
                     <div>
                         <h2>Introducing UP1-series</h2>
                         <p>Easy to program. Incredibly powerful.</p>
@@ -57,6 +61,7 @@
                     <img src="/resources/images/updroid-robot.png" alt="Updroid" />
                 </header>
             </div>
+            <span class="icon-arrow-down"></span>
         </div>
         <div class="image-gallery">
             <div class="container-fluid">

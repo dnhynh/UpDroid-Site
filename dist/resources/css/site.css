@@ -1212,6 +1212,7 @@ p {
 	-o-transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
 	-ms-transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
 	transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+	border: none;
 	display: inline-block;
 	height: 50px;
 	line-height: 50px;
@@ -1263,6 +1264,16 @@ html.sb-active body {
 	-o-transition: none;
 	-ms-transition: none;
 	transition: none;
+}
+
+::selection {
+	background-color: #ff2919;
+	color: #ffffff;
+}
+
+::-moz-selection {
+	background-color: #ff2919;
+	color: #ffffff;
 }
 
 nav {
@@ -1382,12 +1393,12 @@ header[role=banner].inactive span {
 
 .home-header {
 	float: left;
+	position: relative;
 	width: 100%;
 }
 
 .home-header .row {
-	height: 531px;
-	padding-bottom: 140px;
+	padding-bottom: 21px;
 	padding-top: 91px;
 	position: relative;
 }
@@ -1404,6 +1415,7 @@ header[role=banner].inactive span {
 
 .home-header .row > div p {
 	padding-top: 14px;
+	width: 70%;
 }
 
 .home-header .row > div .btn {
@@ -1416,10 +1428,6 @@ header[role=banner].inactive span {
 	text-shadow: none;
 	background-color: transparent;
 	border: 0;
-	background-image: url('/resources/images/updroid.png');
-	background-position: left top;
-	background-repeat: no-repeat;
-	background-size: contain;
 	height: 50%;
 	left: 21px;
 	position: absolute;
@@ -1427,12 +1435,55 @@ header[role=banner].inactive span {
 	width: 84%;
 }
 
+.home-header .row h1 span {
+	background-position: left top;
+	background-repeat: no-repeat;
+	background-size: contain;
+	height: 100%;
+	position: absolute;
+	width: 100%;
+	will-change: transform;
+}
+
+.home-header .row h1 span.parallax-1 {
+	-webkit-transition: opacity 0.5s ease-in-out;
+	-moz-transition: opacity 0.5s ease-in-out;
+	-o-transition: opacity 0.5s ease-in-out;
+	-ms-transition: opacity 0.5s ease-in-out;
+	transition: opacity 0.5s ease-in-out;
+	background-image: url('/resources/images/updroid-parallax-1.gif');
+	opacity: 1;
+}
+
+.home-header .row h1 span.parallax-1.inactive {
+	opacity: 0;
+}
+
+.home-header .row h1 span.parallax-2 {
+	background-image: url('/resources/images/updroid-parallax-2.gif');
+}
+
+.home-header .row h1 span.parallax-3 {
+	background-image: url('/resources/images/updroid-parallax-3.gif');
+}
+
+.home-header .row h1 span.parallax-4 {
+	background-image: url('/resources/images/updroid-parallax-4.gif');
+}
+
 .home-header .row img {
+	bottom: 220px;
 	left: 0;
 	position: absolute;
-	top: 30%;
 	z-index: 100;
 	width: 70%;
+}
+
+.home-header .icon-arrow-down {
+	font-size: 34px;
+	font-size: 3.4rem;
+	color: #0c0c0c;
+	position: absolute;
 }
 
 .image-gallery {
@@ -1574,6 +1625,7 @@ header[role=banner].inactive span {
 
 .robotics .row > div:last-of-type p {
 	padding-top: 14px;
+	width: 70%;
 }
 
 .robotics .row > div:last-of-type .btn {
@@ -1582,7 +1634,7 @@ header[role=banner].inactive span {
 
 .robotics .row img {
 	margin-left: 21px;
-	margin-top: 35px;
+	margin-top: 105px;
 	width: 90%;
 }
 
@@ -1717,12 +1769,110 @@ header[role=banner].inactive span {
 	top: 20px;
 }
 
+.form {
+	float: left;
+	width: 100%;
+}
+
+.form .row header,
+.form .row > div {
+	float: left;
+	width: 100%;
+	position: relative;
+	min-height: 1px;
+	padding-left: 0;
+	padding-right: 0;
+	padding: 0 21px;
+}
+
+.form .row header p,
+.form .row > div p {
+	padding-top: 21px;
+}
+
+.form .row fieldset {
+	float: left;
+	width: 100%;
+	position: relative;
+	min-height: 1px;
+	padding-left: 0;
+	padding-right: 0;
+	padding: 0 21px;
+}
+
+.form .row fieldset ol {
+	margin-top: 28px;
+}
+
+.form .row fieldset li {
+	margin-bottom: 28px;
+}
+
+.form .row fieldset label {
+	font-family: "Avenir Next LT W01 Bold";
+	font-size: 18px;
+	font-size: 1.8rem;
+	color: #666666;
+	display: inline-block;
+	margin-bottom: 7px;
+	width: 100%;
+}
+
+.form .row fieldset input[type=text],
+.form .row fieldset input[type=email],
+.form .row fieldset textarea {
+	font-family: "Avenir Next LT W01 Bold";
+	font-size: 18px;
+	font-size: 1.8rem;
+	border: solid 6px transparent;
+	color: #1e1e1e;
+	padding: 10px;
+	width: 100%;
+}
+
+.form .row fieldset input[type=text]:focus,
+.form .row fieldset input[type=email]:focus,
+.form .row fieldset textarea:focus {
+	border-color: #d5d6d6;
+	outline: none;
+}
+
+.form .row fieldset input[type=text].error,
+.form .row fieldset input[type=email].error,
+.form .row fieldset textarea.error {
+	border-color: #ff2919;
+}
+
+.form .row fieldset textarea {
+	height: 140px;
+}
+
+.form-contact .row {
+	padding-bottom: 77px;
+	padding-top: 91px;
+}
+
+.form-newsletter {
+	background-color: #ffffff;
+}
+
+.form-newsletter .row {
+	padding-bottom: 77px;
+	padding-top: 77px;
+}
+
+.form-newsletter .row fieldset input[type=text],
+.form-newsletter .row fieldset input[type=email],
+.form-newsletter .row fieldset textarea {
+	background-color: #eaecec;
+}
+
 footer[role=contentinfo] {
 	background-color: #ffffff;
 	float: left;
 	padding-bottom: 21px;
 	padding-right: 21px;
-	padding-top: 21px;
+	padding-top: 84px;
 	position: relative;
 	width: 100%;
 }
@@ -1745,10 +1895,11 @@ footer[role=contentinfo] p {
 	-o-transition: bottom 0.3s ease-in-out, opacity 0.3s ease-in-out;
 	-ms-transition: bottom 0.3s ease-in-out, opacity 0.3s ease-in-out;
 	transition: bottom 0.3s ease-in-out, opacity 0.3s ease-in-out;
-	bottom: -20px;
+	bottom: 56px;
 	color: #0c0c0c;
 	cursor: pointer;
-	opacity: 0;
+	left: 50%;
+	margin-left: -17px;
 	position: absolute;
 	z-index: 100;
 }
@@ -1769,6 +1920,22 @@ footer[role=contentinfo] p {
 
 .vh-100 {
 	height: 704px !important;
+}
+
+}
+
+@media (min-width: 350px) {
+
+.home-header .row > div p {
+	width: 60%;
+}
+
+.home-header .row img {
+	bottom: 190px;
+}
+
+.robotics .row > div:last-of-type p {
+	width: 60%;
 }
 
 }
@@ -2117,6 +2284,7 @@ header[role=banner] span.icon-updroid-logo {
 
 .home-header .row > div p {
 	padding-top: 14px;
+	width: auto;
 }
 
 .home-header .row > div .btn {
@@ -2130,7 +2298,12 @@ header[role=banner] span.icon-updroid-logo {
 	width: 83.4%;
 }
 
+.home-header .row h1 span {
+	height: 378px;
+}
+
 .home-header .row img {
+	bottom: auto;
 	left: 38px;
 	top: 230px;
 	width: 67%;
@@ -2191,7 +2364,7 @@ header[role=banner] span.icon-updroid-logo {
 }
 
 .robotics {
-	padding-bottom: 147px;
+	padding-bottom: 77px;
 	padding-top: 91px;
 }
 
@@ -2246,6 +2419,10 @@ header[role=banner] span.icon-updroid-logo {
 	padding-right: 0;
 	position: absolute;
 	right: 8.3%;
+}
+
+.robotics .row > div:last-of-type p {
+	width: auto;
 }
 
 .robotics .row img {
@@ -2403,6 +2580,43 @@ header[role=banner] span.icon-updroid-logo {
 	right: 210px;
 }
 
+.form .row header,
+.form .row > div {
+	float: left;
+	width: 50%;
+}
+
+.form .row header,
+.form .row > div {
+	margin-left: 25%;
+}
+
+.form .row header,
+.form .row > div {
+	padding: 0;
+}
+
+.form .row fieldset {
+	float: left;
+	width: 50%;
+}
+
+.form .row fieldset {
+	margin-left: 25%;
+}
+
+.form .row fieldset {
+	padding: 0;
+}
+
+.form .row fieldset ol {
+	margin-top: 49px;
+}
+
+.form-contact .row {
+	padding-top: 77px;
+}
+
 footer[role=contentinfo] {
 	padding-right: 0;
 	padding-top: 70px;
@@ -2418,12 +2632,9 @@ footer[role=contentinfo] p {
 }
 
 .icon-arrow-up {
-	left: 28px;
-}
-
-.icon-arrow-up.active {
 	bottom: 28px;
 	left: 28px;
+	margin-left: 0;
 }
 
 }
@@ -2463,7 +2674,7 @@ td.visible-sm {
 	display: none !important;
 }
 
-.icon-arrow-up {
+.home-header .icon-arrow-down {
 	display: none !important;
 }
 
@@ -2755,10 +2966,20 @@ nav > div .social-nav {
 	height: 494px;
 }
 
+.home-header .row h1 span {
+	height: 494px;
+}
+
 .home-header .row img {
 	left: 50px;
+	position: absolute;
 	top: 280px;
 	width: 67%;
+}
+
+.home-header .icon-arrow-down {
+	bottom: 70px;
+	left: 28px;
 }
 
 .image-gallery .row > div span {
@@ -2879,7 +3100,7 @@ nav > div .social-nav {
 }
 
 .people > div:nth-of-type(odd) .row > div:before {
-	background-color: #fff;
+	background-color: #ffffff;
 	content: '';
 	height: 300px;
 	position: absolute;
@@ -2889,7 +3110,7 @@ nav > div .social-nav {
 }
 
 .people > div:nth-of-type(even) {
-	background-color: #fff;
+	background-color: #ffffff;
 	background-image: none;
 }
 
@@ -2908,7 +3129,7 @@ nav > div .social-nav {
 }
 
 .people > div:nth-of-type(even) .row > div:before {
-	background-color: #fff;
+	background-color: #ffffff;
 	content: '';
 	height: 300px;
 	position: absolute;
@@ -2957,6 +3178,41 @@ nav > div .social-nav {
 
 .people .row > div:nth-of-type(2) img {
 	right: 35px;
+}
+
+.form .row header,
+.form .row > div {
+	float: left;
+	width: 16.66666667%;
+}
+
+.form .row header,
+.form .row > div {
+	margin-left: 8.33333333%;
+}
+
+.form .row fieldset {
+	float: left;
+	width: 33.33333333%;
+}
+
+.form .row fieldset {
+	margin-left: 8.33333333%;
+}
+
+.form .row fieldset ol {
+	margin-top: 7px;
+}
+
+.icon-arrow-up {
+	bottom: -20px;
+	left: 28px;
+	opacity: 0;
+}
+
+.icon-arrow-up.active {
+	bottom: 28px;
+	left: 28px;
 }
 
 }
@@ -3335,9 +3591,18 @@ header[role=banner] span.icon-updroid-logo {
 	top: 119px;
 }
 
+.home-header .row h1 span {
+	height: 591px;
+}
+
 .home-header .row img {
 	top: 360px;
 	width: 68%;
+}
+
+.home-header .icon-arrow-down {
+	bottom: 140px;
+	left: 49px;
 }
 
 .image-gallery .row > div span {
@@ -3416,6 +3681,10 @@ header[role=banner] span.icon-updroid-logo {
 	height: 310px;
 }
 
+.form-contact .row {
+	padding-top: 119px;
+}
+
 .icon-arrow-up {
 	left: 49px;
 }
@@ -3462,11 +3731,11 @@ td.visible-xs {
 	display: none !important;
 }
 
-.about-header span {
+.home-header .icon-arrow-down {
 	display: none !important;
 }
 
-.icon-arrow-up {
+.about-header span {
 	display: none !important;
 }
 

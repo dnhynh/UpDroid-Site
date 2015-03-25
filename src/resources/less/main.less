@@ -27,6 +27,16 @@ body {
     }
 }
 
+// Custom text selection styling
+::selection {
+    background-color: @text-select-bg-color;
+    color: @text-select-color;
+}
+::-moz-selection {
+    background-color: @text-select-bg-color;
+    color: @text-select-color;
+}
+
 // Push navigation
 nav {
     background-color: @nav-bg-color;
@@ -215,11 +225,11 @@ header[role=banner] {
 // Home logo & image of UpDroid - includes sign up feature
 .home-header {
     float: left;
+    position: relative;
     width: 100%;
 
     .row {
-        height: 531px;
-        padding-bottom: 140px;
+        padding-bottom: 21px;
         padding-top: 91px;
         position: relative;
 
@@ -253,9 +263,15 @@ header[role=banner] {
 
             p {
                 padding-top: 14px;
+                width: 70%;
+
+                @media (min-width: @screen-large-mobile-min) {
+                    width: 60%;
+                }
 
                 @media (min-width: @screen-sm-min) {
                     padding-top: 14px;
+                    width: auto;
                 }
 
                 @media (min-width: @screen-md-min) {
@@ -276,12 +292,9 @@ header[role=banner] {
             }
         }
 
+        // Logo text & parallax effect (desktop only)
         h1 {
             .text-hide;
-            background-image: url('/resources/images/updroid.png');
-            background-position: left top;
-            background-repeat: no-repeat;
-            background-size: contain;
             height: 50%;
             left: 21px;
             position: absolute;
@@ -303,16 +316,65 @@ header[role=banner] {
                 height: 591px;
                 top: 119px;
             }
+
+            span {
+                background-position: left top;
+                background-repeat: no-repeat;
+                background-size: contain;
+                height: 100%;
+                position: absolute;
+                width: 100%;
+                will-change: transform;
+
+                @media (min-width: @screen-sm-min) {
+                    height: 378px;
+                }
+
+                @media (min-width: @screen-md-min) {
+                    height: 494px;
+                }
+
+                @media (min-width: @screen-lg-min) {
+                    height: 591px;
+                }
+
+                &.parallax-1 {
+                    .transition(opacity 0.5s ease-in-out);
+                    background-image: url('/resources/images/updroid-parallax-1.gif');
+                    opacity: 1;
+
+                    &.inactive {
+                        opacity: 0;
+                    }
+                }
+
+                &.parallax-2 {
+                    background-image: url('/resources/images/updroid-parallax-2.gif');
+                }
+
+                &.parallax-3 {
+                    background-image: url('/resources/images/updroid-parallax-3.gif');
+                }
+
+                &.parallax-4 {
+                    background-image: url('/resources/images/updroid-parallax-4.gif');
+                }
+            }
         }
 
         img {
+            bottom: 220px;
             left: 0;
             position: absolute;
-            top: 30%;
             z-index: 100;
             width: 70%;
 
+            @media (min-width: @screen-large-mobile-min) {
+                bottom: 190px;
+            }
+
             @media (min-width: @screen-sm-min) {
+                bottom: auto;
                 left: 38px;
                 top: 230px;
                 width: 67%;
@@ -320,6 +382,7 @@ header[role=banner] {
 
             @media (min-width: @screen-md-min) {
                 left: 50px;
+                position: absolute;
                 top: 280px;
                 width: 67%;
             }
@@ -328,6 +391,24 @@ header[role=banner] {
                 top: 360px;
                 width: 68%;
             }
+        }
+    }
+
+    .icon-arrow-down {
+        .font-size(3.4);
+        .hidden-xs;
+        .hidden-sm;
+        color: @icon-color;
+        position: absolute;
+
+        @media (min-width: @screen-md-min) {
+            bottom: 70px;
+            left: 28px;
+        }
+
+        @media (min-width: @screen-lg-min) {
+            bottom: 140px;
+            left: 49px;
         }
     }
 }
@@ -484,7 +565,7 @@ header[role=banner] {
     width: 100%;
 
     @media (min-width: @screen-sm-min) {
-        padding-bottom: 147px;
+        padding-bottom: 77px;
         padding-top: 91px;
     }
 
@@ -587,6 +668,15 @@ header[role=banner] {
 
                 p {
                     padding-top: 14px;
+                    width: 70%;
+
+                    @media (min-width: @screen-large-mobile-min) {
+                        width: 60%;
+                    }
+
+                    @media (min-width: @screen-sm-min) {
+                        width: auto;
+                    }
 
                     @media (min-width: @screen-md-min) {
                         padding-top: 21px;
@@ -605,7 +695,7 @@ header[role=banner] {
 
         img {
             margin-left: 21px;
-            margin-top: 35px;
+            margin-top: 105px;
             width: 90%;
 
             @media (min-width: @screen-sm-min) {
@@ -794,7 +884,7 @@ header[role=banner] {
 
                 &:before {
                     @media (min-width: @screen-md-min) {
-                        background-color: #fff;
+                        background-color: @people-bg-color-alt;
                         content: '';
                         height: 300px;
                         position: absolute;
@@ -819,7 +909,7 @@ header[role=banner] {
             }
 
             @media (min-width: @screen-md-min) {
-                background-color: #fff;
+                background-color: @people-bg-color-alt;
                 background-image: none;
             }
 
@@ -828,13 +918,13 @@ header[role=banner] {
                 .make-md-column-offset(3);
 
                 @media (min-width: @screen-md-min) {
-                    background-color: #d0d3d1;
+                    background-color: @people-bg-color-alt2;
                     padding-left: 8.3%;
                 }
 
                 &:before {
                     @media (min-width: @screen-md-min) {
-                        background-color: #fff;
+                        background-color: @people-bg-color-alt;
                         content: '';
                         height: 300px;
                         position: absolute;
@@ -1013,13 +1103,130 @@ header[role=banner] {
     }
 }
 
+// Common form styling
+.form {
+    float: left;
+    width: 100%;
+
+    .row {
+        header, >div {
+            .make-xs-column(12);
+            .make-sm-column(6);
+            .make-sm-column-offset(3);
+            .make-md-column(2);
+            .make-md-column-offset(1);
+            padding: 0 21px;
+
+            @media (min-width: @screen-sm-min) {
+                padding: 0;
+            }
+
+            p {
+                padding-top: 21px;
+            }
+        }
+
+        fieldset {
+            .make-xs-column(12);
+            .make-sm-column(6);
+            .make-sm-column-offset(3);
+            .make-md-column(4);
+            .make-md-column-offset(1);
+            padding: 0 21px;
+
+            @media (min-width: @screen-sm-min) {
+                padding: 0;
+            }
+
+            ol {
+                margin-top: 28px;
+
+                @media (min-width: @screen-sm-min) {
+                    margin-top: 49px;
+                }
+
+                @media (min-width: @screen-md-min) {
+                    margin-top: 7px;
+                }
+            }
+
+            li {
+                margin-bottom: 28px;
+            }
+
+            label {
+                .font-avenir-next-bold();
+                .font-size(1.8);
+                color: @form-input-label-color;
+                display: inline-block;
+                margin-bottom: 7px;
+                width: 100%;
+            }
+
+            input[type=text], input[type=email], textarea {
+                .font-avenir-next-bold();
+                .font-size(1.8);
+                border: solid 6px transparent;
+                color: @form-input-text-color;
+                padding: 10px;
+                width: 100%;
+
+                &:focus {
+                    border-color: @form-input-focus-color;
+                    outline: none;
+                }
+
+                &.error {
+                    border-color: @form-input-error-color;
+                }
+            }
+
+            textarea {
+                height: 140px;
+            }
+        }
+    }
+}
+
+// Contact form
+.form-contact {
+    .row {
+        padding-bottom: 77px;
+        padding-top: 91px;
+
+        @media (min-width: @screen-sm-min) {
+            padding-top: 77px;
+        }
+
+        @media (min-width: @screen-lg-min) {
+            padding-top: 119px;
+        }
+    }
+}
+
+// Newsletter form
+.form-newsletter {
+    background-color: @newsletter-bg-color;
+
+    .row {
+        padding-bottom: 77px;
+        padding-top: 77px;
+
+        fieldset {
+            input[type=text], input[type=email], textarea {
+                background-color: @newsletter-input-bg-color;
+            }
+        }
+    }
+}
+
 // Footer copyright
 footer[role=contentinfo] {
     background-color: @footer-bg-color;
     float: left;
     padding-bottom: 21px;
     padding-right: 21px;
-    padding-top: 21px;
+    padding-top: 84px;
     position: relative;
     width: 100%;
 
@@ -1039,18 +1246,25 @@ footer[role=contentinfo] {
 // Back to top arrow
 .icon-arrow-up {
     .font-size(3.4);
-    .hidden-xs;
-    .hidden-sm;
     .transition(bottom 0.3s ease-in-out, opacity 0.3s ease-in-out;); // Animate bottom position & opacity
-    bottom: -20px;
+    bottom: 56px;
     color: @icon-color;
     cursor: pointer;
-    opacity: 0;
+    left: 50%;
+    margin-left: -17px;
     position: absolute;
     z-index: 100;
 
     @media (min-width: @screen-sm-min) {
+        bottom: 28px;
         left: 28px;
+        margin-left: 0;
+    }
+
+    @media (min-width: @screen-md-min) {
+        bottom: -20px;
+        left: 28px;
+        opacity: 0;
     }
 
     @media (min-width: @screen-lg-min) {
@@ -1060,7 +1274,7 @@ footer[role=contentinfo] {
     &.active {
         opacity: 1;
 
-        @media (min-width: @screen-sm-min) {
+        @media (min-width: @screen-md-min) {
             bottom: 28px;
             left: 28px;
         }
