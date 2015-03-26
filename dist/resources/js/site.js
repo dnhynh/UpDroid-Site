@@ -402,7 +402,7 @@ var Global =
 
         $(window).scroll(function () {
             // Animate in the back to top arrow when the scrollbar is at the bottom of the page (offset 20 pixels)
-            if ($(window).scrollTop() >= 20) {
+            if ($(this).scrollTop() >= 20) {
                 $header.addClass("inactive");
             }
             else {
@@ -417,7 +417,7 @@ var Global =
 
         $(window).scroll(function () {
             // Animate in the back to top arrow when the scrollbar is at the bottom of the page (offset 20 pixels)
-            if ($(window).scrollTop() + windowHeight >= documentHeight - 20) {
+            if ($(this).scrollTop() + windowHeight >= documentHeight - 20) {
                 $backTop.addClass("active");
             }
             else {
@@ -441,26 +441,31 @@ var Homepage =
         this.Parallax();
     },
     "Parallax": function () {
-        var scrollTop,
-            $parallax1 = $("#parallax-1"),
-            $parallax2 = $("#parallax-2"),
-            $parallax3 = $("#parallax-3"),
-            $parallax4 = $("#parallax-4");
+        // Simple test for Mobile Safari
+        var isMobileSafari = navigator.userAgent.match(/(iPod|iPhone|iPad)/) && navigator.userAgent.match(/AppleWebKit/) && !navigator.userAgent.match("CriOS");
 
-        $(window).scroll( function () {
-            scrollTop = $(window).scrollTop();
+        if (!Modernizr.touch || isMobileSafari) {
+            var scrollTop,
+                $parallax1 = $("#parallax-1"),
+                $parallax2 = $("#parallax-2"),
+                $parallax3 = $("#parallax-3"),
+                $parallax4 = $("#parallax-4");
 
-            if (scrollTop >= 20) {
-                $parallax1.addClass("inactive");
-            }
-            else {
-                $parallax1.removeClass("inactive");
-            }
+            $(window).scroll(function () {
+                scrollTop = $(this).scrollTop();
 
-            $parallax2.css("transform", "translateY(-" + (scrollTop*1.5) + "px)");
-            $parallax3.css("transform", "translateY(-" + (scrollTop/2) + "px)");
-            $parallax4.css("transform", "translateY(-" + (scrollTop/3) + "px)");
-        });
+                if (scrollTop >= 20) {
+                    $parallax1.addClass("inactive");
+                }
+                else {
+                    $parallax1.removeClass("inactive");
+                }
+
+                $parallax2.css("transform", "translateY(-" + (scrollTop * 1.5) + "px)");
+                $parallax3.css("transform", "translateY(-" + (scrollTop / 2) + "px)");
+                $parallax4.css("transform", "translateY(-" + (scrollTop / 3) + "px)");
+            });
+        }
     }
 };
 
