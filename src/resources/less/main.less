@@ -434,15 +434,20 @@ header[role=banner] {
         }
 
         header {
+            .transform(translateY(-50%));
             padding-left: 21px;
             padding-right: 10%;
-            padding-top: 30%;
             position: absolute;
+            top: 50%;
 
             @media (min-width: @screen-sm-min) {
-                padding-left: 25%;
-                padding-right: 25%;
-                padding-top: 25%;
+                padding-left: 10%;
+                padding-right: 10%;
+            }
+
+            @media (min-width: @screen-md-min) {
+                padding-left: 20%;
+                padding-right: 20%;
             }
 
             p {
@@ -1188,8 +1193,8 @@ header[role=banner] {
     }
 }
 
-// Contact form
-.form-contact {
+// Newsletter form
+.form-newsletter {
     .row {
         padding-bottom: 77px;
         padding-top: 91px;
@@ -1204,9 +1209,9 @@ header[role=banner] {
     }
 }
 
-// Newsletter form
-.form-newsletter {
-    background-color: @newsletter-bg-color;
+// Contact form
+.form-contact {
+    background-color: @contact-bg-color;
 
     .row {
         padding-bottom: 77px;
@@ -1214,7 +1219,7 @@ header[role=banner] {
 
         fieldset {
             input[type=text], input[type=email], textarea {
-                background-color: @newsletter-input-bg-color;
+                background-color: @contact-input-bg-color;
             }
         }
     }

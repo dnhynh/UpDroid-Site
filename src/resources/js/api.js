@@ -87,6 +87,7 @@ var Homepage =
             $(window).scroll(function () {
                 scrollTop = $(this).scrollTop();
 
+                // Fade out the dots & type connectors when the user scrolls 20 pixels from the top
                 if (scrollTop >= 20) {
                     $parallax1.addClass("inactive");
                 }
@@ -94,6 +95,7 @@ var Homepage =
                     $parallax1.removeClass("inactive");
                 }
 
+                // When the user scrolls, animate the 3 different parallax sections at different ratios
                 $parallax2.css("transform", "translateY(-" + (scrollTop * 1.5) + "px)");
                 $parallax3.css("transform", "translateY(-" + (scrollTop / 2) + "px)");
                 $parallax4.css("transform", "translateY(-" + (scrollTop / 3) + "px)");
@@ -111,10 +113,12 @@ var Contact =
         this.FormValidation();
     },
     "FormValidation": function () {
+        // Contact form validation
         $("#ss-form").validate( {
             errorPlacement: function(error, element) {}
         });
 
+        // Newsletter form validation
         $("#mc-embedded-subscribe-form").validate( {
             errorPlacement: function(error, element) {}
         });
