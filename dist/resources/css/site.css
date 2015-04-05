@@ -1522,14 +1522,62 @@ header[role=banner].inactive span {
 	margin-top: 21px;
 }
 
-.image-gallery .row > div img {
+.image-gallery .row > div .images {
 	left: 0;
 	position: absolute;
 	top: 0;
 	width: 100%;
 }
 
-.image-gallery .row > div span {
+.image-gallery .row > div .images img {
+	width: 100%;
+}
+
+.image-gallery .row > div .images .cycle-pager {
+	text-align: center;
+	bottom: 27px;
+	display: block;
+	left: 0;
+	overflow: hidden;
+	position: absolute;
+	width: 100%;
+	z-index: 500;
+}
+
+.image-gallery .row > div .images .cycle-pager span {
+	-webkit-border-top-right-radius: 50%;
+	-webkit-border-bottom-right-radius: 50%;
+	-webkit-border-bottom-left-radius: 50%;
+	-webkit-border-top-left-radius: 50%;
+	-moz-border-radius-topright: 50%;
+	-moz-border-radius-bottomright: 50%;
+	-moz-border-radius-bottomleft: 50%;
+	-moz-border-radius-topleft: 50%;
+	border-top-right-radius: 50%;
+	border-bottom-right-radius: 50%;
+	border-bottom-left-radius: 50%;
+	border-top-left-radius: 50%;
+	-moz-background-clip: padding-box;
+	-webkit-background-clip: padding-box;
+	background-clip: padding-box;
+	font: 0/0 a;
+	color: transparent;
+	text-shadow: none;
+	background-color: transparent;
+	border: 0;
+	background-color: #cdcfcf;
+	cursor: pointer;
+	display: inline-block;
+	height: 8px;
+	margin: 0 8px;
+	width: 8px;
+}
+
+.image-gallery .row > div .images .cycle-pager span.cycle-pager-active {
+	background-color: #0c0c0c;
+}
+
+.image-gallery .row > div > span {
 	font-family: "Monosten A";
 	font-size: 14px;
 	font-size: 1.4rem;
@@ -1538,11 +1586,11 @@ header[role=banner].inactive span {
 	position: absolute;
 }
 
-.image-gallery .row > div span:first-of-type {
+.image-gallery .row > div > span:first-of-type {
 	top: 21px;
 }
 
-.image-gallery .row > div span:last-of-type {
+.image-gallery .row > div > span:last-of-type {
 	bottom: 21px;
 }
 
@@ -1598,18 +1646,15 @@ header[role=banner].inactive span {
 }
 
 .robotics .row > div:nth-of-type(2) {
-	float: left;
-	width: 100%;
 	position: relative;
 	min-height: 1px;
 	padding-left: 0;
 	padding-right: 0;
-	padding-left: 21px;
-	padding-right: 21px;
 	padding-top: 14px;
 }
 
 .robotics .row > div:nth-of-type(2) p {
+	padding-right: 35px;
 	padding-top: 14px;
 }
 
@@ -1876,7 +1921,7 @@ footer[role=contentinfo] {
 	background-color: #ffffff;
 	float: left;
 	padding-bottom: 21px;
-	padding-right: 21px;
+	padding-left: 21px;
 	padding-top: 84px;
 	position: relative;
 	width: 100%;
@@ -1889,7 +1934,6 @@ footer[role=contentinfo] p {
 	min-height: 1px;
 	padding-left: 0;
 	padding-right: 0;
-	text-align: right;
 }
 
 .icon-arrow-up {
@@ -2328,18 +2372,22 @@ header[role=banner] span.icon-updroid-logo {
 	padding-right: 10%;
 }
 
-.image-gallery .row > div span {
+.image-gallery .row > div .images .cycle-pager {
+	bottom: 20px;
+}
+
+.image-gallery .row > div > span {
 	font-size: 13px;
 	font-size: 1.3rem;
 	left: 14px;
 	line-height: 18px;
 }
 
-.image-gallery .row > div span:first-of-type {
+.image-gallery .row > div > span:first-of-type {
 	top: 14px;
 }
 
-.image-gallery .row > div span:last-of-type {
+.image-gallery .row > div > span:last-of-type {
 	bottom: 14px;
 }
 
@@ -2401,15 +2449,6 @@ header[role=banner] span.icon-updroid-logo {
 
 .robotics .row > div:nth-of-type(2) {
 	margin-left: 8.33333333%;
-}
-
-.robotics .row > div:nth-of-type(2) {
-	padding-left: 0;
-	padding-right: 0;
-}
-
-.robotics .row > div:nth-of-type(2) p {
-	padding-right: 35px;
 }
 
 .robotics .row > div:last-of-type {
@@ -2622,7 +2661,7 @@ header[role=banner] span.icon-updroid-logo {
 }
 
 footer[role=contentinfo] {
-	padding-right: 0;
+	padding-left: 0;
 	padding-top: 70px;
 }
 
@@ -2633,6 +2672,10 @@ footer[role=contentinfo] p {
 
 footer[role=contentinfo] p {
 	margin-left: 58.33333333%;
+}
+
+footer[role=contentinfo] p {
+	text-align: right;
 }
 
 .icon-arrow-up {
@@ -2991,15 +3034,19 @@ nav > div .social-nav {
 	padding-right: 20%;
 }
 
-.image-gallery .row > div span {
+.image-gallery .row > div .images .cycle-pager {
+	bottom: 27px;
+}
+
+.image-gallery .row > div > span {
 	left: 21px;
 }
 
-.image-gallery .row > div span:first-of-type {
+.image-gallery .row > div > span:first-of-type {
 	top: 21px;
 }
 
-.image-gallery .row > div span:last-of-type {
+.image-gallery .row > div > span:last-of-type {
 	bottom: 21px;
 }
 
@@ -3614,7 +3661,7 @@ header[role=banner] span.icon-updroid-logo {
 	left: 49px;
 }
 
-.image-gallery .row > div span {
+.image-gallery .row > div > span {
 	font-size: 14px;
 	font-size: 1.4rem;
 	line-height: 20px;
@@ -3741,6 +3788,10 @@ td.visible-xs {
 }
 
 .home-header .icon-arrow-down {
+	display: none !important;
+}
+
+.robotics .row > div:nth-of-type(2) {
 	display: none !important;
 }
 

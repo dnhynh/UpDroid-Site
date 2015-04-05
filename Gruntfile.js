@@ -25,16 +25,25 @@ module.exports = function (grunt) {
         },
         imagemin: {
             dynamic: {
-                options: {
-                    cache: false,
-                    optimizationLevel: 7
-                },
                 files: [{
                     expand: true,
                     cwd: 'src/resources/images/',
-                    src: ['**/*.{png,jpg,gif,svg}'],
+                    src: ['**/*.{gif,svg}'],
                     dest: 'dist/resources/images/'
                 }]
+            }
+        },
+        tinypng: {
+            options: {
+                apiKey: "", //API key will need adding - see https://tinypng.com/developers
+                summarize: true,
+                stopOnImageError: true
+            },
+            compress: {
+                expand: true,
+                cwd: 'src/resources/images/',
+                src: ['**/*.{png,jpg}'],
+                dest: 'dist/resources/images/'
             }
         },
         concat: {
@@ -98,7 +107,7 @@ module.exports = function (grunt) {
             },
             images: {
                 files: ['src/resources/images/**/*.{png,jpg,gif,svg}'],
-                tasks: ['newer:imagemin:dynamic'],
+                tasks: ['newer:imagemin:dynamic', 'newer:tinypng'],
                 options: {
                     nospawn: true
                 }
@@ -118,6 +127,7 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-combine-media-queries');
     grunt.loadNpmTasks('grunt-contrib-cssmin');
     grunt.loadNpmTasks('grunt-contrib-imagemin');
+    grunt.loadNpmTasks('grunt-tinypng');
     grunt.loadNpmTasks('grunt-contrib-concat');
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-bake');
