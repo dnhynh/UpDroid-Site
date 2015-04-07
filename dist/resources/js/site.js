@@ -459,6 +459,7 @@ var Homepage =
 {
     "Init": function () {
         this.Parallax();
+        this.Cycle();
     },
     "Parallax": function () {
         // Simple test for Mobile Safari
@@ -475,12 +476,10 @@ var Homepage =
                 scrollTop = $(this).scrollTop();
 
                 // Fade out the dots & type connectors when the user scrolls 20 pixels from the top
-                if (scrollTop >= 20) {
-                    $parallax1.addClass("inactive");
-                }
-                else {
-                    $parallax1.removeClass("inactive");
-                }
+                scrollTop >= 20 ? $parallax1.addClass("inactive") : $parallax1.removeClass("inactive");
+
+                // Start the parallax effect after 10 pixels has been scrolled
+                scrollTop <= 10 ? scrollTop = 0 : scrollTop = scrollTop - 10;
 
                 // When the user scrolls, animate the 3 different parallax sections at different ratios
                 $parallax2.css("transform", "translateY(-" + (scrollTop * 1.5) + "px)");
@@ -488,6 +487,17 @@ var Homepage =
                 $parallax4.css("transform", "translateY(-" + (scrollTop / 3) + "px)");
             });
         }
+    },
+    "Cycle": function () {
+        // Cycle robot image set on click of image (non touch devices only)
+        $("html.no-touch #sb-site").on("click", "div.images", function () {
+            $(this).find(".cycle-slideshow").cycle("next");
+        });
+
+        // Stop the above click event happening on the pager links
+        $("html.no-touch #sb-site").on("click", "div.cycle-pager", function (event) {
+            event.stopPropagation();
+        });
     }
 };
 
