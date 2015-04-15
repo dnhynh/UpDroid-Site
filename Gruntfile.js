@@ -35,7 +35,7 @@ module.exports = function (grunt) {
         },
         tinypng: {
             options: {
-                apiKey: "", //API key will need adding - see https://tinypng.com/developers
+                apiKey: "me5ikFpO01tU7-LiOn6GkNKYelCv1VHh", //API key will need adding - see https://tinypng.com/developers
                 summarize: true,
                 stopOnImageError: true
             },
