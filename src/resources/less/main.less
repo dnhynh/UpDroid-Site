@@ -561,6 +561,20 @@ header[role=banner] {
     padding-top: 301px;
     width: 100%;
 
+    .btn {
+        margin-top: 14px;
+
+        @media (min-width: @screen-md-min) {
+                        margin-top: 21px;
+                        width: 50%;
+                    }
+
+        @media (min-width: @screen-sm-min) {
+                        margin-top: 14px;
+                        width: 50%;
+                    }
+    }
+
     @media (min-width: @screen-sm-min) {
         background-position: right center;
         background-size: 138%;
