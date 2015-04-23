@@ -1532,7 +1532,7 @@ header[role=banner].inactive span {
 }
 
 .image-gallery .row > div .images img {
-	cursor: e-resize;
+	cursor: pointer;
 	width: 100%;
 }
 
