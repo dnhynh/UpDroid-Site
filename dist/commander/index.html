@@ -60,9 +60,7 @@
                         <h1>UpDroid Commander</h1>
                     </div>
                     <div>
-                        <p>Commander was created with the intent of making robotics development less painful.  ROS is powerful but using it can be a hassle.  Scattered workspaces, multiple terminals, complex scripts, and a complicated install to boot. Commander is an IDE which takes advantage of the power of ROS but abstracts out all that nonsense.</p>
-                    </div>
-                    <div>
+                        <p>UpCom was created with the intent of making robotics development less painful.  ROS is powerful but using it can be a hassle.  Scattered workspaces, multiple terminals, complex scripts, and a complicated install to boot. UpCom is an IDE which takes advantage of the power of ROS but abstracts out all that nonsense.</p>
                         <h3>Current Features</h3>
                         <ul>
                             <li>Tabbed components</li>
@@ -73,12 +71,45 @@
                         <ul>
                             <li>Multiple Workspaces</li>
                             <li>Share code with other users</li>
+                            <li>32 bit support</li>
                         </ul>
                     </div>
                     <div>                  
-                        <a href="/contact-us/" class="btn btn-red">Download Alpha</a>
-                        <p>Requires Ubuntu 14.04 x86_64</p>
-                        <h3>Download via command line</h3>
+                        <a href="http://downloads.updroid.com/install.sh" class="btn btn-red">Download Alpha</a>
+                        <p>Supported on Ubuntu 14.04 x86_64 and ARM</p>
+                        <p>Tested on Google Chrome version 42.0.2311.90</p>
+                        <h2>Download via command line</h2>
+                        <p>The above button automatically runs this following script.  However if you want to install manually, run the following commands in your terminal</p>
+                        <pre>
+
+    sudo apt-get update
+    sudo apt-get install apt-transport-https
+    </pre>
+    <li># Get the Google Linux package signing key and set up the stable repository.</li>
+    <pre>
+    
+    curl --silent https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo tee apt-key add -'
+    sudo curl --silent https://storage.googleapis.com/download.dartlang.org/linux/debian/dart_stable.list 
+    > /etc/apt/sources.list.d/dart_stable.list
+    </pre>
+    <li># Get the ROS package signing key and set up the stable repository.</w>
+
+    <pre>    
+    sudo apt-key adv --keyserver hkp://pool.sks-keyservers.net --recv-key 0xB01FA116
+    sudo echo "deb http://packages.ros.org/ros/ubuntu trusty main" 
+    > /etc/apt/sources.list.d/ros-latest.list</pre>
+
+    <li># Get the UpDroid package signing key and set up the dev repository.</li>    
+    <pre>
+
+    curl --silent http://packages.updroid.com/packages.updroid.com-keyring.key | sudo tee apt-key add -
+    sudo echo "deb http://packages.updroid.com/ubuntu/ trusty main" 
+    > /etc/apt/sources.list.d/updroid.list
+
+    sudo apt-get update
+    sudo apt-get install cmdr
+                        </pre>
+
                     </div>
                 </header>
             </div>
@@ -101,5 +132,11 @@
 <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 <script>window.jQuery || document.write('<script src="/resources/js/jquery-1.11.1.min.js">\x3C/script>')</script>
 <script type="text/javascript" src="/resources/js/site.min.js"></script>
+<script>
+    var editor = CodeMirror.fromTextArea(document.getElementById('code'), {
+        mode: 'shell',
+        lineNumbers: true
+});
+</script>
 </body>
 </html>

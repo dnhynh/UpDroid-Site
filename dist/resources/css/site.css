@@ -1759,6 +1759,14 @@ header[role=banner].inactive span {
 	padding: 0 21px 0 21px;
 }
 
+.commander-info .row div:nth-of-type(2) > h3 {
+	margin-top: 21px !important;
+}
+
+.commander-info .row div:nth-of-type(2) ul li {
+	font-family: "Monosten A";
+}
+
 .commander-info .row div:nth-of-type(3) {
 	position: relative;
 	float: left;
@@ -1769,27 +1777,37 @@ header[role=banner].inactive span {
 	margin-top: 21px;
 }
 
-.commander-info .row div:nth-of-type(3) ul li {
-	font-family: "Monosten A";
-}
-
-.commander-info .row div:nth-of-type(4) {
-	position: relative;
-	float: left;
-	width: 100%;
-	min-height: 1px;
-	padding-left: 0;
-	padding-right: 0;
+.commander-info .row div:nth-of-type(3) p:first-of-type {
 	margin-top: 21px;
-	padding: 0 21px;
 }
 
-.commander-info .row div:nth-of-type(4) p {
+.commander-info .row div:nth-of-type(3) p:nth-of-type(3) {
+	color: #780405;
+}
+
+.commander-info .row div:nth-of-type(3) li {
+	color: #780405;
+	font-family: "Monosten A";
+	font-size: 12px;
+	font-size: 1.2rem;
+}
+
+.commander-info .row div:nth-of-type(3) h2 {
+	margin-top: 21px;
+	margin-bottom: 21px;
 	text-align: center;
 }
 
-.commander-info .row div:nth-of-type(4) h3 {
-	margin-top: 21px;
+.commander-info .row div:nth-of-type(3) textarea {
+	resize: none;
+}
+
+.commander-info .row div:nth-of-type(3) pre {
+	font-size: 11px;
+	font-size: 1.1rem;
+	color: black;
+	font-stye: strong;
+	font-family: "Courier New";
 }
 
 .about-header {
@@ -2100,12 +2118,12 @@ footer[role=contentinfo] p {
 	padding-bottom: 100px;
 }
 
-.commander-info .row div:nth-of-type(3) h3 {
+.commander-info .row div:nth-of-type(2) h3 {
 	margin-top: 0;
 	padding: 0 21px;
 }
 
-.commander-info .row div:nth-of-type(3) ul li {
+.commander-info .row div:nth-of-type(2) ul li {
 	font-size: 16px;
 	font-size: 1.6rem;
 	line-height: 14px;
@@ -2649,25 +2667,16 @@ header[role=banner] span.icon-updroid-logo {
 	padding-right: 42px;
 }
 
-.commander-info .row div:nth-of-type(3) {
-	float: left;
-	width: 33.33333333%;
-}
-
-.commander-info .row div:nth-of-type(3) ul li {
+.commander-info .row div:nth-of-type(2) ul li {
 	font-size: 12px;
 	font-size: 1.2rem;
 	line-height: 10px;
 	margin: 12px 10px;
 }
 
-.commander-info .row div:nth-of-type(4) {
+.commander-info .row div:nth-of-type(3) {
 	float: left;
 	width: 33.33333333%;
-}
-
-.commander-info .row div:nth-of-type(4) {
-	padding: 0;
 }
 
 .about-header {
@@ -2915,6 +2924,10 @@ td.visible-sm {
 }
 
 .home-header .icon-arrow-down {
+	display: none !important;
+}
+
+.commander-info .row div:nth-of-type(3) {
 	display: none !important;
 }
 
@@ -3311,7 +3324,7 @@ nav > div .social-nav {
 }
 
 .commander-info .row > div:first-of-type {
-	margin-left: 66.66666667%;
+	margin-left: 50%;
 }
 
 .commander-info .row > div:first-of-type img {
@@ -3329,12 +3342,7 @@ nav > div .social-nav {
 	width: 33.33333333%;
 }
 
-.commander-info .row div:nth-of-type(3) {
-	float: left;
-	width: 33.33333333%;
-}
-
-.commander-info .row div:nth-of-type(3) ul li {
+.commander-info .row div:nth-of-type(2) ul li {
 	font-size: 16px;
 	font-size: 1.6rem;
 	line-height: 14px;
@@ -3342,9 +3350,9 @@ nav > div .social-nav {
 	margin: 12px 20px;
 }
 
-.commander-info .row div:nth-of-type(4) {
+.commander-info .row div:nth-of-type(3) {
 	float: left;
-	width: 33.33333333%;
+	width: 66.66666667%;
 }
 
 .about-header {
@@ -4043,6 +4051,10 @@ td.visible-xs {
 }
 
 .robotics .row > div:nth-of-type(2) {
+	display: none !important;
+}
+
+.commander-info .row div:nth-of-type(3) {
 	display: none !important;
 }
 

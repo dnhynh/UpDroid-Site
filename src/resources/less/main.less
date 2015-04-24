@@ -806,7 +806,7 @@ header[role=banner] {
                 .make-sm-column(4);
                 .make-sm-column-offset(8);
                 .make-md-column(4);
-                .make-md-column-offset(8);
+                .make-md-column-offset(6);
                 padding-bottom: 10px;
                 text-align: center;
 
@@ -843,17 +843,10 @@ header[role=banner] {
                         padding-left: 21px;
                         padding-right: 42px;
                     }
-                }    
-            }
-        }
-
-        div {
-            &:nth-of-type(3) {
-                .make-sm-column(4);
-                .make-md-column(4);
-                .make-xs-column(12);
-                margin-top: 21px; 
-
+                }
+                >h3 {
+                    margin-top: 21px !important;
+                }
                 h3{
                     @media (min-width: @screen-xs-min) {
                         margin-top: 0;
@@ -886,31 +879,50 @@ header[role=banner] {
                         }
 
                     }
-                }
-
+                }    
             }
         }
+
         div {
-            &:nth-of-type(4) {
+            &:nth-of-type(3) {
+                .hidden-sm;
+                .hidden-xs;
                 .make-sm-column(4);
-                .make-md-column(4);
+                .make-md-column(8);
                 .make-xs-column(12);
                 margin-top: 21px;
-                padding: 0 21px;
 
-                @media (min-width: @screen-sm-min) {
-                    padding: 0;
+                p{
+                    &:first-of-type{
+                        margin-top: 21px;    
+                    }
+                    &:nth-of-type(3) {
+                        color: #780405;
+                    }
+                } 
+                li {
+                    color: #780405;
+                    .font-monosten-a;
+                    .font-size(1.2);
                 }
 
-                p {
+                h2 {
+                    margin-top: 21px;
+                    margin-bottom: 21px;
                     text-align: center;
                 }
 
-                h3 {
-                    margin-top: 21px;
+                textarea{
+                    resize: none;
                 }
-
+                pre {
+                    .font-size(1.1);
+                    color: black;
+                    font-stye: strong;
+                    font-family: "Courier New";
+                }
             }
+
         }
     }
 }
