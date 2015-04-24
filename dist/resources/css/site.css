@@ -1730,6 +1730,9 @@ header[role=banner].inactive span {
 
 .commander-info .row > div:first-of-type img {
 	width: 130px;
+	float: left;
+	width: 16.66666667%;
+	margin-left: 16.66666667%;
 	position: relative;
 	min-height: 1px;
 	padding-left: 0;
@@ -1738,6 +1741,8 @@ header[role=banner].inactive span {
 }
 
 .commander-info .row > div:first-of-type h1 {
+	float: left;
+	width: 100%;
 	position: relative;
 	min-height: 1px;
 	padding-left: 0;
@@ -1746,12 +1751,13 @@ header[role=banner].inactive span {
 }
 
 .commander-info .row div:nth-of-type(2) {
+	width: 100%;
 	position: relative;
 	min-height: 1px;
 	padding-left: 0;
 	padding-right: 0;
 	float: left;
-	width: 100%;
+	padding: 0 21px;
 }
 
 .commander-info .row div:nth-of-type(2) > p {
@@ -1765,6 +1771,10 @@ header[role=banner].inactive span {
 
 .commander-info .row div:nth-of-type(2) ul li {
 	font-family: "Monosten A";
+}
+
+.commander-info .row div:nth-of-type(2) a {
+	margin-top: 21px;
 }
 
 .commander-info .row div:nth-of-type(3) {
@@ -2107,6 +2117,30 @@ footer[role=contentinfo] p {
 
 .robotics .row > div:last-of-type p {
 	width: 60%;
+}
+
+.commander-info .row > div:first-of-type h1 {
+	text-align: center;
+}
+
+.commander-info .row div:nth-of-type(2) h3 {
+	text-align: center;
+}
+
+.commander-info .row div:nth-of-type(2) ul li {
+	font-size: 16px;
+	font-size: 1.6rem;
+	line-height: 14px;
+	padding: 0 21px;
+	margin: 15px 12px;
+}
+
+}
+
+@media (min-width: 350px) and (max-width: 767px) {
+
+.commander-info .row > div:first-of-type img {
+	display: none !important;
 }
 
 }
@@ -2643,7 +2677,7 @@ header[role=banner] span.icon-updroid-logo {
 }
 
 .commander-info .row > div:first-of-type {
-	margin-left: 66.66666667%;
+	margin-left: 25%;
 }
 
 .commander-info .row > div:first-of-type img {
@@ -2658,7 +2692,11 @@ header[role=banner] span.icon-updroid-logo {
 
 .commander-info .row div:nth-of-type(2) {
 	float: left;
-	width: 33.33333333%;
+	width: 100%;
+}
+
+.commander-info .row div:nth-of-type(2) {
+	padding: 0;
 }
 
 .commander-info .row div:nth-of-type(2) > p {
@@ -3348,6 +3386,11 @@ nav > div .social-nav {
 	line-height: 14px;
 	margin-bottom: 5px;
 	margin: 12px 20px;
+}
+
+.commander-info .row div:nth-of-type(2) a {
+	display: none !important;
+	visibility: hidden !important;
 }
 
 .commander-info .row div:nth-of-type(3) {
