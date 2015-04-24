@@ -824,7 +824,6 @@ time,
 mark,
 audio,
 video,
-.commander-header span,
 .about-header span {
 	margin: 0;
 	padding: 0;
@@ -1159,7 +1158,6 @@ h1 {
 }
 
 h2,
-.commander-header span,
 .about-header span {
 	font-family: "Avenir Next LT W01 Bold";
 	font-size: 30px;
@@ -1167,6 +1165,15 @@ h2,
 	color: #0c0c0c;
 	letter-spacing: -1px;
 	line-height: 32px;
+}
+
+h3 {
+	font-family: "Avenir Next LT W01 Bold";
+	font-size: 20px;
+	font-size: 2rem;
+	color: #0c0c0c;
+	letter-spacing: -1px;
+	line-height: 22px;
 }
 
 p {
@@ -1695,34 +1702,81 @@ header[role=banner].inactive span {
 	width: 90%;
 }
 
-.commander-header {
+.commander-info {
 	float: left;
 	width: 100%;
 }
 
-.commander-header .container {
+.commander-info .container {
 	position: relative;
 }
 
-.commander-header .row {
+.commander-info .row {
 	padding-bottom: 28px;
-	padding-top: 140px;
+	padding-top: 100px;
 	position: relative;
 }
 
-.commander-header .row h1 {
+.commander-info .row > div:first-of-type {
+	float: left;
+	width: 100%;
 	position: relative;
 	min-height: 1px;
 	padding-left: 0;
 	padding-right: 0;
-	padding: 0 21px;
+	padding-bottom: 10px;
+	text-align: center;
 }
 
-.commander-header .row > p {
-	font-family: "Avenir Next LT W01 Bold";
+.commander-info .row > div:first-of-type img {
+	width: 130px;
+	position: relative;
+	min-height: 1px;
+	padding-left: 0;
+	padding-right: 0;
+	display: inline-block;
+}
+
+.commander-info .row > div:first-of-type h1 {
+	position: relative;
+	min-height: 1px;
+	padding-left: 0;
+	padding-right: 0;
+	display: inline;
+}
+
+.commander-info .row div:nth-of-type(2) {
+	position: relative;
+	min-height: 1px;
+	padding-left: 0;
+	padding-right: 0;
 	float: left;
 	width: 100%;
+}
+
+.commander-info .row div:nth-of-type(2) > p {
+	margin-top: 21px;
+	padding: 0 21px 0 21px;
+}
+
+.commander-info .row div:nth-of-type(3) {
 	position: relative;
+	float: left;
+	width: 100%;
+	min-height: 1px;
+	padding-left: 0;
+	padding-right: 0;
+	margin-top: 21px;
+}
+
+.commander-info .row div:nth-of-type(3) ul li {
+	font-family: "Monosten A";
+}
+
+.commander-info .row div:nth-of-type(4) {
+	position: relative;
+	float: left;
+	width: 100%;
 	min-height: 1px;
 	padding-left: 0;
 	padding-right: 0;
@@ -1730,37 +1784,12 @@ header[role=banner].inactive span {
 	padding: 0 21px;
 }
 
-.commander-header .row div {
-	float: left;
-	width: 100%;
+.commander-info .row div:nth-of-type(4) p {
+	text-align: center;
 }
 
-.commander-header .row div > p {
-	float: left;
-	width: 100%;
-	position: relative;
-	min-height: 1px;
-	padding-left: 0;
-	padding-right: 0;
+.commander-info .row div:nth-of-type(4) h3 {
 	margin-top: 21px;
-	padding: 0 21px;
-}
-
-.commander-header .row div > p:first-of-type {
-	float: left;
-	width: 100%;
-	position: relative;
-	min-height: 1px;
-	padding-left: 0;
-	padding-right: 0;
-	margin-top: 21px;
-	padding: 0 21px;
-}
-
-.commander-header span {
-	position: absolute;
-	right: 0;
-	top: 140px;
 }
 
 .about-header {
@@ -2064,6 +2093,28 @@ footer[role=contentinfo] p {
 
 }
 
+@media (min-width: 480px) {
+
+.commander-info .row {
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+
+.commander-info .row div:nth-of-type(3) h3 {
+	margin-top: 0;
+	padding: 0 21px;
+}
+
+.commander-info .row div:nth-of-type(3) ul li {
+	font-size: 16px;
+	font-size: 1.6rem;
+	line-height: 14px;
+	padding: 0 21px;
+	margin: 15px 12px;
+}
+
+}
+
 @media (min-width: 481px) {
 
 /* Slidebar widths on small screens. */
@@ -2332,11 +2383,16 @@ h1 {
 }
 
 h2,
-.commander-header span,
 .about-header span {
 	font-size: 26px;
 	font-size: 2.6rem;
 	line-height: 27px;
+}
+
+h3 {
+	font-size: 16px;
+	font-size: 1.6rem;
+	line-height: 18px;
 }
 
 p {
@@ -2558,73 +2614,60 @@ header[role=banner] span.icon-updroid-logo {
 	width: 32%;
 }
 
-.commander-header .row {
+.commander-info .row {
 	padding-bottom: 140px;
-	padding-top: 329px;
+	padding-top: 100px;
 }
 
-.commander-header .row h1 {
+.commander-info .row > div:first-of-type {
 	float: left;
-	width: 41.66666667%;
+	width: 33.33333333%;
 }
 
-.commander-header .row h1 {
-	margin-left: 8.33333333%;
+.commander-info .row > div:first-of-type {
+	margin-left: 66.66666667%;
 }
 
-.commander-header .row h1 {
-	padding: 0;
-}
-
-.commander-header .row > p {
+.commander-info .row > div:first-of-type img {
 	float: left;
-	width: 41.66666667%;
+	width: 33.33333333%;
 }
 
-.commander-header .row > p {
-	margin-left: 8.33333333%;
-}
-
-.commander-header .row > p {
-	margin-top: 0;
-	padding: 0;
-}
-
-.commander-header .row > p {
-	font-size: 18px;
-	font-size: 1.8rem;
-	line-height: 18px;
-}
-
-.commander-header .row div {
-	margin-top: 35px;
-}
-
-.commander-header .row div > p {
-	float: left;
-	width: 41.66666667%;
-}
-
-.commander-header .row div > p {
-	margin-top: 0;
-	padding-left: 0;
-	padding-right: 42px;
-}
-
-.commander-header .row div > p:first-of-type {
+.commander-info .row > div:first-of-type h1 {
 	float: left;
 	width: 50%;
 }
 
-.commander-header .row div > p:first-of-type {
-	margin-left: 8.33333333%;
+.commander-info .row div:nth-of-type(2) {
+	float: left;
+	width: 33.33333333%;
 }
 
-.commander-header .row div > p:first-of-type {
-	clear: left;
-	margin-top: 0;
-	padding-left: 0;
+.commander-info .row div:nth-of-type(2) > p {
+	margin-top: 21px;
+	padding-left: 21px;
 	padding-right: 42px;
+}
+
+.commander-info .row div:nth-of-type(3) {
+	float: left;
+	width: 33.33333333%;
+}
+
+.commander-info .row div:nth-of-type(3) ul li {
+	font-size: 12px;
+	font-size: 1.2rem;
+	line-height: 10px;
+	margin: 12px 10px;
+}
+
+.commander-info .row div:nth-of-type(4) {
+	float: left;
+	width: 33.33333333%;
+}
+
+.commander-info .row div:nth-of-type(4) {
+	padding: 0;
 }
 
 .about-header {
@@ -3262,33 +3305,44 @@ nav > div .social-nav {
 	width: 32%;
 }
 
-.commander-header .row h1 {
-	float: left;
-	width: 83.33333333%;
-}
-
-.commander-header .row h1 {
-	margin-left: 8.33333333%;
-}
-
-.commander-header .row > p {
-	font-size: 20px;
-	font-size: 2rem;
-	line-height: 20px;
-	margin-bottom: 70px;
-	margin-top: 70px;
-}
-
-.commander-header .row div {
-	margin-top: 0;
-}
-
-.commander-header .row div > p {
+.commander-info .row > div:first-of-type {
 	float: left;
 	width: 33.33333333%;
 }
 
-.commander-header .row div > p:first-of-type {
+.commander-info .row > div:first-of-type {
+	margin-left: 66.66666667%;
+}
+
+.commander-info .row > div:first-of-type img {
+	float: left;
+	width: 33.33333333%;
+}
+
+.commander-info .row > div:first-of-type h1 {
+	float: left;
+	width: 50%;
+}
+
+.commander-info .row div:nth-of-type(2) {
+	float: left;
+	width: 33.33333333%;
+}
+
+.commander-info .row div:nth-of-type(3) {
+	float: left;
+	width: 33.33333333%;
+}
+
+.commander-info .row div:nth-of-type(3) ul li {
+	font-size: 16px;
+	font-size: 1.6rem;
+	line-height: 14px;
+	margin-bottom: 5px;
+	margin: 12px 20px;
+}
+
+.commander-info .row div:nth-of-type(4) {
 	float: left;
 	width: 33.33333333%;
 }
@@ -3775,11 +3829,16 @@ h1 {
 }
 
 h2,
-.commander-header span,
 .about-header span {
 	font-size: 31px;
 	font-size: 3.1rem;
 	line-height: 32px;
+}
+
+h3 {
+	font-size: 21px;
+	font-size: 2.1rem;
+	line-height: 22px;
 }
 
 p {
@@ -3882,15 +3941,9 @@ header[role=banner] span.icon-updroid-logo {
 	width: 28%;
 }
 
-.commander-header .row {
+.commander-info .row {
 	padding-bottom: 210px;
-	padding-top: 329px;
-}
-
-.commander-header .row > p {
-	font-size: 24px;
-	font-size: 2.4rem;
-	line-height: 24px;
+	padding-top: 100px;
 }
 
 .about-header .row {
@@ -3990,10 +4043,6 @@ td.visible-xs {
 }
 
 .robotics .row > div:nth-of-type(2) {
-	display: none !important;
-}
-
-.commander-header span {
 	display: none !important;
 }
 
