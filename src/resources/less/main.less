@@ -803,10 +803,8 @@ header[role=banner] {
         > div {
             &:first-of-type{
                 .make-xs-column(12);
-                .make-sm-column(4);
-                .make-sm-column-offset(3);
-                .make-md-column(4);
-                .make-md-column-offset(6);
+                .make-sm-column(12);
+                .make-md-column(12);
                 padding-bottom: 10px;
                 text-align: center;
 
@@ -814,8 +812,8 @@ header[role=banner] {
                     width: 130px;
                     .make-xs-column(2);
                     .make-xs-column-offset(2);
-                    .make-md-column(4);
-                    .make-sm-column(4);
+                    .make-sm-column(2);
+                    .make-md-column(2);
                     display: inline-block;
                     @media (min-width: @screen-large-mobile-min) {
                         .hidden-xs;
@@ -825,11 +823,15 @@ header[role=banner] {
 
                 h1 {
                     .make-xs-column(12);
-                    .make-md-column(6);
+                    .make-md-column(5);
                     .make-sm-column(6);
                     display: inline;
                     @media (min-width: @screen-large-mobile-min) {
                         text-align: center;
+                    }
+
+                    @media (min-width: @screen-md-min) {
+                        .font-size(3.5);
                     }
                 }   
             }

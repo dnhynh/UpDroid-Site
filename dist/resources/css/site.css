@@ -2673,16 +2673,12 @@ header[role=banner] span.icon-updroid-logo {
 
 .commander-info .row > div:first-of-type {
 	float: left;
-	width: 33.33333333%;
-}
-
-.commander-info .row > div:first-of-type {
-	margin-left: 25%;
+	width: 100%;
 }
 
 .commander-info .row > div:first-of-type img {
 	float: left;
-	width: 33.33333333%;
+	width: 16.66666667%;
 }
 
 .commander-info .row > div:first-of-type h1 {
@@ -3358,21 +3354,22 @@ nav > div .social-nav {
 
 .commander-info .row > div:first-of-type {
 	float: left;
-	width: 33.33333333%;
-}
-
-.commander-info .row > div:first-of-type {
-	margin-left: 50%;
+	width: 100%;
 }
 
 .commander-info .row > div:first-of-type img {
 	float: left;
-	width: 33.33333333%;
+	width: 16.66666667%;
 }
 
 .commander-info .row > div:first-of-type h1 {
 	float: left;
-	width: 50%;
+	width: 41.66666667%;
+}
+
+.commander-info .row > div:first-of-type h1 {
+	font-size: 35px;
+	font-size: 3.5rem;
 }
 
 .commander-info .row div:nth-of-type(2) {
