@@ -1792,6 +1792,8 @@ header[role=banner].inactive span {
 }
 
 .commander-info .row div:nth-of-type(3) p:nth-of-type(3) {
+	font-size: 20px;
+	font-size: 2rem;
 	color: #780405;
 }
 
@@ -1813,11 +1815,29 @@ header[role=banner].inactive span {
 }
 
 .commander-info .row div:nth-of-type(3) pre {
-	font-size: 11px;
-	font-size: 1.1rem;
+	margin-top: 21px;
+	background-color: white;
+	font-size: 14px;
+	font-size: 1.4rem;
 	color: black;
 	font-stye: strong;
 	font-family: "Courier New";
+}
+
+.commander-info .row div:nth-of-type(3) pre .sudo {
+	color: #30a;
+}
+
+.commander-info .row div:nth-of-type(3) pre .flag {
+	color: #00c;
+}
+
+.commander-info .row div:nth-of-type(3) pre .comment {
+	color: #a50;
+}
+
+.commander-info .row div:nth-of-type(3) pre .quote {
+	color: #a11;
 }
 
 .about-header {

@@ -80,45 +80,35 @@
                         <p>Supported on Ubuntu 14.04 x86_64 and ARM</p>
                         <p>Tested on Google Chrome version 42.0.2311.90</p>
                         <h2>Download via command line</h2>
-                        <p>The above button automatically runs this following script.  However if you want to install manually, run the following commands in your terminal</p>
-                        <pre>
+                        <p>The above button automatically downloads this following script.  However if you want to install manually, run the following commands in your terminal</p>
+                        <pre><code>
+    <span class='sudo'>sudo</span> apt-get update
+    <span class='sudo'>sudo</span> apt-get install apt-transport-https
 
-    sudo apt-get update
-    sudo apt-get install apt-transport-https
-    </pre>
-    <li># Get the Google Linux package signing key and set up the stable repository.</li>
-    <pre>
-    
-    curl --silent https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo tee apt-key add -'
-    sudo curl --silent https://storage.googleapis.com/download.dartlang.org/linux/debian/dart_stable.list 
-    > /etc/apt/sources.list.d/dart_stable.list
-    </pre>
-    <li># Get the ROS package signing key and set up the stable repository.</w>
+    <span class='comment'># Get the Google Linux package signing key and set up the stable repository.</span>
 
-    <pre>    
-    sudo apt-key adv --keyserver hkp://pool.sks-keyservers.net --recv-key 0xB01FA116
-    sudo echo "deb http://packages.ros.org/ros/ubuntu trusty main" 
-    > /etc/apt/sources.list.d/ros-latest.list</pre>
+    <span class='sudo'>curl</span> <span class='flag'>--silent</span> https://dl-ssl.google.com/linux/linux_signing_key.pub | <span class='sudo'>sudo tee</span> apt-key add -'
+    <span class='sudo'>sudo curl</span> <span class='flag'>--silent</span> https://storage.googleapis.com/download.dartlang.org/linux/debian/dart_stable.list > /etc/apt/sources.list.d/dart_stable.list    
 
-    <li># Get the UpDroid package signing key and set up the dev repository.</li>    
-    <pre>
+    <span class='comment'># Get the ROS package signing key and set up the stable repository.</span>
 
-    curl --silent http://packages.updroid.com/packages.updroid.com-keyring.key | sudo tee apt-key add -
-    sudo echo "deb http://packages.updroid.com/ubuntu/ trusty main" 
-    > /etc/apt/sources.list.d/updroid.list
+    <span class='sudo'>sudo</span> apt-key adv <span class='flag'>--keyserver</span> hkp://pool.sks-keyservers.net <span class='flag'>--recv-key</span> 0xB01FA116
+    <span class='sudo'>sudo echo</span> <span class='quote'>"deb http://packages.ros.org/ros/ubuntu trusty main"</span> > /etc/apt/sources.list.d/ros-latest.list
 
-    sudo apt-get update
-    sudo apt-get install cmdr
+    <span class='comment'># Get the UpDroid package signing key and set up the dev repository.</span>
+
+    <span class='sudo'>curl</span> <span class='flag'>--silent</span> http://packages.updroid.com/packages.updroid.com-keyring.key | <span class='sudo'>sudo tee</span> apt-key add -
+    sudo echo <span class='quote'>"deb http://packages.updroid.com/ubuntu/ trusty main"</span> > /etc/apt/sources.list.d/updroid.list
+
+    <span class='sudo'>sudo</span> apt-get update
+    <span class='sudo'>sudo</span> apt-get install cmdr
+                        </code>
                         </pre>
 
                     </div>
                 </header>
             </div>
         </div>
-        <section class="download">
-            <div>
-            </div>
-        </section>
         <footer role="contentinfo">
             <div class="container">
                 <div class="row">
@@ -133,11 +123,5 @@
 <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 <script>window.jQuery || document.write('<script src="/resources/js/jquery-1.11.1.min.js">\x3C/script>')</script>
 <script type="text/javascript" src="/resources/js/site.min.js"></script>
-<script>
-    var editor = CodeMirror.fromTextArea(document.getElementById('code'), {
-        mode: 'shell',
-        lineNumbers: true
-});
-</script>
 </body>
 </html>
