@@ -58,54 +58,35 @@
                     <div>
                         <img src="/resources/images/commander-logo.png"/>
                         <h1>UpDroid Commander</h1>
+                        <h3>Robotics Development Simplified</h3>
                     </div>
-                    <div>
-                        <p>UpCom was created with the intent of making robotics development less painful.  ROS is powerful but using it can be a hassle.  Scattered workspaces, multiple terminals, complex scripts, and a complicated install to boot. UpCom is an IDE which takes advantage of the power of ROS but abstracts out all that nonsense.</p>
-                        <h3>Current Features</h3>
+                    <div><p>UpCom <span class='version'>0.4.0</span> is currently in alpha and available for testing.  In order to run UpCom you need ROS (Robot Operating System). You can install ROS <a href='http://wiki.ros.org/indigo/Installation/Ubuntu'>here</a>.  UpCom is supported on Ubuntu <span class='version'>14.04 x86_64</span> and was tested on Google Chrome version <span class='version'>42.0.2311.90</span>. Happy Programming.</p></div>
+                    <div>                
+                        <a id='install' onClick=”_gaq.push([‘_trackEvent’, ‘Download’, ‘Commander Download’]);” class="btn btn-red">Install Alpha</a>
+                        <div id='instructions'>
+                            <code>
+                                <span class='sudo'>wget</span> <span class='flag'>-qO</span> - http://packages.updroid.com/Release.key | <span class='sudo'>sudo</span> apt-key add -
+                                <span class='sudo'>sudo</span> sh <span class='flag'>-c</span> 'echo <span class='quote'>"deb http://packages.updroid.com/ubuntu/ trusty main"</span> > /etc/apt/sources.list.d/updroid.list'
+                            </code>
+
+                           <p>In order to upgrade commander run: <code>apt-get install <span class='flag'>--only-upgrade</span> cmdr</code></p>
+                        </div>    
+                    </div>
+                    <div id="features">
+                        <h1>Current Features</h1>
                         <ul>
                             <li>Tabbed components</li>
                             <li>Integrated console, text editor, file explorer and camera stream</li>
                             <li>Build workspace, run nodes, and run version control by pushing a button</li>
                         </ul>
-                        <h3>Near Future</h3>
+                        <h1>Near Future</h1>
                         <ul>
                             <li>Multiple Workspaces</li>
                             <li>Share code with other users</li>
-                            <li>32 bit support</li>
+                            <li>32 bit ARM and x86 support</li>
                         </ul>
-                        <a href="#" class="btn btn-red">Downloadable on Desktop and Arm</a>
-                    </div>
-                    <div>                  
-                        <a href="http://downloads.updroid.com/install.sh" class="btn btn-red">Download Alpha</a>
-                        <p>Supported on Ubuntu 14.04 x86_64 and ARM</p>
-                        <p>Tested on Google Chrome version 42.0.2311.90</p>
-                        <h2>Download via command line</h2>
-                        <p>The above button automatically downloads this following script.  However if you want to install manually, run the following commands in your terminal</p>
-                        <pre><code>
-    <span class='sudo'>sudo</span> apt-get update
-    <span class='sudo'>sudo</span> apt-get install apt-transport-https
-
-    <span class='comment'># Get the Google Linux package signing key and set up the stable repository.</span>
-
-    <span class='sudo'>curl</span> <span class='flag'>--silent</span> https://dl-ssl.google.com/linux/linux_signing_key.pub | <span class='sudo'>sudo tee</span> apt-key add -'
-    <span class='sudo'>sudo curl</span> <span class='flag'>--silent</span> https://storage.googleapis.com/download.dartlang.org/linux/debian/dart_stable.list > /etc/apt/sources.list.d/dart_stable.list    
-
-    <span class='comment'># Get the ROS package signing key and set up the stable repository.</span>
-
-    <span class='sudo'>sudo</span> apt-key adv <span class='flag'>--keyserver</span> hkp://pool.sks-keyservers.net <span class='flag'>--recv-key</span> 0xB01FA116
-    <span class='sudo'>sudo echo</span> <span class='quote'>"deb http://packages.ros.org/ros/ubuntu trusty main"</span> > /etc/apt/sources.list.d/ros-latest.list
-
-    <span class='comment'># Get the UpDroid package signing key and set up the dev repository.</span>
-
-    <span class='sudo'>curl</span> <span class='flag'>--silent</span> http://packages.updroid.com/packages.updroid.com-keyring.key | <span class='sudo'>sudo tee</span> apt-key add -
-    sudo echo <span class='quote'>"deb http://packages.updroid.com/ubuntu/ trusty main"</span> > /etc/apt/sources.list.d/updroid.list
-
-    <span class='sudo'>sudo</span> apt-get update
-    <span class='sudo'>sudo</span> apt-get install cmdr
-                        </code>
-                        </pre>
-
-                    </div>
+                        <a href="" class="btn btn-red">Downloadable on Desktop</a>
+                    </div>  
                 </header>
             </div>
         </div>
@@ -121,6 +102,16 @@
 </div>
 
 <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<script>
+    document.getElementById( 'install' ).addEventListener( 'click', function() {
+    var instructions = document.getElementById( 'instructions' );
+    if( instructions.className == 'expanded' ) {
+        instructions.className = '';
+    } else {
+        instructions.className = 'expanded';
+    };
+} );
+</script>
 <script>window.jQuery || document.write('<script src="/resources/js/jquery-1.11.1.min.js">\x3C/script>')</script>
 <script type="text/javascript" src="/resources/js/site.min.js"></script>
 </body>

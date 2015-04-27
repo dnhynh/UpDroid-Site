@@ -799,49 +799,146 @@ header[role=banner] {
             padding-bottom: 210px;
             padding-top: 100px;
         }
+        > p {
+            text-align: center;
+            padding: 0 25px 25px 25px;
+            .font-size(2);
+
+            a {
+                color: #a11;
+            }
+        }
+
+        .version {
+            color: #a11;
+        }
+
+
+        a:hover {
+                font-weight: bold;
+                text-decoration: none;
+            }
 
         > div {
             &:first-of-type{
                 .make-xs-column(12);
                 .make-sm-column(12);
                 .make-md-column(12);
-                padding-bottom: 10px;
+                padding-bottom: 21px;
                 text-align: center;
 
                 img {
-                    width: 130px;
-                    .make-xs-column(2);
-                    .make-xs-column-offset(2);
-                    .make-sm-column(2);
-                    .make-md-column(2);
-                    display: inline-block;
-                    @media (min-width: @screen-large-mobile-min) {
-                        .hidden-xs;
-                    }
+                    text-align: center;
+                    margin: 21px 0 21px 0;
 
                 }
 
                 h1 {
-                    .make-xs-column(12);
-                    .make-md-column(5);
-                    .make-sm-column(6);
-                    display: inline;
+                    display: block;
                     @media (min-width: @screen-large-mobile-min) {
                         text-align: center;
                     }
 
-                    @media (min-width: @screen-md-min) {
+                    @media (min-width: @screen-xs-min) {
                         .font-size(3.5);
                     }
+                }
+
+                h3 {
+                    padding-top: 10px;
                 }   
             }
         }
 
+        div{
+            &:nth-of-type(2) {
+                .make-md-column(8);
+                .make-md-column-offset(2);
+                padding: 0 20px 20px 20px;
+
+                @media(min-width: @screen-md-min) {
+                    padding: 0 0 20px 0;
+                }
+            }
+        }
+
         div {
-            &:nth-of-type(2){
+            &:nth-of-type(3) {
+                .hidden-sm;
+                .hidden-xs;
+                .make-md-column(8);
+                .make-md-column-offset(2);
+
+                p{
+                    &:first-of-type{
+                        margin-top: 21px;   
+                    }
+                    &:nth-of-type(3) {
+                        .font-size(2);
+                        color: #780405;
+                    }
+                } 
+                li {
+                    color: #780405;
+                    .font-monosten-a;
+                    .font-size(1.2);
+                }
+
+                h2 {
+                    margin-top: 50px;
+                    margin-bottom: 21px;
+                    text-align: center;
+                }
+
+                textarea{
+                    resize: none;
+                }
+
+                #install:hover{
+                    cursor: pointer;
+                }
+
+                #instructions{
+                    height: 0px;    
+                    overflow: hidden;
+                    transition:             height 500ms ease;
+                        -moz-transition:    height 500ms ease;
+                        -ms-transition:     height 500ms ease;
+                        -o-transition:      height 500ms ease;
+                        -webkit-transition: height 500ms ease;
+                }
+                .expanded {
+                    height: 150px !important;
+                }
+
+                div{
+                    margin-top: 30px;
+                    code {
+                        .font-size(2.4);
+                        font-family: "Courier New";
+                        .sudo {
+                            color: #30a;
+                        }
+                        .flag {
+                            color: #00c;
+                        }
+                        .comment {
+                            color: #a50;
+                        }
+                        .quote {
+                            color: #a11;
+                        }
+                    }              
+                }
+            }
+        }
+
+        div {
+            &:nth-of-type(4){
                 .make-xs-column(12);
                 .make-sm-column(12);
-                .make-md-column(4);
+                .make-md-column(8);
+                .make-md-column-offset(2);
                 float: left;
                 padding: 0 21px;
 
@@ -859,10 +956,7 @@ header[role=banner] {
                         padding-right: 42px;
                     }
                 }
-                >h3 {
-                    margin-top: 21px !important;
-                }
-                h3{
+                h1{
                     @media (min-width: @screen-xs-min) {
                         margin-top: 0;
                         padding: 0 21px;
@@ -870,31 +964,32 @@ header[role=banner] {
                     }
 
                     @media (min-width: @screen-large-mobile-min) {
-                            text-align: center;
-                        }
+                        text-align: center;
+                    }
                 }
                 ul{
                     li{
                         .font-monosten-a();
+                        text-align: center;
                         @media (min-width: @screen-large-mobile-min) {
                             .font-size(1.6);
-                            line-height: 14px;
+                            line-height: 20px;
                             padding: 0 21px;
                             margin: 15px 12px;
 
                         }
 
                         @media (min-width: @screen-xs-min) {
-                            .font-size(1.6);
-                            line-height: 14px;
+                            .font-size(1.9);
+                            line-height: 20px;
                             padding: 0 21px;
                             margin: 15px 12px;
 
                         }
 
                         @media (min-width: @screen-sm-min) {
-                            .font-size(1.2);
-                            line-height: 10px;
+                            .font-size(1.6);
+                            line-height: 20px;
                             margin: 12px 10px;
                         }
 
@@ -915,63 +1010,6 @@ header[role=banner] {
                     }
                 }    
             }
-        }
-
-        div {
-            &:nth-of-type(3) {
-                .hidden-sm;
-                .hidden-xs;
-                .make-sm-column(4);
-                .make-md-column(8);
-                .make-xs-column(12);
-                margin-top: 21px;
-
-                p{
-                    &:first-of-type{
-                        margin-top: 21px;    
-                    }
-                    &:nth-of-type(3) {
-                        .font-size(2);
-                        color: #780405;
-                    }
-                } 
-                li {
-                    color: #780405;
-                    .font-monosten-a;
-                    .font-size(1.2);
-                }
-
-                h2 {
-                    margin-top: 21px;
-                    margin-bottom: 21px;
-                    text-align: center;
-                }
-
-                textarea{
-                    resize: none;
-                }
-                pre {
-                    margin-top: 21px;
-                    background-color: white;
-                    .font-size(1.4);
-                    color: black;
-                    font-stye: strong;
-                    font-family: "Courier New";
-                    .sudo {
-                        color: #30a;
-                    }
-                    .flag {
-                        color: #00c;
-                    }
-                    .comment {
-                        color: #a50;
-                    }
-                    .quote {
-                        color: #a11;
-                    }
-                }
-            }
-
         }
     }
 }
