@@ -1812,7 +1812,7 @@ header[role=banner].inactive span {
 }
 
 .commander-info .row div:nth-of-type(3) .expanded {
-	height: 450px !important;
+	height: 550px !important;
 }
 
 .commander-info .row div:nth-of-type(3) div {
