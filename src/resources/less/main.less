@@ -864,13 +864,9 @@ header[role=banner] {
 
         div {
             &:nth-of-type(3) {
+                .hidden-xs;
                 .make-md-column(8);
                 .make-md-column-offset(2);
-                padding: 0 20px;
-
-                @media (min-width: @screen-sm-min) {
-                padding: 0;
-                }
 
                 p{
                     &:first-of-type{
@@ -1016,7 +1012,7 @@ header[role=banner] {
 
                 a {
                     margin-top: 21px;
-                    @media(min-width: @screen-md-min) {
+                    @media(min-width: @screen-sm-min) {
                         .hidden;
                     }
                 }    

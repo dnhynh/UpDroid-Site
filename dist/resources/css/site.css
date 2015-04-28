@@ -1774,7 +1774,6 @@ header[role=banner].inactive span {
 	min-height: 1px;
 	padding-left: 0;
 	padding-right: 0;
-	padding: 0 20px;
 }
 
 .commander-info .row div:nth-of-type(3) p:first-of-type {
@@ -2734,10 +2733,6 @@ header[role=banner] span.icon-updroid-logo {
 	width: 100%;
 }
 
-.commander-info .row div:nth-of-type(3) {
-	padding: 0;
-}
-
 .commander-info .row div:nth-of-type(4) {
 	float: left;
 	width: 100%;
@@ -2759,6 +2754,11 @@ header[role=banner] span.icon-updroid-logo {
 
 .commander-info .row div:nth-of-type(4) ul li {
 	margin: 12px 10px;
+}
+
+.commander-info .row div:nth-of-type(4) a {
+	display: none !important;
+	visibility: hidden !important;
 }
 
 .about-header {
@@ -3441,11 +3441,6 @@ nav > div .social-nav {
 .commander-info .row div:nth-of-type(4) ul li {
 	margin-bottom: 5px;
 	margin: 12px 20px;
-}
-
-.commander-info .row div:nth-of-type(4) a {
-	display: none !important;
-	visibility: hidden !important;
 }
 
 .about-header {
@@ -4138,6 +4133,10 @@ td.visible-xs {
 }
 
 .robotics .row > div:nth-of-type(2) {
+	display: none !important;
+}
+
+.commander-info .row div:nth-of-type(3) {
 	display: none !important;
 }
 
