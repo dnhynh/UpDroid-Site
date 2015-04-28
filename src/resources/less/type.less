@@ -133,6 +133,24 @@ h2 {
 	}
 }
 
+h3 {
+    .font-avenir-next-bold();
+    .font-size(1.9);
+    color: @heading-color;
+    letter-spacing: -1px;
+    line-height: 22px;
+
+    @media (min-width: @screen-xs-min) {
+        .font-size(1.6);
+        line-height: 18px;
+    }
+
+    @media (min-width: @screen-md-min) {
+        .font-size(1.6);
+        line-height: 22px;
+    }
+}
+
 p {
     .font-monosten-a();
     .font-size(1.4);
