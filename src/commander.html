@@ -24,13 +24,25 @@
                     <div>                
                         <a id='install' onClick=”_gaq.push([‘_trackEvent’, ‘Download’, ‘Commander Download’]);” class="btn btn-red">Install Alpha</a>
                         <div id='instructions'>
-                            <code>
-                                <span class='sudo'>wget</span> <span class='flag'>-qO</span> - http://packages.updroid.com/Release.key | <span class='sudo'>sudo</span> apt-key add -
-                                <span class='sudo'>sudo</span> sh <span class='flag'>-c</span> 'echo <span class='quote'>"deb http://packages.updroid.com/ubuntu/ trusty main"</span> > /etc/apt/sources.list.d/updroid.list'
-                            </code>
+                        <h3>In order to install UpCom run the following commands in your console:</h3>
+    <!-- Install Code -->
+    <pre><code>
+    <span class='prompt'>$ </span><span class='sudo'>wget</span> <span class='flag'>-qO</span> - http://packages.updroid.com/Release.key | 
+    <span class='sudo'>sudo</span> apt-key add -   
 
-                           <p>In order to upgrade commander run: <code>apt-get install <span class='flag'>--only-upgrade</span> cmdr</code></p>
-                        </div>    
+    <span class='prompt'>$ </span><span class='sudo'>sudo</span> sh <span class='flag'>-c</span> 'echo <span class='quote'>"deb http://packages.updroid.com/ubuntu/ trusty main"</span> 
+    > /etc/apt/sources.list.d/updroid.list'
+
+<h3>In order to upgrade commander run: </h3>
+    <span class='prompt'>$ </span>apt-get install <span class='flag'>--only-upgrade</span> cmdr   
+    <h3>Usage</h3>
+    <span class='comment'># Set the ROS source folder</span>
+    <span class='prompt'>$ </span>. /opt/ros/indigo/setup.bash
+    <span class='comment'># Start UpCom</span>
+    <span class='prompt'>$ </span><span class='sudo'>cmdr</span> gui
+
+    <h3>To access UpCom: tune browser to <span class='quote'>localhost:12060</span></h3>
+    </code></pre></div>    
                     </div>
                     <div id="features">
                         <h1>Current Features</h1>
@@ -41,7 +53,7 @@
                         </ul>
                         <h1>Near Future</h1>
                         <ul>
-                            <li>Multiple Workspaces</li>
+                            <li>Multiple Workspaces -- Share code with other users -- 32 bit ARM and x86 support</li>
                             <li>Share code with other users</li>
                             <li>32 bit ARM and x86 support</li>
                         </ul>
