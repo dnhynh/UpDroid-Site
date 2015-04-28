@@ -864,18 +864,17 @@ header[role=banner] {
 
         div {
             &:nth-of-type(3) {
-                .hidden-sm;
-                .hidden-xs;
                 .make-md-column(8);
                 .make-md-column-offset(2);
+                padding: 0 20px;
+
+                @media (min-width: @screen-sm-min) {
+                padding: 0;
+                }
 
                 p{
                     &:first-of-type{
                         margin-top: 21px;   
-                    }
-                    &:nth-of-type(3) {
-                        .font-size(2);
-                        color: #780405;
                     }
                 } 
                 li {
@@ -989,31 +988,25 @@ header[role=banner] {
                 ul{
                     li{
                         .font-monosten-a();
+                        line-height: 18px;
+                        .font-size(1.3);
+
                         @media (min-width: @screen-large-mobile-min) {
-                            .font-size(1.6);
-                            line-height: 20px;
                             padding: 0 21px;
                             margin: 15px 12px;
-
                         }
 
                         @media (min-width: @screen-xs-min) {
-                            .font-size(1.9);
-                            line-height: 20px;
                             padding: 0 21px;
                             margin: 15px 12px;
 
                         }
 
                         @media (min-width: @screen-sm-min) {
-                            .font-size(1.6);
-                            line-height: 20px;
                             margin: 12px 10px;
                         }
 
                         @media (min-width: @screen-md-min) {
-                            .font-size(1.6);
-                            line-height: 14px;
                             margin-bottom: 5px;
                             margin: 12px 20px;
                         }

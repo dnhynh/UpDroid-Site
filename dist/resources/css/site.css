@@ -1774,16 +1774,11 @@ header[role=banner].inactive span {
 	min-height: 1px;
 	padding-left: 0;
 	padding-right: 0;
+	padding: 0 20px;
 }
 
 .commander-info .row div:nth-of-type(3) p:first-of-type {
 	margin-top: 21px;
-}
-
-.commander-info .row div:nth-of-type(3) p:nth-of-type(3) {
-	font-size: 20px;
-	font-size: 2rem;
-	color: #780405;
 }
 
 .commander-info .row div:nth-of-type(3) li {
@@ -1887,6 +1882,9 @@ header[role=banner].inactive span {
 
 .commander-info .row div:nth-of-type(4) ul li {
 	font-family: "Monosten A";
+	line-height: 18px;
+	font-size: 13px;
+	font-size: 1.3rem;
 }
 
 .commander-info .row div:nth-of-type(4) a {
@@ -2197,9 +2195,6 @@ footer[role=contentinfo] p {
 }
 
 .commander-info .row div:nth-of-type(4) ul li {
-	font-size: 16px;
-	font-size: 1.6rem;
-	line-height: 20px;
 	padding: 0 21px;
 	margin: 15px 12px;
 }
@@ -2230,9 +2225,6 @@ h3 {
 }
 
 .commander-info .row div:nth-of-type(4) ul li {
-	font-size: 19px;
-	font-size: 1.9rem;
-	line-height: 20px;
 	padding: 0 21px;
 	margin: 15px 12px;
 }
@@ -2742,6 +2734,10 @@ header[role=banner] span.icon-updroid-logo {
 	width: 100%;
 }
 
+.commander-info .row div:nth-of-type(3) {
+	padding: 0;
+}
+
 .commander-info .row div:nth-of-type(4) {
 	float: left;
 	width: 100%;
@@ -2762,9 +2758,6 @@ header[role=banner] span.icon-updroid-logo {
 }
 
 .commander-info .row div:nth-of-type(4) ul li {
-	font-size: 16px;
-	font-size: 1.6rem;
-	line-height: 20px;
 	margin: 12px 10px;
 }
 
@@ -3013,10 +3006,6 @@ td.visible-sm {
 }
 
 .home-header .icon-arrow-down {
-	display: none !important;
-}
-
-.commander-info .row div:nth-of-type(3) {
 	display: none !important;
 }
 
@@ -3450,9 +3439,6 @@ nav > div .social-nav {
 }
 
 .commander-info .row div:nth-of-type(4) ul li {
-	font-size: 16px;
-	font-size: 1.6rem;
-	line-height: 14px;
 	margin-bottom: 5px;
 	margin: 12px 20px;
 }
@@ -4152,10 +4138,6 @@ td.visible-xs {
 }
 
 .robotics .row > div:nth-of-type(2) {
-	display: none !important;
-}
-
-.commander-info .row div:nth-of-type(3) {
 	display: none !important;
 }
 
