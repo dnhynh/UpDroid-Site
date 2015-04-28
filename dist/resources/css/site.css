@@ -1818,13 +1818,16 @@ header[role=banner].inactive span {
 }
 
 .commander-info .row div:nth-of-type(3) .expanded {
-	height: 350px !important;
+	height: 450px !important;
 }
 
 .commander-info .row div:nth-of-type(3) div {
 	background-color: white;
-	padding-top: 20px;
 	margin-bottom: 20px;
+}
+
+.commander-info .row div:nth-of-type(3) div > h3 {
+	padding-top: 20px;
 }
 
 .commander-info .row div:nth-of-type(3) div h3 {
@@ -1840,6 +1843,7 @@ header[role=banner].inactive span {
 	font-size: 1.3rem;
 	color: black;
 	font-family: "Courier New";
+	line-height: 18px;
 }
 
 .commander-info .row div:nth-of-type(3) div code .prompt {
