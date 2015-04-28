@@ -69,9 +69,10 @@
     <pre><code>
     <span class='prompt'>$ </span><span class='sudo'>wget</span> <span class='flag'>-qO</span> - http://packages.updroid.com/Release.key | 
     <span class='sudo'>sudo</span> apt-key add -   
-
     <span class='prompt'>$ </span><span class='sudo'>sudo</span> sh <span class='flag'>-c</span> 'echo <span class='quote'>"deb http://packages.updroid.com/ubuntu/ trusty main"</span> 
     > /etc/apt/sources.list.d/updroid.list'
+    <span class='prompt'>$ </span><span class='sudo'>sudo</span> apt-get update
+    <span class='prompt'>$ </span><span class='sudo'>sudo</span> apt-get install cmdr
 
 <h3>In order to update run: </h3>
     <span class='prompt'>$ </span>apt-get install <span class='flag'>--only-upgrade</span> cmdr   
