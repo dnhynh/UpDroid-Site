@@ -852,6 +852,7 @@ header[role=banner] {
 
         div{
             &:nth-of-type(2) {
+                .hidden-xs;
                 .make-md-column(8);
                 .make-md-column-offset(2);
                 padding: 0 20px 20px 20px;
@@ -948,7 +949,26 @@ header[role=banner] {
         }
 
         div {
-            &:nth-of-type(4){
+            &:nth-of-type(4) {
+                .make-xs-column(12);
+                .make-sm-column(12);
+                .make-md-column(8);
+                .make-md-column-offset(2);
+                padding: 0 21px;
+                
+                @media (min-width: @screen-md-min) {
+                    padding: 0;
+                }
+                .switch {
+                    @media (min-width: @screen-sm-min) {
+                        .hidden;
+                    }
+                }
+            }
+        }
+
+        div {
+            &:nth-of-type(5) {
                 .make-xs-column(12);
                 .make-sm-column(12);
                 .make-md-column(8);
@@ -970,22 +990,28 @@ header[role=banner] {
                         padding-right: 42px;
                     }
                 }
-                h1{
-                    @media (min-width: @screen-xs-min) {
-                        margin-top: 0;
-                        padding: 0 21px;
-                        text-align: center;
-                    }
 
-                    @media (min-width: @screen-sm-min) {
-                    }
-                }
                 ul{
                     .make-sm-column(10);
                     .make-sm-column-offset(1);
                     .make-md-column(10);
                     .make-md-column-offset(1);
                     .make-xs-column(12);
+                    margin-top: 21px;
+                    h1 {
+                        @media (min-width: @screen-xs-min) {
+                        margin-top: 0;
+                        padding: 0 21px;
+                        text-align: center;
+                        }
+
+                        @media (min-width: @screen-sm-min) {
+                        }
+                    }
+
+                    h3 {
+                        text-align: center;
+                    }
                     li{
                         .font-monosten-a();
                         line-height: 18px;
