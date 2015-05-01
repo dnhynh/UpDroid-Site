@@ -1875,8 +1875,13 @@ header[role=banner].inactive span {
 	padding: 0 21px 0 21px;
 }
 
-.commander-info .row div:nth-of-type(4) h1 {
-	text-align: center;
+.commander-info .row div:nth-of-type(4) ul {
+	position: relative;
+	float: left;
+	width: 100%;
+	min-height: 1px;
+	padding-left: 0;
+	padding-right: 0;
 }
 
 .commander-info .row div:nth-of-type(4) ul li {
@@ -2221,6 +2226,7 @@ h3 {
 .commander-info .row div:nth-of-type(4) h1 {
 	margin-top: 0;
 	padding: 0 21px;
+	text-align: center;
 }
 
 .commander-info .row div:nth-of-type(4) ul li {
@@ -2748,8 +2754,13 @@ header[role=banner] span.icon-updroid-logo {
 	padding-right: 42px;
 }
 
-.commander-info .row div:nth-of-type(4) h1 {
-	text-align: left;
+.commander-info .row div:nth-of-type(4) ul {
+	float: left;
+	width: 83.33333333%;
+}
+
+.commander-info .row div:nth-of-type(4) ul {
+	margin-left: 8.33333333%;
 }
 
 .commander-info .row div:nth-of-type(4) ul li {
@@ -3436,6 +3447,15 @@ nav > div .social-nav {
 
 .commander-info .row div:nth-of-type(4) {
 	margin-left: 16.66666667%;
+}
+
+.commander-info .row div:nth-of-type(4) ul {
+	float: left;
+	width: 83.33333333%;
+}
+
+.commander-info .row div:nth-of-type(4) ul {
+	margin-left: 8.33333333%;
 }
 
 .commander-info .row div:nth-of-type(4) ul li {

@@ -971,17 +971,21 @@ header[role=banner] {
                     }
                 }
                 h1{
-                    text-align: center;
                     @media (min-width: @screen-xs-min) {
                         margin-top: 0;
                         padding: 0 21px;
+                        text-align: center;
                     }
 
                     @media (min-width: @screen-sm-min) {
-                        text-align: left;
                     }
                 }
                 ul{
+                    .make-sm-column(10);
+                    .make-sm-column-offset(1);
+                    .make-md-column(10);
+                    .make-md-column-offset(1);
+                    .make-xs-column(12);
                     li{
                         .font-monosten-a();
                         line-height: 18px;
