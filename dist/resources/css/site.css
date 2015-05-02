@@ -1923,6 +1923,30 @@ header[role=banner].inactive span {
 	padding-right: 0;
 }
 
+.commander-info .row > div:nth-of-type(4) > div:nth-of-type(3) {
+	padding-top: 20px;
+}
+
+.commander-info .row > div:nth-of-type(4) > div:nth-of-type(3) img {
+	float: left;
+	width: 100%;
+	position: relative;
+	min-height: 1px;
+	padding-left: 0;
+	padding-right: 0;
+	padding: 0 15px;
+	width: 50px;
+}
+
+.commander-info .row > div:nth-of-type(4) > div:nth-of-type(3) p {
+	float: left;
+	width: 100%;
+	position: relative;
+	min-height: 1px;
+	padding-left: 0;
+	padding-right: 0;
+}
+
 .commander-info .row > div:nth-of-type(5) {
 	width: 100%;
 	position: relative;
@@ -1930,6 +1954,7 @@ header[role=banner].inactive span {
 	padding-left: 0;
 	padding-right: 0;
 	float: left;
+	margin-top: 50px;
 	padding: 0 21px;
 }
 
@@ -2856,6 +2881,24 @@ header[role=banner] span.icon-updroid-logo {
 	margin-left: 8.33333333%;
 }
 
+.commander-info .row > div:nth-of-type(4) > div:nth-of-type(3) img {
+	margin-left: 8.33333333%;
+}
+
+.commander-info .row > div:nth-of-type(4) > div:nth-of-type(3) img {
+	float: left;
+	width: 33.33333333%;
+}
+
+.commander-info .row > div:nth-of-type(4) > div:nth-of-type(3) p {
+	float: left;
+	width: 33.33333333%;
+}
+
+.commander-info .row > div:nth-of-type(4) > div:nth-of-type(3) p {
+	margin-left: 8.33333333%;
+}
+
 .commander-info .row > div:nth-of-type(5) {
 	float: left;
 	width: 100%;
@@ -3601,6 +3644,24 @@ nav > div .social-nav {
 }
 
 .commander-info .row > div:nth-of-type(4) > div:nth-of-type(2) p {
+	float: left;
+	width: 33.33333333%;
+}
+
+.commander-info .row > div:nth-of-type(4) > div:nth-of-type(3) img {
+	margin-left: 8.33333333%;
+}
+
+.commander-info .row > div:nth-of-type(4) > div:nth-of-type(3) img {
+	float: left;
+	width: 33.33333333%;
+}
+
+.commander-info .row > div:nth-of-type(4) > div:nth-of-type(3) p {
+	margin-left: 8.33333333%;
+}
+
+.commander-info .row > div:nth-of-type(4) > div:nth-of-type(3) p {
 	float: left;
 	width: 33.33333333%;
 }
