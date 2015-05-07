@@ -1832,8 +1832,11 @@ header[role=banner].inactive span {
 	width: 100%;
 }
 
-.commander .btn {
-	margin-top: 14px;
+.commander a {
+	font-family: "Monosten A";
+	font-size: 14px;
+	font-size: 1.4rem;
+	color: #ff2919;
 }
 
 .commander .row > div {
@@ -1848,6 +1851,10 @@ header[role=banner].inactive span {
 
 .commander .row > div p {
 	padding-top: 14px;
+}
+
+.commander .row > div p:nth-of-type(2) {
+	margin-bottom: 21px;
 }
 
 .robotics {
@@ -2947,11 +2954,6 @@ header[role=banner] span.icon-updroid-logo {
 	bottom: 14px;
 }
 
-.commander .btn {
-	margin-top: 14px;
-	width: 50%;
-}
-
 .commander {
 	background-position: right center;
 	background-size: 138%;
@@ -3721,11 +3723,6 @@ nav > div .social-nav {
 
 .image-gallery .row > div > span:last-of-type {
 	bottom: 21px;
-}
-
-.commander .btn {
-	margin-top: 21px;
-	width: 50%;
 }
 
 .commander {
