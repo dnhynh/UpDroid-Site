@@ -2028,15 +2028,16 @@ header[role=banner].inactive span {
 .commander-info .row > div:nth-of-type(3) #instructions {
 	height: 0px;
 	overflow: hidden;
-	transition: height 500ms ease;
-	-moz-transition: height 500ms ease;
-	-ms-transition: height 500ms ease;
-	-o-transition: height 500ms ease;
-	-webkit-transition: height 500ms ease;
+	transition: height 500ms ease, border 500ms ease;
+	-moz-transition: height 500ms ease, border 500ms ease;
+	-ms-transition: height 500ms ease, border 500ms ease;
+	-o-transition: height 500ms ease, border 500ms ease;
+	-webkit-transition: height 500ms ease, border 500ms ease;
 }
 
 .commander-info .row > div:nth-of-type(3) .expanded {
 	height: 550px !important;
+	border: 3px solid #ff2919;
 }
 
 .commander-info .row > div:nth-of-type(3) div {
