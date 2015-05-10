@@ -67,28 +67,40 @@
                         <a id='install' class="btn btn-red">Install Alpha</a>
                         <div id='instructions'>
                         <h3>In order to install UpCom run the following commands in your console:</h3>
+                        <br>
     <!-- Install Code -->
-    <pre><code>
+    <code>
     <span class='prompt'>$ </span><span class='sudo'>wget</span> <span class='flag'>-qO</span> - http://packages.updroid.com/Release.key | <span class='sudo'>sudo</span> apt-key add -   
-    
-    <span class='prompt'>$ </span><span class='sudo'>sudo</span> sh <span class='flag'>-c</span> 'echo <span class='quote'>"deb http://packages.updroid.com/ubuntu/ trusty main"</span> 
-    > /etc/apt/sources.list.d/updroid.list'
+    <br><br>
+    <span class='prompt'>$ </span><span class='sudo'>sudo</span> sh <span class='flag'>-c</span> 'echo <span class='quote'>"deb http://packages.updroid.com/ubuntu/ trusty main"</span> > /etc/apt/sources.list.d/updroid.list'
+    <br><br>
     <span class='prompt'>$ </span><span class='sudo'>sudo</span> apt-get update
+    <br><br>
     <span class='prompt'>$ </span><span class='sudo'>sudo</span> apt-get install cmdr
-
-<h3>In order to update run: </h3>
+    <br><br>
+    <h3>In order to update run: </h3>
+    <br>
     <span class='comment'># Expect updates to be released weekly, more or less. </span>
+    <br>
     <span class='prompt'>$ </span><span class='sudo'>sudo</span> apt-get update
-    <span class='prompt'>$ </span><span class='sudo'>sudo</span> apt-get install <span class='flag'>--only-upgrade</span> cmdr   
+    <br>
+    <span class='prompt'>$ </span><span class='sudo'>sudo</span> apt-get install <span class='flag'>--only-upgrade</span> cmdr
+    <br><br>   
     <h3>Usage</h3>
+    <br>
     <span class='comment'># Set the ROS source folder</span>
+    <br>
     <span class='prompt'>$ </span>. /opt/ros/indigo/setup.bash
+    <br>
     <span class='comment'># Start UpCom</span>
+    <br>
     <span class='prompt'>$ </span><span class='sudo'>cmdr</span> gui
+    <br><br>
     <h3>To access UpCom: tune browser to <span class='quote'>localhost:12060</span></h3>
+    <br>
     <span class='comment'># Because UpCom is still in alpha, it currently doesn't have any built in 
     security tools. As such, please run UpCom from within a closed network.</span>
-    </code></pre></div>    
+    </code></div>    
                     </div>
                     <div>
                         <p><span class='switch'>UpDroid Commander (</span>UpCom<span class='switch'>) is a browser based IDE for robotics software development. It</span> features a multi-tabbed interface with several built-in tabs for robotics software development. Soon you will be able to add user created tabs as well. The built-in tabs currently available are: Editor, Console, and Camera-feed viewer. Additionally, UpCom features a file explorer to easily view your development workspace with drag-and-drop file management.<span class='switch'>  Download our alpha and start programming today!</span></p>
