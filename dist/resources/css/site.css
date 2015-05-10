@@ -4636,6 +4636,10 @@ td.visible-xs {
 	display: none !important;
 }
 
+.commander-info .row > div:nth-of-type(5) h1 {
+	display: none !important;
+}
+
 .about-header span {
 	display: none !important;
 }
