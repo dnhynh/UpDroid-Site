@@ -2171,6 +2171,34 @@ header[role=banner].inactive span {
 	padding-right: 0;
 }
 
+.commander-info .row > div:nth-of-type(4) > div:nth-of-type(4) {
+	padding-top: 20px;
+}
+
+.commander-info .row > div:nth-of-type(4) > div:nth-of-type(4) img {
+	float: left;
+	width: 100%;
+	position: relative;
+	min-height: 1px;
+	padding-left: 0;
+	padding-right: 0;
+	padding: 0 15px;
+}
+
+.commander-info .row > div:nth-of-type(4) > div:nth-of-type(4) p {
+	margin-top: 60px;
+	float: left;
+	width: 100%;
+	position: relative;
+	min-height: 1px;
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.commander-info .row > div:nth-of-type(4) > a {
+	margin-top: 20px;
+}
+
 .commander-info .row > div:nth-of-type(5) {
 	width: 100%;
 	position: relative;
@@ -2219,10 +2247,6 @@ header[role=banner].inactive span {
 	font-size: 13px;
 	font-size: 1.3rem;
 	list-style: circle;
-}
-
-.commander-info .row > div:nth-of-type(5) a {
-	margin-top: 21px;
 }
 
 .about-header {
@@ -3132,6 +3156,29 @@ header[role=banner] span.icon-updroid-logo {
 	margin-left: 16.66666667%;
 }
 
+.commander-info .row > div:nth-of-type(4) > div:nth-of-type(4) img {
+	margin-left: 8.33333333%;
+}
+
+.commander-info .row > div:nth-of-type(4) > div:nth-of-type(4) img {
+	float: left;
+	width: 41.66666667%;
+}
+
+.commander-info .row > div:nth-of-type(4) > div:nth-of-type(4) p {
+	float: left;
+	width: 33.33333333%;
+}
+
+.commander-info .row > div:nth-of-type(4) > div:nth-of-type(4) p {
+	margin-left: 8.33333333%;
+}
+
+.commander-info .row > div:nth-of-type(4) > a {
+	display: none !important;
+	visibility: hidden !important;
+}
+
 .commander-info .row > div:nth-of-type(5) {
 	float: left;
 	width: 100%;
@@ -3157,11 +3204,6 @@ header[role=banner] span.icon-updroid-logo {
 
 .commander-info .row > div:nth-of-type(5) ul li {
 	margin: 12px 10px;
-}
-
-.commander-info .row > div:nth-of-type(5) a {
-	display: none !important;
-	visibility: hidden !important;
 }
 
 .about-header {
@@ -3895,6 +3937,24 @@ nav > div .social-nav {
 }
 
 .commander-info .row > div:nth-of-type(4) > div:nth-of-type(3) p {
+	float: left;
+	width: 33.33333333%;
+}
+
+.commander-info .row > div:nth-of-type(4) > div:nth-of-type(4) img {
+	margin-left: 8.33333333%;
+}
+
+.commander-info .row > div:nth-of-type(4) > div:nth-of-type(4) img {
+	float: left;
+	width: 41.66666667%;
+}
+
+.commander-info .row > div:nth-of-type(4) > div:nth-of-type(4) p {
+	margin-left: 8.33333333%;
+}
+
+.commander-info .row > div:nth-of-type(4) > div:nth-of-type(4) p {
 	float: left;
 	width: 33.33333333%;
 }
