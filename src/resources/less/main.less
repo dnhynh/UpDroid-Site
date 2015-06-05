@@ -770,17 +770,37 @@ header[role=banner] {
 }
 
 // Commander page
-.commander-info {
+.commander-install {
+    background-color: #f1f4f4;
     float: left;
     width: 100%;
 
+    @media (min-width: @screen-md-min) {
+        background-image: url('/resources/images/UpCom_Header.png');
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position: left 220px;
+    }
+
+    h2 {    
+        padding-top: 160px;
+    }
+
+    h3 {
+        @media (min-width: @screen-md-min) {
+            padding-top: 220px;
+        }
+        @media (min-width: 1450px) {
+                        padding-top: 290px;
+                    }
+    }
     .container {
         position: relative;
     }
 
     .row {
         padding-bottom: 28px;
-        padding-top: 180px !important;
+        padding-top: 0 !important;
         position: relative;
 
         @media (min-width: @screen-sm-min) {
@@ -839,7 +859,9 @@ header[role=banner] {
 
                 > h3 {
                     color: #7e7e7e;
-                    margin-top: 83px;
+                    @media (min-width: @screen-md-min) {
+                        margin-top: 230px;
+                    }
                 }
 
                 > p {
