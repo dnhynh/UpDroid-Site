@@ -807,14 +807,10 @@ header[role=banner] {
             }
         }
 
-        .version {
-            color: #a11;
-        }
-
         > div {
             &:first-of-type {
-                .make-md-column(8)
-            }
+                .make-md-column(5);
+                padding-left: 30px;
 
             h3 {
                 line-height: 18px;
@@ -825,7 +821,7 @@ header[role=banner] {
             > p {
                 &:first-of-type {
                     margin-top: 21px;
-                    .make-md-column(5);
+                    .make-md-column(6);
                 }
 
                 &:nth-of-type(2) {
@@ -836,10 +832,29 @@ header[role=banner] {
             }
         }
 
-        > div {
             &:nth-of-type(2) {
-                .make-md-column(4)
+                .make-md-column-offset(4);
+                .make-md-column(3);
+                padding-right: 30px;
+
+                > h3 {
+                    color: #7e7e7e;
+                    margin-top: 83px;
+                }
+
+                > p {
+                    margin-top: 31px;
+                    .make-md-column(12);
+                }
+
+                > a {
+                    margin-top: 31px;
+                }
             }
+        }
+
+        .version {
+            color: #a11;
         }
     }
 }

@@ -1952,24 +1952,21 @@ header[role=banner].inactive span {
 	color: #a11;
 }
 
-.commander-info .row .version {
-	color: #a11;
-}
-
 .commander-info .row > div:first-of-type {
 	position: relative;
 	min-height: 1px;
 	padding-left: 0;
 	padding-right: 0;
+	padding-left: 30px;
 }
 
-.commander-info .row > div h3 {
+.commander-info .row > div:first-of-type h3 {
 	line-height: 18px;
 	color: #7e7e7e;
 	margin-top: 18px;
 }
 
-.commander-info .row > div > p:first-of-type {
+.commander-info .row > div:first-of-type > p:first-of-type {
 	margin-top: 21px;
 	position: relative;
 	min-height: 1px;
@@ -1977,7 +1974,7 @@ header[role=banner].inactive span {
 	padding-right: 0;
 }
 
-.commander-info .row > div > p:nth-of-type(2) {
+.commander-info .row > div:first-of-type > p:nth-of-type(2) {
 	margin-top: 21px;
 	position: relative;
 	min-height: 1px;
@@ -1990,6 +1987,28 @@ header[role=banner].inactive span {
 	min-height: 1px;
 	padding-left: 0;
 	padding-right: 0;
+	padding-right: 30px;
+}
+
+.commander-info .row > div:nth-of-type(2) > h3 {
+	color: #7e7e7e;
+	margin-top: 83px;
+}
+
+.commander-info .row > div:nth-of-type(2) > p {
+	margin-top: 31px;
+	position: relative;
+	min-height: 1px;
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.commander-info .row > div:nth-of-type(2) > a {
+	margin-top: 31px;
+}
+
+.commander-info .row .version {
+	color: #a11;
 }
 
 .about-header {
@@ -3439,26 +3458,35 @@ nav > div .social-nav {
 
 .commander-info .row > div:first-of-type {
 	float: left;
-	width: 66.66666667%;
-}
-
-.commander-info .row > div > p:first-of-type {
-	float: left;
 	width: 41.66666667%;
 }
 
-.commander-info .row > div > p:nth-of-type(2) {
+.commander-info .row > div:first-of-type > p:first-of-type {
+	float: left;
+	width: 50%;
+}
+
+.commander-info .row > div:first-of-type > p:nth-of-type(2) {
 	margin-left: 8.33333333%;
 }
 
-.commander-info .row > div > p:nth-of-type(2) {
+.commander-info .row > div:first-of-type > p:nth-of-type(2) {
 	float: left;
 	width: 41.66666667%;
 }
 
 .commander-info .row > div:nth-of-type(2) {
+	margin-left: 33.33333333%;
+}
+
+.commander-info .row > div:nth-of-type(2) {
 	float: left;
-	width: 33.33333333%;
+	width: 25%;
+}
+
+.commander-info .row > div:nth-of-type(2) > p {
+	float: left;
+	width: 100%;
 }
 
 .about-header {
