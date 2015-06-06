@@ -775,7 +775,7 @@ header[role=banner] {
     float: left;
     width: 100%;
 
-    @media (min-width: @screen-md-min) {
+    @media (min-width: @screen-sm-min) {
         background-image: url('/resources/images/UpCom_Header.png');
         background-size: 100%;
         background-repeat: no-repeat;
@@ -787,6 +787,10 @@ header[role=banner] {
     }
 
     h3 {
+        @media (min-width: @screen-sm-min) {
+            padding-top: 180px;
+        }
+
         @media (min-width: @screen-md-min) {
             padding-top: 220px;
         }
@@ -829,7 +833,7 @@ header[role=banner] {
 
         > div {
             &:first-of-type {
-                .make-md-column(5);
+                .make-md-column(8);
                 padding-left: 30px;
 
             h3 {
@@ -849,12 +853,16 @@ header[role=banner] {
                     .make-md-column-offset(1);
                     .make-md-column(5);
                 }
+
+                &:nth-of-type(3) {
+                    .make-md-column-offset(6);
+                    .make-md-column(6);
+                }
             }
         }
 
             &:nth-of-type(2) {
-                .make-md-column-offset(4);
-                .make-md-column(3);
+                .make-md-column(4);
                 padding-right: 30px;
 
                 > h3 {

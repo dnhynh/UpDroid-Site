@@ -1987,6 +1987,13 @@ header[role=banner].inactive span {
 	padding-right: 0;
 }
 
+.commander-install .row > div:first-of-type > p:nth-of-type(3) {
+	position: relative;
+	min-height: 1px;
+	padding-left: 0;
+	padding-right: 0;
+}
+
 .commander-install .row > div:nth-of-type(2) {
 	position: relative;
 	min-height: 1px;
@@ -2819,6 +2826,17 @@ header[role=banner] span.icon-updroid-logo {
 	width: 32%;
 }
 
+.commander-install {
+	background-image: url('/resources/images/UpCom_Header.png');
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: left 220px;
+}
+
+.commander-install h3 {
+	padding-top: 180px;
+}
+
 .commander-install .row {
 	padding-bottom: 140px;
 	padding-top: 100px;
@@ -3460,20 +3478,13 @@ nav > div .social-nav {
 	width: 32%;
 }
 
-.commander-install {
-	background-image: url('/resources/images/UpCom_Header.png');
-	background-size: 100%;
-	background-repeat: no-repeat;
-	background-position: left 220px;
-}
-
 .commander-install h3 {
 	padding-top: 220px;
 }
 
 .commander-install .row > div:first-of-type {
 	float: left;
-	width: 41.66666667%;
+	width: 66.66666667%;
 }
 
 .commander-install .row > div:first-of-type > p:first-of-type {
@@ -3490,13 +3501,18 @@ nav > div .social-nav {
 	width: 41.66666667%;
 }
 
-.commander-install .row > div:nth-of-type(2) {
-	margin-left: 33.33333333%;
+.commander-install .row > div:first-of-type > p:nth-of-type(3) {
+	margin-left: 50%;
+}
+
+.commander-install .row > div:first-of-type > p:nth-of-type(3) {
+	float: left;
+	width: 50%;
 }
 
 .commander-install .row > div:nth-of-type(2) {
 	float: left;
-	width: 25%;
+	width: 33.33333333%;
 }
 
 .commander-install .row > div:nth-of-type(2) > h3 {
