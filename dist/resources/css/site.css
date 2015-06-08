@@ -1926,124 +1926,107 @@ header[role=banner].inactive span {
 	width: 90%;
 }
 
-.commander-install {
+.commander-info {
 	background-color: #f1f4f4;
 	float: left;
 	width: 100%;
+	padding-bottom: 150px;
 }
 
-.commander-install h1 {
+.commander-info h1 {
 	padding-top: 160px;
 	margin-left: 30px;
 }
 
-.commander-install h3 {
+.commander-info h3 {
 	font-size: 19px;
 	font-size: 1.9rem;
 	line-height: 25px;
 	color: #7e7e7e;
 }
 
-.commander-install p {
+.commander-info p {
 	margin-top: 21px;
 }
 
-.commander-install .version {
+.commander-info .version {
 	color: #a11;
 }
 
-.commander-install .container {
+.commander-info .container {
 	position: relative;
 }
 
-.commander-install .row {
-	padding-bottom: 28px;
-	padding-top: 0 !important;
+.commander-info .row {
 	position: relative;
 }
 
-.commander-install .row .left {
+.commander-info .row .left {
+	padding-left: 30px !important;
 	position: relative;
 	min-height: 1px;
 	padding-left: 0;
 	padding-right: 0;
 }
 
-.commander-install .row .left a {
+.commander-info .row .left a {
 	white-space: nowrap;
 	color: #ff2919;
 }
 
-.commander-install .row .left > div:first-of-type {
+.commander-info .row .left > div:first-of-type {
 	position: relative;
 	min-height: 1px;
 	padding-left: 0;
 	padding-right: 0;
 }
 
-.commander-install .row .left > div:last-of-type {
+.commander-info .row .left > div:last-of-type {
 	position: relative;
 	min-height: 1px;
 	padding-left: 0;
 	padding-right: 0;
 }
 
-.commander-install .row .right {
+.commander-info .row .right {
 	position: relative;
 	min-height: 1px;
 	padding-left: 0;
 	padding-right: 0;
 }
 
-.commander-install .row .right a {
+.commander-info .row .right a {
 	margin-top: 21px;
 }
 
-.commander-install .row > div:first-of-type {
-	padding-left: 30px;
+.commander-info .row .right a:hover {
+	cursor: pointer;
 }
 
-.commander-install .row > div:first-of-type > p:first-of-type {
-	margin-top: 21px;
+.screens {
+	background-color: #ffffff;
+}
+
+.screens .row img {
 	position: relative;
 	min-height: 1px;
 	padding-left: 0;
 	padding-right: 0;
 }
 
-.commander-install .row > div:first-of-type > p:nth-of-type(2) {
-	margin-top: 21px;
+.screens .row p {
 	position: relative;
 	min-height: 1px;
 	padding-left: 0;
 	padding-right: 0;
 }
 
-.commander-install .row > div:first-of-type > p:nth-of-type(3) {
-	position: relative;
-	min-height: 1px;
-	padding-left: 0;
-	padding-right: 0;
+.changelog {
+	background-color: #ffffff;
 }
 
-.commander-install .row > div:nth-of-type(2) {
-	padding-right: 30px;
-}
-
-.commander-install .row > div:nth-of-type(2) > h3 {
-	color: #7e7e7e;
-}
-
-.commander-install .row > div:nth-of-type(2) > p {
-	margin-top: 31px;
-	position: relative;
-	min-height: 1px;
-	padding-left: 0;
-	padding-right: 0;
-}
-
-.commander-install .row > div:nth-of-type(2) > a {
-	margin-top: 31px;
+.changelog pre {
+	background-color: #f1f4f4;
 }
 
 .about-header {
@@ -2845,18 +2828,18 @@ header[role=banner] span.icon-updroid-logo {
 	width: 32%;
 }
 
-.commander-install {
+.commander-info {
 	background-image: url('/resources/images/UpCom_Header.png');
 	background-size: 100%;
 	background-repeat: no-repeat;
 	background-position: left 220px;
 }
 
-.commander-install .row .left {
+.commander-info .row .left {
 	padding-top: 200px;
 }
 
-.commander-install .row .right {
+.commander-info .row .right {
 	padding-top: 220px;
 }
 
@@ -3496,68 +3479,50 @@ nav > div .social-nav {
 	width: 32%;
 }
 
-.commander-install .row .left {
+.commander-info .row .left {
 	float: left;
 	width: 75%;
 }
 
-.commander-install .row .left {
+.commander-info .row .left {
 	padding-top: 240px;
 }
 
-.commander-install .row .left > div:first-of-type {
+.commander-info .row .left > div:first-of-type {
 	float: left;
 	width: 33.33333333%;
 }
 
-.commander-install .row .left > div:last-of-type {
+.commander-info .row .left > div:last-of-type {
 	float: left;
 	width: 33.33333333%;
 }
 
-.commander-install .row .left > div:last-of-type {
+.commander-info .row .left > div:last-of-type {
 	margin-left: 21px;
 }
 
-.commander-install .row .right {
+.commander-info .row .left > div:last-of-type > p:first-of-type {
+	margin-top: 0;
+}
+
+.commander-info .row .right {
 	float: left;
 	width: 25%;
 }
 
-.commander-install .row .right {
+.commander-info .row .right {
 	padding-top: 260px;
 }
 
-.commander-install .row > div:first-of-type > p:first-of-type {
+.screens .row img {
 	float: left;
-	width: 50%;
+	width: 33.33333333%;
 }
 
-.commander-install .row > div:first-of-type > p:nth-of-type(2) {
-	margin-left: 8.33333333%;
-}
-
-.commander-install .row > div:first-of-type > p:nth-of-type(2) {
+.screens .row p {
 	float: left;
-	width: 41.66666667%;
-}
-
-.commander-install .row > div:first-of-type > p:nth-of-type(3) {
-	margin-left: 50%;
-}
-
-.commander-install .row > div:first-of-type > p:nth-of-type(3) {
-	float: left;
-	width: 50%;
-}
-
-.commander-install .row > div:nth-of-type(2) > h3 {
-	margin-top: 230px;
-}
-
-.commander-install .row > div:nth-of-type(2) > p {
-	float: left;
-	width: 100%;
+	width: 33.33333333%;
 }
 
 .about-header {
@@ -4207,11 +4172,11 @@ header[role=banner] span.icon-updroid-logo {
 
 @media (min-width: 1450px) {
 
-.commander-install .row .left {
+.commander-info .row .left {
 	padding-top: 310px;
 }
 
-.commander-install .row .right {
+.commander-info .row .right {
 	padding-top: 330px;
 }
 

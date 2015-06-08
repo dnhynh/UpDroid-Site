@@ -1,4 +1,4 @@
-﻿/// <reference path="../bootstrap/bootstrap.less" />
+/// <reference path="../bootstrap/bootstrap.less" />
 /// <reference path="variables.less" />
 /// <reference path="utilities.less" />
 /// <reference path="type.less" />
@@ -770,10 +770,11 @@ header[role=banner] {
 }
 
 // Commander page
-.commander-install {
+.commander-info {
     background-color: #f1f4f4;
     float: left;
     width: 100%;
+    padding-bottom: 150px;
 
     @media (min-width: @screen-sm-min) {
         background-image: url('/resources/images/UpCom_Header.png');
@@ -806,108 +807,91 @@ header[role=banner] {
     }
 
     .row {
-        padding-bottom: 28px;
-        padding-top: 0 !important;
         position: relative;
 
 
-    .left {
-        .make-md-column(9);
+        .left {
+            padding-left: 30px !important;
+            .make-md-column(9);
 
-        a {
-            white-space: nowrap;
-            color: #ff2919;
-        }
-
-        @media (min-width: @screen-sm-min) {
-            padding-top: 200px;
-        }
-
-        @media (min-width: @screen-md-min) {
-            padding-top: 240px;
-        }
-
-        @media (min-width: 1450px) {
-            padding-top: 310px;
-        }
-
-        >div {
-            &:first-of-type {
-                .make-md-column(4);
+            a {
+                white-space: nowrap;
+                color: #ff2919;
             }
 
-            &:last-of-type {
-                .make-md-column(4);
-                @media (min-width: @screen-md-min) {
-                    margin-left: 21px;
-                }
+            @media (min-width: @screen-sm-min) {
+                padding-top: 200px;
             }
-        }
-    }
 
-    .right {
-        .make-md-column(3);
+            @media (min-width: @screen-md-min) {
+                padding-top: 240px;
+            }
 
-        @media (min-width: @screen-sm-min) {
-            padding-top: 220px;
-        }
+            @media (min-width: 1450px) {
+                padding-top: 310px;
+            }
 
-        @media (min-width: @screen-md-min) {
-            padding-top: 260px;
-        }
-
-        @media (min-width: 1450px) {
-            padding-top: 330px;
-        }
-
-        a {
-            margin-top: 21px;
-        }
-    }
-
-        > div {
-            &:first-of-type {
-                padding-left: 30px;
-
-            > p {
+            >div {
                 &:first-of-type {
-                    margin-top: 21px;
-                    .make-md-column(6);
+                    .make-md-column(4);
                 }
 
-                &:nth-of-type(2) {
-                    margin-top: 21px;
-                    .make-md-column-offset(1);
-                    .make-md-column(5);
-                }
-
-                &:nth-of-type(3) {
-                    .make-md-column-offset(6);
-                    .make-md-column(6);
-                }
-            }
-        }
-
-            &:nth-of-type(2) {
-                padding-right: 30px;
-
-                > h3 {
-                    color: #7e7e7e;
+                &:last-of-type {
+                    .make-md-column(4);
                     @media (min-width: @screen-md-min) {
-                        margin-top: 230px;
+                        margin-left: 21px;
+                        >p {
+                            &:first-of-type {
+                                margin-top: 0;
+                            }
+                        }
                     }
                 }
+            }
+        }
 
-                > p {
-                    margin-top: 31px;
-                    .make-md-column(12);
-                }
+        .right {
+            .make-md-column(3);
 
-                > a {
-                    margin-top: 31px;
+            @media (min-width: @screen-sm-min) {
+                padding-top: 220px;
+            }
+
+            @media (min-width: @screen-md-min) {
+                padding-top: 260px;
+            }
+
+            @media (min-width: 1450px) {
+                padding-top: 330px;
+            }
+
+            a {
+                margin-top: 21px;
+                &:hover {
+                    cursor: pointer;
                 }
             }
         }
+    }
+}
+
+.screens {
+    background-color: #ffffff;
+
+    .row {
+        img {
+            .make-md-column(4);
+        }
+        p {
+            .make-md-column(4);
+        }
+    }
+}
+
+.changelog {
+    background-color: #ffffff;
+    pre {
+        background-color: #f1f4f4;
     }
 }
 
