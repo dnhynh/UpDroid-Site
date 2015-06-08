@@ -1932,8 +1932,24 @@ header[role=banner].inactive span {
 	width: 100%;
 }
 
-.commander-install h2 {
+.commander-install h1 {
 	padding-top: 160px;
+	margin-left: 30px;
+}
+
+.commander-install h3 {
+	font-size: 19px;
+	font-size: 1.9rem;
+	line-height: 25px;
+	color: #7e7e7e;
+}
+
+.commander-install p {
+	margin-top: 21px;
+}
+
+.commander-install .version {
+	color: #a11;
 }
 
 .commander-install .container {
@@ -1946,29 +1962,45 @@ header[role=banner].inactive span {
 	position: relative;
 }
 
-.commander-install .row > p {
-	text-align: center;
-	padding: 0 25px 25px 25px;
-	font-size: 20px;
-	font-size: 2rem;
-}
-
-.commander-install .row > p a {
-	color: #a11;
-}
-
-.commander-install .row > div:first-of-type {
+.commander-install .row .left {
 	position: relative;
 	min-height: 1px;
 	padding-left: 0;
 	padding-right: 0;
-	padding-left: 30px;
 }
 
-.commander-install .row > div:first-of-type h3 {
-	line-height: 18px;
-	color: #7e7e7e;
-	margin-top: 18px;
+.commander-install .row .left a {
+	white-space: nowrap;
+	color: #ff2919;
+}
+
+.commander-install .row .left > div:first-of-type {
+	position: relative;
+	min-height: 1px;
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.commander-install .row .left > div:last-of-type {
+	position: relative;
+	min-height: 1px;
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.commander-install .row .right {
+	position: relative;
+	min-height: 1px;
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.commander-install .row .right a {
+	margin-top: 21px;
+}
+
+.commander-install .row > div:first-of-type {
+	padding-left: 30px;
 }
 
 .commander-install .row > div:first-of-type > p:first-of-type {
@@ -1995,10 +2027,6 @@ header[role=banner].inactive span {
 }
 
 .commander-install .row > div:nth-of-type(2) {
-	position: relative;
-	min-height: 1px;
-	padding-left: 0;
-	padding-right: 0;
 	padding-right: 30px;
 }
 
@@ -2016,10 +2044,6 @@ header[role=banner].inactive span {
 
 .commander-install .row > div:nth-of-type(2) > a {
 	margin-top: 31px;
-}
-
-.commander-install .row .version {
-	color: #a11;
 }
 
 .about-header {
@@ -2329,11 +2353,6 @@ h3 {
 	font-size: 16px;
 	font-size: 1.6rem;
 	line-height: 18px;
-}
-
-.commander-install .row {
-	padding-top: 100px;
-	padding-bottom: 100px;
 }
 
 }
@@ -2833,13 +2852,12 @@ header[role=banner] span.icon-updroid-logo {
 	background-position: left 220px;
 }
 
-.commander-install h3 {
-	padding-top: 180px;
+.commander-install .row .left {
+	padding-top: 200px;
 }
 
-.commander-install .row {
-	padding-bottom: 140px;
-	padding-top: 100px;
+.commander-install .row .right {
+	padding-top: 220px;
 }
 
 .about-header {
@@ -3478,13 +3496,36 @@ nav > div .social-nav {
 	width: 32%;
 }
 
-.commander-install h3 {
-	padding-top: 220px;
+.commander-install .row .left {
+	float: left;
+	width: 75%;
 }
 
-.commander-install .row > div:first-of-type {
+.commander-install .row .left {
+	padding-top: 240px;
+}
+
+.commander-install .row .left > div:first-of-type {
 	float: left;
-	width: 66.66666667%;
+	width: 33.33333333%;
+}
+
+.commander-install .row .left > div:last-of-type {
+	float: left;
+	width: 33.33333333%;
+}
+
+.commander-install .row .left > div:last-of-type {
+	margin-left: 21px;
+}
+
+.commander-install .row .right {
+	float: left;
+	width: 25%;
+}
+
+.commander-install .row .right {
+	padding-top: 260px;
 }
 
 .commander-install .row > div:first-of-type > p:first-of-type {
@@ -3508,11 +3549,6 @@ nav > div .social-nav {
 .commander-install .row > div:first-of-type > p:nth-of-type(3) {
 	float: left;
 	width: 50%;
-}
-
-.commander-install .row > div:nth-of-type(2) {
-	float: left;
-	width: 33.33333333%;
 }
 
 .commander-install .row > div:nth-of-type(2) > h3 {
@@ -4112,11 +4148,6 @@ header[role=banner] span.icon-updroid-logo {
 	width: 28%;
 }
 
-.commander-install .row {
-	padding-bottom: 210px;
-	padding-top: 100px;
-}
-
 .about-header .row {
 	padding-bottom: 210px;
 	padding-top: 329px;
@@ -4176,8 +4207,12 @@ header[role=banner] span.icon-updroid-logo {
 
 @media (min-width: 1450px) {
 
-.commander-install h3 {
-	padding-top: 290px;
+.commander-install .row .left {
+	padding-top: 310px;
+}
+
+.commander-install .row .right {
+	padding-top: 330px;
 }
 
 }
