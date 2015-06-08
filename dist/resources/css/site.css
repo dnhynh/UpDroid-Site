@@ -1928,7 +1928,6 @@ header[role=banner].inactive span {
 
 .commander-info {
 	background-color: #f1f4f4;
-	float: left;
 	width: 100%;
 	padding-bottom: 150px;
 }
@@ -2007,14 +2006,32 @@ header[role=banner].inactive span {
 	background-color: #ffffff;
 }
 
-.screens .row img {
+.screens > div {
+	padding: 100px 0;
+}
+
+.screens h3 {
+	font-size: 19px;
+	font-size: 1.9rem;
+	line-height: 25px;
+	color: #7e7e7e;
+}
+
+.screens .row > div {
 	position: relative;
 	min-height: 1px;
 	padding-left: 0;
 	padding-right: 0;
 }
 
-.screens .row p {
+.screens .row > div img {
+	position: relative;
+	min-height: 1px;
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.screens .row > div p {
 	position: relative;
 	min-height: 1px;
 	padding-left: 0;
@@ -3515,14 +3532,23 @@ nav > div .social-nav {
 	padding-top: 260px;
 }
 
-.screens .row img {
-	float: left;
-	width: 33.33333333%;
+.screens .row > div {
+	margin-left: 16.66666667%;
 }
 
-.screens .row p {
+.screens .row > div {
 	float: left;
-	width: 33.33333333%;
+	width: 66.66666667%;
+}
+
+.screens .row > div img {
+	float: left;
+	width: 50%;
+}
+
+.screens .row > div p {
+	float: left;
+	width: 50%;
 }
 
 .about-header {

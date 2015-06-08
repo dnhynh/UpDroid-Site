@@ -772,7 +772,6 @@ header[role=banner] {
 // Commander page
 .commander-info {
     background-color: #f1f4f4;
-    float: left;
     width: 100%;
     padding-bottom: 150px;
 
@@ -877,13 +876,26 @@ header[role=banner] {
 
 .screens {
     background-color: #ffffff;
+    > div {
+        padding: 100px 0;
+    }
+
+    h3 {
+        .font-size(1.9);
+        line-height: 25px;
+        color: #7e7e7e;
+    }
 
     .row {
-        img {
-            .make-md-column(4);
-        }
-        p {
-            .make-md-column(4);
+        >div {
+            .make-md-column-offset(2);
+            .make-md-column(8);
+            img {
+                .make-md-column(6);
+            }
+            p {
+                .make-md-column(6);   
+            }
         }
     }
 }
