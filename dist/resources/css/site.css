@@ -2006,10 +2006,6 @@ header[role=banner].inactive span {
 	background-color: #ffffff;
 }
 
-.screens > div {
-	padding: 100px 0;
-}
-
 .screens h3 {
 	font-size: 19px;
 	font-size: 1.9rem;
@@ -2022,6 +2018,7 @@ header[role=banner].inactive span {
 	min-height: 1px;
 	padding-left: 0;
 	padding-right: 0;
+	margin-top: 120px;
 }
 
 .screens .row > div img {
@@ -2029,21 +2026,54 @@ header[role=banner].inactive span {
 	min-height: 1px;
 	padding-left: 0;
 	padding-right: 0;
+	padding: 25px;
 }
 
-.screens .row > div p {
+.screens .row > div > div {
 	position: relative;
 	min-height: 1px;
 	padding-left: 0;
 	padding-right: 0;
+	padding: 25px;
+}
+
+.screens .row > div > div p {
+	margin-top: 21px;
+}
+
+.screens .row > div:nth-of-type(3) > div,
+.screens .row > div:last-of-type > div {
+	padding-top: 18%;
 }
 
 .changelog {
 	background-color: #ffffff;
 }
 
+.changelog #log {
+	margin-top: 100px;
+	margin-bottom: 100px;
+	position: relative;
+	min-height: 1px;
+	padding-left: 0;
+	padding-right: 0;
+	text-align: center;
+	overflow: hidden;
+}
+
+.changelog #log h1 {
+	padding-bottom: 50px;
+}
+
 .changelog pre {
+	overflow: auto;
+	text-align: left;
 	background-color: #f1f4f4;
+	height: 500px;
+	font-family: "Monosten A";
+	line-height: 18px;
+	font-size: 13px;
+	font-size: 1.3rem;
 }
 
 .about-header {
@@ -2852,11 +2882,7 @@ header[role=banner] span.icon-updroid-logo {
 	background-position: left 220px;
 }
 
-.commander-info .row .left {
-	padding-top: 200px;
-}
-
-.commander-info .row .right {
+.commander-info .row > div {
 	padding-top: 220px;
 }
 
@@ -3496,13 +3522,13 @@ nav > div .social-nav {
 	width: 32%;
 }
 
-.commander-info .row .left {
-	float: left;
-	width: 75%;
+.commander-info .row > div {
+	padding-top: 260px;
 }
 
 .commander-info .row .left {
-	padding-top: 240px;
+	float: left;
+	width: 75%;
 }
 
 .commander-info .row .left > div:first-of-type {
@@ -3528,10 +3554,6 @@ nav > div .social-nav {
 	width: 25%;
 }
 
-.commander-info .row .right {
-	padding-top: 260px;
-}
-
 .screens .row > div {
 	margin-left: 16.66666667%;
 }
@@ -3546,9 +3568,18 @@ nav > div .social-nav {
 	width: 50%;
 }
 
-.screens .row > div p {
+.screens .row > div > div {
 	float: left;
 	width: 50%;
+}
+
+.changelog #log {
+	margin-left: 8.33333333%;
+}
+
+.changelog #log {
+	float: left;
+	width: 83.33333333%;
 }
 
 .about-header {
@@ -4198,11 +4229,7 @@ header[role=banner] span.icon-updroid-logo {
 
 @media (min-width: 1450px) {
 
-.commander-info .row .left {
-	padding-top: 310px;
-}
-
-.commander-info .row .right {
+.commander-info .row > div {
 	padding-top: 330px;
 }
 

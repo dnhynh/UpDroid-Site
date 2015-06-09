@@ -808,6 +808,20 @@ header[role=banner] {
     .row {
         position: relative;
 
+        >div {
+            @media (min-width: @screen-sm-min) {
+                padding-top: 220px;
+            }
+
+            @media (min-width: @screen-md-min) {
+                padding-top: 260px;
+            }
+
+            @media (min-width: 1450px) {
+                padding-top: 330px;
+            }
+        }
+
 
         .left {
             padding-left: 30px !important;
@@ -816,18 +830,6 @@ header[role=banner] {
             a {
                 white-space: nowrap;
                 color: #ff2919;
-            }
-
-            @media (min-width: @screen-sm-min) {
-                padding-top: 200px;
-            }
-
-            @media (min-width: @screen-md-min) {
-                padding-top: 240px;
-            }
-
-            @media (min-width: 1450px) {
-                padding-top: 310px;
             }
 
             >div {
@@ -852,18 +854,6 @@ header[role=banner] {
         .right {
             .make-md-column(3);
 
-            @media (min-width: @screen-sm-min) {
-                padding-top: 220px;
-            }
-
-            @media (min-width: @screen-md-min) {
-                padding-top: 260px;
-            }
-
-            @media (min-width: 1450px) {
-                padding-top: 330px;
-            }
-
             a {
                 margin-top: 21px;
                 &:hover {
@@ -875,10 +865,8 @@ header[role=banner] {
 }
 
 .screens {
+
     background-color: #ffffff;
-    > div {
-        padding: 100px 0;
-    }
 
     h3 {
         .font-size(1.9);
@@ -890,11 +878,23 @@ header[role=banner] {
         >div {
             .make-md-column-offset(2);
             .make-md-column(8);
+            margin-top: 120px;
             img {
                 .make-md-column(6);
+                padding: 25px;
             }
-            p {
+            >div {
                 .make-md-column(6);   
+                padding: 25px;
+
+                p {
+                    margin-top: 21px;
+                }
+            }
+            &:nth-of-type(3), &:last-of-type {
+                > div {
+                    padding-top: 18%;
+                }        
             }
         }
     }
@@ -902,8 +902,25 @@ header[role=banner] {
 
 .changelog {
     background-color: #ffffff;
+    #log {
+        h1 {
+            padding-bottom: 50px;
+        }
+        margin-top: 100px;
+        margin-bottom: 100px;
+        .make-md-column-offset(1);
+        .make-md-column(10);
+        text-align: center;
+        overflow: hidden;
+    }
     pre {
+        overflow: auto;
+        text-align: left;
         background-color: #f1f4f4;
+        height: 500px;
+        .font-monosten-a();
+        line-height: 18px;
+        .font-size(1.3);
     }
 }
 
