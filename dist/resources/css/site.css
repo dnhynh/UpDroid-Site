@@ -1948,10 +1948,6 @@ header[role=banner].inactive span {
 	margin-top: 21px;
 }
 
-.commander-info .version {
-	color: #a11;
-}
-
 .commander-info .container {
 	position: relative;
 }
