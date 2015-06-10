@@ -1998,6 +1998,58 @@ header[role=banner].inactive span {
 	cursor: pointer;
 }
 
+#instructions {
+	height: 0px;
+	overflow: hidden;
+	transition: height 500ms ease;
+	-moz-transition: height 500ms ease;
+	-ms-transition: height 500ms ease;
+	-o-transition: height 500ms ease;
+	-webkit-transition: height 500ms ease;
+	margin: 20px 20px;
+	position: relative;
+	min-height: 1px;
+	padding-left: 0;
+	padding-right: 0;
+}
+
+#instructions code {
+	font-size: 13px;
+	font-size: 1.3rem;
+	color: black;
+	font-family: "Courier New";
+	line-height: 18px;
+}
+
+#instructions code .prompt {
+	-moz-user-select: -moz-none;
+	-khtml-user-select: none;
+	-webkit-user-select: none;
+	color: #008080;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+#instructions code .sudo {
+	color: #30a;
+}
+
+#instructions code .flag {
+	color: #00c;
+}
+
+#instructions code .comment {
+	color: #a50;
+}
+
+#instructions code .quote {
+	color: #a11;
+}
+
+.expanded {
+	height: 600px !important;
+}
+
 .screens {
 	background-color: #ffffff;
 }
@@ -3548,6 +3600,15 @@ nav > div .social-nav {
 .commander-info .row .right {
 	float: left;
 	width: 25%;
+}
+
+#instructions {
+	float: left;
+	width: 66.66666667%;
+}
+
+#instructions {
+	margin-left: 16.66666667%;
 }
 
 .screens .row > div {

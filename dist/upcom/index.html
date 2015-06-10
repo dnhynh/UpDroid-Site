@@ -73,14 +73,49 @@
                         <div>
                             <h3>UpCom α</h3>
                             <p>As UpCom is currently in its Alpha phase, please expect issues and help make us aware of them through its feedback button.<br><br>Happy Programming.</p>
-                            <a href="#install" class="btn btn-red">Install Alpha</a>
+                            <a id="install" href="#instructions" class="btn btn-red">Install Alpha</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div id="install">
-            
+        <div id="instructions">
+            <code>
+            <code>
+                <span class='prompt'>$ </span><span class='sudo'>wget</span> <span class='flag'>-qO</span> - http://packages.updroid.com/Release.key | <span class='sudo'>sudo</span> apt-key add -   
+                <br><br>
+                <span class='prompt'>$ </span><span class='sudo'>sudo</span> sh <span class='flag'>-c</span> 'echo <span class='quote'>"deb http://packages.updroid.com/ubuntu/ trusty main"</span> > /etc/apt/sources.list.d/updroid.list'
+                <br><br>
+                <span class='prompt'>$ </span><span class='sudo'>sudo</span> apt-get update
+                <br><br>
+                <span class='prompt'>$ </span><span class='sudo'>sudo</span> apt-get install cmdr
+                <br><br>
+                <h3>In order to update run: </h3>
+                <br>
+                <span class='comment'># Expect updates to be released weekly, more or less. </span>
+                <br>
+                <span class='prompt'>$ </span><span class='sudo'>sudo</span> apt-get update
+                <br>
+                <span class='prompt'>$ </span><span class='sudo'>sudo</span> apt-get install <span class='flag'>--only-upgrade</span> cmdr
+                <br><br>   
+                <h3>Usage</h3>
+                <br>
+                <span class='comment'># Set the ROS source folder</span>
+                <br>
+                <span class='prompt'>$ </span>. /opt/ros/indigo/setup.bash
+                <br>
+                <span class='comment'># Start UpCom</span>
+                <br>
+                <span class='prompt'>$ </span><span class='sudo'>cmdr</span> gui
+                <br><br>
+                <h3>To access UpCom: tune browser to <span class='quote'>localhost:12060</span></h3>
+                <br>
+                <span class='comment'># Note: Raspberry Pi Users need to install ffmpeg >= 2.6.2 before using UpCom</span>
+                <br><br>
+                <span class='comment'># Because UpCom is still in alpha, it currently doesn't have any built in 
+                security tools. As such, please run UpCom from within a closed network.</span>
+            </code>
+            </code>
         </div>
 
         <section class="screens">
