@@ -407,7 +407,3 @@ $.fn.scrollView = function () {
     }, 500);
   });
 }
-
-function first() {
-
-}

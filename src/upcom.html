@@ -20,11 +20,11 @@
                         <div>
                             <h3>Robotics<br>Development<br>Simplified</h3>
                             <p>UpDroid Commander (UpCom) is a browser-based IDE for robotics software development.</p>  
-                            <p>It can be installed on an Ubuntu 14.04 x86_64 PC that is connected to robotics hardware (sensors, actuators) alongside ROS (Robot Operating System).</p>
-                            <p>You can install ROS <a href="#">here -</a></p>
+                            <span class="hide-xs"><p>It can be installed on an Ubuntu 14.04 x86_64 PC that is connected to robotics hardware (sensors, actuators) alongside ROS (Robot Operating System).</p>
+                            <p>You can install ROS <a href="#">here -</a></p></span>
                         </div>
                         <div>
-                            <p>UpCom is on version <span class='version'>0.4.8</span><br><br>It was tested on<br>------<br>Google Chrome<br><span class='version'>42.0.2311.90</span><br>------<br>Chromium<br><span class='version'>42.0.2311.90</span><br>------</p> 
+                            <span class="hide-xs"><p>UpCom is on version <span class='version'>0.4.8</span><br><br>It was tested on<br>------<br>Google Chrome<br><span class='version'>42.0.2311.90</span><br>------<br>Chromium<br><span class='version'>42.0.2311.90</span><br>------</p></span> 
                             <p>UpCom features a multi-tabbed interface with several built-in tabs for robotics software development. Soon you will be able to add user created tabs as well.</p> 
                             <p>The built-in tabs currently available are: Editor, Console, and Camera-feed viewer. Additionally, UpCom features a file explorer to easily view your development workspace with drag-and-drop file management.</p>   
                         </div>
@@ -34,6 +34,7 @@
                             <h3>UpCom α</h3>
                             <p>As UpCom is currently in its Alpha phase, please expect issues and help make us aware of them through its feedback button.<br><br>Happy Programming.</p>
                             <a id="install" class="btn btn-red">Install Alpha</a>
+                            <a id="dummy" class="btn btn-red">Available on Desktop</a>
                         </div>
                     </div>
                 </div>
@@ -65,8 +66,8 @@
                         </div>
 
                         <div>
-                            <img src="../resources/images/screens/CommanderButtons.png" />
-                            <div>
+                            <img id="controls-switch" src="../resources/images/screens/CommanderButtons.png" />
+                            <div id='controls'>
                                 <h3>Controls</h3>                        
                                 <p>Helpful control buttons allow you to clean and build your workspace with a single click. Another lets you run ROS launch files and nodes through a simple menu. A share button currently integrated with Git can automatically commit your unstaged package changes and push them to the preconfigured remote repository.</p>    
                             </div>
@@ -81,8 +82,8 @@
                         </div>
 
                         <div>
-                            <img src="../resources/images/screens/workspaces.png" />
-                            <div>
+                            <a id="tidy-switch" href="../resources/images/screens/workspaces.png" data-lightbox="workspaces.png" data-title="Workspace Menu"><img src="../resources/images/screens/workspaces.png" /></a>
+                            <div id='tidy'>
                                 <h3>Tidy</h3>
                                 <p>Have more than one project? Easily organize them by adding and removing workspaces on the fly.</p>
                             </div>
@@ -128,6 +129,29 @@
         }
     });
 });
+</script>
+<script type="text/javascript">
+    $(document).ready(function(){
+    if($(window).width()< 768)
+        {
+            $("#tidy").remove().insertBefore($("#tidy-switch"));
+            $("#controls").remove().insertBefore($("#controls-switch"));
+        }
+});
+</script>
+<script>
+    $(document).load($(window).bind("resize", listenWidth));
+
+    function listenWidth( e ) {
+        if($(window).width()<768)
+            {
+                $("#tidy").remove().insertBefore($("#tidy-switch"));
+                $("#controls").remove().insertBefore($("#controls-switch"));
+            } else {
+                $("#tidy").remove().insertAfter($("#tidy-switch"));
+                $("#controls").remove().insertAfter($("#controls-switch"));
+            }
+        }
 </script>
 <script>window.jQuery || document.write('<script src="/resources/js/jquery-1.11.1.min.js">\x3C/script>')</script>
 <script type="text/javascript" src="/resources/js/site.min.js"></script>

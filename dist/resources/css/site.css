@@ -1929,11 +1929,16 @@ header[role=banner].inactive span {
 .commander-info {
 	background-color: #f1f4f4;
 	width: 100%;
-	padding-bottom: 150px;
+	padding-bottom: 50px;
+}
+
+.commander-info .hide-xs {
+	display: none !important;
+	visibility: hidden !important;
 }
 
 .commander-info h1 {
-	padding-top: 160px;
+	padding-top: 100px;
 	margin-left: 30px;
 	position: relative;
 	min-height: 1px;
@@ -1994,12 +1999,16 @@ header[role=banner].inactive span {
 	padding-right: 0;
 }
 
-.commander-info .row .right a {
+.commander-info .row .right #install {
 	margin-top: 21px;
 }
 
-.commander-info .row .right a:hover {
+.commander-info .row .right #install:hover {
 	cursor: pointer;
+}
+
+.commander-info .row .right #dummy {
+	margin-top: 21px;
 }
 
 #instructions {
@@ -2083,13 +2092,14 @@ header[role=banner].inactive span {
 }
 
 .screens .row > div {
+	margin-left: 8.33333333%;
 	float: left;
-	width: 100%;
+	width: 83.33333333%;
 	position: relative;
 	min-height: 1px;
 	padding-left: 0;
 	padding-right: 0;
-	margin-top: 120px;
+	margin-top: 50px;
 }
 
 .screens .row > div img {
@@ -2958,6 +2968,11 @@ header[role=banner] span.icon-updroid-logo {
 	background-size: 100%;
 	background-repeat: no-repeat;
 	background-position: left 220px;
+	padding-bottom: 150px;
+}
+
+.commander-info h1 {
+	padding-top: 160px;
 }
 
 .commander-info h3 {
@@ -2970,6 +2985,11 @@ header[role=banner] span.icon-updroid-logo {
 
 .commander-info .row .right {
 	padding-top: 0;
+}
+
+.commander-info .row .right #dummy {
+	display: none !important;
+	visibility: hidden !important;
 }
 
 .expanded > div {
@@ -2986,6 +3006,10 @@ header[role=banner] span.icon-updroid-logo {
 	margin-left: 8.33333333%;
 }
 
+.screens .row > div {
+	margin-top: 120px;
+}
+
 .screens .row > div img {
 	float: left;
 	width: 50%;
@@ -2999,6 +3023,15 @@ header[role=banner] span.icon-updroid-logo {
 .screens .row > div:nth-of-type(3) > div,
 .screens .row > div:last-of-type > div {
 	padding-top: 15%;
+}
+
+.changelog #log {
+	margin-left: 8.33333333%;
+}
+
+.changelog #log {
+	float: left;
+	width: 83.33333333%;
 }
 
 .about-header {
@@ -3675,7 +3708,7 @@ nav > div .social-nav {
 }
 
 .commander-info .row .right {
-	padding: 260px 30px;
+	padding: 260px 30px 0  30px;
 }
 
 #instructions .row > div {
@@ -4420,7 +4453,7 @@ td.visible-xs {
 	display: none !important;
 }
 
-.commander-info .row .right a {
+.commander-info .row .right #install {
 	display: none !important;
 }
 
