@@ -1935,9 +1935,14 @@ header[role=banner].inactive span {
 .commander-info h1 {
 	padding-top: 160px;
 	margin-left: 30px;
+	position: relative;
+	min-height: 1px;
+	padding-left: 0;
+	padding-right: 0;
 }
 
 .commander-info h3 {
+	margin-top: 21px;
 	font-size: 19px;
 	font-size: 1.9rem;
 	line-height: 25px;
@@ -1957,7 +1962,6 @@ header[role=banner].inactive span {
 }
 
 .commander-info .row .left {
-	padding-left: 30px !important;
 	position: relative;
 	min-height: 1px;
 	padding-left: 0;
@@ -2001,7 +2005,7 @@ header[role=banner].inactive span {
 #instructions {
 	height: 0px;
 	overflow: hidden;
-	background-color: #fff; /** alternate color: #e4e4e4 */
+	background-color: #e4e4e4; /** alternate color: #e4e4e4 */
 	transition: height 1000ms ease, padding 1000ms ease;
 	-moz-transition: height 1000ms ease, padding 1000ms ease;
 	-ms-transition: height 1000ms ease, padding 1000ms ease;
@@ -2057,7 +2061,14 @@ header[role=banner].inactive span {
 
 .expanded {
 	height: 750px !important;
-	padding: 50px 0;
+	padding: 50px 50px;
+}
+
+.expanded > div {
+	position: relative;
+	min-height: 1px;
+	padding-left: 0;
+	padding-right: 0;
 }
 
 .screens {
@@ -2072,6 +2083,8 @@ header[role=banner].inactive span {
 }
 
 .screens .row > div {
+	float: left;
+	width: 100%;
 	position: relative;
 	min-height: 1px;
 	padding-left: 0;
@@ -2080,6 +2093,8 @@ header[role=banner].inactive span {
 }
 
 .screens .row > div img {
+	float: left;
+	width: 100%;
 	position: relative;
 	min-height: 1px;
 	padding-left: 0;
@@ -2088,6 +2103,8 @@ header[role=banner].inactive span {
 }
 
 .screens .row > div > div {
+	float: left;
+	width: 100%;
 	position: relative;
 	min-height: 1px;
 	padding-left: 0;
@@ -2097,11 +2114,6 @@ header[role=banner].inactive span {
 
 .screens .row > div > div p {
 	margin-top: 21px;
-}
-
-.screens .row > div:nth-of-type(3) > div,
-.screens .row > div:last-of-type > div {
-	padding-top: 18%;
 }
 
 .changelog {
@@ -2431,6 +2443,14 @@ footer[role=contentinfo] p {
 
 .robotics .row > div:last-of-type p {
 	width: 60%;
+}
+
+.commander-info .row .left {
+	padding: 0 30px;
+}
+
+.commander-info .row .right {
+	padding: 0 30px;
 }
 
 }
@@ -2940,8 +2960,45 @@ header[role=banner] span.icon-updroid-logo {
 	background-position: left 220px;
 }
 
-.commander-info .row > div {
-	padding-top: 220px;
+.commander-info h3 {
+	margin-top: 0;
+}
+
+.commander-info .row .left {
+	padding: 220px 30px 30px 30px;
+}
+
+.commander-info .row .right {
+	padding-top: 0;
+}
+
+.expanded > div {
+	float: left;
+	width: 100%;
+}
+
+.screens .row > div {
+	float: left;
+	width: 83.33333333%;
+}
+
+.screens .row > div {
+	margin-left: 8.33333333%;
+}
+
+.screens .row > div img {
+	float: left;
+	width: 50%;
+}
+
+.screens .row > div > div {
+	float: left;
+	width: 50%;
+}
+
+.screens .row > div:nth-of-type(3) > div,
+.screens .row > div:last-of-type > div {
+	padding-top: 15%;
 }
 
 .about-header {
@@ -3580,13 +3637,18 @@ nav > div .social-nav {
 	width: 32%;
 }
 
-.commander-info .row > div {
-	padding-top: 260px;
+.commander-info h1 {
+	float: left;
+	width: 100%;
 }
 
 .commander-info .row .left {
 	float: left;
 	width: 75%;
+}
+
+.commander-info .row .left {
+	padding: 260px 30px 0 30px;
 }
 
 .commander-info .row .left > div:first-of-type {
@@ -3613,7 +3675,7 @@ nav > div .social-nav {
 }
 
 .commander-info .row .right {
-	padding-right: 30px;
+	padding: 260px 30px;
 }
 
 #instructions .row > div {
@@ -3642,6 +3704,11 @@ nav > div .social-nav {
 .screens .row > div > div {
 	float: left;
 	width: 50%;
+}
+
+.screens .row > div:nth-of-type(3) > div,
+.screens .row > div:last-of-type > div {
+	padding-top: 18%;
 }
 
 .changelog #log {
@@ -4300,8 +4367,12 @@ header[role=banner] span.icon-updroid-logo {
 
 @media (min-width: 1450px) {
 
-.commander-info .row > div {
-	padding-top: 330px;
+.commander-info .row .left {
+	padding: 330px 30px;
+}
+
+.commander-info .row .right {
+	padding: 330px 30px;
 }
 
 }
@@ -4346,6 +4417,18 @@ td.visible-xs {
 }
 
 .robotics .row > div:nth-of-type(2) {
+	display: none !important;
+}
+
+.commander-info .row .right a {
+	display: none !important;
+}
+
+.expanded {
+	display: none !important;
+}
+
+.changelog {
 	display: none !important;
 }
 
