@@ -73,7 +73,7 @@
                         <div>
                             <h3>UpCom α</h3>
                             <p>As UpCom is currently in its Alpha phase, please expect issues and help make us aware of them through its feedback button.<br><br>Happy Programming.</p>
-                            <a id="install" href="#instructions" class="btn btn-red">Install Alpha</a>
+                            <a id="install" class="btn btn-red">Install Alpha</a>
                         </div>
                     </div>
                 </div>
@@ -82,6 +82,8 @@
         <div id="instructions">
             <code>
             <code>
+                <h3>In order to install UpCom run the following commands in your console:</h3>
+                <br>
                 <span class='prompt'>$ </span><span class='sudo'>wget</span> <span class='flag'>-qO</span> - http://packages.updroid.com/Release.key | <span class='sudo'>sudo</span> apt-key add -   
                 <br><br>
                 <span class='prompt'>$ </span><span class='sudo'>sudo</span> sh <span class='flag'>-c</span> 'echo <span class='quote'>"deb http://packages.updroid.com/ubuntu/ trusty main"</span> > /etc/apt/sources.list.d/updroid.list'
@@ -325,15 +327,23 @@
 
 <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 <script>
+    var instructions = document.getElementById( 'instructions' );
+    
     document.getElementById( 'install' ).addEventListener( 'click', function() {
     ga('send', 'event', 'Downloads', 'Commander Download');
-    var instructions = document.getElementById( 'instructions' );
-    if( instructions.className == 'expanded' ) {
-        instructions.className = '';
-    } else {
-        instructions.className = 'expanded';
-    };
-} );
+    $(instructions).scrollView();
+    $(window).scroll(function() {
+        var height = $(window).scrollTop();
+
+        if (height >= $(instructions).offset().top - 300) {
+            instructions.className = 'expanded';
+        }
+
+        else {
+            instructions.className = '';
+        }
+    });
+});
 </script>
 <script>window.jQuery || document.write('<script src="/resources/js/jquery-1.11.1.min.js">\x3C/script>')</script>
 <script type="text/javascript" src="/resources/js/site.min.js"></script>

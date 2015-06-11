@@ -2001,11 +2001,11 @@ header[role=banner].inactive span {
 #instructions {
 	height: 0px;
 	overflow: hidden;
-	transition: height 500ms ease;
-	-moz-transition: height 500ms ease;
-	-ms-transition: height 500ms ease;
-	-o-transition: height 500ms ease;
-	-webkit-transition: height 500ms ease;
+	transition: height 1000ms ease;
+	-moz-transition: height 1000ms ease;
+	-ms-transition: height 1000ms ease;
+	-o-transition: height 1000ms ease;
+	-webkit-transition: height 1000ms ease;
 	margin: 20px 20px;
 	position: relative;
 	min-height: 1px;
@@ -3600,6 +3600,10 @@ nav > div .social-nav {
 .commander-info .row .right {
 	float: left;
 	width: 25%;
+}
+
+.commander-info .row .right {
+	padding-right: 30px;
 }
 
 #instructions {

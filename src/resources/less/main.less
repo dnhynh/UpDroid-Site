@@ -849,6 +849,9 @@ header[role=banner] {
 
         .right {
             .make-md-column(3);
+            @media (min-width: @screen-md-min) {
+                padding-right: 30px;
+            }
 
             a {
                 margin-top: 21px;
@@ -864,11 +867,11 @@ header[role=banner] {
 #instructions {
     height: 0px;    
     overflow: hidden;
-    transition:             height 500ms ease;
-        -moz-transition:    height 500ms ease;
-        -ms-transition:     height 500ms ease;
-        -o-transition:      height 500ms ease;
-        -webkit-transition: height 500ms ease;
+    transition:             height 1000ms ease;
+        -moz-transition:    height 1000ms ease;
+        -ms-transition:     height 1000ms ease;
+        -o-transition:      height 1000ms ease;
+        -webkit-transition: height 1000ms ease;
     margin: 20px 20px;
     .make-md-column(8);
     .make-md-column-offset(2);
