@@ -1932,11 +1932,6 @@ header[role=banner].inactive span {
 	padding-bottom: 50px;
 }
 
-.commander-info .hide-xs {
-	display: none !important;
-	visibility: hidden !important;
-}
-
 .commander-info h1 {
 	padding-top: 100px;
 	margin-left: 30px;
@@ -4450,6 +4445,10 @@ td.visible-xs {
 }
 
 .robotics .row > div:nth-of-type(2) {
+	display: none !important;
+}
+
+.commander-info .hide-xs {
 	display: none !important;
 }
 
