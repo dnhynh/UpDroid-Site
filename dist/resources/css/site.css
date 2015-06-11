@@ -2001,23 +2001,32 @@ header[role=banner].inactive span {
 #instructions {
 	height: 0px;
 	overflow: hidden;
-	transition: height 1000ms ease;
-	-moz-transition: height 1000ms ease;
-	-ms-transition: height 1000ms ease;
-	-o-transition: height 1000ms ease;
-	-webkit-transition: height 1000ms ease;
-	margin: 20px 20px;
+	background-color: #fff; /** alternate color: #e4e4e4 */
+	transition: height 1000ms ease, padding 1000ms ease;
+	-moz-transition: height 1000ms ease, padding 1000ms ease;
+	-ms-transition: height 1000ms ease, padding 1000ms ease;
+	-o-transition: height 1000ms ease, padding 1000ms ease;
+	-webkit-transition: height 1000ms ease, padding 1000ms ease;
+}
+
+#instructions .row > div {
+	padding: 20px 20px !important;
+	background-color: #f1f4f4;
 	position: relative;
 	min-height: 1px;
 	padding-left: 0;
 	padding-right: 0;
 }
 
+#instructions .row > div h1 {
+	margin-bottom: 20px;
+}
+
 #instructions code {
 	font-size: 13px;
 	font-size: 1.3rem;
 	color: black;
-	font-family: "Courier New";
+	font-family: "Monosten A";
 	line-height: 18px;
 }
 
@@ -2047,7 +2056,8 @@ header[role=banner].inactive span {
 }
 
 .expanded {
-	height: 600px !important;
+	height: 750px !important;
+	padding: 50px 0;
 }
 
 .screens {
@@ -3606,13 +3616,13 @@ nav > div .social-nav {
 	padding-right: 30px;
 }
 
-#instructions {
+#instructions .row > div {
 	float: left;
-	width: 66.66666667%;
+	width: 83.33333333%;
 }
 
-#instructions {
-	margin-left: 16.66666667%;
+#instructions .row > div {
+	margin-left: 8.33333333%;
 }
 
 .screens .row > div {
