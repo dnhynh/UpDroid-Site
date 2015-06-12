@@ -4413,7 +4413,7 @@ header[role=banner] span.icon-upcom-logo {
 @media (min-width: 1450px) {
 
 .commander-info .row .left {
-	padding: 330px 30px;
+	padding: 330px 30px 0 30px;
 }
 
 .commander-info .row .right {
