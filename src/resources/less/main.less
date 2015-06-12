@@ -202,7 +202,24 @@ header[role=banner] {
             }
         }
 
+        img {
+            width: 80px;
+        }
+
         &.icon-updroid-logo {
+            color: @icon-color;
+            right: 21px;
+
+            @media (min-width: @screen-sm-min) {
+                right: 28px;
+            }
+
+            @media (min-width: @screen-lg-min) {
+                right: 49px;
+            }
+        }
+
+        &.icon-upcom-logo {
             color: @icon-color;
             right: 21px;
 

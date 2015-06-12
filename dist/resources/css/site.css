@@ -1608,7 +1608,16 @@ html.sb-active header[role=banner] span.icon-burger:before {
 	content: "\e602";
 }
 
+header[role=banner] span img {
+	width: 80px;
+}
+
 header[role=banner] span.icon-updroid-logo {
+	color: #0c0c0c;
+	right: 21px;
+}
+
+header[role=banner] span.icon-upcom-logo {
 	color: #0c0c0c;
 	right: 21px;
 }
@@ -2790,6 +2799,10 @@ header[role=banner] span.icon-burger {
 }
 
 header[role=banner] span.icon-updroid-logo {
+	right: 28px;
+}
+
+header[role=banner] span.icon-upcom-logo {
 	right: 28px;
 }
 
@@ -4274,6 +4287,10 @@ header[role=banner] span.icon-burger {
 }
 
 header[role=banner] span.icon-updroid-logo {
+	right: 49px;
+}
+
+header[role=banner] span.icon-upcom-logo {
 	right: 49px;
 }
 
