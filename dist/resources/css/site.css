@@ -2003,6 +2003,10 @@ header[role=banner].inactive span {
 	padding-right: 0;
 }
 
+.commander-info .row .right a {
+	color: #ff2919;
+}
+
 .commander-info .row .right #install {
 	margin-top: 21px;
 }
