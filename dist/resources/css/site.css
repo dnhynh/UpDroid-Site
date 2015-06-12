@@ -2009,6 +2009,7 @@ header[role=banner].inactive span {
 
 .commander-info .row .right #install {
 	margin-top: 21px;
+	color: #fff;
 }
 
 .commander-info .row .right #install:hover {
@@ -2016,6 +2017,7 @@ header[role=banner].inactive span {
 }
 
 .commander-info .row .right #dummy {
+	color: #fff;
 	margin-top: 21px;
 }
 
