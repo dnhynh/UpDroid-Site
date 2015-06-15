@@ -4423,7 +4423,7 @@ header[role=banner] span.icon-upcom-logo {
 }
 
 .commander-info .row .right {
-	padding: 330px 30px;
+	padding: 330px 30px 0 30px;
 }
 
 }
