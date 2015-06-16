@@ -897,16 +897,17 @@ header[role=banner] {
             }
 
             a {
-                color: #ff2919;
+                &:hover {
+                    cursor: pointer;
+                }
+                &:first-child{
+                    color: #ff2919; 
+                }
             }
 
             #install {
                 margin-top: 21px;
-                color: #fff;
                 .hidden-xs;
-                &:hover {
-                    cursor: pointer;
-                }
             }
 
             #dummy {
@@ -935,8 +936,19 @@ header[role=banner] {
         > div {
             padding: 20px 20px !important;
             background-color: #f1f4f4;
+            position: relative;
             .make-md-column(10);
             .make-md-column-offset(1);
+
+            .icon-cross {
+                .font-size(3.4);
+                position: absolute;
+                top: 21px;
+                right: 21px;
+                cursor: pointer;
+                color:  #0c0c0c;
+            }
+
             h1 {
                 margin-bottom: 20px;
             }

@@ -2003,17 +2003,16 @@ header[role=banner].inactive span {
 	padding-right: 0;
 }
 
-.commander-info .row .right a {
+.commander-info .row .right a:hover {
+	cursor: pointer;
+}
+
+.commander-info .row .right a:first-child {
 	color: #ff2919;
 }
 
 .commander-info .row .right #install {
 	margin-top: 21px;
-	color: #fff;
-}
-
-.commander-info .row .right #install:hover {
-	cursor: pointer;
 }
 
 .commander-info .row .right #dummy {
@@ -2039,6 +2038,16 @@ header[role=banner].inactive span {
 	min-height: 1px;
 	padding-left: 0;
 	padding-right: 0;
+}
+
+#instructions .row > div .icon-cross {
+	font-size: 34px;
+	font-size: 3.4rem;
+	position: absolute;
+	top: 21px;
+	right: 21px;
+	cursor: pointer;
+	color: #0c0c0c;
 }
 
 #instructions .row > div h1 {

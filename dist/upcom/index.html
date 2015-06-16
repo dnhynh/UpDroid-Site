@@ -86,6 +86,7 @@
                 <div class="row">
                     <div>
                         <h1> To install UpCom run in console: </h1>
+                        <span id="close-instructions" class="icon-cross"></span>
                         <code>
                     <code>
                         <br>
@@ -334,48 +335,13 @@
 </div>
 
 <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
-<script>
-    var instructions = document.getElementById( 'instructions' );
-    
-    document.getElementById( 'install' ).addEventListener( 'click', function() {
-    ga('send', 'event', 'Downloads', 'Commander Download');
-    $(instructions).scrollView();
-    $(window).scroll(function() {
-        var height = $(window).scrollTop();
-
-        if (height >= $(instructions).offset().top - 300) {
-            instructions.className = 'expanded';
-        }
-
-        else {
-            instructions.className = '';
-        }
-    });
-});
-
-    $(document).ready(function(){
-    if($(window).width()< 768)
-        {
-            $("#tidy").remove().insertBefore($("#tidy-switch"));
-            $("#controls").remove().insertBefore($("#controls-switch"));
-        }
-});
-
-    $(document).load($(window).bind("resize", listenWidth));
-
-    function listenWidth( e ) {
-        if($(window).width()<768)
-            {
-                $("#tidy").remove().insertBefore($("#tidy-switch"));
-                $("#controls").remove().insertBefore($("#controls-switch"));
-            } else {
-                $("#tidy").remove().insertAfter($("#tidy-switch"));
-                $("#controls").remove().insertAfter($("#controls-switch"));
-            }
-        }
-</script>
 <script>window.jQuery || document.write('<script src="/resources/js/jquery-1.11.1.min.js">\x3C/script>')</script>
 <script type="text/javascript" src="/resources/js/site.min.js"></script>
 <script src="js/lightbox.min.js"></script>
+<script>
+    $(document).ready(function () {
+        UpCom.Init();
+    });
+</script>
 </body>
 </html>

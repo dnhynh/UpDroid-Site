@@ -34,7 +34,7 @@ var Global =
         var $header = $("#header");
 
         $(window).scroll(function () {
-            // Animate in the back to top arrow when the scrollbar is at the bottom of the page (offset 20 pixels)
+            // Remove header icons after scroll passes 20 px
             if ($(this).scrollTop() >= 20) {
                 $header.addClass("inactive");
             }
@@ -135,6 +135,65 @@ var Contact =
     }
 };
 
+/*****************************************************/
+/*                   UpCom                           */
+/*****************************************************/
+
+var UpCom = 
+{
+    "Init": function () {
+        this.installClick();
+        this.loadView();
+        this.resizeListen();
+    },
+
+    "installClick": function () {
+        var instructions = document.getElementById( 'instructions' );
+    
+        document.getElementById( 'install' ).addEventListener( 'click', function() {
+            ga('send', 'event', 'Downloads', 'Commander Download');
+            $(instructions).scrollView();
+            setTimeout(function () {
+                var height = $(window).scrollTop();
+
+                if (height >= $(instructions).offset().top - 300) {
+                    instructions.className = 'expanded';
+                }
+            }, 500);
+            
+            $("#close-instructions").click(function() {
+                instructions.className = '';
+            });
+        });
+    },
+
+    "loadView": function () {
+        $(document).ready(function(){
+        if($(window).width()< 768)
+            {
+                $("#tidy").remove().insertBefore($("#tidy-switch"));
+                $("#controls").remove().insertBefore($("#controls-switch"));
+            }
+        });
+    },
+
+    "resizeListen": function () {
+        $(document).load($(window).bind("resize", listenWidth));
+
+        function listenWidth( e ) {
+        if($(window).width()<768)
+            {
+                $("#tidy").remove().insertBefore($("#tidy-switch"));
+                $("#controls").remove().insertBefore($("#controls-switch"));
+            } else {
+                $("#tidy").remove().insertAfter($("#tidy-switch"));
+                $("#controls").remove().insertAfter($("#controls-switch"));
+            }
+        }
+    }
+};
+
 $(document).ready(function () {
     Global.Init();
 });
+
