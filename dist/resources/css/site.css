@@ -2032,7 +2032,7 @@ header[role=banner].inactive span {
 }
 
 #instructions .row > div {
-	padding: 20px 20px !important;
+	padding: 40px 35px !important;
 	background-color: #f1f4f4;
 	position: relative;
 	min-height: 1px;
@@ -2044,8 +2044,8 @@ header[role=banner].inactive span {
 	font-size: 34px;
 	font-size: 3.4rem;
 	position: absolute;
-	top: 21px;
-	right: 21px;
+	top: 40px;
+	right: 35px;
 	cursor: pointer;
 	color: #0c0c0c;
 }
