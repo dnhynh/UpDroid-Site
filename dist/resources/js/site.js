@@ -512,7 +512,7 @@ var Homepage =
     "Cycle": function () {
         // Cycle robot image set on click of image (non touch devices only)
         $("html.no-touch #sb-site").on("click", "div.images", function () {
-            $(this).find(".cycle-slideshow").cycle("next");
+            $("div.images").find(".cycle-slideshow").cycle("next");
         });
 
         // Stop the above click event happening on the pager links
