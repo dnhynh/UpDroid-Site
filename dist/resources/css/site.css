@@ -2544,6 +2544,10 @@ footer[role=contentinfo] p {
 	width: 60%;
 }
 
+.up1 .container {
+	padding: 0 30px;
+}
+
 .up1 > div {
 	padding: 0 30px;
 }
@@ -3780,6 +3784,10 @@ nav > div .social-nav {
 	right: 21px;
 	top: 147px;
 	width: 32%;
+}
+
+.up1 .container {
+	padding: 0 0 100px 0;
 }
 
 .up1 p {

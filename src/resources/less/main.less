@@ -791,6 +791,14 @@ header[role=banner] {
     .container {
         position: relative;
         padding-bottom: 100px;
+
+        @media (min-width: @screen-large-mobile-min) {
+            padding: 0 30px;
+        }
+
+        @media (min-width: @screen-md-min) {
+            padding: 0 0 100px 0;
+        }
     }
     .row {
         position: relative;
