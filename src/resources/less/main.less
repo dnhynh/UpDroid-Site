@@ -795,31 +795,106 @@ header[role=banner] {
     .row {
         position: relative;
         margin-top: 150px;
-        padding: 0 50px;
-    }
-    #left {
-        .make-md-column(6);
-        >div {
-            &:first-of-type {
-                .make-md-column(6);
-            }
-            &:last-of-type {
-                .make-md-column(6);
-            }
-        }
     }
 
-    h1 {
-        padding-top: 21px;
-    }
 
     h3 {
-        padding-top: 5px;
         color: @caption;
     }
 
     p {
-        padding: 21px 21px 0 0;
+        padding-top: 21px;
+        @media (min-width: @screen-md-min) {
+            padding: 21px 21px 0 0;
+        }
+    }
+
+    > div {
+        @media (min-width: @screen-large-mobile-min) {
+            padding: 0 30px;
+        }
+    }
+
+    #left {
+        @media (min-width: @screen-md-min) {
+            padding-left: 30px;
+        }
+        .make-md-column(6);
+        >div {
+            &:first-of-type {
+                .make-md-column(6);
+                // Mini header 
+                >div {
+                    .make-md-column(12);
+                    @media (min-width: @screen-large-mobile-min) {
+                        >div {
+                            display: inline-block;
+                            position: relative;
+                            bottom: 5px;
+                        }
+                    }
+
+                    @media (min-width: @screen-md-min) {
+                        margin-bottom: 21px;
+                        img {
+                        .make-md-column(5);
+                        }
+
+                        >div {
+                            .make-md-column(7);
+                            position: absolute;
+                            bottom: 0px; 
+                            right: 0px;
+                        }    
+                    }
+                }
+
+                h1{
+                    @media (min-width: @screen-large-mobile-min) {
+                        .font-size(2.6);
+                    }
+                }
+            }
+            &:last-of-type {
+                .make-md-column(6);
+                @media (min-width: @screen-md-min) {
+                    p:first-child {
+                        padding-top: 0;
+                    }
+                }
+            }
+        }
+    }
+
+    #right {
+        .make-md-column-offset(3);
+        .make-md-column(3);
+        @media (min-width: @screen-md-min) {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+
+        @media (min-width: @screen-md-min) {
+            padding-right: 20px;
+        }
+
+        h3 {
+            .hidden-sm;
+            .hidden-xs;
+        }
+
+        p {
+            padding-top: 10px;
+        }
+
+        a {
+            margin-top: 21px;
+        }
+
+        img {
+            margin-top: 100px;
+        }
     }
 }
 

@@ -1943,7 +1943,14 @@ header[role=banner].inactive span {
 .up1 .row {
 	position: relative;
 	margin-top: 150px;
-	padding: 0 50px;
+}
+
+.up1 h3 {
+	color: #7e7e7e;
+}
+
+.up1 p {
+	padding-top: 21px;
 }
 
 .up1 #left {
@@ -1960,6 +1967,13 @@ header[role=banner].inactive span {
 	padding-right: 0;
 }
 
+.up1 #left > div:first-of-type > div {
+	position: relative;
+	min-height: 1px;
+	padding-left: 0;
+	padding-right: 0;
+}
+
 .up1 #left > div:last-of-type {
 	position: relative;
 	min-height: 1px;
@@ -1967,17 +1981,23 @@ header[role=banner].inactive span {
 	padding-right: 0;
 }
 
-.up1 h1 {
-	padding-top: 21px;
+.up1 #right {
+	position: relative;
+	min-height: 1px;
+	padding-left: 0;
+	padding-right: 0;
 }
 
-.up1 h3 {
-	padding-top: 5px;
-	color: #7e7e7e;
+.up1 #right p {
+	padding-top: 10px;
 }
 
-.up1 p {
-	padding: 21px 21px 0 0;
+.up1 #right a {
+	margin-top: 21px;
+}
+
+.up1 #right img {
+	margin-top: 100px;
 }
 
 .commander-info {
@@ -2522,6 +2542,21 @@ footer[role=contentinfo] p {
 
 .robotics .row > div:last-of-type p {
 	width: 60%;
+}
+
+.up1 > div {
+	padding: 0 30px;
+}
+
+.up1 #left > div:first-of-type > div > div {
+	display: inline-block;
+	position: relative;
+	bottom: 5px;
+}
+
+.up1 #left > div:first-of-type h1 {
+	font-size: 26px;
+	font-size: 2.6rem;
 }
 
 .commander-info .row .left {
@@ -3355,6 +3390,10 @@ td.visible-sm {
 	display: none !important;
 }
 
+.up1 #right h3 {
+	display: none !important;
+}
+
 }
 
 @media (min-width: 992px) {
@@ -3743,6 +3782,14 @@ nav > div .social-nav {
 	width: 32%;
 }
 
+.up1 p {
+	padding: 21px 21px 0 0;
+}
+
+.up1 #left {
+	padding-left: 30px;
+}
+
 .up1 #left {
 	float: left;
 	width: 50%;
@@ -3753,9 +3800,58 @@ nav > div .social-nav {
 	width: 50%;
 }
 
+.up1 #left > div:first-of-type > div {
+	float: left;
+	width: 100%;
+}
+
+.up1 #left > div:first-of-type > div {
+	margin-bottom: 21px;
+}
+
+.up1 #left > div:first-of-type > div img {
+	position: relative;
+	min-height: 1px;
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.up1 #left > div:first-of-type > div > div {
+	position: relative;
+	min-height: 1px;
+	padding-left: 0;
+	padding-right: 0;
+	position: absolute;
+	bottom: 0px;
+	right: 0px;
+}
+
 .up1 #left > div:last-of-type {
 	float: left;
 	width: 50%;
+}
+
+.up1 #left > div:last-of-type p:first-child {
+	padding-top: 0;
+}
+
+.up1 #right {
+	margin-left: 25%;
+}
+
+.up1 #right {
+	float: left;
+	width: 25%;
+}
+
+.up1 #right {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+
+.up1 #right {
+	padding-right: 20px;
 }
 
 .commander-info h1 {
@@ -4040,6 +4136,20 @@ td.visible-md {
 
 .hidden-md {
 	display: none !important;
+}
+
+}
+
+@media (min-width: 992px) and (min-width: 992px) {
+
+.up1 #left > div:first-of-type > div img {
+	float: left;
+	width: 41.66666667%;
+}
+
+.up1 #left > div:first-of-type > div > div {
+	float: left;
+	width: 58.33333333%;
 }
 
 }
@@ -4542,6 +4652,10 @@ td.visible-xs {
 }
 
 .robotics .row > div:nth-of-type(2) {
+	display: none !important;
+}
+
+.up1 #right h3 {
 	display: none !important;
 }
 
