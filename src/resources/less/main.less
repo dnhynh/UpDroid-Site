@@ -786,6 +786,43 @@ header[role=banner] {
     }
 }
 
+//UP1 page
+.up1 {
+    .container {
+        position: relative;
+        padding-bottom: 100px;
+    }
+    .row {
+        position: relative;
+        margin-top: 150px;
+        padding: 0 50px;
+    }
+    #left {
+        .make-md-column(6);
+        >div {
+            &:first-of-type {
+                .make-md-column(6);
+            }
+            &:last-of-type {
+                .make-md-column(6);
+            }
+        }
+    }
+
+    h1 {
+        padding-top: 21px;
+    }
+
+    h3 {
+        padding-top: 5px;
+        color: @caption;
+    }
+
+    p {
+        padding: 21px 21px 0 0;
+    }
+}
+
 // Commander page
 .commander-info {
     background-color: #f1f4f4;
@@ -872,6 +909,11 @@ header[role=banner] {
                                 margin-top: 0;
                             }
                         }
+                    }
+
+                    img {
+                        padding-top: 10px;
+                        width: 80px;
                     }
                 }
             }

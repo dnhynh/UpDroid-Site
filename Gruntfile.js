@@ -73,7 +73,8 @@ module.exports = function (grunt) {
                     'dist/about-us/index.html': 'src/about-us.html',
                     'dist/contact-us/index.html': 'src/contact-us.html',
                     'dist/commander/index.html' : 'src/commander.html',
-                    'dist/upcom/index.html' : 'src/upcom.html'
+                    'dist/upcom/index.html' : 'src/upcom.html',
+                    'dist/up1/index.html' : 'src/up1.html'
                 }
             }
         },

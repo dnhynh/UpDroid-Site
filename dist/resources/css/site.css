@@ -1935,6 +1935,51 @@ header[role=banner].inactive span {
 	width: 90%;
 }
 
+.up1 .container {
+	position: relative;
+	padding-bottom: 100px;
+}
+
+.up1 .row {
+	position: relative;
+	margin-top: 150px;
+	padding: 0 50px;
+}
+
+.up1 #left {
+	position: relative;
+	min-height: 1px;
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.up1 #left > div:first-of-type {
+	position: relative;
+	min-height: 1px;
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.up1 #left > div:last-of-type {
+	position: relative;
+	min-height: 1px;
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.up1 h1 {
+	padding-top: 21px;
+}
+
+.up1 h3 {
+	padding-top: 5px;
+	color: #7e7e7e;
+}
+
+.up1 p {
+	padding: 21px 21px 0 0;
+}
+
 .commander-info {
 	background-color: #f1f4f4;
 	width: 100%;
@@ -1994,6 +2039,11 @@ header[role=banner].inactive span {
 	min-height: 1px;
 	padding-left: 0;
 	padding-right: 0;
+}
+
+.commander-info .row .left > div:last-of-type img {
+	padding-top: 10px;
+	width: 80px;
 }
 
 .commander-info .row .right {
@@ -3691,6 +3741,21 @@ nav > div .social-nav {
 	right: 21px;
 	top: 147px;
 	width: 32%;
+}
+
+.up1 #left {
+	float: left;
+	width: 50%;
+}
+
+.up1 #left > div:first-of-type {
+	float: left;
+	width: 50%;
+}
+
+.up1 #left > div:last-of-type {
+	float: left;
+	width: 50%;
 }
 
 .commander-info h1 {
