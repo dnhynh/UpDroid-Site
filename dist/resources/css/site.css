@@ -2000,6 +2000,14 @@ header[role=banner].inactive span {
 	margin-top: 100px;
 }
 
+.modules .container {
+	position: relative;
+}
+
+.modules .row {
+	position: relative;
+}
+
 .commander-info {
 	background-color: #f1f4f4;
 	width: 100%;
