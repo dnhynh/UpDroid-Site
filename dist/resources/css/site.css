@@ -2000,12 +2000,85 @@ header[role=banner].inactive span {
 	margin-top: 100px;
 }
 
-.modules .container {
+#modules {
+	background-color: #e4e4e4;
+}
+
+#modules .container {
 	position: relative;
 }
 
-.modules .row {
+#modules .row {
 	position: relative;
+}
+
+#modules .row > div {
+	position: relative;
+	min-height: 1px;
+	padding-left: 0;
+	padding-right: 0;
+}
+
+#modules .row > div > span {
+	font-family: "Monosten A";
+	font-size: 14px;
+	font-size: 1.4rem;
+	line-height: 20px;
+	left: 21px;
+	position: absolute;
+}
+
+#modules .row > div > span:first-of-type {
+	top: 21px;
+}
+
+#modules .row > div #modules-slider img {
+	cursor: pointer;
+	width: 80%;
+}
+
+#modules .row > div #modules-slider .cycle-pager {
+	text-align: center;
+	bottom: 27px;
+	display: block;
+	left: 0;
+	overflow: hidden;
+	position: absolute;
+	width: 100%;
+	z-index: 500;
+}
+
+#modules .row > div #modules-slider .cycle-pager span {
+	-webkit-border-top-right-radius: 50%;
+	-webkit-border-bottom-right-radius: 50%;
+	-webkit-border-bottom-left-radius: 50%;
+	-webkit-border-top-left-radius: 50%;
+	-moz-border-radius-topright: 50%;
+	-moz-border-radius-bottomright: 50%;
+	-moz-border-radius-bottomleft: 50%;
+	-moz-border-radius-topleft: 50%;
+	border-top-right-radius: 50%;
+	border-bottom-right-radius: 50%;
+	border-bottom-left-radius: 50%;
+	border-top-left-radius: 50%;
+	-moz-background-clip: padding-box;
+	-webkit-background-clip: padding-box;
+	background-clip: padding-box;
+	font: 0/0 a;
+	color: transparent;
+	text-shadow: none;
+	background-color: transparent;
+	border: 0;
+	background-color: #cdcfcf;
+	cursor: pointer;
+	display: inline-block;
+	height: 10px;
+	margin: 0 8px;
+	width: 10px;
+}
+
+#modules .row > div #modules-slider .cycle-pager span.cycle-pager-active {
+	background-color: #0c0c0c;
 }
 
 .commander-info {
@@ -3083,6 +3156,21 @@ header[role=banner] span.icon-upcom-logo {
 	width: 32%;
 }
 
+#modules .row > div > span {
+	font-size: 13px;
+	font-size: 1.3rem;
+	left: 14px;
+	line-height: 18px;
+}
+
+#modules .row > div > span:first-of-type {
+	top: 14px;
+}
+
+#modules .row > div #modules-slider .cycle-pager {
+	bottom: 20px;
+}
+
 .commander-info {
 	background-image: url('/resources/images/UpCom_Header.png');
 	background-size: 100%;
@@ -3870,6 +3958,27 @@ nav > div .social-nav {
 	padding-right: 20px;
 }
 
+#modules .row > div {
+	margin-left: 8.33333333%;
+}
+
+#modules .row > div {
+	float: left;
+	width: 58.33333333%;
+}
+
+#modules .row > div > span {
+	left: 21px;
+}
+
+#modules .row > div > span:first-of-type {
+	top: 21px;
+}
+
+#modules .row > div #modules-slider .cycle-pager {
+	bottom: 27px;
+}
+
 .commander-info h1 {
 	float: left;
 	width: 100%;
@@ -4557,6 +4666,12 @@ header[role=banner] span.icon-upcom-logo {
 	right: 56px;
 	top: 203px;
 	width: 28%;
+}
+
+#modules .row > div > span {
+	font-size: 14px;
+	font-size: 1.4rem;
+	line-height: 20px;
 }
 
 .about-header .row {

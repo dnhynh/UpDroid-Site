@@ -2,9 +2,9 @@
 <html lang="en">
 <head>
     <title>UpDroid Commander</title>
-    <meta name="description" content="Commander, robotics programming simplified." />
-    <meta property="og:title" content="UpDroid Commander"/>
-    <meta property="og:description" content="UpDroid Commander, robotics programming simplified."/>
+    <meta name="description" content="UP1, custom" />
+    <meta property="og:title" content="UP1 Series"/>
+    <meta property="og:description" content=""/>
     <!--(bake includes/head.html)-->
 </head>
 <body>
@@ -18,7 +18,7 @@
                     <div id="left">
                         <div>
                             <div>
-                                <img src="../resources/images/updroid-sprite.png"/>
+                                <img src="../resources/images/updroid-sprite.png" />
                                 <div>
                                     <h1>The UP1</h1>
                                     <h3>Bring it to Life</h3> 
@@ -38,12 +38,39 @@
                 </div>
             </div>
         </div>
-        <section class="modules">
+        <div id="modules">
             <div class="container">
                 <div class="row">
+                    <div>
+                        <div id="modules-slider">
+                            <div class="cycle-slideshow" data-cycle-timeout="0" data-cycle-swipe="true" data-cycle-loader="wait" data-cycle-carousel-visible='1' data-cycle-fx="scrollHorz" data-cycle-log="false">
+                                <div class="cycle-pager"></div>
+                                <img src="../resources/images/up1-sequence/cpu.png" alt="UpDroid CPU" />
+                                <img src="../resources/images/up1-sequence/base.png" alt="UpDroid Base" />
+                                <img src="../resources/images/up1-sequence/arms.png" alt="UpDroid Arms" />
+                                <img src="../resources/images/up1-sequence/io.png" alt="UpDroid Sensors" />
+                                <img src="../resources/images/up1-sequence/exploded.png" alt="UpDroid Parts" />
+                                <img src="../resources/images/up1-sequence/complete.png" alt="The UP1" />
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div id="caption-slider">
+                            <div class="cycle-slideshow" data-cycle-timeout="0" data-cycle-swipe="true" data-cycle-loader="wait"  data-cycle-fx="fade" data-cycle-log="false" data-cycle-slides="> div">
+                                <div>
+                                    <h1>test</h1>
+                                    <p>this is</p>
+                                </div>
+                                <div>
+                                    <h1>dif</h1>
+                                    <p>this is</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </section>
+        </div>
 
         <!--(bake includes/footer.html)-->
     </article>
@@ -52,5 +79,8 @@
 <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 <script>window.jQuery || document.write('<script src="/resources/js/jquery-1.11.1.min.js">\x3C/script>')</script>
 <script type="text/javascript" src="/resources/js/site.min.js"></script>
+<script type="text/javascript">
+    Up1.Init();
+</script>
 </body>
 </html>

@@ -193,6 +193,27 @@ var UpCom =
     }
 };
 
+/*****************************************************/
+/*                   Homepage                        */
+/*****************************************************/
+var Up1 =
+{
+    "Init": function () {
+        this.Cycle();
+    },
+    "Cycle": function () {
+        // Cycle robot image set on click of image (non touch devices only)
+        $("html.no-touch #sb-site").on("click", "#modules-slider", function () {
+            $(this).find(".cycle-slideshow").cycle("next");
+        });
+
+        // Stop the above click event happening on the pager links
+        $("html.no-touch #sb-site").on("click", "div.cycle-pager", function (event) {
+            event.stopPropagation();
+        });
+    }
+};
+
 $(document).ready(function () {
     Global.Init();
 });
