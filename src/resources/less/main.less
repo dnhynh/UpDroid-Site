@@ -921,7 +921,7 @@ header[role=banner] {
 
             }
             .make-md-column-offset(1);
-            .make-md-column(7);
+            .make-md-column(10);
 
             >span {
                 .font-monosten-a();
@@ -959,11 +959,14 @@ header[role=banner] {
             }
 
             #modules-slider {
-                box-shadow: 0px 3px 5px #d3d2cf;
+                box-shadow: -1px 3px #d3d2cf;
 
-                img {
-                    cursor: pointer;
-                    width: 100%;
+                .slide {
+                    img {
+                        .make-md-column(8);
+                        cursor: pointer;
+                        width: 100%;
+                    }
                 }
 
                 .cycle-pager {

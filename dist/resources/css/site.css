@@ -2034,10 +2034,14 @@ header[role=banner].inactive span {
 }
 
 #modules .row > div #modules-slider {
-	box-shadow: 0px 3px 5px #d3d2cf;
+	box-shadow: -1px 3px #d3d2cf;
 }
 
-#modules .row > div #modules-slider img {
+#modules .row > div #modules-slider .slide img {
+	position: relative;
+	min-height: 1px;
+	padding-left: 0;
+	padding-right: 0;
 	cursor: pointer;
 	width: 100%;
 }
@@ -3969,7 +3973,7 @@ nav > div .social-nav {
 
 #modules .row > div {
 	float: left;
-	width: 58.33333333%;
+	width: 83.33333333%;
 }
 
 #modules .row > div > span {
@@ -3978,6 +3982,11 @@ nav > div .social-nav {
 
 #modules .row > div > span:first-of-type {
 	top: 21px;
+}
+
+#modules .row > div #modules-slider .slide img {
+	float: left;
+	width: 66.66666667%;
 }
 
 #modules .row > div #modules-slider .cycle-pager {
