@@ -793,7 +793,7 @@ header[role=banner] {
         padding-bottom: 100px;
 
         @media (min-width: @screen-large-mobile-min) {
-            padding: 0 30px;
+            padding: 0 30px 100px 30px;
         }
 
         @media (min-width: @screen-md-min) {
@@ -917,9 +917,7 @@ header[role=banner] {
         position: relative;
         padding: 30px 30px;
         >div {
-            &:first-of-type {
-
-            }
+            .make-sm-column(12);
             .make-md-column-offset(1);
             .make-md-column(10);
 
@@ -959,20 +957,45 @@ header[role=banner] {
             }
 
             #modules-slider {
-                box-shadow: -1px 3px #d3d2cf;
+                >div {
+                    height: 550px;
+
+                    @media (min-width: @screen-sm-min) {
+                        height: 420px;
+                    }
+
+                    @media (min-width: @screen-lg-min) {
+                        height: 500px;
+                    }
+                }
 
                 .slide {
                     img {
+                        .make-sm-column(8);
                         .make-md-column(8);
                         cursor: pointer;
                         width: 100%;
+                    }
+
+                    >div {
+                        .make-sm-column(4);
+                        .make-md-column(4);
+                        padding-top: 20px;
+
+                        @media (min-width: @screen-sm-min) {
+                            padding-top: 100px;
+                        }
+
+                        p {
+                            padding-top: 21px;
+                        }
                     }
                 }
 
                 .cycle-pager {
                     .text-center;
-                    bottom: 27px;
                     display: block;
+                    bottom: 27px;
                     left: 0;
                     overflow: hidden;
                     position: absolute;

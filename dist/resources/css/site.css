@@ -2033,8 +2033,8 @@ header[role=banner].inactive span {
 	top: 21px;
 }
 
-#modules .row > div #modules-slider {
-	box-shadow: -1px 3px #d3d2cf;
+#modules .row > div #modules-slider > div {
+	height: 550px;
 }
 
 #modules .row > div #modules-slider .slide img {
@@ -2046,10 +2046,22 @@ header[role=banner].inactive span {
 	width: 100%;
 }
 
+#modules .row > div #modules-slider .slide > div {
+	position: relative;
+	min-height: 1px;
+	padding-left: 0;
+	padding-right: 0;
+	padding-top: 20px;
+}
+
+#modules .row > div #modules-slider .slide > div p {
+	padding-top: 21px;
+}
+
 #modules .row > div #modules-slider .cycle-pager {
 	text-align: center;
-	bottom: 27px;
 	display: block;
+	bottom: 27px;
 	left: 0;
 	overflow: hidden;
 	position: absolute;
@@ -2635,7 +2647,7 @@ footer[role=contentinfo] p {
 }
 
 .up1 .container {
-	padding: 0 30px;
+	padding: 0 30px 100px 30px;
 }
 
 .up1 > div {
@@ -3165,6 +3177,11 @@ header[role=banner] span.icon-upcom-logo {
 	width: 32%;
 }
 
+#modules .row > div {
+	float: left;
+	width: 100%;
+}
+
 #modules .row > div > span {
 	font-size: 13px;
 	font-size: 1.3rem;
@@ -3174,6 +3191,24 @@ header[role=banner] span.icon-upcom-logo {
 
 #modules .row > div > span:first-of-type {
 	top: 14px;
+}
+
+#modules .row > div #modules-slider > div {
+	height: 420px;
+}
+
+#modules .row > div #modules-slider .slide img {
+	float: left;
+	width: 66.66666667%;
+}
+
+#modules .row > div #modules-slider .slide > div {
+	float: left;
+	width: 33.33333333%;
+}
+
+#modules .row > div #modules-slider .slide > div {
+	padding-top: 100px;
 }
 
 #modules .row > div #modules-slider .cycle-pager {
@@ -3989,6 +4024,11 @@ nav > div .social-nav {
 	width: 66.66666667%;
 }
 
+#modules .row > div #modules-slider .slide > div {
+	float: left;
+	width: 33.33333333%;
+}
+
 #modules .row > div #modules-slider .cycle-pager {
 	bottom: 27px;
 }
@@ -4686,6 +4726,10 @@ header[role=banner] span.icon-upcom-logo {
 	font-size: 14px;
 	font-size: 1.4rem;
 	line-height: 20px;
+}
+
+#modules .row > div #modules-slider > div {
+	height: 500px;
 }
 
 .about-header .row {
