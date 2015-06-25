@@ -2010,6 +2010,7 @@ header[role=banner].inactive span {
 
 #modules .row {
 	position: relative;
+	padding: 30px 30px;
 }
 
 #modules .row > div {
@@ -2032,9 +2033,13 @@ header[role=banner].inactive span {
 	top: 21px;
 }
 
+#modules .row > div #modules-slider {
+	box-shadow: 0px 3px 5px #d3d2cf;
+}
+
 #modules .row > div #modules-slider img {
 	cursor: pointer;
-	width: 80%;
+	width: 100%;
 }
 
 #modules .row > div #modules-slider .cycle-pager {
