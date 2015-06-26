@@ -2033,8 +2033,8 @@ header[role=banner].inactive span {
 	top: 21px;
 }
 
-#modules .row > div #modules-slider > div {
-	height: 550px;
+#modules .row > div #modules-slider .slide {
+	padding-bottom: 90px;
 }
 
 #modules .row > div #modules-slider .slide img {
@@ -2044,6 +2044,7 @@ header[role=banner].inactive span {
 	padding-right: 0;
 	cursor: pointer;
 	width: 100%;
+	height: auto;
 }
 
 #modules .row > div #modules-slider .slide > div {
@@ -2647,7 +2648,7 @@ footer[role=contentinfo] p {
 }
 
 .up1 .container {
-	padding: 0 30px 100px 30px;
+	padding: 0 30px 50px 30px;
 }
 
 .up1 > div {
@@ -3193,7 +3194,7 @@ header[role=banner] span.icon-upcom-logo {
 	top: 14px;
 }
 
-#modules .row > div #modules-slider > div {
+#modules .row > div #modules-slider .slide {
 	height: 420px;
 }
 
@@ -4728,7 +4729,7 @@ header[role=banner] span.icon-upcom-logo {
 	line-height: 20px;
 }
 
-#modules .row > div #modules-slider > div {
+#modules .row > div #modules-slider .slide {
 	height: 500px;
 }
 

@@ -793,7 +793,7 @@ header[role=banner] {
         padding-bottom: 100px;
 
         @media (min-width: @screen-large-mobile-min) {
-            padding: 0 30px 100px 30px;
+            padding: 0 30px 50px 30px;
         }
 
         @media (min-width: @screen-md-min) {
@@ -957,8 +957,9 @@ header[role=banner] {
             }
 
             #modules-slider {
-                >div {
-                    height: 550px;
+
+                .slide {
+                    padding-bottom: 90px;
 
                     @media (min-width: @screen-sm-min) {
                         height: 420px;
@@ -967,14 +968,13 @@ header[role=banner] {
                     @media (min-width: @screen-lg-min) {
                         height: 500px;
                     }
-                }
 
-                .slide {
                     img {
                         .make-sm-column(8);
                         .make-md-column(8);
                         cursor: pointer;
                         width: 100%;
+                        height: auto;
                     }
 
                     >div {
