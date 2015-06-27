@@ -2103,6 +2103,15 @@ header[role=banner].inactive span {
 	background-color: #0c0c0c;
 }
 
+.top-left-wing,
+.middle-left-wing,
+.bot-left-wing,
+.top-right-wing,
+.middle-right-wing,
+.bot-right-wing {
+	display: none;
+}
+
 .commander-info {
 	background-color: #f1f4f4;
 	width: 100%;
