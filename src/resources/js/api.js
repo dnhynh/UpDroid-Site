@@ -200,6 +200,8 @@ var Up1 =
 {
     "Init": function () {
         this.Cycle();
+        this.loadView();
+        this.resizeListen();
     },
     "Cycle": function () {
         // Cycle robot image set on click of image (non touch devices only)
@@ -211,6 +213,28 @@ var Up1 =
         $("html.no-touch #sb-site").on("click", "div.cycle-pager", function (event) {
             event.stopPropagation();
         });
+    },
+
+    "loadView": function () {
+        $(document).ready(function(){
+        if($(window).width()< 768)
+            {
+                $("#up1-feature").remove().insertBefore($("#switch-point"));
+            }
+        });
+    },
+
+    "resizeListen": function () {
+        $(document).load($(window).bind("resize", listenWidth));
+
+        function listenWidth( e ) {
+        if($(window).width()< 978)
+            {
+                $("#up1-feature").remove().insertBefore($("#switch-point"));
+            } else {
+                $("#right").append( $("#up1-feature") );
+            }
+        }
     }
 };
 

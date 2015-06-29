@@ -823,6 +823,19 @@ header[role=banner] {
         }
     }
 
+    #up1-feature {
+        @media (min-width: @screen-large-mobile-min) {
+            max-width: 400px;
+            width: 100%;
+            padding-top: 21px;
+        }
+        @media (min-width: @screen-md-min) {
+            max-width: 100%;
+            width: 100%;
+            padding-top: 0;
+        }
+    }
+
     #left {
         @media (min-width: @screen-md-min) {
             padding-left: 30px;
@@ -836,16 +849,22 @@ header[role=banner] {
                     .make-md-column(12);
                     @media (min-width: @screen-large-mobile-min) {
                         >div {
+
                             display: inline-block;
                             position: relative;
                             bottom: 5px;
+                        }
+
+                        img {
+                            .hidden-xs;
+                            .hidden-sm;
                         }
                     }
 
                     @media (min-width: @screen-md-min) {
                         margin-bottom: 21px;
                         img {
-                        .make-md-column(5);
+                            .make-md-column(5);
                         }
 
                         >div {
@@ -875,13 +894,7 @@ header[role=banner] {
     }
 
     #right {
-        .make-md-column-offset(3);
-        .make-md-column(3);
-        @media (min-width: @screen-md-min) {
-            position: absolute;
-            bottom: 0;
-            right: 0;
-        }
+        .make-md-column(6);
 
         @media (min-width: @screen-md-min) {
             padding-right: 20px;
@@ -898,10 +911,6 @@ header[role=banner] {
 
         a {
             margin-top: 21px;
-        }
-
-        img {
-            margin-top: 100px;
         }
     }
 }
