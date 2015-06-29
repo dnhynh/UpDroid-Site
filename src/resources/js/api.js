@@ -217,7 +217,7 @@ var Up1 =
 
     "loadView": function () {
         $(document).ready(function(){
-        if($(window).width()< 768)
+        if($(window).width()< 978)
             {
                 $("#up1-feature").remove().insertBefore($("#switch-point"));
             }
