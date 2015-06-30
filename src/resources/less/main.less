@@ -812,6 +812,10 @@ header[role=banner] {
 
     p {
         padding-top: 21px;
+        @media (min-width: @screen-sm-min) {
+            padding: 10px 10px 0 0;
+        }
+
         @media (min-width: @screen-md-min) {
             padding: 21px 21px 0 0;
         }
@@ -840,9 +844,11 @@ header[role=banner] {
         @media (min-width: @screen-md-min) {
             padding-left: 30px;
         }
+        .make-sm-column(6);
         .make-md-column(6);
         >div {
             &:first-of-type {
+                .make-sm-column(6);
                 .make-md-column(6);
                 // Mini header 
                 >div {
@@ -856,18 +862,20 @@ header[role=banner] {
                         }
 
                         img {
-                            .hidden-xs;
                             .hidden-sm;
+                            .hidden-xs;
                         }
                     }
 
                     @media (min-width: @screen-md-min) {
                         margin-bottom: 21px;
                         img {
+                            .make-sm-column(5);
                             .make-md-column(5);
                         }
 
                         >div {
+                            .make-sm-column(7);
                             .make-md-column(7);
                             position: absolute;
                             bottom: 0px; 
@@ -883,8 +891,9 @@ header[role=banner] {
                 }
             }
             &:last-of-type {
+                .make-sm-column(6);
                 .make-md-column(6);
-                @media (min-width: @screen-md-min) {
+                @media (min-width: @screen-sm-min) {
                     p:first-child {
                         padding-top: 0;
                     }
@@ -894,15 +903,11 @@ header[role=banner] {
     }
 
     #right {
+        .make-sm-column(6);
         .make-md-column(6);
 
         @media (min-width: @screen-md-min) {
             padding-right: 20px;
-        }
-
-        h3 {
-            .hidden-sm;
-            .hidden-xs;
         }
 
         p {

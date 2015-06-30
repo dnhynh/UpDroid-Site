@@ -2638,7 +2638,7 @@ footer[role=contentinfo] p {
 
 }
 
-@media (min-width: 350px) and (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 350px) and (max-width: 767px) {
 
 .up1 #left > div:first-of-type > div img {
 	display: none !important;
@@ -2646,7 +2646,7 @@ footer[role=contentinfo] p {
 
 }
 
-@media (min-width: 350px) and (max-width: 767px) {
+@media (min-width: 350px) and (min-width: 768px) and (max-width: 991px) {
 
 .up1 #left > div:first-of-type > div img {
 	display: none !important;
@@ -2767,10 +2767,6 @@ td.visible-sm {
 }
 
 .home-header .icon-arrow-down {
-	display: none !important;
-}
-
-.up1 #right h3 {
 	display: none !important;
 }
 
@@ -3248,6 +3244,34 @@ header[role=banner] span.icon-upcom-logo {
 	right: 21px;
 	top: 294px;
 	width: 32%;
+}
+
+.up1 p {
+	padding: 10px 10px 0 0;
+}
+
+.up1 #left {
+	float: left;
+	width: 50%;
+}
+
+.up1 #left > div:first-of-type {
+	float: left;
+	width: 50%;
+}
+
+.up1 #left > div:last-of-type {
+	float: left;
+	width: 50%;
+}
+
+.up1 #left > div:last-of-type p:first-child {
+	padding-top: 0;
+}
+
+.up1 #right {
+	float: left;
+	width: 50%;
 }
 
 #modules .row > div {
@@ -4013,10 +4037,6 @@ nav > div .social-nav {
 	width: 50%;
 }
 
-.up1 #left > div:last-of-type p:first-child {
-	padding-top: 0;
-}
-
 .up1 #right {
 	float: left;
 	width: 50%;
@@ -4339,6 +4359,20 @@ td.visible-md {
 
 .hidden-md {
 	display: none !important;
+}
+
+}
+
+@media (min-width: 992px) and (min-width: 768px) {
+
+.up1 #left > div:first-of-type > div img {
+	float: left;
+	width: 41.66666667%;
+}
+
+.up1 #left > div:first-of-type > div > div {
+	float: left;
+	width: 58.33333333%;
 }
 
 }
@@ -4865,10 +4899,6 @@ td.visible-xs {
 }
 
 .robotics .row > div:nth-of-type(2) {
-	display: none !important;
-}
-
-.up1 #right h3 {
 	display: none !important;
 }
 
