@@ -2031,6 +2031,7 @@ header[role=banner].inactive span {
 
 #modules .row > div #modules-slider .slide {
 	padding-bottom: 90px;
+	cursor: pointer;
 }
 
 #modules .row > div #modules-slider .slide img {
@@ -2038,7 +2039,6 @@ header[role=banner].inactive span {
 	min-height: 1px;
 	padding-left: 0;
 	padding-right: 0;
-	cursor: pointer;
 	width: 100%;
 	height: auto;
 }
@@ -2049,7 +2049,6 @@ header[role=banner].inactive span {
 	padding-left: 0;
 	padding-right: 0;
 	padding-top: 20px;
-	margin-top: 70px;
 }
 
 #modules .row > div #modules-slider .slide > div p {
@@ -3311,6 +3310,7 @@ header[role=banner] span.icon-upcom-logo {
 
 #modules .row > div #modules-slider .slide > div {
 	padding-top: 100px;
+	margin-top: 10px;
 }
 
 #modules .row > div #modules-slider .cycle-pager {
