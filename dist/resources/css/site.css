@@ -2055,6 +2055,10 @@ header[role=banner].inactive span {
 	padding-top: 21px;
 }
 
+#modules .row > div #modules-slider .slide > div a {
+	margin: 21px 21px 0 0;
+}
+
 #modules .row > div #modules-slider .cycle-pager {
 	text-align: center;
 	display: block;
