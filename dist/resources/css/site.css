@@ -3313,7 +3313,7 @@ header[role=banner] span.icon-upcom-logo {
 }
 
 #modules .row > div #modules-slider .cycle-pager {
-	bottom: 20px;
+	bottom: 5px;
 }
 
 .commander-info {
@@ -4078,7 +4078,7 @@ nav > div .social-nav {
 }
 
 #modules .row > div #modules-slider .cycle-pager {
-	bottom: 27px;
+	bottom: 5px;
 }
 
 .commander-info h1 {
@@ -4792,6 +4792,10 @@ header[role=banner] span.icon-upcom-logo {
 
 #modules .row > div #modules-slider .slide {
 	height: 500px;
+}
+
+#modules .row > div #modules-slider .cycle-pager {
+	bottom: 27px;
 }
 
 .about-header .row {
