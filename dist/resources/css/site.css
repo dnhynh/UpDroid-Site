@@ -1937,7 +1937,7 @@ header[role=banner].inactive span {
 
 .up1 .container {
 	position: relative;
-	padding-bottom: 100px;
+	padding-bottom: 50px;
 }
 
 .up1 .row {
@@ -1989,10 +1989,18 @@ header[role=banner].inactive span {
 }
 
 .up1 #right p {
+	position: relative;
+	min-height: 1px;
+	padding-left: 0;
+	padding-right: 0;
 	padding-top: 10px;
 }
 
 .up1 #right a {
+	position: relative;
+	min-height: 1px;
+	padding-left: 0;
+	padding-right: 0;
 	margin-top: 21px;
 }
 
@@ -3278,6 +3286,24 @@ header[role=banner] span.icon-upcom-logo {
 	width: 50%;
 }
 
+.up1 #right p {
+	margin-left: 16.66666667%;
+}
+
+.up1 #right p {
+	float: left;
+	width: 75%;
+}
+
+.up1 #right a {
+	margin-left: 16.66666667%;
+}
+
+.up1 #right a {
+	float: left;
+	width: 75%;
+}
+
 #modules .row > div {
 	float: left;
 	width: 100%;
@@ -3309,7 +3335,7 @@ header[role=banner] span.icon-upcom-logo {
 }
 
 #modules .row > div #modules-slider .slide > div {
-	padding-top: 110px;
+	padding-top: 70px;
 }
 
 #modules .row > div #modules-slider .cycle-pager {
@@ -3983,7 +4009,7 @@ nav > div .social-nav {
 }
 
 .up1 .container {
-	padding: 0 0 100px 0;
+	padding: 0 0 50px 0;
 }
 
 .up1 p {
@@ -4075,6 +4101,10 @@ nav > div .social-nav {
 #modules .row > div #modules-slider .slide > div {
 	float: left;
 	width: 33.33333333%;
+}
+
+#modules .row > div #modules-slider .slide > div {
+	padding-top: 110px;
 }
 
 #modules .row > div #modules-slider .cycle-pager {

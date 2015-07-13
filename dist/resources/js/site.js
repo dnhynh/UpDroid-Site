@@ -647,7 +647,7 @@ var Up1 =
             {
                 $("#up1-feature").remove().insertBefore($("#switch-point"));
             } else {
-                $("#right").append( $("#up1-feature") );
+                $("#up1-feature").insertBefore($("#switch-point2"));
             }
         }
     }
