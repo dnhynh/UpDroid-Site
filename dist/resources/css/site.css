@@ -1993,7 +1993,6 @@ header[role=banner].inactive span {
 	min-height: 1px;
 	padding-left: 0;
 	padding-right: 0;
-	padding-top: 10px;
 }
 
 .up1 #right a {
@@ -2705,6 +2704,10 @@ footer[role=contentinfo] p {
 	font-size: 2.6rem;
 }
 
+.up1 #right p {
+	padding-top: 50px;
+}
+
 .commander-info .row .left {
 	padding: 0 30px;
 }
@@ -3293,6 +3296,10 @@ header[role=banner] span.icon-upcom-logo {
 .up1 #right p {
 	float: left;
 	width: 75%;
+}
+
+.up1 #right p {
+	padding-top: 10px;
 }
 
 .up1 #right a {
@@ -4825,7 +4832,7 @@ header[role=banner] span.icon-upcom-logo {
 }
 
 #modules .row > div #modules-slider .cycle-pager {
-	bottom: 27px;
+	bottom: 20px;
 }
 
 .about-header .row {
