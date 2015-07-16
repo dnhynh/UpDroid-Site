@@ -2289,8 +2289,15 @@ header[role=banner].inactive span {
 }
 
 #app {
-	background-color: #434343;
+	background-color: #002b36;
 	padding: 8.3% 8.3%;
+}
+
+#app .type {
+	font-family: "Monosten A";
+	font-size: 30px;
+	font-size: 3rem;
+	color: #839496;
 }
 
 #app img {
@@ -2645,6 +2652,15 @@ footer[role=contentinfo] p {
 
 .icon-arrow-up.active {
 	opacity: 1;
+}
+
+.typed-cursor {
+	font-size: 30px;
+	font-size: 3rem;
+	opacity: 1;
+	-webkit-animation: blink 0.7s infinite;
+	-moz-animation: blink 0.7s infinite;
+	animation: blink 0.7s infinite;
 }
 
 @media all and (device-width: 768px) and (device-height: 1024px) and (orientation: portrait) {
@@ -5034,6 +5050,54 @@ td.visible-print {
 
 .hidden-print {
 	display: none !important;
+}
+
+}
+
+@keyframes blink {
+
+0% {
+	opacity: 1;
+}
+
+50% {
+	opacity: 0;
+}
+
+100% {
+	opacity: 1;
+}
+
+}
+
+@-webkit-keyframes blink {
+
+0% {
+	opacity: 1;
+}
+
+50% {
+	opacity: 0;
+}
+
+100% {
+	opacity: 1;
+}
+
+}
+
+@-moz-keyframes blink {
+
+0% {
+	opacity: 1;
+}
+
+50% {
+	opacity: 0;
+}
+
+100% {
+	opacity: 1;
 }
 
 }

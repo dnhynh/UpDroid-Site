@@ -58,6 +58,7 @@
         <div id="app">
             <div class="container">
                 <div class="row">
+                    <span class="type"></span>
                     <img src="../resources/images/screens/upcom_populated.png"/>       
                 </div>
             </div>
@@ -128,6 +129,16 @@
 <script>
     $(document).ready(function () {
         UpCom.Init();
+    });
+</script>
+<script src="typed.js"></script>
+<script>
+    $(function(){
+        $(".type").typed({
+            strings: ["cmdr -gui"],
+            typeSpeed: 50,
+            showCursor: true
+        });
     });
 </script>
 <script type="text/javascript">

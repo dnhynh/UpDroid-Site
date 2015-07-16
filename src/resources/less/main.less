@@ -1290,8 +1290,14 @@ header[role=banner] {
 }
 
 #app {
-    background-color: #434343;
+    background-color: #002b36;
     padding: 8.3% 8.3%;
+
+    .type {
+        .font-monosten-a;
+        .font-size(3.0);
+        color: #839496;
+    }
 
     img {
         .make-xs-column(12);
@@ -1942,4 +1948,27 @@ footer[role=contentinfo] {
             left: 49px;
         }
     }
+}
+
+.typed-cursor{
+    .font-size(3);
+    opacity: 1;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+}
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
 }
