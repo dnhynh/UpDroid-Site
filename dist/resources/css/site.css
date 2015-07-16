@@ -2288,6 +2288,20 @@ header[role=banner].inactive span {
 	padding-right: 0;
 }
 
+#app {
+	background-color: #7b2a1f;
+	padding: 8.3% 8.3%;
+}
+
+#app img {
+	position: relative;
+	float: left;
+	width: 100%;
+	min-height: 1px;
+	padding-left: 0;
+	padding-right: 0;
+}
+
 .screens {
 	background-color: #ffffff;
 }
