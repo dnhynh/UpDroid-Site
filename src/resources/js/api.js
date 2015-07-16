@@ -145,6 +145,7 @@ var UpCom =
         this.installClick();
         this.loadView();
         this.resizeListen();
+        this.animateWings();
     },
 
     "installClick": function () {
@@ -190,6 +191,28 @@ var UpCom =
                 $("#controls").remove().insertAfter($("#controls-switch"));
             }
         }
+    },
+
+    "animateWings": function () {
+        var wings = $('.top-left-wing, .middle-left-wing, .bot-left-wing, .top-right-wing, .middle-right-wing, .bot-right-wing');
+        var left = $('.top-left-wing, .middle-left-wing, .bot-left-wing');
+        var right = $('.top-right-wing, .middle-right-wing, .bot-right-wing');
+        $(left).velocity({
+            translateX: "5px"
+        });
+        $(right).velocity({
+            translateX: "-5px"
+        })
+        $(wings).velocity("fadeIn", {
+            duration: 1500,
+            delay: 1000
+        });
+        $(left).velocity({
+            translateX: "0px"
+        });
+        $(right).velocity({
+            translateX: "0px"
+        });
     }
 };
 
