@@ -2159,6 +2159,7 @@ header[role=banner].inactive span {
 	min-height: 1px;
 	padding-left: 0;
 	padding-right: 0;
+	padding: 0 30px;
 }
 
 .commander-info .row .left a {
@@ -2190,6 +2191,7 @@ header[role=banner].inactive span {
 	min-height: 1px;
 	padding-left: 0;
 	padding-right: 0;
+	padding: 0 30px;
 }
 
 .commander-info .row .right a:hover {
@@ -2286,6 +2288,81 @@ header[role=banner].inactive span {
 	min-height: 1px;
 	padding-left: 0;
 	padding-right: 0;
+}
+
+#app {
+	height: 42vw;
+}
+
+#app .row {
+	height: 100%;
+	margin: 50px 0;
+	padding: 0 30px;
+}
+
+#app .row #terminal {
+	position: absolute;
+	left: 35%;
+	width: 30%;
+	height: 50%;
+}
+
+#app .row #terminal #toolbar {
+	border-top-right-radius: 5px;
+	border-top-left-radius: 5px;
+	width: 100%;
+	height: 1.5vw;
+	padding-left: .5vw;
+	background-color: #cccccc;
+}
+
+#app .row #terminal #toolbar > div {
+	padding-top: .1vw;
+	margin-right: .3vw;
+	display: inline-block;
+	position: relative;
+	top: 25%;
+	border-radius: 50% 50% 50% 50%;
+	background-color: white;
+	height: .8vw;
+	width: .8vw;
+}
+
+#app .row #terminal #window {
+	background-color: #1c1c1c;
+	height: 20vw;
+	max-height: 250px;
+	padding: 1vw 1vw;
+}
+
+#app .row > div:nth-of-type(2) {
+	padding-left: 50px;
+}
+
+#app .row > div:nth-of-type(2) img {
+	width: 55vw;
+	position: absolute;
+	right: 5%;
+	opacity: 0;
+}
+
+#app .row .type {
+	font-family: "Monosten A";
+	font-size: 13px;
+	font-size: 1.3rem;
+	display: inline-block;
+	margin-left: 5px;
+	margin-top: 5px;
+	color: #839496;
+}
+
+.typed-cursor {
+	font-size: 13px;
+	font-size: 1.3rem;
+	opacity: 1;
+	-webkit-animation: blink 0.7s infinite;
+	-moz-animation: blink 0.7s infinite;
+	animation: blink 0.7s infinite;
 }
 
 .screens {
@@ -2782,6 +2859,10 @@ td.visible-sm {
 }
 
 .home-header .icon-arrow-down {
+	display: none !important;
+}
+
+#app {
 	display: none !important;
 }
 
@@ -4959,6 +5040,10 @@ td.visible-xs {
 	display: none !important;
 }
 
+#app {
+	display: none !important;
+}
+
 .changelog {
 	display: none !important;
 }
@@ -5020,6 +5105,54 @@ td.visible-print {
 
 .hidden-print {
 	display: none !important;
+}
+
+}
+
+@keyframes blink {
+
+0% {
+	opacity: 1;
+}
+
+50% {
+	opacity: 0;
+}
+
+100% {
+	opacity: 1;
+}
+
+}
+
+@-webkit-keyframes blink {
+
+0% {
+	opacity: 1;
+}
+
+50% {
+	opacity: 0;
+}
+
+100% {
+	opacity: 1;
+}
+
+}
+
+@-moz-keyframes blink {
+
+0% {
+	opacity: 1;
+}
+
+50% {
+	opacity: 0;
+}
+
+100% {
+	opacity: 1;
 }
 
 }
