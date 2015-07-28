@@ -1142,6 +1142,7 @@ var Up1 =
 
             if (userAgent.match(/iPhone/i)) {
                document.getElementById("up1-feature").src = "../resources/images/up1-feature-small.png";
+               document.getElementById("header-droid").remove();
             }
         });
     }
