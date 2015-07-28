@@ -1100,6 +1100,7 @@ var Up1 =
         this.Cycle();
         this.loadView();
         this.resizeListen();
+        this.safariPicture();
     },
     "Cycle": function () {
         // Cycle robot image set on click of image (non touch devices only)
@@ -1133,6 +1134,16 @@ var Up1 =
                 $("#up1-feature").insertBefore($("#switch-point2"));
             }
         }
+    },
+
+    "safariPicture": function () {
+        $(document).ready(function(){
+            var userAgent = window.navigator.userAgent;
+
+            if (userAgent.match(/iPhone/i)) {
+               document.getElementById("up1-feature").src = "../resources/images/up1-feature-small.png";
+            }
+        });
     }
 };
 
