@@ -60,8 +60,20 @@
         <div id="app">
             <div class="container">
                 <div class="row">
-                    <span class="type"></span>
-                    <img src="../resources/images/screens/upcom_populated.png"/>       
+                    <div id="terminal">
+                        <div id="toolbar">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                        <div id="window">
+                            <p class="type">you@computer:</p><span class="type typing"></span>
+                        </div>
+                    </div>
+                    <div>
+                        <img id="upcom-empty" src="../resources/images/screens/upcom_empty.png" />
+                        <a id="upcom-pop-link" href="../resources/images/screens/upcom_populated.png" data-lightbox="upcom_populated.png" data-title="UpCom"><img id="upcom-pop" src="../resources/images/screens/upcom_populated.png"/></a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -132,15 +144,6 @@
 <script>
     $(document).ready(function () {
         UpCom.Init();
-    });
-</script>
-<script>
-    $(function(){
-        $(".type").typed({
-            strings: ["Start UpCom from within your terminal", "cmdr gui"],
-            typeSpeed: 50,
-            showCursor: true
-        });
     });
 </script>
 </body>

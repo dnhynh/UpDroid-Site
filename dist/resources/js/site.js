@@ -979,6 +979,7 @@ var UpCom =
         this.installClick();
         this.loadView();
         this.resizeListen();
+        this.typeScene();
         this.animateWings();
     },
 
@@ -1000,6 +1001,46 @@ var UpCom =
                 instructions.className = '';
             });
         });
+    },
+
+    "typeScene": function () {
+        function startTyping () {
+            $(".typing").typed({
+                strings: ["UpCom starts with one command.", "cmdr gui"],
+                typeSpeed: 50,
+                showCursor: true,
+                backDelay: 1000,
+            });
+        }
+
+        $(document).ready(function () {
+            $("#upcom-pop").bind('click', false),
+            $(window).bind("scroll", checkHeight)
+        });
+
+        function checkHeight () {
+            var height = $(window).scrollTop();
+            if (height >= $(".type").offset().top - 300) {
+                startTyping();
+
+                $(window).unbind("scroll", checkHeight);
+                setTimeout(function () {
+                    $("#terminal").velocity({
+                        translateX: "-100%"
+                    });
+                }, 7000);
+                setTimeout(showUpCom, 8000);
+            }
+        }
+
+        function showUpCom () {
+            $("#upcom-empty").velocity("fadeIn", {duration: 500});
+            setTimeout(function() {
+                $("#upcom-pop").velocity("fadeIn", {duration: 500},
+                    {complete: $("#upcom-pop").unbind('click', false)}
+                    );
+            }, 2000);
+        }
     },
 
     "loadView": function () {
