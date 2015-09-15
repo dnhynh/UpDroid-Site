@@ -857,6 +857,18 @@ var Global =
                 window.location.href = href;
             }, 1000);
         });
+
+        $(".icon-facebook").addEventListener( 'click', function() {
+            ga('send', 'event', 'link', 'Facebook linked');
+        });
+
+        $(".icon-instagram").addEventListener( 'click', function() {
+            ga('send', 'event', 'link', 'Instagram linked');
+        });
+
+        $(".icon-twitter").addEventListener( 'click', function() {
+            ga('send', 'event', 'link', 'Twitter linked');
+        });
     },
     "BorderFade": function () {
         // Fade the red site border in, 2 seconds after the page has finished loading
