@@ -24,15 +24,15 @@ var Global =
             }, 1000);
         });
 
-        $(".icon-facebook").addEventListener( 'click', function() {
+        document.getElementById( 'facebook' ).addEventListener( 'click', function() {
             ga('send', 'event', 'link', 'Facebook linked');
         });
 
-        $(".icon-instagram").addEventListener( 'click', function() {
+        document.getElementById( 'instagram' ).addEventListener( 'click', function() {
             ga('send', 'event', 'link', 'Instagram linked');
         });
 
-        $(".icon-twitter").addEventListener( 'click', function() {
+        document.getElementById( 'twitter' ).addEventListener( 'click', function() {
             ga('send', 'event', 'link', 'Twitter linked');
         });
     },
