@@ -2691,6 +2691,11 @@ header[role=banner].inactive span {
 	padding-top: 77px;
 }
 
+.form-contact .row .email:after {
+	color: #ff2919;
+	content: "press\40updroid.com";
+}
+
 .form-contact .row fieldset input[type=text],
 .form-contact .row fieldset input[type=email],
 .form-contact .row fieldset textarea {
