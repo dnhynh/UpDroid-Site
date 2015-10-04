@@ -84,7 +84,7 @@ var Homepage =
 {
     "Init": function () {
         this.Parallax();
-        this.Cycle();
+        // this.Cycle();
     },
     "Parallax": function () {
         // Simple test for Mobile Safari
