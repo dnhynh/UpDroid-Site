@@ -1758,13 +1758,31 @@ html.sb-active body {
 	transition: none;
 }
 
-.pre-order a {
+.pre-order > div {
 	position: relative;
-	float: left;
-	width: 41.66666667%;
 	min-height: 1px;
 	padding-left: 0;
 	padding-right: 0;
+	padding-top: 20px;
+}
+
+.pre-order > div > div {
+	position: relative;
+	float: left;
+	width: 58.33333333%;
+	min-height: 1px;
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.pre-order > div a {
+	position: relative;
+	float: left;
+	width: 33.33333333%;
+	min-height: 1px;
+	padding-left: 0;
+	padding-right: 0;
+	margin-left: 8.33333333%;
 }
 
 ::selection {
@@ -3407,6 +3425,11 @@ p {
 
 body {
 	padding: 0;
+}
+
+.pre-order > div {
+	float: left;
+	width: 100%;
 }
 
 nav > div {

@@ -30,8 +30,18 @@ body {
 // Pre Order Modal
 
 .pre-order {
-    a {
-        .make-xs-column(5);
+    >div {
+        .make-sm-column(12);
+        padding-top: 20px;
+        
+        >div {
+            .make-xs-column(7);
+        }
+
+        a {
+            .make-xs-column(4);
+            .make-xs-column-offset(1);
+        }
     }
 }
 
