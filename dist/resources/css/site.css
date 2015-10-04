@@ -1725,6 +1725,11 @@ html.no-touch .btn-red:hover {
 	color: #ff2919;
 }
 
+.btn-red:focus {
+	color: #fff;
+	text-decoration: none;
+}
+
 html {
 	font-size: 62.5%;
 }
@@ -1751,6 +1756,15 @@ html.sb-active body {
 	-o-transition: none;
 	-ms-transition: none;
 	transition: none;
+}
+
+.pre-order a {
+	position: relative;
+	float: left;
+	width: 41.66666667%;
+	min-height: 1px;
+	padding-left: 0;
+	padding-right: 0;
 }
 
 ::selection {
