@@ -2807,6 +2807,52 @@ header[role=banner].inactive span {
 	text-align: center;
 }
 
+.press .container {
+	padding: 150px 0 100px 0;
+}
+
+.press .container .row {
+	padding: 0 50px;
+}
+
+.press .container .row > div:first-of-type {
+	float: left;
+	width: 100%;
+	position: relative;
+	min-height: 1px;
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.press .container .row > div:first-of-type .red {
+	color: #ff2919;
+}
+
+.press .container .row > div:first-of-type p {
+	margin-top: 21px;
+}
+
+.press .container .row > div:first-of-type a {
+	margin-top: 21px;
+	float: left;
+	width: 100%;
+	position: relative;
+	min-height: 1px;
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.press .container .row > div:nth-of-type(2) {
+	float: left;
+	width: 100%;
+	position: relative;
+	min-height: 1px;
+	padding-left: 0;
+	padding-right: 0;
+	padding-top: 50px;
+	text-align: center;
+}
+
 .about-header {
 	float: left;
 	width: 100%;
@@ -3833,6 +3879,29 @@ header[role=banner] span.icon-upcom-logo {
 .changelog #log {
 	float: left;
 	width: 83.33333333%;
+}
+
+.press .container .row > div:first-of-type {
+	float: left;
+	width: 58.33333333%;
+}
+
+.press .container .row > div:first-of-type a {
+	float: left;
+	width: 41.66666667%;
+}
+
+.press .container .row > div:nth-of-type(2) {
+	margin-left: 8.33333333%;
+}
+
+.press .container .row > div:nth-of-type(2) {
+	float: left;
+	width: 33.33333333%;
+}
+
+.press .container .row > div:nth-of-type(2) {
+	padding-top: 0;
 }
 
 .press .container .row > div:first-of-type {
