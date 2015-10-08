@@ -407,26 +407,30 @@ header[role=banner] {
             width: 70%;
 
             @media (min-width: @screen-large-mobile-min) {
-                bottom: 190px;
+                left: 35px;
+                bottom: 178px;
+                width: 35%;
             }
 
             @media (min-width: @screen-sm-min) {
                 bottom: auto;
-                left: 38px;
-                top: 230px;
-                width: 67%;
+                left: 90px;
+                bottom: 95px;
+                width: 35%;
             }
 
             @media (min-width: @screen-md-min) {
-                left: 50px;
+                left: 130px;
                 position: absolute;
-                top: 280px;
-                width: 67%;
+                bottom: 100px;
+                width: 30%;
             }
 
             @media (min-width: @screen-lg-min) {
-                top: 360px;
-                width: 68%;
+                left: 120px;
+                position: absolute;
+                bottom: 130px;
+                width: 35%;
             }
         }
     }
@@ -476,6 +480,12 @@ header[role=banner] {
 
             p {
                 margin-top: 21px;
+            }
+
+            .play {
+                border-radius: 50%;
+                background-color: @brand-red;
+                width: 33%;
             }
         }
     }
