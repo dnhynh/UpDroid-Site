@@ -262,6 +262,7 @@ header[role=banner] {
 .home-header {
     float: left;
     position: relative;
+    background-color: #eaecec;
     width: 100%;
 
     .row {
@@ -445,6 +446,37 @@ header[role=banner] {
         @media (min-width: @screen-lg-min) {
             bottom: 140px;
             left: 49px;
+        }
+    }
+}
+
+// Video Section
+
+.video {
+    float: left;
+    width: 100%;
+    background-color: #f1f4f4;
+    
+    .container {
+
+    }
+
+    .row {
+        padding: 80px 21px;
+        @media(min-width: @screen-sm-min) {
+            padding: 80px 0;
+        }
+
+        >div {
+            .make-xs-column(12);
+            .make-sm-column-offset(1);
+            .make-sm-column(3);
+            .make-md-column-offset(1);
+            .make-md-column(3);
+
+            p {
+                margin-top: 21px;
+            }
         }
     }
 }

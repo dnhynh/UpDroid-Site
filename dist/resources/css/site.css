@@ -1922,6 +1922,7 @@ header[role=banner].inactive span {
 .home-header {
 	float: left;
 	position: relative;
+	background-color: #eaecec;
 	width: 100%;
 }
 
@@ -2012,6 +2013,29 @@ header[role=banner].inactive span {
 	font-size: 3.4rem;
 	color: #0c0c0c;
 	position: absolute;
+}
+
+.video {
+	float: left;
+	width: 100%;
+	background-color: #f1f4f4;
+}
+
+.video .row {
+	padding: 80px 21px;
+}
+
+.video .row > div {
+	float: left;
+	width: 100%;
+	position: relative;
+	min-height: 1px;
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.video .row > div p {
+	margin-top: 21px;
 }
 
 .image-gallery {
@@ -3603,6 +3627,19 @@ header[role=banner] span.icon-upcom-logo {
 	width: 67%;
 }
 
+.video .row {
+	padding: 80px 0;
+}
+
+.video .row > div {
+	margin-left: 8.33333333%;
+}
+
+.video .row > div {
+	float: left;
+	width: 25%;
+}
+
 .image-gallery .row > div {
 	float: left;
 	width: 33.33333333%;
@@ -4487,6 +4524,15 @@ nav > div .social-nav {
 .home-header .icon-arrow-down {
 	bottom: 70px;
 	left: 28px;
+}
+
+.video .row > div {
+	margin-left: 8.33333333%;
+}
+
+.video .row > div {
+	float: left;
+	width: 25%;
 }
 
 .image-gallery .row > div header {
