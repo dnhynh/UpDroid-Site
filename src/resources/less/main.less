@@ -1505,6 +1505,47 @@ header[role=banner] {
     }
 }
 
+// Press
+
+.press {
+    .container {
+        padding: 150px 0 100px 0;
+
+        .row {
+            padding: 0 50px;
+            >div:first-of-type {
+                .make-xs-column(12);                
+                .make-sm-column(7);
+
+                .red {
+                    color: @brand-red;
+                }
+
+                p {
+                    margin-top: 21px;
+                }
+
+                a {
+                    margin-top: 21px;
+                    .make-xs-column(12);
+                    .make-sm-column(5);
+                }
+            }
+            >div:nth-of-type(2) {
+                .make-xs-column(12);
+                .make-sm-column-offset(1);
+                .make-sm-column(4);
+                padding-top: 50px;
+                text-align: center;
+                
+                @media(min-width: @screen-sm-min) {
+                    padding-top: 0;
+                }
+            }    
+        }
+    }
+}
+
 // About us content
 .about-header {
     float: left;
@@ -1993,11 +2034,6 @@ header[role=banner] {
     .row {
         padding-bottom: 77px;
         padding-top: 77px;
-
-        .email:after {
-            color: @brand-red;
-            content: "press\40updroid.com"; 
-        }
 
         fieldset {
             input[type=text], input[type=email], textarea {

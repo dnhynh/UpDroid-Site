@@ -1006,23 +1006,23 @@ var UpCom =
     },
 
     "installClick": function () {
-        var instructions = document.getElementById( 'instructions' );
+        // var instructions = document.getElementById( 'instructions' );
     
-        document.getElementById( 'install' ).addEventListener( 'click', function() {
-            ga('send', 'event', 'Downloads', 'Commander Download');
-            $(instructions).scrollView();
-            setTimeout(function () {
-                var height = $(window).scrollTop();
+        // document.getElementById( 'install' ).addEventListener( 'click', function() {
+        //     ga('send', 'event', 'Downloads', 'Commander Download');
+        //     $(instructions).scrollView();
+        //     setTimeout(function () {
+        //         var height = $(window).scrollTop();
 
-                if (height >= $(instructions).offset().top - 300) {
-                    instructions.className = 'expanded';
-                }
-            }, 500);
+        //         if (height >= $(instructions).offset().top - 300) {
+        //             instructions.className = 'expanded';
+        //         }
+        //     }, 500);
             
-            $("#close-instructions").click(function() {
-                instructions.className = '';
-            });
-        });
+        //     $("#close-instructions").click(function() {
+        //         instructions.className = '';
+        //     });
+        // });
     },
 
     "typeScene": function () {
