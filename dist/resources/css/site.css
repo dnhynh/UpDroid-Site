@@ -2039,9 +2039,65 @@ header[role=banner].inactive span {
 }
 
 .video .row > div .play {
+	margin-top: 21px;
 	border-radius: 50%;
+	width: 45px;
+	height: 45px;
+	text-align: center;
 	background-color: #ff2919;
-	width: 33%;
+	cursor: pointer;
+	transition: all 500ms ease;
+	-moz-transition: all 500ms ease;
+	-ms-transition: all 500ms ease;
+	-o-transition: all 500ms ease;
+	-webkit-transition: all 500ms ease;
+}
+
+.video .row > div .play:hover {
+	background-color: #fff;
+}
+
+.video .row > div .play:hover .play-icon {
+	border-left: 10px solid #ff2919;
+}
+
+.video .row > div .play .play-icon {
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	left: 2px;
+	transform: translateY(-50%);
+	top: 50%;
+	width: 0;
+	height: 0;
+	border-top: 7px solid transparent;
+	border-bottom: 7px solid transparent;
+	border-left: 10px solid #fff;
+	transition: all 500ms ease;
+	-moz-transition: all 500ms ease;
+	-ms-transition: all 500ms ease;
+	-o-transition: all 500ms ease;
+	-webkit-transition: all 500ms ease;
+}
+
+.video .row > div:nth-of-type(2) {
+	float: left;
+	width: 100%;
+	position: relative;
+	min-height: 1px;
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.video .row > div:nth-of-type(2) > div > div {
+	cursor: pointer;
+	margin-top: 21px;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 50%;
+	border: 10px solid #fff;
+	height: 70vw;
+	width: 70vw;
 }
 
 .image-gallery {
@@ -3646,6 +3702,17 @@ header[role=banner] span.icon-upcom-logo {
 .video .row > div {
 	float: left;
 	width: 25%;
+}
+
+.video .row > div:nth-of-type(2) {
+	float: left;
+	width: 50%;
+}
+
+.video .row > div:nth-of-type(2) > div > div {
+	margin-top: 100px;
+	width: 300px;
+	height: 300px;
 }
 
 .image-gallery .row > div {
@@ -5548,6 +5615,10 @@ td.visible-xs {
 }
 
 .home-header .icon-arrow-down {
+	display: none !important;
+}
+
+.video .row > div .play {
 	display: none !important;
 }
 

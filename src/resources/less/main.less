@@ -483,9 +483,72 @@ header[role=banner] {
             }
 
             .play {
+
+                .hidden-xs;
+                margin-top: 21px;
                 border-radius: 50%;
+                width: 45px;
+                height: 45px;
+                text-align: center;
                 background-color: @brand-red;
-                width: 33%;
+                cursor: pointer;
+                transition:                    all 500ms ease;
+                    -moz-transition:           all 500ms ease;
+                    -ms-transition:            all 500ms ease;
+                    -o-transition:             all 500ms ease; 
+                    -webkit-transition:        all 500ms ease;
+
+                &:hover {
+                    background-color: #fff;
+                }
+
+                &:hover {
+                    .play-icon {
+                        border-left: 10px solid @brand-red;
+                    }
+                } 
+
+                .play-icon {
+                    position: relative;
+                    margin-left: auto;
+                    margin-right: auto;
+                    left: 2px;
+                    transform: translateY(-50%);
+                    top: 50%;
+                    width: 0;
+                    height: 0;
+                    border-top: 7px solid transparent;
+                    border-bottom: 7px solid transparent;
+                    border-left: 10px solid #fff;
+                    transition:                    all 500ms ease;
+                        -moz-transition:           all 500ms ease;
+                        -ms-transition:            all 500ms ease;
+                        -o-transition:             all 500ms ease; 
+                        -webkit-transition:        all 500ms ease;
+                }
+            }
+
+            &:nth-of-type(2) {
+                .make-xs-column(12);
+                .make-sm-column(6);
+                >div {
+                    >div {
+                        cursor: pointer;
+                        margin-top: 21px;
+                        margin-left: auto;
+                        margin-right: auto;
+                        border-radius: 50%;
+                        border: 10px solid #fff;
+                        height: 70vw;
+                        width: 70vw;
+
+                        @media(min-width: @screen-sm-min) {
+                            margin-top: 100px;
+                            width: 300px;
+                            height: 300px;
+                        }
+                    }
+                }
             }
         }
     }
