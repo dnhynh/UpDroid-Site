@@ -755,7 +755,7 @@ header[role=banner] {
 }
 
 // Robotics content - includes sign up feature
-.robotics {
+.inside {
     background-color: @robotics-bg-color;
     float: left;
     padding-top: 35px;
@@ -773,72 +773,58 @@ header[role=banner] {
 
     .row {
         position: relative;
+        padding-left: 21px;
+        h1 {
+            margin-left: 21px;
+            @media(min-width: @screen-sm-min) {
+                margin: 0 0;
+                width: 170px;
+            }
+        }
 
-        >div {
-            &:first-of-type {
-                .make-xs-column(12);
-                .make-sm-column(7);
-                .make-sm-column-offset(1);
-                .make-lg-column(3);
-                .make-lg-column-offset(1);
-                padding-left: 21px;
-                padding-right: 21px;
+        ul {
+                    li {
+                        .font-monosten-a;
+                        .font-size(1.2);
+                        margin-left: 21px;
+                        margin-top: 5px;
+                    }                    
+                }
 
+        >div:first-of-type, >div:nth-of-type(2) {
+            .make-xs-column(12);
+            .make-sm-column(4);
+            .make-md-column(3);
+            padding: 21px 21px;
+
+            @media (min-width: @screen-sm-min) {
+                padding: 0 0;
+            }
+
+            h1 {
                 @media (min-width: @screen-sm-min) {
-                    padding-left: 0;
-                    padding-right: 0;
-                }
-
-                h2 {
-                    @media (min-width: @screen-sm-min) {
-                        padding-right: 35px;
-                    }
-                }
-
-                p {
-                    padding-top: 14px;
-
-                    @media (min-width: @screen-sm-min) {
-                        padding-right: 35px;
-                    }
-
-                    @media (min-width: @screen-md-min) {
-                        padding-top: 21px;
-                    }
+                    padding-right: 35px;
                 }
             }
 
-            &:nth-of-type(2) {
-                .hidden-xs;
-                .make-sm-column(6);
-                .make-sm-column-offset(1);
-                .make-lg-column(3);
-                .make-lg-column-offset(0);
+            p {
                 padding-top: 14px;
+
+                @media (min-width: @screen-sm-min) {
+                    padding-right: 35px;
+                }
 
                 @media (min-width: @screen-md-min) {
                     padding-top: 21px;
                 }
 
-                @media (min-width: @screen-lg-min) {
-                    padding-top: 0;
-                }
-
-                p {
-                    padding-right: 35px;
-                    padding-top: 14px;
-
-                    @media (min-width: @screen-md-min) {
-                        padding-top: 21px;
-                    }
-
-                    &:first-of-type {
-                        padding-top: 0;
-                    }
+                &:not(:first-child):before {
+                    content: "- ";
                 }
             }
+        }
 
-            &:last-of-type {
+            >div:last-of-type {
                 .make-xs-column(12);
                 .make-sm-column(3);
                 .make-md-column(2);
@@ -846,11 +832,12 @@ header[role=banner] {
                 padding-right: 21px;
 
                 @media (min-width: @screen-sm-min) {
-                    bottom: 0;
+                    top: 200;
+                    padding: 0 0;
                     padding-left: 0;
                     padding-right: 0;
                     position: absolute;
-                    right: 8.3%;
+                    right: 2%;
                 }
 
                 p {
@@ -877,7 +864,6 @@ header[role=banner] {
                         margin-top: 21px;
                     }
                 }
-            }
         }
 
         img {
