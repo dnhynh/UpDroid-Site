@@ -2254,30 +2254,56 @@ header[role=banner].inactive span {
 
 .inside .row {
 	position: relative;
-	padding-left: 21px;
+	padding: 0 21px;
 }
 
 .inside .row h1 {
-	margin-left: 21px;
-}
-
-.inside .row ul li {
-	font-family: "Monosten A";
-	font-size: 12px;
-	font-size: 1.2rem;
-	margin-left: 21px;
-	margin-top: 5px;
+	margin: 50px 21px 0 0;
 }
 
 .inside .row > div:first-of-type,
 .inside .row > div:nth-of-type(2) {
+	padding: 21px 21px;
+}
+
+.inside .row > div:first-of-type > div,
+.inside .row > div:nth-of-type(2) > div {
+	position: relative;
 	float: left;
 	width: 100%;
-	position: relative;
 	min-height: 1px;
 	padding-left: 0;
 	padding-right: 0;
-	padding: 21px 21px;
+	margin-top: 5px;
+	margin-left: 30px;
+}
+
+.inside .row > div:first-of-type > div ul > li,
+.inside .row > div:nth-of-type(2) > div ul > li {
+	font-family: "Monosten A";
+	font-size: 12px;
+	font-size: 1.2rem;
+	margin-top: 5px;
+}
+
+.inside .row > div:first-of-type .bullet,
+.inside .row > div:nth-of-type(2) .bullet {
+	position: relative;
+	float: left;
+	width: 8.33333333%;
+	min-height: 1px;
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.inside .row > div:first-of-type .bullet-desc,
+.inside .row > div:nth-of-type(2) .bullet-desc {
+	position: relative;
+	float: left;
+	width: 91.66666667%;
+	min-height: 1px;
+	padding-left: 0;
+	padding-right: 0;
 }
 
 .inside .row > div:first-of-type p,
@@ -2285,9 +2311,22 @@ header[role=banner].inactive span {
 	padding-top: 14px;
 }
 
-.inside .row > div:first-of-type p:not(:first-child):before,
-.inside .row > div:nth-of-type(2) p:not(:first-child):before {
-	content: "- ";
+.inside .row > div:first-of-type {
+	float: left;
+	width: 66.66666667%;
+	position: relative;
+	min-height: 1px;
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.inside .row > div:nth-of-type(2) {
+	float: left;
+	width: 66.66666667%;
+	position: relative;
+	min-height: 1px;
+	padding-left: 0;
+	padding-right: 0;
 }
 
 .inside .row > div:last-of-type {
@@ -2297,23 +2336,44 @@ header[role=banner].inactive span {
 	min-height: 1px;
 	padding-left: 0;
 	padding-right: 0;
-	padding-left: 21px;
-	padding-right: 21px;
+}
+
+.inside .row > div:last-of-type img {
+	margin-left: 8.33333333%;
+	float: left;
+	width: 83.33333333%;
+	position: relative;
+	min-height: 1px;
+	padding-left: 0;
+	padding-right: 0;
+	margin-top: 42px;
+}
+
+.inside .row > div:last-of-type h1 {
+	position: relative;
+	float: left;
+	width: 100%;
+	min-height: 1px;
+	padding-left: 0;
+	padding-right: 0;
+	margin-top: 21px;
 }
 
 .inside .row > div:last-of-type p {
+	position: relative;
+	float: left;
+	width: 100%;
+	min-height: 1px;
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.inside .row > div:last-of-type p:first-of-type {
 	padding-top: 14px;
-	width: 70%;
 }
 
 .inside .row > div:last-of-type .btn {
 	margin-top: 14px;
-}
-
-.inside .row img {
-	margin-left: 21px;
-	margin-top: 105px;
-	width: 90%;
 }
 
 .up1 .container {
@@ -3254,10 +3314,6 @@ footer[role=contentinfo] p {
 	width: 35%;
 }
 
-.inside .row > div:last-of-type p {
-	width: 60%;
-}
-
 .up1 .container {
 	padding: 0 30px 50px 30px;
 }
@@ -3786,12 +3842,6 @@ header[role=banner] span.icon-upcom-logo {
 
 .inside .row > div:first-of-type,
 .inside .row > div:nth-of-type(2) {
-	float: left;
-	width: 33.33333333%;
-}
-
-.inside .row > div:first-of-type,
-.inside .row > div:nth-of-type(2) {
 	padding: 0 0;
 }
 
@@ -3805,31 +3855,45 @@ header[role=banner] span.icon-upcom-logo {
 	padding-right: 35px;
 }
 
+.inside .row > div:first-of-type {
+	float: left;
+	width: 33.33333333%;
+}
+
+.inside .row > div:nth-of-type(2) {
+	float: left;
+	width: 33.33333333%;
+}
+
+.inside .row > div:nth-of-type(2) {
+	padding-right: 21px;
+}
+
 .inside .row > div:last-of-type {
 	float: left;
 	width: 25%;
 }
 
 .inside .row > div:last-of-type {
-	top: 200;
+	top: 0;
 	padding: 0 0;
-	padding-left: 0;
-	padding-right: 0;
 	position: absolute;
 	right: 2%;
 }
 
-.inside .row > div:last-of-type p {
-	width: auto;
+.inside .row > div:last-of-type img {
+	margin-left: 0%;
 }
 
-.inside .row img {
-	margin-left: 0;
+.inside .row > div:last-of-type img {
+	float: left;
+	width: 41.66666667%;
+}
+
+.inside .row > div:last-of-type img {
 	margin-top: 0;
-	position: absolute;
-	right: 21px;
-	top: 294px;
-	width: 32%;
+	position: relative;
+	right: 10px;
 }
 
 .up1 p {
@@ -4654,35 +4718,56 @@ nav > div .social-nav {
 	padding-top: 112px;
 }
 
-.inside .row > div:first-of-type,
-.inside .row > div:nth-of-type(2) {
-	float: left;
-	width: 25%;
+.inside .row {
+	padding: 0 100px;
 }
 
 .inside .row > div:first-of-type p,
 .inside .row > div:nth-of-type(2) p {
 	padding-top: 21px;
+	font-size: 12px;
+	font-size: 1.2rem;
+}
+
+.inside .row > div:first-of-type {
+	float: left;
+	width: 25%;
+}
+
+.inside .row > div:nth-of-type(2) {
+	float: left;
+	width: 33.33333333%;
+}
+
+.inside .row > div:nth-of-type(2) {
+	padding-right: 0;
+	margin-left: 21px;
 }
 
 .inside .row > div:last-of-type {
 	float: left;
-	width: 16.66666667%;
+	width: 25%;
+}
+
+.inside .row > div:last-of-type {
+	padding-left: 50px;
+	top: 0;
+	position: absolute;
+	right: 100px;
+}
+
+.inside .row > div:last-of-type img {
+	float: left;
+	width: 41.66666667%;
 }
 
 .inside .row > div:last-of-type p {
-	padding-top: 21px;
+	font-size: 12px;
+	font-size: 1.2rem;
 }
 
 .inside .row > div:last-of-type .btn {
 	margin-top: 21px;
-}
-
-.inside .row img {
-	position: absolute;
-	right: 21px;
-	top: 147px;
-	width: 32%;
 }
 
 .up1 .container {
@@ -5465,10 +5550,8 @@ header[role=banner] span.icon-upcom-logo {
 	line-height: 20px;
 }
 
-.inside .row img {
-	right: 56px;
-	top: 203px;
-	width: 28%;
+.inside .row > div:last-of-type {
+	padding-left: 80px;
 }
 
 #modules .row > div > span {
