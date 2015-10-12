@@ -31,8 +31,16 @@ body {
 
 .pre-order {
     text-align: left;
-    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
     padding: 0;
+
+    @media(min-width: @screen-large-mobile-min) {
+        width: 100%;
+    }
+     @media(min-width: @screen-sm-min) {
+        width: 500px;
+     }
 
     .icon-cross {
         position: absolute;

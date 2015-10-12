@@ -1760,7 +1760,8 @@ html.sb-active body {
 
 .pre-order {
 	text-align: left;
-	width: 500px;
+	margin-left: auto;
+	margin-right: auto;
 	padding: 0;
 }
 
@@ -3351,6 +3352,10 @@ footer[role=contentinfo] p {
 
 @media (min-width: 350px) {
 
+.pre-order {
+	width: 100%;
+}
+
 .home-header .row > div p {
 	width: 60%;
 }
@@ -3705,6 +3710,10 @@ p {
 
 body {
 	padding: 0;
+}
+
+.pre-order {
+	width: 500px;
 }
 
 .pre-order > div {
