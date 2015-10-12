@@ -1812,9 +1812,9 @@ html.sb-active body {
 
 .pre-order > div > p:nth-of-type(2) {
 	margin-top: 21px;
-	position: relative;
 	float: left;
-	width: 66.66666667%;
+	width: 100%;
+	position: relative;
 	min-height: 1px;
 	padding-left: 0;
 	padding-right: 0;
@@ -3713,12 +3713,17 @@ body {
 }
 
 .pre-order {
-	width: 500px;
+	width: 400px;
 }
 
 .pre-order > div {
 	float: left;
 	width: 100%;
+}
+
+.pre-order > div > p:nth-of-type(2) {
+	float: left;
+	width: 75%;
 }
 
 nav > div {
