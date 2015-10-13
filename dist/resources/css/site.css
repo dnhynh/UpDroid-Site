@@ -2252,6 +2252,10 @@ header[role=banner].inactive span {
 	z-index: 2;
 }
 
+#exploded {
+	background-color: #e4e4e4;
+}
+
 #exploded .row {
 	margin-top: 80px;
 	padding: 0 21px;

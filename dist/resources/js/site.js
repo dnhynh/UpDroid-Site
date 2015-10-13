@@ -982,7 +982,8 @@ var Homepage =
 
         var controller = new ScrollMagic.Controller();
         var start = new ScrollMagic.Scene({
-          offset: 1500, // starting scene, when reaching this element
+          triggerElement: "#exploded", // starting scene, when reaching this element
+          offset: 300,
           duration: 400 // pin the element for a total of 400px
         })
         .setPin('#exploded'); // the element we want to pin
