@@ -2253,6 +2253,60 @@ header[role=banner].inactive span {
 	z-index: 2;
 }
 
+.exploded {
+	float: left;
+	width: 100%;
+}
+
+.exploded .row {
+	margin-top: 80px;
+	padding: 0 21px;
+}
+
+.exploded .row > div:first-of-type {
+	float: left;
+	width: 100%;
+	position: relative;
+	min-height: 1px;
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.exploded .row > div:first-of-type h1 {
+	float: left;
+	width: 100%;
+	position: relative;
+	min-height: 1px;
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.exploded .row > div:first-of-type > p {
+	position: relative;
+	float: left;
+	width: 100%;
+	min-height: 1px;
+	padding-left: 0;
+	padding-right: 0;
+	padding-top: 21px;
+}
+
+.exploded .row > div:nth-of-type(2) {
+	float: left;
+	width: 100%;
+	position: relative;
+	min-height: 1px;
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.exploded .row > div:nth-of-type(2) .circle {
+	width: 80vw;
+	height: 80vw;
+	border-radius: 50%;
+	background-color: white;
+}
+
 .commander {
 	background-image: url('/resources/images/bg-commander.gif');
 	background-position: right 35px;
@@ -3857,6 +3911,25 @@ header[role=banner] span.icon-upcom-logo {
 
 .image-gallery .row > div > span:first-of-type {
 	top: 14px;
+}
+
+.exploded .row {
+	padding: 0 50px;
+}
+
+.exploded .row > div:first-of-type {
+	float: left;
+	width: 25%;
+}
+
+.exploded .row > div:first-of-type h1 {
+	float: left;
+	width: 66.66666667%;
+}
+
+.exploded .row > div:nth-of-type(2) {
+	float: left;
+	width: 50%;
 }
 
 .commander {
