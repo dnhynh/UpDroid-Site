@@ -707,6 +707,7 @@ header[role=banner] {
 
             &:first-of-type {
                 top: 21px;
+                z-index: 2;
 
                 @media (min-width: @screen-sm-min) {
                     top: 14px;
@@ -714,18 +715,6 @@ header[role=banner] {
 
                 @media (min-width: @screen-md-min) {
                     top: 21px;
-                }
-            }
-
-            &:last-of-type {
-                bottom: 21px;
-
-                @media (min-width: @screen-sm-min) {
-                    bottom: 14px;
-                }
-
-                @media (min-width: @screen-md-min) {
-                    bottom: 21px;
                 }
             }
         }

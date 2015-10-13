@@ -2250,10 +2250,7 @@ header[role=banner].inactive span {
 
 .image-gallery .row > div > span:first-of-type {
 	top: 21px;
-}
-
-.image-gallery .row > div > span:last-of-type {
-	bottom: 21px;
+	z-index: 2;
 }
 
 .commander {
@@ -3862,10 +3859,6 @@ header[role=banner] span.icon-upcom-logo {
 	top: 14px;
 }
 
-.image-gallery .row > div > span:last-of-type {
-	bottom: 14px;
-}
-
 .commander {
 	background-position: right center;
 	background-size: 138%;
@@ -4747,10 +4740,6 @@ nav > div .social-nav {
 
 .image-gallery .row > div > span:first-of-type {
 	top: 21px;
-}
-
-.image-gallery .row > div > span:last-of-type {
-	bottom: 21px;
 }
 
 .commander {
