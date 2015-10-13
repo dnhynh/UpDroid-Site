@@ -1929,10 +1929,8 @@ html.no-touch nav > div .social-nav li a:hover {
 
 .wrapper {
 	background-color: #eaecec;
-	float: left;
 	overflow: hidden;
 	position: relative;
-	width: 100%;
 }
 
 header[role=banner] span {
@@ -1977,10 +1975,8 @@ header[role=banner].inactive span {
 }
 
 .home-header {
-	float: left;
 	position: relative;
 	background-color: #eaecec;
-	width: 100%;
 }
 
 .home-header .row {
@@ -2074,8 +2070,6 @@ header[role=banner].inactive span {
 
 .video {
 	display: none;
-	float: left;
-	width: 100%;
 	background-color: #f1f4f4;
 }
 
@@ -2156,11 +2150,6 @@ header[role=banner].inactive span {
 	border: 10px solid #fff;
 	height: 70vw;
 	width: 70vw;
-}
-
-.image-gallery {
-	float: left;
-	width: 100%;
 }
 
 .image-gallery .row > div {
@@ -2261,11 +2250,6 @@ header[role=banner].inactive span {
 .image-gallery .row > div > span:first-of-type {
 	top: 21px;
 	z-index: 2;
-}
-
-#exploded {
-	float: left;
-	width: 100%;
 }
 
 #exploded .row {
@@ -2412,10 +2396,8 @@ header[role=banner].inactive span {
 	background-position: right 35px;
 	background-repeat: no-repeat;
 	background-size: 600px;
-	float: left;
 	padding-bottom: 70px;
 	padding-top: 301px;
-	width: 100%;
 }
 
 .commander a {
@@ -2445,9 +2427,7 @@ header[role=banner].inactive span {
 
 .inside {
 	background-color: #ffffff;
-	float: left;
 	padding-top: 35px;
-	width: 100%;
 }
 
 .inside .row {
