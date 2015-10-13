@@ -886,6 +886,16 @@ table {
  * LESS Useful Utilities
  */
 
+/* Vertical Align */
+
+.vertical-align {
+	position: relative;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+
 /* REM Font size with Pixel fallback */
 
 /* 100% Viewport Height */
@@ -2253,17 +2263,17 @@ header[role=banner].inactive span {
 	z-index: 2;
 }
 
-.exploded {
+#exploded {
 	float: left;
 	width: 100%;
 }
 
-.exploded .row {
+#exploded .row {
 	margin-top: 80px;
 	padding: 0 21px;
 }
 
-.exploded .row > div:first-of-type {
+#exploded .row > div:first-of-type {
 	float: left;
 	width: 100%;
 	position: relative;
@@ -2272,7 +2282,20 @@ header[role=banner].inactive span {
 	padding-right: 0;
 }
 
-.exploded .row > div:first-of-type h1 {
+#exploded .row > div:first-of-type > div {
+	position: relative;
+	float: left;
+	width: 100%;
+	min-height: 1px;
+	padding-left: 0;
+	padding-right: 0;
+}
+
+#exploded .row > div:first-of-type > div .no-wrap {
+	white-space: nowrap;
+}
+
+#exploded .row > div:first-of-type > div > h1 {
 	float: left;
 	width: 100%;
 	position: relative;
@@ -2281,30 +2304,107 @@ header[role=banner].inactive span {
 	padding-right: 0;
 }
 
-.exploded .row > div:first-of-type > p {
+#exploded .row > div:first-of-type > div > p {
 	position: relative;
 	float: left;
 	width: 100%;
 	min-height: 1px;
 	padding-left: 0;
 	padding-right: 0;
+}
+
+#exploded .row > div:first-of-type > div > p:first-of-type {
 	padding-top: 21px;
 }
 
-.exploded .row > div:nth-of-type(2) {
+#exploded .row > div:first-of-type > div:not(:first-child) {
+	display: none !important;
+	visibility: hidden !important;
+}
+
+#exploded .row > div:nth-of-type(2) {
 	float: left;
-	width: 100%;
+	width: 83.33333333%;
 	position: relative;
 	min-height: 1px;
 	padding-left: 0;
 	padding-right: 0;
+	height: 100%;
 }
 
-.exploded .row > div:nth-of-type(2) .circle {
-	width: 80vw;
-	height: 80vw;
+#exploded .row > div:nth-of-type(2) .circle {
+	width: 60vw;
+	height: 60vw;
+	margin: 21px auto;
 	border-radius: 50%;
 	background-color: white;
+}
+
+#exploded .row > div:nth-of-type(2) .circle img {
+	width: 320px;
+	position: absolute;
+	left: -50px;
+}
+
+#exploded .row > div:nth-of-type(2) .circle #cpu {
+	z-index: 1;
+	bottom: 0;
+}
+
+#exploded .row > div:nth-of-type(2) .circle #base {
+	z-index: 2;
+	bottom: 0;
+}
+
+#exploded .row > div:nth-of-type(2) .circle #arm {
+	bottom: -2px;
+	z-index: 3;
+}
+
+#exploded .row > div:nth-of-type(2) .circle #io {
+	bottom: -2px;
+	z-index: 4;
+}
+
+#exploded .row > div:last-of-type {
+	float: left;
+	width: 16.66666667%;
+	position: relative;
+	min-height: 1px;
+	padding-left: 0;
+	padding-right: 0;
+	height: 100%;
+}
+
+#exploded .row > div:last-of-type > div {
+	margin-top: 120px;
+}
+
+#exploded .row > div:last-of-type > div .pager { /* override normal button styling */
+	padding: 0 0;
+	border: 0;
+	margin: 33px auto;
+	border-radius: 50%;
+	display: block;
+	width: 15px;
+	height: 15px;
+	background-color: #fff;
+	border: 1px solid #cdcfcf;
+	cursor: pointer;
+	transition: all 1000ms ease;
+	-moz-transition: all 1000ms ease;
+	-ms-transition: all 1000ms ease;
+	-o-transition: all 1000ms ease;
+	-webkit-transition: all 1000ms ease;
+}
+
+#exploded .row > div:last-of-type > div .pager:hover {
+	background: black;
+}
+
+#exploded .row > div:last-of-type > div .pager:focus {
+	background: black;
+	outline: 0;
 }
 
 .commander {
@@ -3913,23 +4013,42 @@ header[role=banner] span.icon-upcom-logo {
 	top: 14px;
 }
 
-.exploded .row {
+#exploded .row {
 	padding: 0 50px;
 }
 
-.exploded .row > div:first-of-type {
+#exploded .row > div:first-of-type {
 	float: left;
 	width: 25%;
 }
 
-.exploded .row > div:first-of-type h1 {
+#exploded .row > div:first-of-type > div > h1 {
 	float: left;
 	width: 66.66666667%;
 }
 
-.exploded .row > div:nth-of-type(2) {
+#exploded .row > div:nth-of-type(2) {
 	float: left;
-	width: 50%;
+	width: 41.66666667%;
+}
+
+#exploded .row > div:nth-of-type(2) {
+	margin-left: 8.33333333%;
+}
+
+#exploded .row > div:nth-of-type(2) .circle {
+	width: 300px;
+	height: 300px;
+	margin: 50px 0;
+}
+
+#exploded .row > div:last-of-type {
+	float: left;
+	width: 16.66666667%;
+}
+
+#exploded .row > div:last-of-type {
+	margin-left: 8.33333333%;
 }
 
 .commander {
@@ -4813,6 +4932,10 @@ nav > div .social-nav {
 
 .image-gallery .row > div > span:first-of-type {
 	top: 21px;
+}
+
+#exploded .row > div:last-of-type {
+	margin-left: 0%;
 }
 
 .commander {

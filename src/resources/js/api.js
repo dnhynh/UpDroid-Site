@@ -85,6 +85,7 @@ var Homepage =
     "Init": function () {
         this.Parallax();
         // this.Cycle();
+        this.Exploded();
     },
     "Parallax": function () {
         // Simple test for Mobile Safari
@@ -123,6 +124,19 @@ var Homepage =
         $("html.no-touch #sb-site").on("click", "div.cycle-pager", function (event) {
             event.stopPropagation();
         });
+    },
+    "Exploded": function () {
+        console.log("firing");
+
+        var controller = new ScrollMagic.Controller();
+        var start = new ScrollMagic.Scene({
+          offset: 1500, // starting scene, when reaching this element
+          duration: 400 // pin the element for a total of 400px
+        })
+        .setPin('#exploded'); // the element we want to pin
+
+        // Add Scene to ScrollMagic Controller
+        controller.addScene(start);
     }
 };
 
