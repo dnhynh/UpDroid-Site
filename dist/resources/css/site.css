@@ -2306,6 +2306,10 @@ header[role=banner].inactive span {
 	padding-top: 21px;
 }
 
+#exploded .row > div:first-of-type > div .spec-start {
+	padding-top: 21px;
+}
+
 #exploded .row > div:first-of-type > div:not(:first-child) {
 	opacity: 0;
 }
