@@ -126,15 +126,44 @@ var Homepage =
         });
     },
     "Exploded": function () {
-        console.log("firing");
 
         var controller = new ScrollMagic.Controller();
         var start = new ScrollMagic.Scene({
           triggerElement: "#exploded", // starting scene, when reaching this element
-          offset: 300,
-          duration: 400 // pin the element for a total of 400px
+          offset: 240,
+          duration: 50000 // pin the element for a total of 400px
         })
         .setPin('#exploded'); // the element we want to pin
+
+        var remove1 = new ScrollMagic.Scene({
+            triggerElement: "#exploded",
+            offset: 1000,
+        }).setVelocity("#first-headline", {opacity: 0})
+        .addTo(controller);
+
+        var armUp = new ScrollMagic.Scene({
+            triggerElement: "#exploded",
+            offset: 1100,
+        }).setVelocity("#arm", {translateY: "-40%"})
+        .addTo(controller);
+
+        var add2 = new ScrollMagic.Scene({
+            triggerElement: "#exploded",
+            offset: 1100,
+        }).setVelocity("#arm-copy", {opacity: 1})
+        .addTo(controller);
+
+        var armDown = new ScrollMagic.Scene({
+            triggerElement: "#exploded",
+            offset: 3000,
+        }).setVelocity("#arm", {translateY: "0"})
+        .addTo(controller);
+
+        var remove2 = new ScrollMagic.Scene({
+            triggerElement: "#exploded",
+            offset: 3000,
+        }).setVelocity("#arm-copy", {opacity: 0})
+        .addTo(controller);
 
         // Add Scene to ScrollMagic Controller
         controller.addScene(start);

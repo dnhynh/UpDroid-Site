@@ -734,6 +734,13 @@ header[role=banner] {
             >div {
                 .make-xs-column(12);
 
+                position: absolute;
+
+                @media(min-width: @screen-sm-min) {
+                    left: 0px;
+                    top: 0px;
+                }
+
                 .no-wrap {
                     white-space: nowrap;
                 }
@@ -749,9 +756,8 @@ header[role=banner] {
                         padding-top: 21px;
                     }
                 }
-
                 &:not(:first-child) {
-                    .hidden;
+                    opacity: 0;
                 }
             }
         }
