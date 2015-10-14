@@ -160,7 +160,7 @@ var Homepage =
         var armBack = new ScrollMagic.Scene({
             triggerElement: "#exploded",
             offset: 1250
-        }).setVelocity("#arm", {translateY: "0", translateX: "0"})
+        }).setVelocity("#arm", {translateY: "30%", translateX: "-15%"})
         .addTo(controller);
 
         var remove1 = new ScrollMagic.Scene({
