@@ -137,152 +137,156 @@ var Homepage =
 
         var removeTag = new ScrollMagic.Scene({
             triggerElement: "#exploded",
-            offset: 740
-        }).setVelocity("#start-copy", {opacity: 0})
+            offset: 540,
+            duration: 200
+        }).setTween("#start-copy", {opacity: 0})
         .addTo(controller);
 
         
 
         var armUp = new ScrollMagic.Scene({
             triggerElement: "#exploded",
-            offset: 750
-        }).setVelocity("#arm", {translateY: "-30%", translateX: "15%"})
+            offset: 850,
+            duration: 200
+        }).setTween("#arm", {x: "15%", y: "-30%"})
         .addTo(controller);
 
         var add1 = new ScrollMagic.Scene({
             triggerElement: "#exploded",
-            offset: 750
-        }).setVelocity("#arm-copy", {opacity: 1})
+            offset: 850
+            duration: 200
+        }).setTween("#arm-copy", {opacity: 1})
         .addTo(controller);
 
         
 
         var armBack = new ScrollMagic.Scene({
             triggerElement: "#exploded",
-            offset: 1250
-        }).setVelocity("#arm", {translateY: "30%", translateX: "-15%"})
+            offset: 1050,
+            duration: 200
+        }).setTween("#arm", {x: "-=15%", y: "+=30%"})
         .addTo(controller);
 
         var remove1 = new ScrollMagic.Scene({
             triggerElement: "#exploded",
             offset: 1250
-        }).setVelocity("#arm-copy", {opacity: 0})
+        }).setTween("#arm-copy", {opacity: 0})
         .addTo(controller);
 
 
 
-        var ioOut = new ScrollMagic.Scene({
-            triggerElement: "#exploded",
-            offset: 1450
-        }).setVelocity("#io", {translateY: "-5%", translateX: "-12%"})
-        .addTo(controller);
+        // var ioOut = new ScrollMagic.Scene({
+        //     triggerElement: "#exploded",
+        //     offset: 1450
+        // }).setTween("#io", {translateY: "-5%", translateX: "-12%"})
+        // .addTo(controller);
 
-        var add2 = new ScrollMagic.Scene({
-            triggerElement: "#exploded",
-            offset: 1450
-        }).setVelocity("#io-copy", {opacity: 1})
-        .addTo(controller);
-
-
-
-        var ioBack = new ScrollMagic.Scene({
-            triggerElement: "#exploded",
-            offset: 1950
-        }).setVelocity("#io", {translateY: "0", translateX: "0"})
-        .addTo(controller);
-
-        var remove2 = new ScrollMagic.Scene({
-            triggerElement: "#exploded",
-            offset: 1950
-        }).setVelocity("#io-copy", {opacity: 0})
-        .addTo(controller);
+        // var add2 = new ScrollMagic.Scene({
+        //     triggerElement: "#exploded",
+        //     offset: 1450
+        // }).setTween("#io-copy", {opacity: 1})
+        // .addTo(controller);
 
 
 
-        var cpuUp = new ScrollMagic.Scene({
-            triggerElement: "#exploded",
-            offset: 2250
-        }).setVelocity("#cpu", {translateX: "15%", translateY: "-30%"})
-        .addTo(controller);
+        // var ioBack = new ScrollMagic.Scene({
+        //     triggerElement: "#exploded",
+        //     offset: 1950
+        // }).setTween("#io", {translateY: "0", translateX: "0"})
+        // .addTo(controller);
 
-        var add3 = new ScrollMagic.Scene({
-            triggerElement: "#exploded",
-            offset: 2250
-        }).setVelocity("#cpu-copy", {opacity: 1})
-        .addTo(controller);
-
-        var cpuBack = new ScrollMagic.Scene({
-            triggerElement: "#exploded",
-            offset: 2750
-        }).setVelocity("#cpu", {translateX: "0", translateY: "0"})
-        .addTo(controller);
-
-        var remove3 = new ScrollMagic.Scene({
-            triggerElement: "#exploded",
-            offset: 2750
-        }).setVelocity("#cpu-copy", {opacity: 0})
-        .addTo(controller);
+        // var remove2 = new ScrollMagic.Scene({
+        //     triggerElement: "#exploded",
+        //     offset: 1950
+        // }).setTween("#io-copy", {opacity: 0})
+        // .addTo(controller);
 
 
-        var cpuFade = new ScrollMagic.Scene({
-            triggerElement: "#exploded",
-            offset: 2950
-        }).setVelocity("#cpu", {opacity: 0})
-        .addTo(controller);
 
-        var armUp = new ScrollMagic.Scene({
-            triggerElement: "#exploded",
-            offset: 3150
-        }).setVelocity("#arm", {translateY: "-50%"})
-        .addTo(controller);
+        // var cpuUp = new ScrollMagic.Scene({
+        //     triggerElement: "#exploded",
+        //     offset: 2250
+        // }).setTween("#cpu", {translateX: "15%", translateY: "-30%"})
+        // .addTo(controller);
 
-        var ioUp = new ScrollMagic.Scene({
-            triggerElement: "#exploded",
-            offset: 3150
-        }).setVelocity("#io", {translateY: "-50%"})
-        .addTo(controller);
+        // var add3 = new ScrollMagic.Scene({
+        //     triggerElement: "#exploded",
+        //     offset: 2250
+        // }).setTween("#cpu-copy", {opacity: 1})
+        // .addTo(controller);
 
-        var baseUp = new ScrollMagic.Scene({
-            triggerElement: "#exploded",
-            offset: 3150
-        }).setVelocity("#base", {translateY: "-20%"})
-        .addTo(controller);
+        // var cpuBack = new ScrollMagic.Scene({
+        //     triggerElement: "#exploded",
+        //     offset: 2750
+        // }).setTween("#cpu", {translateX: "0", translateY: "0"})
+        // .addTo(controller);
 
-        var add4 = new ScrollMagic.Scene({
-            triggerElement: "#exploded",
-            offset: 3150
-        }).setVelocity("#base-copy", {opacity: 1})
-        .addTo(controller);
+        // var remove3 = new ScrollMagic.Scene({
+        //     triggerElement: "#exploded",
+        //     offset: 2750
+        // }).setTween("#cpu-copy", {opacity: 0})
+        // .addTo(controller);
 
-        var armBack = new ScrollMagic.Scene({
-            triggerElement: "#exploded",
-            offset: 3650
-        }).setVelocity("#arm", {translateY: "0"})
-        .addTo(controller);
 
-        var ioBack = new ScrollMagic.Scene({
-            triggerElement: "#exploded",
-            offset: 3650
-        }).setVelocity("#io", {translateY: "0"})
-        .addTo(controller);
+        // var cpuFade = new ScrollMagic.Scene({
+        //     triggerElement: "#exploded",
+        //     offset: 2950
+        // }).setTween("#cpu", {opacity: 0})
+        // .addTo(controller);
 
-        var baseBack = new ScrollMagic.Scene({
-            triggerElement: "#exploded",
-            offset: 3650
-        }).setVelocity("#base", {translateY: "0"})
-        .addTo(controller);
+        // var armUp = new ScrollMagic.Scene({
+        //     triggerElement: "#exploded",
+        //     offset: 3150
+        // }).setTween("#arm", {translateY: "-50%"})
+        // .addTo(controller);
 
-        var remove4 = new ScrollMagic.Scene({
-            triggerElement: "#exploded",
-            offset: 3650
-        }).setVelocity("#base-copy", {opacity: 0})
-        .addTo(controller);
+        // var ioUp = new ScrollMagic.Scene({
+        //     triggerElement: "#exploded",
+        //     offset: 3150
+        // }).setTween("#io", {translateY: "-50%"})
+        // .addTo(controller);
 
-        var add5 = new ScrollMagic.Scene({
-            triggerElement: "#exploded",
-            offset: 3850
-        }).setVelocity("#close-copy", {opacity: 1})
-        .addTo(controller);
+        // var baseUp = new ScrollMagic.Scene({
+        //     triggerElement: "#exploded",
+        //     offset: 3150
+        // }).setTween("#base", {translateY: "-20%"})
+        // .addTo(controller);
+
+        // var add4 = new ScrollMagic.Scene({
+        //     triggerElement: "#exploded",
+        //     offset: 3150
+        // }).setTween("#base-copy", {opacity: 1})
+        // .addTo(controller);
+
+        // var armBack = new ScrollMagic.Scene({
+        //     triggerElement: "#exploded",
+        //     offset: 3650
+        // }).setTween("#arm", {translateY: "0"})
+        // .addTo(controller);
+
+        // var ioBack = new ScrollMagic.Scene({
+        //     triggerElement: "#exploded",
+        //     offset: 3650
+        // }).setTween("#io", {translateY: "0"})
+        // .addTo(controller);
+
+        // var baseBack = new ScrollMagic.Scene({
+        //     triggerElement: "#exploded",
+        //     offset: 3650
+        // }).setTween("#base", {translateY: "0"})
+        // .addTo(controller);
+
+        // var remove4 = new ScrollMagic.Scene({
+        //     triggerElement: "#exploded",
+        //     offset: 3650
+        // }).setTween("#base-copy", {opacity: 0})
+        // .addTo(controller);
+
+        // var add5 = new ScrollMagic.Scene({
+        //     triggerElement: "#exploded",
+        //     offset: 3850
+        // }).setTween("#close-copy", {opacity: 1})
+        // .addTo(controller);
 
 
         // Add Scene to ScrollMagic Controller
