@@ -1768,6 +1768,38 @@ html.sb-active body {
 	transition: none;
 }
 
+.no-wrap {
+	white-space: nowrap;
+}
+
+.faq {
+	text-align: left;
+}
+
+.faq .icon-cross {
+	font-size: 34px;
+	font-size: 3.4rem;
+	position: absolute;
+	top: 21px;
+	right: 21px;
+	cursor: pointer;
+	color: #0c0c0c;
+}
+
+.faq .question {
+	color: black;
+}
+
+.faq h1,
+.faq h3,
+.faq p {
+	padding-top: 21px;
+}
+
+.faq p {
+	color: #7e7e7e;
+}
+
 .pre-order {
 	text-align: left;
 	margin-left: auto;
@@ -1874,6 +1906,10 @@ html.sb-active body {
 	-ms-transition: all 500ms ease;
 	-o-transition: all 500ms ease;
 	-webkit-transition: all 500ms ease;
+}
+
+.pre-order > div > div form {
+	padding-top: 21px;
 }
 
 .pre-order > div > div form input {
@@ -2336,10 +2372,6 @@ header[role=banner].inactive span {
 	position: absolute;
 }
 
-#exploded .row > div:first-of-type > div .no-wrap {
-	white-space: nowrap;
-}
-
 #exploded .row > div:first-of-type > div > h1 {
 	float: left;
 	width: 100%;
@@ -2571,7 +2603,7 @@ header[role=banner].inactive span {
 	padding-right: 0;
 }
 
-.inside .row > div:last-of-type {
+.inside .row > div:nth-of-type(3) {
 	float: left;
 	width: 100%;
 	position: relative;
@@ -2580,7 +2612,7 @@ header[role=banner].inactive span {
 	padding-right: 0;
 }
 
-.inside .row > div:last-of-type img {
+.inside .row > div:nth-of-type(3) img {
 	margin-left: 8.33333333%;
 	float: left;
 	width: 83.33333333%;
@@ -2591,7 +2623,7 @@ header[role=banner].inactive span {
 	margin-top: 42px;
 }
 
-.inside .row > div:last-of-type h1 {
+.inside .row > div:nth-of-type(3) h1 {
 	position: relative;
 	float: left;
 	width: 100%;
@@ -2601,7 +2633,7 @@ header[role=banner].inactive span {
 	margin-top: 21px;
 }
 
-.inside .row > div:last-of-type p {
+.inside .row > div:nth-of-type(3) p {
 	position: relative;
 	float: left;
 	width: 100%;
@@ -2610,12 +2642,35 @@ header[role=banner].inactive span {
 	padding-right: 0;
 }
 
-.inside .row > div:last-of-type p:first-of-type {
+.inside .row > div:nth-of-type(3) p:first-of-type {
 	padding-top: 14px;
 }
 
-.inside .row > div:last-of-type .btn {
+.inside .row > div:nth-of-type(3) .btn {
 	margin-top: 14px;
+}
+
+.inside .row > div:last-of-type {
+	position: relative;
+	float: left;
+	width: 100%;
+	min-height: 1px;
+	padding-left: 0;
+	padding-right: 0;
+	margin-top: 21px;
+}
+
+.inside .row > div:last-of-type a {
+	color: #ff2919;
+	cursor: pointer;
+}
+
+.inside .row > div:last-of-type a:hover {
+	text-decoration: none;
+}
+
+.inside .row > div:last-of-type p {
+	padding-top: 21px;
 }
 
 .up1 .container {
@@ -4139,7 +4194,7 @@ header[role=banner] span.icon-upcom-logo {
 }
 
 .inside {
-	padding-bottom: 77px;
+	padding-bottom: 30px;
 	padding-top: 91px;
 }
 
@@ -4177,31 +4232,39 @@ header[role=banner] span.icon-upcom-logo {
 	padding-right: 21px;
 }
 
-.inside .row > div:last-of-type {
+.inside .row > div:nth-of-type(3) {
 	float: left;
 	width: 25%;
 }
 
-.inside .row > div:last-of-type {
+.inside .row > div:nth-of-type(3) {
 	top: 0;
 	padding: 0 0;
 	position: absolute;
 	right: 2%;
 }
 
-.inside .row > div:last-of-type img {
+.inside .row > div:nth-of-type(3) img {
 	margin-left: 0%;
 }
 
-.inside .row > div:last-of-type img {
+.inside .row > div:nth-of-type(3) img {
 	float: left;
 	width: 41.66666667%;
 }
 
-.inside .row > div:last-of-type img {
+.inside .row > div:nth-of-type(3) img {
 	margin-top: 0;
 	position: relative;
 	right: 10px;
+}
+
+.inside .row > div:last-of-type {
+	margin-top: 50px;
+	position: relative;
+	min-height: 1px;
+	padding-left: 0;
+	padding-right: 0;
 }
 
 .up1 p {
@@ -4618,6 +4681,19 @@ footer[role=contentinfo] p {
 
 }
 
+@media (min-width: 768px) and (min-width: 768px) {
+
+.inside .row > div:last-of-type {
+	float: left;
+	width: 25%;
+}
+
+.inside .row > div:last-of-type {
+	margin-left: 33.33333333%;
+}
+
+}
+
 @media (min-width: 768px) and (max-width: 991px) {
 
 .visible-sm {
@@ -5022,7 +5098,7 @@ nav > div .social-nav {
 }
 
 .inside {
-	padding-bottom: 112px;
+	padding-bottom: 30px;
 	padding-top: 112px;
 }
 
@@ -5052,29 +5128,29 @@ nav > div .social-nav {
 	margin-left: 21px;
 }
 
-.inside .row > div:last-of-type {
+.inside .row > div:nth-of-type(3) {
 	float: left;
 	width: 25%;
 }
 
-.inside .row > div:last-of-type {
+.inside .row > div:nth-of-type(3) {
 	padding-left: 50px;
 	top: 0;
 	position: absolute;
 	right: 100px;
 }
 
-.inside .row > div:last-of-type img {
+.inside .row > div:nth-of-type(3) img {
 	float: left;
 	width: 41.66666667%;
 }
 
-.inside .row > div:last-of-type p {
+.inside .row > div:nth-of-type(3) p {
 	font-size: 12px;
 	font-size: 1.2rem;
 }
 
-.inside .row > div:last-of-type .btn {
+.inside .row > div:nth-of-type(3) .btn {
 	margin-top: 21px;
 }
 
@@ -5858,7 +5934,7 @@ header[role=banner] span.icon-upcom-logo {
 	line-height: 20px;
 }
 
-.inside .row > div:last-of-type {
+.inside .row > div:nth-of-type(3) {
 	padding-left: 80px;
 }
 

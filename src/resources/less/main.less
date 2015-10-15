@@ -27,6 +27,37 @@ body {
     }
 }
 
+.no-wrap {
+    white-space: nowrap;
+}
+
+// FAQ modal
+
+.faq {
+    .icon-cross {
+        .font-size(3.4);
+        position: absolute;
+        top: 21px;
+        right: 21px;
+        cursor: pointer;
+        color:  #0c0c0c;
+    }
+
+    .question {
+        color: black;
+    }
+
+    h1, h3, p {
+        padding-top: 21px;
+    }
+
+    p {
+        color: #7e7e7e;
+    }
+
+    text-align: left;       
+}
+
 // Pre Order Modal
 
 .pre-order {
@@ -103,6 +134,7 @@ body {
             overflow: hidden;
             margin-top: 21px;
             form {
+                padding-top: 21px;
                 input {
                     display: inline;
                 }
@@ -786,10 +818,6 @@ header[role=banner] {
                     left: 0px;
                     top: 0px;
                 }
-
-                .no-wrap {
-                    white-space: nowrap;
-                }
                 
                 >h1 {
                     .make-xs-column(12);
@@ -1003,12 +1031,12 @@ header[role=banner] {
     padding-top: 35px;
 
     @media (min-width: @screen-sm-min) {
-        padding-bottom: 77px;
+        padding-bottom: 30px;
         padding-top: 91px;
     }
 
     @media (min-width: @screen-md-min) {
-        padding-bottom: 112px;
+        padding-bottom: 30px;
         padding-top: 112px;
     }
 
@@ -1096,7 +1124,7 @@ header[role=banner] {
             }
         }
 
-        >div:last-of-type {
+        >div:nth-of-type(3) {
             .make-xs-column(12);
             .make-sm-column(3);
             .make-md-column(3);
@@ -1157,6 +1185,30 @@ header[role=banner] {
                 @media (min-width: @screen-md-min) {
                     margin-top: 21px;
                 }
+            }
+        }
+
+        >div:last-of-type {
+            .make-xs-column(12);
+            margin-top: 21px;
+
+            @media (min-width: @screen-sm-min) {
+                margin-top: 50px;
+                .make-sm-column(3);
+                .make-sm-column-offset(4);
+            }
+
+            a {
+                color: @brand-red;
+                cursor: pointer;
+
+                &:hover {
+                    text-decoration: none;
+                }
+            }
+
+            p {
+                padding-top: 21px;
             }
         }
     }
