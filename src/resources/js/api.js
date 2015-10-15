@@ -244,18 +244,21 @@ var Homepage =
         }).setTween("#cpu", {opacity: 0})
         .addTo(controller);
 
+
+        // Base 
+
         var armUp = new ScrollMagic.Scene({
             triggerElement: "#exploded",
             offset: 2050,
             duration: 200
-        }).setTween("#arm", {y: "-50%"})
+        }).setTween("#arm", {y: "-40%"})
         .addTo(controller);
 
         var ioUp = new ScrollMagic.Scene({
             triggerElement: "#exploded",
             offset: 2050,
             duration: 200
-        }).setTween("#io", {y: "-50%"})
+        }).setTween("#io", {y: "-40%"})
         .addTo(controller);
 
         var baseUp = new ScrollMagic.Scene({
@@ -278,14 +281,14 @@ var Homepage =
             triggerElement: "#exploded",
             offset: 2450,
             duration: 200
-        }).setTween("#arm", {y: "+=50%"})
+        }).setTween("#arm", {y: "+=40%"})
         .addTo(controller);
 
         var ioBack = new ScrollMagic.Scene({
             triggerElement: "#exploded",
             offset: 2450,
             duration: 200
-        }).setTween("#io", {y: "+=50%"})
+        }).setTween("#io", {y: "+=40%"})
         .addTo(controller);
 
         var baseBack = new ScrollMagic.Scene({
