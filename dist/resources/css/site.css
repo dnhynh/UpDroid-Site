@@ -2074,6 +2074,9 @@ header[role=banner].inactive span {
 	position: absolute;
 	z-index: 100;
 	width: 70%;
+	left: 35px;
+	bottom: 205px;
+	width: 35%;
 }
 
 .home-header .icon-arrow-down {
@@ -2315,6 +2318,8 @@ header[role=banner].inactive span {
 	min-height: 1px;
 	padding-left: 0;
 	padding-right: 0;
+	font-size: 12px;
+	font-size: 1.2rem;
 }
 
 #exploded .row > div:first-of-type > div > p:first-of-type {
@@ -2341,6 +2346,9 @@ header[role=banner].inactive span {
 }
 
 #exploded .row > div:nth-of-type(2) .circle {
+	width: 200px;
+	height: 200px;
+	margin: 30px auto 21px auto;
 	border-radius: 50%;
 	background-color: white;
 }
@@ -3508,23 +3516,6 @@ footer[role=contentinfo] p {
 	width: 60%;
 }
 
-.home-header .row img {
-	left: 35px;
-	bottom: 205px;
-	width: 35%;
-}
-
-#exploded .row > div:first-of-type > div > p {
-	font-size: 13px;
-	font-size: 1.3rem;
-}
-
-#exploded .row > div:nth-of-type(2) .circle {
-	width: 200px;
-	height: 200px;
-	margin: 21px auto;
-}
-
 .up1 .container {
 	padding: 0 30px 50px 30px;
 }
@@ -4040,6 +4031,11 @@ header[role=banner] span.icon-upcom-logo {
 #exploded .row > div:first-of-type > div > h1 {
 	float: left;
 	width: 66.66666667%;
+}
+
+#exploded .row > div:first-of-type > div > p {
+	font-size: 14px;
+	font-size: 1.4rem;
 }
 
 #exploded .row > div:nth-of-type(2) {

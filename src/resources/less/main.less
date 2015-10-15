@@ -450,11 +450,9 @@ header[role=banner] {
             z-index: 100;
             width: 70%;
 
-            @media (min-width: @screen-large-mobile-min) {
-                left: 35px;
-                bottom: 205px;
-                width: 35%;
-            }
+            left: 35px;
+            bottom: 205px;
+            width: 35%;
 
             @media (min-width: @screen-sm-min) {
                 bottom: auto;
@@ -772,9 +770,12 @@ header[role=banner] {
                         .hidden-xs;
                     }
                     
-                    @media (min-width: @screen-large-mobile-min) {
-                        .font-size(1.3);
+                    .font-size(1.2);
+
+                    @media (min-width: @screen-sm-min) {
+                        .font-size(1.4);
                     }
+
 
                 }
                 .spec-start {
@@ -799,11 +800,9 @@ header[role=banner] {
             }
 
             .circle {
-                @media(min-width: @screen-large-mobile-min) {
-                    width: 200px;
-                    height: 200px;
-                    margin: 21px auto;
-                }
+                width: 200px;
+                height: 200px;
+                margin: 30px auto 21px auto;
 
                 @media (min-width: @screen-sm-min) {
                     width: 300px;
