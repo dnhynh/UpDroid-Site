@@ -321,11 +321,19 @@ var Homepage =
         var diy = $('#diy-button');
         diy.on("click", function (event) {
             event.preventDefault();
-            diy.unbind('click');
-            console.log('firing');
+            diy.addClass('hidden');
+            $('#confirm-diy').removeClass('hidden');
             disclaimer.className = "expand";
-            diy.text('Confirm Order');
-            diy.attr('data-ct-checkout', 'updroid.up1-diy-kit');
+        });
+        $('#confirm-diy').on("click", function(event) {
+            if($('#diy-agree').is(':checked') == false) {
+                window.alert("Please confirm you understand before proceeding.");
+                event.preventDefault();
+            }
+            else {
+                document.getElementById('buy-diy').click();
+                event.preventDefault();
+            }
         });
     },
 

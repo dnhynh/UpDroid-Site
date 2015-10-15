@@ -1842,8 +1842,21 @@ html.sb-active body {
 	margin-top: 21px;
 }
 
+.pre-order > div #buy-diy {
+	display: none;
+}
+
 .pre-order > div .expand {
-	height: 340px;
+	height: 240px;
+}
+
+.pre-order > div .expand > div:first-of-type {
+	height: 200px;
+	overflow: auto;
+}
+
+.pre-order > div .expand > div:last-of-type {
+	height: 20px;
 }
 
 .pre-order > div > div {
@@ -1855,6 +1868,7 @@ html.sb-active body {
 	padding-right: 0;
 	height: 0;
 	overflow: hidden;
+	margin-top: 21px;
 	transition: all 500ms ease;
 	-moz-transition: all 500ms ease;
 	-ms-transition: all 500ms ease;
@@ -1862,10 +1876,23 @@ html.sb-active body {
 	-webkit-transition: all 500ms ease;
 }
 
+.pre-order > div > div form input {
+	display: inline;
+}
+
+.pre-order > div > div form > p {
+	display: inline-block;
+	margin-left: 21px;
+}
+
 .pre-order > div > div p {
 	font-size: 12px;
 	font-size: 1.2rem;
 	padding-top: 21px;
+}
+
+.pre-order > div > div p:first-of-type {
+	padding-top: 0;
 }
 
 ::selection {
