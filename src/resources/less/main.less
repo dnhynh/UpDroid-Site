@@ -39,7 +39,7 @@ body {
         width: 100%;
     }
      @media(min-width: @screen-sm-min) {
-        width: 400px;
+        width: 500px;
      }
 
     .icon-cross {
@@ -82,8 +82,20 @@ body {
             margin-top: 21px;
         }
 
+        .expand {
+                height: 340px;
+            }
+
         >div {
             .make-xs-column(12);
+            height: 0;
+            overflow: hidden;
+
+            transition:     all 500ms ease;
+                    -moz-transition:           all 500ms ease;
+                    -ms-transition:            all 500ms ease;
+                    -o-transition:             all 500ms ease; 
+                    -webkit-transition:        all 500ms ease;
             
             p {
                 .font-size(1.2);
@@ -452,7 +464,7 @@ header[role=banner] {
 
             left: 35px;
             bottom: 205px;
-            width: 35%;
+            width: 50%;
 
             @media (min-width: @screen-sm-min) {
                 bottom: auto;

@@ -86,6 +86,8 @@ var Homepage =
         this.Parallax();
         // this.Cycle();
         this.Exploded();
+        this.ScrollConfig();
+        this.DIYkit();
     },
     "Parallax": function () {
         // Simple test for Mobile Safari
@@ -312,6 +314,51 @@ var Homepage =
             duration: 100
         }).setTween("#close-copy", {opacity: 1})
         .addTo(controller);
+    },
+
+    "DIYkit": function () {
+        var disclaimer = document.getElementById( 'disclaimer' );
+        var diy = $('#diy-button');
+        diy.on("click", function (event) {
+            event.preventDefault();
+            diy.unbind('click');
+            console.log('firing');
+            disclaimer.className = "expand";
+            diy.text('Confirm Order');
+            diy.attr('data-ct-checkout', 'updroid.up1-diy-kit');
+        });
+    },
+
+    "ScrollConfig": function() {
+        var armButton = $("#sArm");
+        sArm.addEventListener('click', function() {
+            console.log($('html').width());
+            var scrollSmall = $('html').width();
+            var scrollMed = $('html').width();
+            var scrollLarge = $('html').width() * 1.45;
+
+            if($(document).width() + 15 < 992) {
+                console.log("scrollSmall: " + scrollSmall);
+                console.log($(document).width());
+                $('html, body').animate({
+                    scrollTop: 1700
+                }, 1000);  
+            }
+
+            else if($(document).width() + 15 < 1200) {
+                console.log("scrollMed: " + scrollMed);
+                $('html, body').animate({
+                    scrollTop: 1900
+                }, 1000);  
+            }
+
+            else {
+                console.log("scrollLarge: " + scrollLarge);
+                $('html, body').animate({
+                    scrollTop: scrollLarge
+                }, 1000);  
+            }
+        });
     }
 };
 
@@ -368,6 +415,14 @@ var UpCom =
         //         instructions.className = '';
         //     });
         // });
+
+        // $.fn.scrollView = function () {
+        //   return this.each(function () {
+        //     $('html, body').animate({
+        //       scrollTop: $(this).offset().top - 100
+        //     }, 500);
+        //   });
+        // }
     },
 
     "typeScene": function () {

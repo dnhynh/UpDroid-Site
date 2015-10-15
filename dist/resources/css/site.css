@@ -1842,6 +1842,10 @@ html.sb-active body {
 	margin-top: 21px;
 }
 
+.pre-order > div .expand {
+	height: 340px;
+}
+
 .pre-order > div > div {
 	position: relative;
 	float: left;
@@ -1849,6 +1853,13 @@ html.sb-active body {
 	min-height: 1px;
 	padding-left: 0;
 	padding-right: 0;
+	height: 0;
+	overflow: hidden;
+	transition: all 500ms ease;
+	-moz-transition: all 500ms ease;
+	-ms-transition: all 500ms ease;
+	-o-transition: all 500ms ease;
+	-webkit-transition: all 500ms ease;
 }
 
 .pre-order > div > div p {
@@ -2076,7 +2087,7 @@ header[role=banner].inactive span {
 	width: 70%;
 	left: 35px;
 	bottom: 205px;
-	width: 35%;
+	width: 50%;
 }
 
 .home-header .icon-arrow-down {
@@ -3863,7 +3874,7 @@ body {
 }
 
 .pre-order {
-	width: 400px;
+	width: 500px;
 }
 
 .pre-order > div {
