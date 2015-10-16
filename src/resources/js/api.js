@@ -338,35 +338,35 @@ var Homepage =
     },
 
     "ScrollConfig": function() {
-        var armButton = $("#sArm");
-        sArm.addEventListener('click', function() {
-            console.log($('html').width());
-            var scrollSmall = $('html').width();
-            var scrollMed = $('html').width();
-            var scrollLarge = $('html').width() * 1.45;
+        // var armButton = $("#sArm");
+        // sArm.addEventListener('click', function() {
+        //     console.log($('html').width());
+        //     var scrollSmall = $('html').width();
+        //     var scrollMed = $('html').width();
+        //     var scrollLarge = $('html').width() * 1.45;
 
-            if($(document).width() + 15 < 992) {
-                console.log("scrollSmall: " + scrollSmall);
-                console.log($(document).width());
-                $('html, body').animate({
-                    scrollTop: 1700
-                }, 1000);  
-            }
+        //     if($(document).width() + 15 < 992) {
+        //         console.log("scrollSmall: " + scrollSmall);
+        //         console.log($(document).width());
+        //         $('html, body').animate({
+        //             scrollTop: 1700
+        //         }, 1000);  
+        //     }
 
-            else if($(document).width() + 15 < 1200) {
-                console.log("scrollMed: " + scrollMed);
-                $('html, body').animate({
-                    scrollTop: 1900
-                }, 1000);  
-            }
+        //     else if($(document).width() + 15 < 1200) {
+        //         console.log("scrollMed: " + scrollMed);
+        //         $('html, body').animate({
+        //             scrollTop: 1900
+        //         }, 1000);  
+        //     }
 
-            else {
-                console.log("scrollLarge: " + scrollLarge);
-                $('html, body').animate({
-                    scrollTop: scrollLarge
-                }, 1000);  
-            }
-        });
+        //     else {
+        //         console.log("scrollLarge: " + scrollLarge);
+        //         $('html, body').animate({
+        //             scrollTop: scrollLarge
+        //         }, 1000);  
+        //     }
+        // });
     }
 };
 

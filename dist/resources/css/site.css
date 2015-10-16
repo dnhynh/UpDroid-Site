@@ -4148,7 +4148,6 @@ header[role=banner] span.icon-upcom-logo {
 	width: 300px;
 	height: 300px;
 	margin: 50px 0;
-	margin: 21px 0;
 }
 
 #exploded .row > div:nth-of-type(2) .circle img {
@@ -4166,7 +4165,7 @@ header[role=banner] span.icon-upcom-logo {
 }
 
 #exploded .row > div:last-of-type > div {
-	margin-top: 100px;
+	margin-top: 120px;
 }
 
 .commander {
@@ -5073,8 +5072,31 @@ nav > div .social-nav {
 	top: 21px;
 }
 
+#exploded .row > div:nth-of-type(2) .circle {
+	width: 400px;
+	height: 400px;
+	margin: 50px 0;
+}
+
+#exploded .row > div:nth-of-type(2) .circle img {
+	width: 420px;
+}
+
 #exploded .row > div:last-of-type {
 	margin-left: 0%;
+}
+
+#exploded .row > div:last-of-type {
+	float: left;
+	width: 25%;
+}
+
+#exploded .row > div:last-of-type > div {
+	margin-top: 150px;
+}
+
+#exploded .row > div:last-of-type > div .pager {
+	margin: 50px auto;
 }
 
 .commander {
