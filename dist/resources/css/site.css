@@ -1844,6 +1844,9 @@ html.sb-active body {
 }
 
 .pre-order > div > p {
+	font-size: 11px;
+	font-size: 1.1rem;
+	margin-top: 21px;
 	position: relative;
 	float: left;
 	width: 100%;
@@ -1852,16 +1855,10 @@ html.sb-active body {
 	padding-right: 0;
 }
 
-.pre-order > div > p:nth-of-type(2) {
-	margin-top: 21px;
-	float: left;
-	width: 100%;
-	position: relative;
-	min-height: 1px;
-	padding-left: 0;
-	padding-right: 0;
-	font-size: 11px;
-	font-size: 1.1rem;
+.pre-order > div > p:first-of-type {
+	margin-top: 0;
+	font-size: 13px;
+	font-size: 1.3rem;
 }
 
 .pre-order > div a {
@@ -1925,6 +1922,7 @@ html.sb-active body {
 	font-size: 12px;
 	font-size: 1.2rem;
 	padding-top: 21px;
+	padding-right: 21px;
 }
 
 .pre-order > div > div p:first-of-type {
@@ -3962,11 +3960,6 @@ body {
 .pre-order > div {
 	float: left;
 	width: 100%;
-}
-
-.pre-order > div > p:nth-of-type(2) {
-	float: left;
-	width: 75%;
 }
 
 nav > div {
