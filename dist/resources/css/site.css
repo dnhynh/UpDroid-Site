@@ -2394,8 +2394,36 @@ header[role=banner].inactive span {
 	padding-top: 21px;
 }
 
-#exploded .row > div:first-of-type > div .spec-start {
+#exploded .row > div:first-of-type > div > div {
+	position: relative;
+	float: left;
+	width: 100%;
+	min-height: 1px;
+	padding-left: 0;
+	padding-right: 0;
 	padding-top: 21px;
+}
+
+#exploded .row > div:first-of-type > div > div p {
+	padding-top: 10px;
+}
+
+#exploded .row > div:first-of-type > div > div > p:nth-of-type(odd) {
+	position: relative;
+	float: left;
+	width: 8.33333333%;
+	min-height: 1px;
+	padding-left: 0;
+	padding-right: 0;
+}
+
+#exploded .row > div:first-of-type > div > div > p:nth-of-type(even) {
+	position: relative;
+	float: left;
+	width: 91.66666667%;
+	min-height: 1px;
+	padding-left: 0;
+	padding-right: 0;
 }
 
 #exploded .row > div:first-of-type > div:not(:first-child) {
@@ -2669,181 +2697,6 @@ header[role=banner].inactive span {
 
 .inside .row > div:last-of-type p {
 	padding-top: 21px;
-}
-
-.up1 .container {
-	position: relative;
-	padding-bottom: 50px;
-}
-
-.up1 .row {
-	position: relative;
-	margin-top: 150px;
-}
-
-.up1 h3 {
-	color: #7e7e7e;
-}
-
-.up1 p {
-	padding-top: 21px;
-}
-
-.up1 #left {
-	position: relative;
-	min-height: 1px;
-	padding-left: 0;
-	padding-right: 0;
-}
-
-.up1 #left > div:first-of-type {
-	position: relative;
-	min-height: 1px;
-	padding-left: 0;
-	padding-right: 0;
-}
-
-.up1 #left > div:first-of-type > div {
-	position: relative;
-	min-height: 1px;
-	padding-left: 0;
-	padding-right: 0;
-}
-
-.up1 #left > div:last-of-type {
-	position: relative;
-	min-height: 1px;
-	padding-left: 0;
-	padding-right: 0;
-}
-
-.up1 #right {
-	position: relative;
-	min-height: 1px;
-	padding-left: 0;
-	padding-right: 0;
-}
-
-.up1 #right p {
-	position: relative;
-	min-height: 1px;
-	padding-left: 0;
-	padding-right: 0;
-}
-
-.up1 #right a {
-	position: relative;
-	min-height: 1px;
-	padding-left: 0;
-	padding-right: 0;
-	margin-top: 21px;
-}
-
-#modules {
-	background-color: #e4e4e4;
-}
-
-#modules .container {
-	position: relative;
-}
-
-#modules .row {
-	position: relative;
-	padding: 30px 30px;
-}
-
-#modules .row > div {
-	position: relative;
-	min-height: 1px;
-	padding-left: 0;
-	padding-right: 0;
-}
-
-#modules .row > div > span {
-	font-family: "Monosten A";
-	font-size: 14px;
-	font-size: 1.4rem;
-	line-height: 20px;
-	left: 21px;
-	position: absolute;
-}
-
-#modules .row > div > span:first-of-type {
-	top: 21px;
-}
-
-#modules .row > div #modules-slider .slide {
-	padding-bottom: 90px;
-	cursor: pointer;
-}
-
-#modules .row > div #modules-slider .slide img {
-	position: relative;
-	min-height: 1px;
-	padding-left: 0;
-	padding-right: 0;
-	width: 100%;
-	height: auto;
-}
-
-#modules .row > div #modules-slider .slide > div {
-	position: relative;
-	min-height: 1px;
-	padding-left: 0;
-	padding-right: 0;
-	padding-top: 20px;
-}
-
-#modules .row > div #modules-slider .slide > div p {
-	padding-top: 21px;
-}
-
-#modules .row > div #modules-slider .slide > div a {
-	margin: 21px 21px 0 0;
-}
-
-#modules .row > div #modules-slider .cycle-pager {
-	text-align: center;
-	display: block;
-	bottom: 27px;
-	left: 0;
-	overflow: hidden;
-	position: absolute;
-	width: 100%;
-	z-index: 500;
-}
-
-#modules .row > div #modules-slider .cycle-pager span {
-	-webkit-border-top-right-radius: 50%;
-	-webkit-border-bottom-right-radius: 50%;
-	-webkit-border-bottom-left-radius: 50%;
-	-webkit-border-top-left-radius: 50%;
-	-moz-border-radius-topright: 50%;
-	-moz-border-radius-bottomright: 50%;
-	-moz-border-radius-bottomleft: 50%;
-	-moz-border-radius-topleft: 50%;
-	border-top-right-radius: 50%;
-	border-bottom-right-radius: 50%;
-	border-bottom-left-radius: 50%;
-	border-top-left-radius: 50%;
-	-moz-background-clip: padding-box;
-	-webkit-background-clip: padding-box;
-	background-clip: padding-box;
-	font: 0/0 a;
-	color: transparent;
-	text-shadow: none;
-	background-color: transparent;
-	border: 0;
-	background-color: #cdcfcf;
-	cursor: pointer;
-	display: inline-block;
-	height: 10px;
-	margin: 0 8px;
-	width: 10px;
-}
-
-#modules .row > div #modules-slider .cycle-pager span.cycle-pager-active {
-	background-color: #0c0c0c;
 }
 
 .top-left-wing,
@@ -3581,22 +3434,6 @@ footer[role=contentinfo] p {
 
 }
 
-@media (min-width: 350px) and (max-width: 767px) {
-
-.up1 #left > div:first-of-type > div img {
-	display: none !important;
-}
-
-}
-
-@media (min-width: 350px) and (min-width: 768px) and (max-width: 991px) {
-
-.up1 #left > div:first-of-type > div img {
-	display: none !important;
-}
-
-}
-
 @media (min-width: 350px) {
 
 .pre-order {
@@ -3605,35 +3442,6 @@ footer[role=contentinfo] p {
 
 .home-header .row > div p {
 	width: 60%;
-}
-
-.up1 .container {
-	padding: 0 30px 50px 30px;
-}
-
-.up1 > div {
-	padding: 0 30px;
-}
-
-.up1 #up1-feature {
-	max-width: 400px;
-	width: 100%;
-	padding-top: 21px;
-}
-
-.up1 #left > div:first-of-type > div > div {
-	display: inline-block;
-	position: relative;
-	bottom: 5px;
-}
-
-.up1 #left > div:first-of-type h1 {
-	font-size: 26px;
-	font-size: 2.6rem;
-}
-
-.up1 #right p {
-	padding-top: 50px;
 }
 
 .commander-info .row .left {
@@ -4120,8 +3928,8 @@ header[role=banner] span.icon-upcom-logo {
 }
 
 #exploded .row > div:first-of-type > div > p {
-	font-size: 14px;
-	font-size: 1.4rem;
+	font-size: 13px;
+	font-size: 1.3rem;
 }
 
 #exploded .row > div:nth-of-type(2) {
@@ -4257,94 +4065,6 @@ header[role=banner] span.icon-upcom-logo {
 	min-height: 1px;
 	padding-left: 0;
 	padding-right: 0;
-}
-
-.up1 p {
-	padding: 10px 10px 0 0;
-}
-
-.up1 #left {
-	float: left;
-	width: 50%;
-}
-
-.up1 #left > div:first-of-type {
-	float: left;
-	width: 50%;
-}
-
-.up1 #left > div:last-of-type {
-	float: left;
-	width: 50%;
-}
-
-.up1 #left > div:last-of-type p:first-child {
-	padding-top: 0;
-}
-
-.up1 #right {
-	float: left;
-	width: 50%;
-}
-
-.up1 #right p {
-	margin-left: 16.66666667%;
-}
-
-.up1 #right p {
-	float: left;
-	width: 75%;
-}
-
-.up1 #right p {
-	padding-top: 10px;
-}
-
-.up1 #right a {
-	margin-left: 16.66666667%;
-}
-
-.up1 #right a {
-	float: left;
-	width: 75%;
-}
-
-#modules .row > div {
-	float: left;
-	width: 100%;
-}
-
-#modules .row > div > span {
-	font-size: 13px;
-	font-size: 1.3rem;
-	left: 14px;
-	line-height: 18px;
-}
-
-#modules .row > div > span:first-of-type {
-	top: 14px;
-}
-
-#modules .row > div #modules-slider .slide {
-	height: 420px;
-}
-
-#modules .row > div #modules-slider .slide img {
-	float: left;
-	width: 66.66666667%;
-}
-
-#modules .row > div #modules-slider .slide > div {
-	float: left;
-	width: 33.33333333%;
-}
-
-#modules .row > div #modules-slider .slide > div {
-	padding-top: 70px;
-}
-
-#modules .row > div #modules-slider .cycle-pager {
-	bottom: 5px;
 }
 
 .commander-info {
@@ -5169,109 +4889,6 @@ nav > div .social-nav {
 	margin-top: 21px;
 }
 
-.up1 .container {
-	padding: 0 0 50px 0;
-}
-
-.up1 p {
-	padding: 21px 21px 0 0;
-}
-
-.up1 #up1-feature {
-	max-width: 100%;
-	width: 100%;
-	padding-top: 0;
-}
-
-.up1 #left {
-	padding-left: 30px;
-}
-
-.up1 #left {
-	float: left;
-	width: 50%;
-}
-
-.up1 #left > div:first-of-type {
-	float: left;
-	width: 50%;
-}
-
-.up1 #left > div:first-of-type > div {
-	float: left;
-	width: 100%;
-}
-
-.up1 #left > div:first-of-type > div {
-	margin-bottom: 21px;
-}
-
-.up1 #left > div:first-of-type > div img {
-	position: relative;
-	min-height: 1px;
-	padding-left: 0;
-	padding-right: 0;
-}
-
-.up1 #left > div:first-of-type > div > div {
-	position: relative;
-	min-height: 1px;
-	padding-left: 0;
-	padding-right: 0;
-	position: absolute;
-	bottom: 0px;
-	right: 0px;
-}
-
-.up1 #left > div:last-of-type {
-	float: left;
-	width: 50%;
-}
-
-.up1 #right {
-	float: left;
-	width: 50%;
-}
-
-.up1 #right {
-	padding-right: 20px;
-}
-
-#modules .row > div {
-	margin-left: 8.33333333%;
-}
-
-#modules .row > div {
-	float: left;
-	width: 83.33333333%;
-}
-
-#modules .row > div > span {
-	left: 21px;
-}
-
-#modules .row > div > span:first-of-type {
-	top: 21px;
-}
-
-#modules .row > div #modules-slider .slide img {
-	float: left;
-	width: 66.66666667%;
-}
-
-#modules .row > div #modules-slider .slide > div {
-	float: left;
-	width: 33.33333333%;
-}
-
-#modules .row > div #modules-slider .slide > div {
-	padding-top: 110px;
-}
-
-#modules .row > div #modules-slider .cycle-pager {
-	bottom: 5px;
-}
-
 .commander-info h1 {
 	float: left;
 	width: 100%;
@@ -5554,34 +5171,6 @@ td.visible-md {
 
 .hidden-md {
 	display: none !important;
-}
-
-}
-
-@media (min-width: 992px) and (min-width: 768px) {
-
-.up1 #left > div:first-of-type > div img {
-	float: left;
-	width: 41.66666667%;
-}
-
-.up1 #left > div:first-of-type > div > div {
-	float: left;
-	width: 58.33333333%;
-}
-
-}
-
-@media (min-width: 992px) and (min-width: 992px) {
-
-.up1 #left > div:first-of-type > div img {
-	float: left;
-	width: 41.66666667%;
-}
-
-.up1 #left > div:first-of-type > div > div {
-	float: left;
-	width: 58.33333333%;
 }
 
 }
@@ -5951,20 +5540,6 @@ header[role=banner] span.icon-upcom-logo {
 
 .inside .row > div:nth-of-type(3) {
 	padding-left: 80px;
-}
-
-#modules .row > div > span {
-	font-size: 14px;
-	font-size: 1.4rem;
-	line-height: 20px;
-}
-
-#modules .row > div #modules-slider .slide {
-	height: 500px;
-}
-
-#modules .row > div #modules-slider .cycle-pager {
-	bottom: 20px;
 }
 
 .about-header .row {
