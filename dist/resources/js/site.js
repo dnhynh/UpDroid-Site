@@ -1000,8 +1000,8 @@ var Homepage =
         var controller = new ScrollMagic.Controller();
         new ScrollMagic.Scene({
           triggerElement: "#exploded", // starting scene, when reaching this element
-          offset: 240,
-          duration: 2650 // pin the element for a total of 400px
+          offset: 250,
+          duration: 3000 // pin the element for a total of 400px
         })
         .setPin('#exploded')
         .addTo(controller); // the element we want to pin
@@ -1181,6 +1181,27 @@ var Homepage =
             offset: 2550,
             duration: 100
         }).setTween("#close-copy", {opacity: 1})
+        .addTo(controller);
+
+        new ScrollMagic.Scene({
+            triggerElement: "#exploded",
+            offset: 2900,
+            duration: 400
+        }).setTween("#base", {y: "-200%"})
+        .addTo(controller);
+
+        new ScrollMagic.Scene({
+            triggerElement: "#exploded",
+            offset: 2900,
+            duration: 400
+        }).setTween("#arm", {y: "-200%"})
+        .addTo(controller);
+
+        new ScrollMagic.Scene({
+            triggerElement: "#exploded",
+            offset: 2900,
+            duration: 400
+        }).setTween("#io", {y: "-200%"})
         .addTo(controller);
     },
 
