@@ -1000,7 +1000,6 @@ var Homepage =
         var controller = new ScrollMagic.Controller();
 
         if ($(document).width() > 992) {
-            console.log("large break");
             new ScrollMagic.Scene({
               triggerElement: "#exploded", // starting scene, when reaching this element
               offset: 320,
@@ -1011,7 +1010,6 @@ var Homepage =
         }
 
         else {
-            console.log('small break');
             new ScrollMagic.Scene({
               triggerElement: "#exploded", // starting scene, when reaching this element
               offset: 250,
@@ -1243,35 +1241,36 @@ var Homepage =
     },
 
     "ScrollConfig": function() {
-        // var armButton = $("#sArm");
-        // sArm.addEventListener('click', function() {
-        //     console.log($('html').width());
-        //     var scrollSmall = $('html').width();
-        //     var scrollMed = $('html').width();
-        //     var scrollLarge = $('html').width() * 1.45;
+        var armButton = $("#sArm");
+        $(document).on("mousewheel", function() {
+            console.log("scroll: " + $(document).scrollTop());
+            console.log("height: " + $(document).height());
+        });
 
-        //     if($(document).width() + 15 < 992) {
-        //         console.log("scrollSmall: " + scrollSmall);
-        //         console.log($(document).width());
-        //         $('html, body').animate({
-        //             scrollTop: 1700
-        //         }, 1000);  
-        //     }
+        sArm.addEventListener('click', function() {
 
-        //     else if($(document).width() + 15 < 1200) {
-        //         console.log("scrollMed: " + scrollMed);
-        //         $('html, body').animate({
-        //             scrollTop: 1900
-        //         }, 1000);  
-        //     }
+            if($(window).width() < 977) {
+                console.log("small");
+                console.log($(window).width());
+                $('html, body').animate({
+                    scrollTop: .2587 * $(document).height()
+                }, 1000);
+            }
 
-        //     else {
-        //         console.log("scrollLarge: " + scrollLarge);
-        //         $('html, body').animate({
-        //             scrollTop: scrollLarge
-        //         }, 1000);  
-        //     }
-        // });
+            else if($(window).width() < 1185 && $(window).width() >= 977) {
+                console.log('med: ' + $(window).width() );
+                $('html, body').animate({
+                    scrollTop: .29 * $(document).height()
+                }, 1000);
+            }
+
+            if($(window).width() >= 1185) {
+                console.log("large: " + $(window).width());
+                $('html, body').animate({
+                    scrollTop: .32 * $(document).height()
+                }, 1000);
+            }
+        });
     }
 };
 
