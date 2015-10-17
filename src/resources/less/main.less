@@ -832,10 +832,6 @@ header[role=banner] {
                     &:first-of-type{
                         padding-top: 21px;
                     }
-
-                    &:not(:nth-child(2)) {
-                        .hidden-xs;
-                    }
                     
                     .font-size(1.2);
 
@@ -847,6 +843,7 @@ header[role=banner] {
                 }
                 >div {
                     .make-xs-column(12);
+                    .hidden-xs;
                     padding-top: 21px;
                     p {
                         padding-top: 10px;

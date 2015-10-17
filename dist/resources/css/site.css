@@ -5654,7 +5654,7 @@ td.visible-xs {
 	display: none !important;
 }
 
-#exploded .row > div:first-of-type > div > p:not( :nth-child(2)) {
+#exploded .row > div:first-of-type > div > div {
 	display: none !important;
 }
 

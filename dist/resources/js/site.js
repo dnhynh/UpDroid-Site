@@ -998,13 +998,29 @@ var Homepage =
     "Exploded": function () {
 
         var controller = new ScrollMagic.Controller();
-        new ScrollMagic.Scene({
-          triggerElement: "#exploded", // starting scene, when reaching this element
-          offset: 250,
-          duration: 3000 // pin the element for a total of 400px
-        })
-        .setPin('#exploded')
-        .addTo(controller); // the element we want to pin
+
+        if ($(document).width() > 992) {
+            console.log("large break");
+            new ScrollMagic.Scene({
+              triggerElement: "#exploded", // starting scene, when reaching this element
+              offset: 320,
+              duration: 3000 // pin the element for a total of 400px
+            })
+            .setPin('#exploded')
+            .addTo(controller); // the element we want to pin
+        }
+
+        else {
+            console.log('small break');
+            new ScrollMagic.Scene({
+              triggerElement: "#exploded", // starting scene, when reaching this element
+              offset: 250,
+              duration: 3000 // pin the element for a total of 400px
+            })
+            .setPin('#exploded')
+            .addTo(controller); // the element we want to pin
+        }
+
 
         
         new ScrollMagic.Scene({
