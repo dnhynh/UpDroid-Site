@@ -134,7 +134,7 @@ var Homepage =
         if ($(document).width() > 992) {
             new ScrollMagic.Scene({
               triggerElement: "#exploded", // starting scene, when reaching this element
-              offset: 340,
+              offset: 310,
               duration: 3000 // pin the element for a total of 400px
             })
             .setPin('#exploded')
@@ -144,7 +144,7 @@ var Homepage =
         else {
             new ScrollMagic.Scene({
               triggerElement: "#exploded", // starting scene, when reaching this element
-              offset: 250,
+              offset: 240,
               duration: 3000 // pin the element for a total of 400px
             })
             .setPin('#exploded')

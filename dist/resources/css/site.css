@@ -2646,6 +2646,16 @@ header[role=banner].inactive span {
 	padding-right: 0;
 }
 
+.inside .row > div:nth-of-type(3) > div > img {
+	position: relative;
+	float: left;
+	width: 50%;
+	min-height: 1px;
+	padding-left: 0;
+	padding-right: 0;
+	margin: 21px 0;
+}
+
 .inside .row > div:nth-of-type(3) img {
 	margin-left: 8.33333333%;
 	float: left;
@@ -4059,6 +4069,11 @@ header[role=banner] span.icon-upcom-logo {
 	padding: 0 0;
 	position: absolute;
 	right: 2%;
+}
+
+.inside .row > div:nth-of-type(3) > div {
+	display: none !important;
+	visibility: hidden !important;
 }
 
 .inside .row > div:nth-of-type(3) img {
@@ -5676,6 +5691,10 @@ td.visible-xs {
 }
 
 #exploded .row > div:last-of-type {
+	display: none !important;
+}
+
+.inside .row > div:nth-of-type(4) {
 	display: none !important;
 }
 

@@ -140,7 +140,7 @@ body {
             >div:last-of-type {
                 height: 20px;
             }
-            
+
             form {
                 padding-top: 21px;
                 input {
@@ -1182,6 +1182,16 @@ header[role=banner] {
                 padding-left: 80px;
             }
 
+            >div {
+                @media (min-width: @screen-sm-min) {
+                    .hidden;
+                }
+                >img {
+                    .make-xs-column(6);
+                    margin: 21px 0;
+                }
+            }
+
             img {
                 .make-xs-column-offset(1);
                 .make-xs-column(10);
@@ -1224,6 +1234,7 @@ header[role=banner] {
         }
 
         >div:nth-of-type(4) {
+            .hidden-xs;
             img {
                 .make-xs-column(6);
             }
