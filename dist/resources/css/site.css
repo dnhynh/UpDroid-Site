@@ -2676,7 +2676,16 @@ header[role=banner].inactive span {
 	margin-top: 14px;
 }
 
-.inside .row > div:last-of-type {
+.inside .row > div:nth-of-type(4) img {
+	position: relative;
+	float: left;
+	width: 50%;
+	min-height: 1px;
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.inside .row #new-content {
 	position: relative;
 	float: left;
 	width: 100%;
@@ -2686,16 +2695,16 @@ header[role=banner].inactive span {
 	margin-top: 21px;
 }
 
-.inside .row > div:last-of-type a {
+.inside .row #new-content a {
 	color: #ff2919;
 	cursor: pointer;
 }
 
-.inside .row > div:last-of-type a:hover {
+.inside .row #new-content a:hover {
 	text-decoration: none;
 }
 
-.inside .row > div:last-of-type p {
+.inside .row #new-content p {
 	padding-top: 21px;
 }
 
@@ -4059,7 +4068,7 @@ header[role=banner] span.icon-upcom-logo {
 	right: 10px;
 }
 
-.inside .row > div:last-of-type {
+.inside .row #new-content {
 	margin-top: 50px;
 	position: relative;
 	min-height: 1px;
@@ -4395,12 +4404,12 @@ footer[role=contentinfo] p {
 
 @media (min-width: 768px) and (min-width: 768px) {
 
-.inside .row > div:last-of-type {
+.inside .row #new-content {
 	float: left;
 	width: 25%;
 }
 
-.inside .row > div:last-of-type {
+.inside .row #new-content {
 	margin-left: 33.33333333%;
 }
 
