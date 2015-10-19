@@ -352,14 +352,14 @@ var Homepage =
     },
 
     "DIYkit": function () {
-        var disclaimer = document.getElementById( 'disclaimer' );
-        var diy = $('#diy-button');
-        diy.on("click", function (event) {
-            event.preventDefault();
-            diy.addClass('hidden');
-            $('#confirm-diy').removeClass('hidden');
-            disclaimer.className = "expand";
-        });
+        // var disclaimer = document.getElementById( 'disclaimer' );
+        // var diy = $('#diy-button');
+        // diy.on("click", function (event) {
+        //     event.preventDefault();
+        //     diy.addClass('hidden');
+        //     $('#confirm-diy').removeClass('hidden');
+        //     disclaimer.className = "expand";
+        // });
         $('#confirm-diy').on("click", function(event) {
             if($('#diy-agree').is(':checked') == false) {
                 window.alert("Please confirm you understand before proceeding.");
@@ -553,63 +553,6 @@ var UpCom =
         });
         $(right).velocity({
             translateX: "0px"
-        });
-    }
-};
-
-/*****************************************************/
-/*                   Homepage                        */
-/*****************************************************/
-var Up1 =
-{
-    "Init": function () {
-        this.Cycle();
-        this.loadView();
-        this.resizeListen();
-        this.safariPicture();
-    },
-    "Cycle": function () {
-        // Cycle robot image set on click of image (non touch devices only)
-        $("html.no-touch #sb-site").on("click", "#modules-slider", function () {
-            $(this).find(".cycle-slideshow").cycle("next");
-        });
-
-        // Stop the above click event happening on the pager links
-        $("html.no-touch #sb-site").on("click", "div.cycle-pager", function (event) {
-            event.stopPropagation();
-        });
-    },
-
-    "loadView": function () {
-        $(document).ready(function(){
-        if($('html').width()< 755)
-            {
-                $("#up1-feature").remove().insertBefore($("#switch-point"));
-            }
-        });
-    },
-
-    "resizeListen": function () {
-        $(document).load($(window).bind("resize", listenWidth));
-
-        function listenWidth( e ) {
-        if($('html').width()< 755)
-            {
-                $("#up1-feature").remove().insertBefore($("#switch-point"));
-            } else {
-                $("#up1-feature").insertBefore($("#switch-point2"));
-            }
-        }
-    },
-
-    "safariPicture": function () {
-        $(document).ready(function(){
-            var userAgent = window.navigator.userAgent;
-
-            if (userAgent.match(/iPhone/i)) {
-               document.getElementById("up1-feature").src = "../resources/images/up1-feature-small.png";
-               document.getElementById("header-droid").remove();
-            }
         });
     }
 };

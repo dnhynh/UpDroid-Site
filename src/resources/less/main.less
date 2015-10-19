@@ -131,9 +131,16 @@ body {
 
         >div {
             .make-xs-column(12);
-            height: 0;
-            overflow: hidden;
             margin-top: 21px;
+            height: 240px;
+            >div:first-of-type {
+                height: 200px;
+                overflow: auto;
+            }
+            >div:last-of-type {
+                height: 20px;
+            }
+            
             form {
                 padding-top: 21px;
                 input {
