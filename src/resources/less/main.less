@@ -131,8 +131,7 @@ body {
 
         >div {
             .make-xs-column(12);
-            margin-top: 21px;
-            height: 240px;
+            height: 310px;
             >div:first-of-type {
                 height: 200px;
                 overflow: auto;
@@ -142,22 +141,20 @@ body {
             }
 
             form {
-                padding-top: 21px;
+                margin-top: 21px;
                 input {
                     display: inline;
                 }
 
                 >p {
                     display: inline-block;
-                    margin-left: 21px;
+                    margin-left: 11px;
                 }
             }
 
-            transition:     all 500ms ease;
-                    -moz-transition:           all 500ms ease;
-                    -ms-transition:            all 500ms ease;
-                    -o-transition:             all 500ms ease; 
-                    -webkit-transition:        all 500ms ease;
+            >a {
+                margin-top: 21px;
+            }
             
             p {
                 .font-size(1.2);
@@ -1224,11 +1221,25 @@ header[role=banner] {
                 }
             }
 
-            .btn {
+            >a {
                 margin-top: 14px;
 
                 @media (min-width: @screen-md-min) {
                     margin-top: 21px;
+                }
+
+                &:nth-of-type(2) {
+                    cursor: pointer;
+                    &:before {
+                        content: "UP1";
+                    }
+                    &:hover {
+                        background-color: grey;
+                        color: white;
+                        &:before {
+                        content: "Coming Soon";
+                        }
+                    }
                 }
             }
         }

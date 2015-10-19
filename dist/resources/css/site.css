@@ -1895,13 +1895,7 @@ html.sb-active body {
 	min-height: 1px;
 	padding-left: 0;
 	padding-right: 0;
-	margin-top: 21px;
-	height: 240px;
-	transition: all 500ms ease;
-	-moz-transition: all 500ms ease;
-	-ms-transition: all 500ms ease;
-	-o-transition: all 500ms ease;
-	-webkit-transition: all 500ms ease;
+	height: 310px;
 }
 
 .pre-order > div > div > div:first-of-type {
@@ -1914,7 +1908,7 @@ html.sb-active body {
 }
 
 .pre-order > div > div form {
-	padding-top: 21px;
+	margin-top: 21px;
 }
 
 .pre-order > div > div form input {
@@ -1923,7 +1917,11 @@ html.sb-active body {
 
 .pre-order > div > div form > p {
 	display: inline-block;
-	margin-left: 21px;
+	margin-left: 11px;
+}
+
+.pre-order > div > div > a {
+	margin-top: 21px;
 }
 
 .pre-order > div > div p {
@@ -2690,8 +2688,25 @@ header[role=banner].inactive span {
 	padding-top: 14px;
 }
 
-.inside .row > div:nth-of-type(3) .btn {
+.inside .row > div:nth-of-type(3) > a {
 	margin-top: 14px;
+}
+
+.inside .row > div:nth-of-type(3) > a:nth-of-type(2) {
+	cursor: pointer;
+}
+
+.inside .row > div:nth-of-type(3) > a:nth-of-type(2):before {
+	content: "UP1";
+}
+
+.inside .row > div:nth-of-type(3) > a:nth-of-type(2):hover {
+	background-color: grey;
+	color: white;
+}
+
+.inside .row > div:nth-of-type(3) > a:nth-of-type(2):hover:before {
+	content: "Coming Soon";
 }
 
 .inside .row > div:nth-of-type(4) img {
@@ -4917,7 +4932,7 @@ nav > div .social-nav {
 	font-size: 1.2rem;
 }
 
-.inside .row > div:nth-of-type(3) .btn {
+.inside .row > div:nth-of-type(3) > a {
 	margin-top: 21px;
 }
 
