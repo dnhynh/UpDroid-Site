@@ -951,9 +951,9 @@ var Global =
 var Homepage =
 {
     "Init": function () {
+        this.Exploded();
         this.Parallax();
         // this.Cycle();
-        this.Exploded();
         this.ScrollConfig();
         this.DIYkit();
     },
@@ -1001,22 +1001,22 @@ var Homepage =
 
         if ($(document).width() > 992) {
             new ScrollMagic.Scene({
-              triggerElement: "#exploded", // starting scene, when reaching this element
+              triggerElement: "#exploded", 
               offset: 310,
-              duration: 3000 // pin the element for a total of 400px
+              duration: 2900 
             })
             .setPin('#exploded')
-            .addTo(controller); // the element we want to pin
+            .addTo(controller); 
         }
 
         else {
             new ScrollMagic.Scene({
-              triggerElement: "#exploded", // starting scene, when reaching this element
+              triggerElement: "#exploded", 
               offset: 240,
-              duration: 3000 // pin the element for a total of 400px
+              duration: 2900 
             })
             .setPin('#exploded')
-            .addTo(controller); // the element we want to pin
+            .addTo(controller); 
         }
 
 
