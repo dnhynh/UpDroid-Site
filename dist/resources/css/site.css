@@ -2753,6 +2753,10 @@ header[role=banner].inactive span {
 	padding-top: 21px;
 }
 
+.inside .row #new-content .red {
+	color: #ff2919;
+}
+
 .top-left-wing,
 .middle-left-wing,
 .bot-left-wing,
@@ -4456,7 +4460,7 @@ footer[role=contentinfo] p {
 
 .inside .row #new-content {
 	float: left;
-	width: 25%;
+	width: 50%;
 }
 
 .inside .row #new-content {
