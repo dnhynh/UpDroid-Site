@@ -441,32 +441,23 @@ var Homepage =
 
         var controller = new ScrollMagic.Controller();
 
-        $(document).on("mousewheel", function() {
-            console.log("scroll: " + $(document).scrollTop());
-            console.log("height: " + $(document).height());
-        });
-
         arm.on('click', function() {
 
             if($(window).width() < 977) {
-                console.log("small");
-                console.log($(window).width());
                 $('html, body').animate({
                     scrollTop: .263 * $(document).height()
                 }, 1000);
             }
 
             else if($(window).width() < 1185 && $(window).width() >= 977) {
-                console.log('med: ' + $(window).width() );
                 $('html, body').animate({
                     scrollTop: .282 * $(document).height()
                 }, 1000);
             }
 
             if($(window).width() >= 1185) {
-                console.log("large: " + $(window).width());
                 $('html, body').animate({
-                    scrollTop: .2947 * $(document).height()
+                    scrollTop: .315 * $(document).height()
                 }, 1000);
             }
         });
@@ -474,22 +465,18 @@ var Homepage =
         io.on('click', function() {
 
             if($(window).width() < 977) {
-                console.log("small");
-                console.log($(window).width());
                 $('html, body').animate({
                     scrollTop: .34 * $(document).height()
                 }, 1000);
             }
 
             else if($(window).width() < 1185 && $(window).width() >= 977) {
-                console.log('med: ' + $(window).width() );
                 $('html, body').animate({
                     scrollTop: .34 * $(document).height()
                 }, 1000);
             }
 
             else if($(window).width() >= 1185) {
-                console.log("large: " + $(window).width());
                 $('html, body').animate({
                     scrollTop: .36 * $(document).height()
                 }, 1000);
@@ -499,22 +486,18 @@ var Homepage =
         cpu.on('click', function() {
 
             if($(window).width() < 977) {
-                console.log("small");
-                console.log($(window).width());
                 $('html, body').animate({
                     scrollTop: .4015 * $(document).height()
                 }, 1000);
             }
 
             else if($(window).width() < 1185 && $(window).width() >= 977) {
-                console.log('med: ' + $(window).width() );
                 $('html, body').animate({
                     scrollTop: .41 * $(document).height()
                 }, 1000);
             }
 
             else if($(window).width() >= 1185) {
-                console.log("large: " + $(window).width());
                 $('html, body').animate({
                     scrollTop: .4373 * $(document).height()
                 }, 1000);
@@ -524,22 +507,18 @@ var Homepage =
         base.on('click', function() {
 
             if($(window).width() < 977) {
-                console.log("small");
-                console.log($(window).width());
                 $('html, body').animate({
                     scrollTop: .5 * $(document).height()
                 }, 1000);
             }
 
             else if($(window).width() < 1185 && $(window).width() >= 977) {
-                console.log('med: ' + $(window).width() );
                 $('html, body').animate({
                     scrollTop: .508 * $(document).height()
                 }, 1000);
             }
 
             else if($(window).width() >= 1185) {
-                console.log("large: " + $(window).width());
                 $('html, body').animate({
                     scrollTop: .5082 * $(document).height()
                 }, 1000);
