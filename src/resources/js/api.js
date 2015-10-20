@@ -493,7 +493,7 @@ var Homepage =
 
             else if($(window).width() < 1185 && $(window).width() >= 977) {
                 $('html, body').animate({
-                    scrollTop: .41 * $(document).height()
+                    scrollTop: .42 * $(document).height()
                 }, 1000);
             }
 
