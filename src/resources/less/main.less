@@ -1251,6 +1251,26 @@ header[role=banner] {
             }
         }
 
+        >div:nth-of-type(5) {
+            .make-xs-column(12);
+            height: 30px;
+            margin-top: 50px;
+
+            @media(min-width: @screen-sm-min) {
+                margin-top: 21px;
+                .make-sm-column(5);
+                .make-sm-column-offset(7);
+            }
+
+            h3 {
+                display: inline-block;
+            }
+            img {
+                margin-left: 30px;
+                height: 100%;
+            }
+        }
+
         #new-content {
             .make-xs-column(12);
             margin-top: 21px;
