@@ -373,33 +373,61 @@ var Homepage =
     },
 
     "ScrollConfig": function() {
-        var armButton = $("#sArm");
+        var arm = $("#sArm");
+        var io = $("#sIO");
+        var cpu = $("#sCPU");
+        var base = $("#sBase");
         $(document).on("mousewheel", function() {
             console.log("scroll: " + $(document).scrollTop());
             console.log("height: " + $(document).height());
         });
 
-        sArm.addEventListener('click', function() {
+        arm.on('click', function() {
 
             if($(window).width() < 977) {
                 console.log("small");
                 console.log($(window).width());
                 $('html, body').animate({
-                    scrollTop: .2587 * $(document).height()
+                    scrollTop: .263 * $(document).height()
                 }, 1000);
             }
 
             else if($(window).width() < 1185 && $(window).width() >= 977) {
                 console.log('med: ' + $(window).width() );
                 $('html, body').animate({
-                    scrollTop: .29 * $(document).height()
+                    scrollTop: .282 * $(document).height()
                 }, 1000);
             }
 
             if($(window).width() >= 1185) {
                 console.log("large: " + $(window).width());
                 $('html, body').animate({
-                    scrollTop: .32 * $(document).height()
+                    scrollTop: .2947 * $(document).height()
+                }, 1000);
+            }
+        });
+
+        io.on('click', function() {
+
+            if($(window).width() < 977) {
+                console.log("small");
+                console.log($(window).width());
+                $('html, body').animate({
+                    scrollTop: .34 * $(document).height()
+                }, 1000);
+            }
+
+            else if($(window).width() < 1185 && $(window).width() >= 977) {
+                console.log('med: ' + $(window).width() );
+                $('html, body').animate({
+                    scrollTop: .34 * $(document).height()
+                }, 1000);
+            }
+
+            else if($(window).width() >= 1185) {
+                console.log("large: " + $(window).width());
+                $('html, body').animate({
+                    scrollTop: .36 * $(document).height()
                 }, 1000);
             }
         });
