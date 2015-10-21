@@ -431,6 +431,17 @@ var Homepage =
                 event.preventDefault();
             }
         });
+
+        $('#confirm-diy').on("touchstart", function(event) {
+            if($('#diy-agree').is(':checked') == false) {
+                window.alert("Please confirm you understand before proceeding.");
+                event.preventDefault();
+            }
+            else {
+                document.getElementById('buy-diy').click();
+                event.preventDefault();
+            }
+        });
     },
 
     "ScrollConfig": function() {
