@@ -1289,18 +1289,7 @@ var Homepage =
         //     $('#confirm-diy').removeClass('hidden');
         //     disclaimer.className = "expand";
         // });
-        $('#confirm-diy').on("click", function(event) {
-            if($('#diy-agree').is(':checked') == false) {
-                window.alert("Please confirm you understand before proceeding.");
-                event.preventDefault();
-            }
-            else {
-                document.getElementById('buy-diy').click();
-                event.preventDefault();
-            }
-        });
-
-        $('#confirm-diy').on("touchstart", function(event) {
+        $('#confirm-diy').bind("click touchstart", function (event) {
             if($('#diy-agree').is(':checked') == false) {
                 window.alert("Please confirm you understand before proceeding.");
                 event.preventDefault();
