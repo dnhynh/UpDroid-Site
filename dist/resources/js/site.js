@@ -1290,13 +1290,19 @@ var Homepage =
         //     disclaimer.className = "expand";
         // });
         $('#confirm-diy').bind("click touchstart", function (event) {
+            var apple = navigator.userAgent.match(/(iPod|iPhone|iPad)/);
             if($('#diy-agree').is(':checked') == false) {
                 window.alert("Please confirm you understand before proceeding.");
                 event.preventDefault();
             }
             else {
-                document.getElementById('buy-diy').click();
-                event.preventDefault();
+                if(apple == null) {
+                    document.getElementById('buy-diy').click();
+                    event.preventDefault();
+                }
+                else {
+                    window.open('https://updroid.tilt.com/up1-dev-kit/checkout/payment');
+                }
             }
         });
     },
