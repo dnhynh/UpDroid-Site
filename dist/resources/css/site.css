@@ -2165,7 +2165,6 @@ header[role=banner].inactive span {
 }
 
 .video {
-	display: none;
 	background-color: #f1f4f4;
 }
 
@@ -2173,20 +2172,21 @@ header[role=banner].inactive span {
 	padding: 80px 21px;
 }
 
-.video .row > div {
+.video .row > div:first-of-type {
 	float: left;
 	width: 100%;
 	position: relative;
 	min-height: 1px;
 	padding-left: 0;
 	padding-right: 0;
+	margin-left: 21px;
 }
 
-.video .row > div p {
+.video .row > div:first-of-type p {
 	margin-top: 21px;
 }
 
-.video .row > div .play {
+.video .row > div:first-of-type .play {
 	margin-top: 21px;
 	border-radius: 50%;
 	width: 45px;
@@ -2201,15 +2201,15 @@ header[role=banner].inactive span {
 	-webkit-transition: all 500ms ease;
 }
 
-.video .row > div .play:hover {
+.video .row > div:first-of-type .play:hover {
 	background-color: #fff;
 }
 
-.video .row > div .play:hover .play-icon {
+.video .row > div:first-of-type .play:hover .play-icon {
 	border-left: 10px solid #ff2919;
 }
 
-.video .row > div .play .play-icon {
+.video .row > div:first-of-type .play .play-icon {
 	position: relative;
 	margin-left: auto;
 	margin-right: auto;
@@ -2235,9 +2235,16 @@ header[role=banner].inactive span {
 	min-height: 1px;
 	padding-left: 0;
 	padding-right: 0;
+	padding-bottom: 80px;
 }
 
-.video .row > div:nth-of-type(2) > div > div {
+.video .row > div:nth-of-type(2) > div {
+	float: left;
+	width: 100%;
+	position: relative;
+	min-height: 1px;
+	padding-left: 0;
+	padding-right: 0;
 	cursor: pointer;
 	margin-top: 21px;
 	margin-left: auto;
@@ -2246,6 +2253,26 @@ header[role=banner].inactive span {
 	border: 10px solid #fff;
 	height: 70vw;
 	width: 70vw;
+	z-index: 1;
+}
+
+.video .row > div:nth-of-type(2) > img {
+	position: absolute !important;
+	bottom: 0px;
+	width: 200px;
+	right: 100px;
+	z-index: 2;
+	float: left;
+	width: 66.66666667%;
+	position: relative;
+	min-height: 1px;
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.video .row > div:nth-of-type(2) > img:first-of-type {
+	right: 99px;
+	z-index: 0;
 }
 
 .image-gallery .row > div {
@@ -3936,24 +3963,57 @@ header[role=banner] span.icon-upcom-logo {
 	padding: 80px 0;
 }
 
-.video .row > div {
-	margin-left: 8.33333333%;
-}
-
-.video .row > div {
+.video .row > div:first-of-type {
 	float: left;
 	width: 25%;
 }
 
+.video .row > div:first-of-type {
+	margin-left: 35px;
+}
+
 .video .row > div:nth-of-type(2) {
+	float: left;
+	width: 66.66666667%;
+}
+
+.video .row > div:nth-of-type(2) > div {
 	float: left;
 	width: 50%;
 }
 
-.video .row > div:nth-of-type(2) > div > div {
+.video .row > div:nth-of-type(2) > div {
+	margin-left: 8.33333333%;
+}
+
+.video .row > div:nth-of-type(2) > div {
 	margin-top: 100px;
-	width: 300px;
-	height: 300px;
+	width: 400px;
+	height: 400px;
+}
+
+.video .row > div:nth-of-type(2) > div .play-icon-center {
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	left: 2px;
+	transform: translateY(-50%);
+	top: 50%;
+	width: 0;
+	height: 0;
+	border-top: 40px solid transparent;
+	border-bottom: 40px solid transparent;
+	border-left: 50px solid #fff;
+	transition: all 500ms ease;
+	-moz-transition: all 500ms ease;
+	-ms-transition: all 500ms ease;
+	-o-transition: all 500ms ease;
+	-webkit-transition: all 500ms ease;
+}
+
+.video .row > div:nth-of-type(2) > img {
+	float: left;
+	width: 83.33333333%;
 }
 
 .image-gallery .row > div {
@@ -4859,13 +4919,13 @@ nav > div .social-nav {
 	left: 28px;
 }
 
-.video .row > div {
-	margin-left: 8.33333333%;
-}
-
-.video .row > div {
+.video .row > div:first-of-type {
 	float: left;
 	width: 25%;
+}
+
+.video .row > div:first-of-type {
+	margin-left: 50px;
 }
 
 .image-gallery .row > div header {
@@ -5750,7 +5810,7 @@ td.visible-xs {
 	display: none !important;
 }
 
-.video .row > div .play {
+.video .row > div:first-of-type .play {
 	display: none !important;
 }
 
