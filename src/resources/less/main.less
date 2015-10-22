@@ -673,7 +673,7 @@ header[role=banner] {
                 z-index: 1;
 
                 @media(min-width: @screen-sm-min) {
-                    margin-top: 100px;
+                    margin-top: 50px;
                     width: 400px;
                     height: 400px;
 
@@ -699,16 +699,14 @@ header[role=banner] {
             }
             >img {
                 position: absolute !important;
-                bottom: 0px;
-                width: 200px;
-                right:  100px;
+                bottom: -10px;
+                right:  200px;
+                width: 500px;
                 z-index: 2;
 
 
-                .make-xs-column(8);
-                .make-sm-column(10);
                 &:first-of-type {
-                    right: 99px;
+                    right: 199px;
                     z-index: 0;
                 }
             }
