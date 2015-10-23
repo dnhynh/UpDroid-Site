@@ -956,6 +956,7 @@ var Homepage =
         // this.Cycle();
         this.ScrollConfig();
         this.DIYkit();
+        this.Video();
     },
     "Parallax": function () {
         // Simple test for Mobile Safari
@@ -984,17 +985,29 @@ var Homepage =
             });
         }
     },
-    "Cycle": function () {
-        // Cycle robot image set on click of image (non touch devices only)
-        $("html.no-touch #sb-site").on("click", "div.images", function () {
-            $("div.images").find(".cycle-slideshow").cycle("next");
+    "Video": function () {
+        $('.play-center').hover(function () {
+            console.log('firing');
+            $('.play-icon-center').addClass('red');
+        }, function () {
+            $('.play-icon-center').removeClass('red');
         });
 
-        // Stop the above click event happening on the pager links
-        $("html.no-touch #sb-site").on("click", "div.cycle-pager", function (event) {
-            event.stopPropagation();
+        $('.play, .play-center').bind("click touchstart", function (event) {
+            document.getElementById('play-video').click();
         });
     },
+    // "Cycle": function () {
+    //     // Cycle robot image set on click of image (non touch devices only)
+    //     $("html.no-touch #sb-site").on("click", "div.images", function () {
+    //         $("div.images").find(".cycle-slideshow").cycle("next");
+    //     });
+
+    //     // Stop the above click event happening on the pager links
+    //     $("html.no-touch #sb-site").on("click", "div.cycle-pager", function (event) {
+    //         event.stopPropagation();
+    //     });
+    // },
     "Exploded": function () {
 
         var controller = new ScrollMagic.Controller();

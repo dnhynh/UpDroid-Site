@@ -658,7 +658,7 @@ header[role=banner] {
             .make-xs-column(12);
             .make-sm-column(8);
             padding-bottom: 80px;
-            >div {
+            >div:first-of-type {
                 .make-xs-column(12);
                 .make-sm-column(6);
                 .make-sm-column-offset(1);
@@ -671,6 +671,39 @@ header[role=banner] {
                 height: 70vw;
                 width: 70vw;
                 z-index: 1;
+                transition:                            all 500ms ease;
+                            -moz-transition:           all 500ms ease;
+                            -ms-transition:            all 500ms ease;
+                            -o-transition:             all 500ms ease; 
+                            -webkit-transition:        all 500ms ease;
+
+                &:hover {
+                    border: 10px solid @brand-red;
+                }
+
+                .play-icon-center {
+                    position: relative;
+                    margin-left: auto;
+                    margin-right: auto;
+                    left: 2px;
+                    transform: translateY(-50%);
+                    top: 50%;
+                    width: 0;
+                    height: 0;
+                    border-top: 40px solid transparent;
+                    border-bottom: 40px solid transparent;
+                    border-left: 50px solid #fff;
+                    transition:                    all 500ms ease;
+                        -moz-transition:           all 500ms ease;
+                        -ms-transition:            all 500ms ease;
+                        -o-transition:             all 500ms ease; 
+                        -webkit-transition:        all 500ms ease;
+                }
+                .play-icon-center.red {
+                    border-top: 40px solid transparent;
+                    border-bottom: 40px solid transparent;
+                    border-left: 50px solid @brand-red;
+                }
 
                 @media(min-width: @screen-sm-min) {
                     margin-top: 50px;
@@ -697,20 +730,27 @@ header[role=banner] {
                     }
                 }
             }
-            >img {
-                position: absolute !important;
-                bottom: -10px;
-                right:  200px;
-                width: 500px;
-                z-index: 2;
+            >div:nth-of-type(2) {
+                width: 100%;
+                position: absolute;
+                bottom: -4px;
+                >img {
+                    position: relative;
+                    display: inline-block;
+                    z-index: 2;
+                    height: 40vw;
+                    cursor: pointer;
 
+                    @media (min-width: @screen-sm-min) {
+                        height: 270px;
+                    }
 
-                &:first-of-type {
-                    right: 199px;
-                    z-index: 0;
+                    &:first-of-type {
+                        z-index: 0;
+                        left: 3px;
+                    }
                 }
             }
-
         }
     }
 }

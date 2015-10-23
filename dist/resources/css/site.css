@@ -2238,7 +2238,7 @@ header[role=banner].inactive span {
 	padding-bottom: 80px;
 }
 
-.video .row > div:nth-of-type(2) > div {
+.video .row > div:nth-of-type(2) > div:first-of-type {
 	float: left;
 	width: 100%;
 	position: relative;
@@ -2254,19 +2254,59 @@ header[role=banner].inactive span {
 	height: 70vw;
 	width: 70vw;
 	z-index: 1;
+	transition: all 500ms ease;
+	-moz-transition: all 500ms ease;
+	-ms-transition: all 500ms ease;
+	-o-transition: all 500ms ease;
+	-webkit-transition: all 500ms ease;
 }
 
-.video .row > div:nth-of-type(2) > img {
-	position: absolute !important;
-	bottom: -10px;
-	right: 200px;
-	width: 500px;
+.video .row > div:nth-of-type(2) > div:first-of-type:hover {
+	border: 10px solid #ff2919;
+}
+
+.video .row > div:nth-of-type(2) > div:first-of-type .play-icon-center {
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	left: 2px;
+	transform: translateY(-50%);
+	top: 50%;
+	width: 0;
+	height: 0;
+	border-top: 40px solid transparent;
+	border-bottom: 40px solid transparent;
+	border-left: 50px solid #fff;
+	transition: all 500ms ease;
+	-moz-transition: all 500ms ease;
+	-ms-transition: all 500ms ease;
+	-o-transition: all 500ms ease;
+	-webkit-transition: all 500ms ease;
+}
+
+.video .row > div:nth-of-type(2) > div:first-of-type .play-icon-center.red {
+	border-top: 40px solid transparent;
+	border-bottom: 40px solid transparent;
+	border-left: 50px solid #ff2919;
+}
+
+.video .row > div:nth-of-type(2) > div:nth-of-type(2) {
+	width: 100%;
+	position: absolute;
+	bottom: -4px;
+}
+
+.video .row > div:nth-of-type(2) > div:nth-of-type(2) > img {
+	position: relative;
+	display: inline-block;
 	z-index: 2;
+	height: 40vw;
+	cursor: pointer;
 }
 
-.video .row > div:nth-of-type(2) > img:first-of-type {
-	right: 199px;
+.video .row > div:nth-of-type(2) > div:nth-of-type(2) > img:first-of-type {
 	z-index: 0;
+	left: 3px;
 }
 
 .image-gallery .row > div {
@@ -3971,22 +4011,22 @@ header[role=banner] span.icon-upcom-logo {
 	width: 66.66666667%;
 }
 
-.video .row > div:nth-of-type(2) > div {
+.video .row > div:nth-of-type(2) > div:first-of-type {
 	float: left;
 	width: 50%;
 }
 
-.video .row > div:nth-of-type(2) > div {
+.video .row > div:nth-of-type(2) > div:first-of-type {
 	margin-left: 8.33333333%;
 }
 
-.video .row > div:nth-of-type(2) > div {
+.video .row > div:nth-of-type(2) > div:first-of-type {
 	margin-top: 50px;
 	width: 400px;
 	height: 400px;
 }
 
-.video .row > div:nth-of-type(2) > div .play-icon-center {
+.video .row > div:nth-of-type(2) > div:first-of-type .play-icon-center {
 	position: relative;
 	margin-left: auto;
 	margin-right: auto;
@@ -4003,6 +4043,10 @@ header[role=banner] span.icon-upcom-logo {
 	-ms-transition: all 500ms ease;
 	-o-transition: all 500ms ease;
 	-webkit-transition: all 500ms ease;
+}
+
+.video .row > div:nth-of-type(2) > div:nth-of-type(2) > img {
+	height: 270px;
 }
 
 .image-gallery .row > div {
