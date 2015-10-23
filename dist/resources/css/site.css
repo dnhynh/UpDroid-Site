@@ -1772,6 +1772,24 @@ html.sb-active body {
 	white-space: nowrap;
 }
 
+.up1-video {
+	width: 100%;
+}
+
+.up1-video .icon-cross {
+	position: absolute;
+	cursor: pointer;
+	color: #0c0c0c;
+	top: 11px;
+	right: 11px;
+	font-size: 15px;
+	font-size: 1.5rem;
+}
+
+.up1-video > div {
+	margin-top: 30px;
+}
+
 .faq {
 	text-align: left;
 }
@@ -2239,8 +2257,6 @@ header[role=banner].inactive span {
 }
 
 .video .row > div:nth-of-type(2) > div:first-of-type {
-	float: left;
-	width: 100%;
 	position: relative;
 	min-height: 1px;
 	padding-left: 0;
@@ -3898,6 +3914,17 @@ p {
 
 body {
 	padding: 0;
+}
+
+.up1-video {
+	width: 500px;
+}
+
+.up1-video .icon-cross {
+	top: 21px;
+	right: 21px;
+	font-size: 34px;
+	font-size: 3.4rem;
 }
 
 .pre-order {
