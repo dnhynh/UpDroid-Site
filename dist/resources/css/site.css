@@ -2426,7 +2426,7 @@ header[role=banner].inactive span {
 }
 
 #exploded {
-	background-color: #e4e4e4;
+	background-color: #f1f4f4;
 }
 
 #exploded .row {
@@ -2597,7 +2597,8 @@ header[role=banner].inactive span {
 }
 
 .commander {
-	background-image: url('/resources/images/bg-commander.gif');
+	background-image: url('/resources/images/bg-commander-alt.gif');
+	background-color: #fff;
 	background-position: right 35px;
 	background-repeat: no-repeat;
 	background-size: 600px;
@@ -2631,7 +2632,7 @@ header[role=banner].inactive span {
 }
 
 .inside {
-	background-color: #ffffff;
+	background-color: #eaecec;
 	padding-top: 35px;
 }
 
