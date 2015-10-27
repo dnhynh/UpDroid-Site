@@ -2808,7 +2808,7 @@ header[role=banner].inactive span {
 	padding-right: 0;
 }
 
-.inside .row > div:nth-of-type(5) {
+.inside .row > div:nth-of-type(6) {
 	position: relative;
 	float: left;
 	width: 100%;
@@ -2819,11 +2819,11 @@ header[role=banner].inactive span {
 	margin-top: 50px;
 }
 
-.inside .row > div:nth-of-type(5) h3 {
+.inside .row > div:nth-of-type(6) h3 {
 	display: inline-block;
 }
 
-.inside .row > div:nth-of-type(5) img {
+.inside .row > div:nth-of-type(6) img {
 	margin-left: 30px;
 	height: 100%;
 }
@@ -4263,7 +4263,7 @@ header[role=banner] span.icon-upcom-logo {
 	right: 10px;
 }
 
-.inside .row > div:nth-of-type(5) {
+.inside .row > div:nth-of-type(6) {
 	margin-top: 21px;
 	position: relative;
 	min-height: 1px;
@@ -4607,22 +4607,22 @@ footer[role=contentinfo] p {
 
 @media (min-width: 768px) and (min-width: 768px) {
 
-.inside .row > div:nth-of-type(5) {
+.inside .row > div:nth-of-type(6) {
 	float: left;
 	width: 41.66666667%;
 }
 
-.inside .row > div:nth-of-type(5) {
-	margin-left: 58.33333333%;
+.inside .row > div:nth-of-type(6) {
+	margin-left: 8.33333333%;
 }
 
 .inside .row #new-content {
 	float: left;
-	width: 50%;
+	width: 41.66666667%;
 }
 
 .inside .row #new-content {
-	margin-left: 33.33333333%;
+	margin-left: 8.33333333%;
 }
 
 }
@@ -5884,6 +5884,10 @@ td.visible-xs {
 }
 
 .inside .row > div:nth-of-type(4) {
+	display: none !important;
+}
+
+.inside .row > div:nth-of-type(6) {
 	display: none !important;
 }
 
