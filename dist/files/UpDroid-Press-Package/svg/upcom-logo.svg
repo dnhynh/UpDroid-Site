@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="137.1225"
+   height="58.182499"
+   viewBox="0 0 137.1225 58.1825"
+   id="svg4277"
+   version="1.1"
+   inkscape:version="0.91 r"
+   sodipodi:docname="upcom-logo.svg">
+  <defs
+     id="defs4279" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.35"
+     inkscape:cx="-306.43875"
+     inkscape:cy="49.091267"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     units="px"
+     fit-margin-top="5"
+     fit-margin-left="5"
+     fit-margin-right="5"
+     fit-margin-bottom="5"
+     inkscape:window-width="1859"
+     inkscape:window-height="1056"
+     inkscape:window-x="61"
+     inkscape:window-y="24"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata4282">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-360.01018,-523.27095)">
+    <path
+       d="m 442.80393,552.3622 c 0,-7.43 -5.65625,-13.56125 -12.89,-14.32 l 0,-4.52 -3.02375,0 0,4.52 c -7.235,0.75875 -12.89,6.89 -12.89,14.32 0,7.43 5.655,13.5625 12.89,14.32 l 0,4.42375 3.02375,0 0,-4.42375 c 7.23375,-0.7575 12.89,-6.89 12.89,-14.32 m 6.44625,-18.84 -5.79,0 c 3.81,3.04375 6.69,7.2 8.10625,11.9975 l 4.08625,0 c -0.36375,-1.45375 -0.82875,-2.86625 -1.40875,-4.22 l 27.58,0 -7.4225,9.38375 -17.9475,0 c -0.085,-1.44 -0.2975,-2.845 -0.59125,-4.22 l -4.0625,0 c 0.47625,1.89125 0.75375,3.86 0.75375,5.89875 0,2.06375 -0.28375,4.05625 -0.77125,5.9675 l 4.0575,0 c 0.2825,-1.305 0.4975,-2.635 0.5925,-4.00125 l 15.08375,0 -7.42375,9.385 -9.97875,0 c 0.6275,-1.42125 1.1375,-2.905 1.525,-4.43875 l -4.08875,0 c -2.83625,9.5025 -11.36875,16.5425 -21.63625,17.17875 l 0,-4.4025 -3.02375,0 0,4.4025 c -10.26875,-0.635 -18.8,-7.67625 -21.6375,-17.17875 l -3.74875,0 c 0.3875,1.53375 0.8975,3.0175 1.52625,4.43875 l -9.98,0 -7.42375,-9.385 15.085,0 c 0.0937,1.36625 0.30875,2.69625 0.59125,4.00125 l 3.7175,0 c -0.4875,-1.91125 -0.77125,-3.90375 -0.77125,-5.9675 0,-2.03875 0.2775,-4.0075 0.75375,-5.89875 l -3.7225,0 c -0.29375,1.375 -0.50625,2.78 -0.59125,4.22 l -17.9475,0 -7.42375,-9.38375 27.58125,0 c -0.58,1.35375 -1.045,2.76625 -1.40875,4.22 l 3.74625,0 c 1.41625,-4.7975 4.295,-8.95375 8.105,-11.9975 l -5.44875,0 c -1.155,1.27625 -2.19625,2.65875 -3.1025,4.13125 l -32.35625,0 -7.42375,-9.3825 49.2525,0 c -2.0025,1.20375 -3.83625,2.6575 -5.47125,4.30625 l 5.80125,0 c 3.52875,-2.46375 7.73625,-4.025 12.2975,-4.30625 l 0,4.30625 3.02375,0 0,-4.30625 c 4.56,0.2825 8.7675,1.8425 12.295,4.30625 l 6.1425,0 c -1.63625,-1.64875 -3.46875,-3.1025 -5.47,-4.30625 l 49.25125,0 -7.42375,9.3825 -32.35625,0 c -0.90625,-1.4725 -1.9475,-2.855 -3.1025,-4.13125 m -18.9575,18.84 c 0,1.045 -0.8475,1.89125 -1.89125,1.89125 -1.045,0 -1.89125,-0.84625 -1.89125,-1.89125 0,-1.045 0.84625,-1.8925 1.89125,-1.8925 1.04375,0 1.89125,0.8475 1.89125,1.8925"
+       style="fill:#231f20;fill-opacity:1;fill-rule:nonzero;stroke:none"
+       id="path350"
+       inkscape:connector-curvature="0" />
+  </g>
+</svg>
