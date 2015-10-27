@@ -3169,6 +3169,16 @@ header[role=banner].inactive span {
 	padding: 25px;
 }
 
+.screens .row > div video {
+	float: left;
+	width: 100%;
+	position: relative;
+	min-height: 1px;
+	padding-left: 0;
+	padding-right: 0;
+	padding: 25px;
+}
+
 .screens .row > div > div {
 	float: left;
 	width: 100%;
@@ -4331,6 +4341,11 @@ header[role=banner] span.icon-upcom-logo {
 	width: 50%;
 }
 
+.screens .row > div video {
+	float: left;
+	width: 50%;
+}
+
 .screens .row > div > div {
 	float: left;
 	width: 50%;
@@ -5170,6 +5185,11 @@ nav > div .social-nav {
 }
 
 .screens .row > div img {
+	float: left;
+	width: 50%;
+}
+
+.screens .row > div video {
 	float: left;
 	width: 50%;
 }
