@@ -119,7 +119,6 @@ var Homepage =
     },
     "Video": function () {
         $('.play-center').hover(function () {
-            console.log('firing');
             $('.play-icon-center').addClass('red');
         }, function () {
             $('.play-icon-center').removeClass('red');
