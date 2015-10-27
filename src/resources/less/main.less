@@ -1114,6 +1114,37 @@ header[role=banner] {
     }
 }
 
+.slick-dots {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 50px;
+
+    >li {
+        display: inline;
+        padding-left: 20px;
+        padding-right: 20px;
+        > button {
+            .font-monosten-a;
+            border-radius: 50%;
+            width: 20px;
+            height: 20px;
+            padding: 0;
+            border: 0;
+            transition:                    all 500ms ease;
+                -moz-transition:           all 500ms ease;
+                -ms-transition:            all 500ms ease;
+                -o-transition:             all 500ms ease; 
+                -webkit-transition:        all 500ms ease;
+
+            &:hover {
+                background-color: @brand-red;
+                color: #fff;
+            }
+        }
+    }
+}
+
 // UpDroid commander content & images
 .commander {
     background-image: url('/resources/images/bg-commander-alt.gif');

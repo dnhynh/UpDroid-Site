@@ -89,6 +89,7 @@ var Homepage =
         this.ScrollConfig();
         this.DIYkit();
         this.Video();
+        this.Commander();
     },
     "Parallax": function () {
         // Simple test for Mobile Safari
@@ -448,6 +449,18 @@ var Homepage =
                     window.open('https://updroid.tilt.com/up1-dev-kit/checkout/payment');
                 }
             }
+        });
+    },
+
+    "Commander": function () {
+        console.log('firing');
+        $('.commander-slider').slick({
+            autoplay: false,
+            autoplaySpeed: 2000,
+            pauseOnHover: true,
+            adaptiveHeight: true,
+            dots: true,
+            arrows: false,
         });
     },
 
