@@ -1883,22 +1883,21 @@ html.sb-active body {
 .up1-video {
 	width: 100%;
 	padding: 0 0;
-	background-color: #d2d2d2;
+	background-color: transparent;
 }
 
 .up1-video .icon-cross {
 	position: absolute;
 	cursor: pointer;
-	color: #0c0c0c;
-	top: 11px;
-	right: 11px;
+	color: #fff;
+	top: 0px;
+	right: 0px;
 	font-size: 15px;
 	font-size: 1.5rem;
 }
 
 .up1-video > div {
 	margin-top: 30px;
-	padding: 5% 5%;
 	text-align: center;
 }
 
@@ -2451,7 +2450,7 @@ header[role=banner].inactive span {
 
 .video .row > div:nth-of-type(2) > div:nth-of-type(2) > img:first-of-type {
 	z-index: 0;
-	left: 3px;
+	left: 4px;
 }
 
 .image-gallery .row > div {
@@ -2790,6 +2789,11 @@ header[role=banner].inactive span {
 
 .commander .row > div p:nth-of-type(2) {
 	margin-bottom: 21px;
+}
+
+.updroid-move {
+	background-color: #fff;
+	height: 550px;
 }
 
 .inside {
@@ -4098,8 +4102,8 @@ body {
 }
 
 .up1-video .icon-cross {
-	top: 21px;
-	right: 21px;
+	top: 0px;
+	right: 0px;
 	font-size: 20px;
 	font-size: 2rem;
 }
@@ -5202,7 +5206,7 @@ nav > div .social-nav {
 .commander {
 	background-position: left center;
 	background-size: contain;
-	padding-bottom: 273px;
+	padding-bottom: 253px;
 	padding-top: 112px;
 }
 

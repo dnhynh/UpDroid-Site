@@ -1343,8 +1343,7 @@ var Homepage =
         console.log('firing');
         $('.commander-slider').slick({
             autoplay: false,
-            autoplaySpeed: 2000,
-            pauseOnHover: true,
+            pauseOnDotsHover: true,
             adaptiveHeight: true,
             dots: true,
             arrows: false,
