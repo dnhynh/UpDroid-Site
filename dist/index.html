@@ -228,10 +228,32 @@
             </div>
             <div class="updroid-move">
                 <div class="container">
-                    <section class="row">
-                        <div class="editor">
+                    <div class="row">
+                        <h1>UpDroid API</h1>
+                        <div>
+                            <div id="editor">
+""" This is a sample of the UpDroid API 
+used to program the UP1 and all our 
+future updroids. """
+
+# Move forward 3 meters
+
+updroid.move(forward, 3)
+
+# Turn right 90 degrees
+
+updroid.turn(right, 90)
+
+# Extend arm straight up
+
+updroid.armExtend(up)
+
+                            </div>
+                            <div>
+                            
+                            </div>
                         </div>
-                    </section>
+                    </div>
                 </div>
             </div>
         </div>
@@ -375,6 +397,13 @@
     $(document).ready(function () {
         Homepage.Init();
     });
+</script>
+<script>
+    var editor = ace.edit("editor");
+    editor.setTheme("ace/theme/kuroir");
+    editor.getSession().setMode("ace/mode/python");
+    editor.setFontSize(16);
+    editor.setReadOnly(true);
 </script>
 </body>
 </html>

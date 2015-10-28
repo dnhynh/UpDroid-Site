@@ -1208,7 +1208,39 @@ header[role=banner] {
 
 .updroid-move {
     background-color: #fff;
-    height: 550px;
+
+    .container {
+
+    }
+
+    .row {
+        margin: 0 0 80px;
+        padding: 0 21px;
+        >h1 {
+            margin-top: 50px;
+        }
+        >div {
+            padding-top: 21px;
+            >div {
+                border: 5px solid #fff;
+                height: 500px;
+            }
+
+            >div:first-of-type {
+                .make-xs-column(12);
+                .make-sm-column(6);
+
+                padding-right: 10px;
+            }
+
+            >div:nth-of-type(2) {
+                .make-xs-column(12);
+                .make-sm-column(6);
+                background-color: #eaecec;
+                padding-left: 10px;
+            }
+        }
+    }
 }
 
 // Robotics content - includes sign up feature

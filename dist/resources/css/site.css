@@ -2793,7 +2793,45 @@ header[role=banner].inactive span {
 
 .updroid-move {
 	background-color: #fff;
-	height: 550px;
+}
+
+.updroid-move .row {
+	margin: 0 0 80px;
+	padding: 0 21px;
+}
+
+.updroid-move .row > h1 {
+	margin-top: 50px;
+}
+
+.updroid-move .row > div {
+	padding-top: 21px;
+}
+
+.updroid-move .row > div > div {
+	border: 5px solid #fff;
+	height: 500px;
+}
+
+.updroid-move .row > div > div:first-of-type {
+	float: left;
+	width: 100%;
+	position: relative;
+	min-height: 1px;
+	padding-left: 0;
+	padding-right: 0;
+	padding-right: 10px;
+}
+
+.updroid-move .row > div > div:nth-of-type(2) {
+	float: left;
+	width: 100%;
+	position: relative;
+	min-height: 1px;
+	padding-left: 0;
+	padding-right: 0;
+	background-color: #eaecec;
+	padding-left: 10px;
 }
 
 .inside {
@@ -4355,6 +4393,16 @@ header[role=banner] span.icon-upcom-logo {
 
 .commander .row > div p {
 	padding-right: 35px;
+}
+
+.updroid-move .row > div > div:first-of-type {
+	float: left;
+	width: 50%;
+}
+
+.updroid-move .row > div > div:nth-of-type(2) {
+	float: left;
+	width: 50%;
 }
 
 .inside {
