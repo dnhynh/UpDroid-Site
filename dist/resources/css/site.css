@@ -1666,6 +1666,182 @@ html.remodal-is-locked {
 	display: none;
 }
 
+/* slick theme */
+
+/* Slider */
+
+.slick-loading .slick-list {
+	background: #ffffff url('ajax-loader.gif') center center no-repeat;
+}
+
+/* Icons */
+
+@font-face {
+	font-family: 'slick';
+	font-weight: normal;
+	font-style: normal;
+	src: url('fonts/slick.eot');
+	src: url('fonts/slick.eot?#iefix') format('embedded-opentype'), url('fonts/slick.woff') format('woff'), url('fonts/slick.ttf') format('truetype'), url('fonts/slick.svg#slick') format('svg');
+}
+
+/* Arrows */
+
+.slick-prev,
+.slick-next {
+	font-size: 0;
+	line-height: 0;
+	position: absolute;
+	top: 50%;
+	display: block;
+	width: 20px;
+	height: 20px;
+	margin-top: -10px;
+	padding: 0;
+	cursor: pointer;
+	color: transparent;
+	border: none;
+	outline: none;
+	background: transparent;
+}
+
+.slick-prev:hover,
+.slick-prev:focus,
+.slick-next:hover,
+.slick-next:focus {
+	color: transparent;
+	outline: none;
+	background: transparent;
+}
+
+.slick-prev:hover:before,
+.slick-prev:focus:before,
+.slick-next:hover:before,
+.slick-next:focus:before {
+	opacity: 1;
+}
+
+.slick-prev.slick-disabled:before,
+.slick-next.slick-disabled:before {
+	opacity: .25;
+}
+
+.slick-prev:before,
+.slick-next:before {
+	font-family: 'slick';
+	font-size: 20px;
+	line-height: 1;
+	opacity: .75;
+	color: white;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.slick-prev {
+	left: -25px;
+}
+
+[dir='rtl'] .slick-prev {
+	right: -25px;
+	left: auto;
+}
+
+.slick-prev:before {
+	content: '←';
+}
+
+[dir='rtl'] .slick-prev:before {
+	content: '→';
+}
+
+.slick-next {
+	right: -25px;
+}
+
+[dir='rtl'] .slick-next {
+	right: auto;
+	left: -25px;
+}
+
+.slick-next:before {
+	content: '→';
+}
+
+[dir='rtl'] .slick-next:before {
+	content: '←';
+}
+
+/* Dots */
+
+.slick-slider {
+	margin-bottom: 30px;
+}
+
+.slick-dots {
+	position: absolute;
+	bottom: -45px;
+	display: block;
+	width: 100%;
+	padding: 0;
+	list-style: none;
+	text-align: center;
+}
+
+.slick-dots li {
+	position: relative;
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	margin: 0 5px;
+	padding: 0;
+	cursor: pointer;
+}
+
+.slick-dots li button {
+	font-size: 0;
+	line-height: 0;
+	display: block;
+	width: 20px;
+	height: 20px;
+	padding: 5px;
+	cursor: pointer;
+	color: transparent;
+	border: 0;
+	outline: none;
+	background: transparent;
+}
+
+.slick-dots li button:hover,
+.slick-dots li button:focus {
+	outline: none;
+}
+
+.slick-dots li button:hover:before,
+.slick-dots li button:focus:before {
+	opacity: 1;
+}
+
+.slick-dots li button:before {
+	font-family: 'slick';
+	font-size: 6px;
+	line-height: 20px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 20px;
+	height: 20px;
+	content: '•';
+	text-align: center;
+	opacity: .25;
+	color: black;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.slick-dots li.slick-active button:before {
+	opacity: .75;
+	color: black;
+}
+
 /* -----------------------------------
  * Type styles
  */
@@ -2437,7 +2613,7 @@ header[role=banner].inactive span {
 .video .row > div:nth-of-type(2) > div:nth-of-type(2) {
 	width: 100%;
 	position: absolute;
-	bottom: 11vw;
+	bottom: 6vw;
 }
 
 .video .row > div:nth-of-type(2) > div:nth-of-type(2) > img {
@@ -2810,7 +2986,8 @@ header[role=banner].inactive span {
 
 .updroid-move .row > div > div {
 	border: 5px solid #fff;
-	height: 500px;
+	height: 400px;
+	margin-bottom: 30px;
 }
 
 .updroid-move .row > div > div:first-of-type {
@@ -3039,6 +3216,7 @@ header[role=banner].inactive span {
 	padding-left: 0;
 	padding-right: 0;
 	margin-top: 21px;
+	margin-bottom: 21px;
 }
 
 .inside .row #new-content a {
@@ -3344,6 +3522,10 @@ header[role=banner].inactive span {
 	background-color: #ffffff;
 }
 
+.screens .slick-arrow {
+	background-color: #ff2919 !important;
+}
+
 .screens h3 {
 	font-size: 19px;
 	font-size: 1.9rem;
@@ -3351,49 +3533,59 @@ header[role=banner].inactive span {
 	color: #7e7e7e;
 }
 
-.screens .row > div {
-	margin-left: 8.33333333%;
-	float: left;
-	width: 83.33333333%;
+.screens .row {
+	padding: 30px 30px;
+}
+
+.screens .row #screens-slider {
 	position: relative;
+	float: left;
+	width: 100%;
 	min-height: 1px;
 	padding-left: 0;
 	padding-right: 0;
 	margin-top: 50px;
+	height: 400px;
 }
 
-.screens .row > div img {
+.screens .row #screens-slider > div {
 	float: left;
 	width: 100%;
 	position: relative;
 	min-height: 1px;
 	padding-left: 0;
 	padding-right: 0;
-	padding: 25px;
 }
 
-.screens .row > div video {
+.screens .row #screens-slider > div .slick-slide {
+	outline: none;
+}
+
+.screens .row #screens-slider > div .caption {
 	float: left;
-	width: 100%;
-	position: relative;
+	width: 33.33333333%;
 	min-height: 1px;
 	padding-left: 0;
 	padding-right: 0;
-	padding: 25px;
-}
-
-.screens .row > div > div {
-	float: left;
-	width: 100%;
 	position: relative;
-	min-height: 1px;
-	padding-left: 0;
-	padding-right: 0;
-	padding: 25px;
+	padding-left: 21px;
+	top: 50%;
 }
 
-.screens .row > div > div p {
+.screens .row #screens-slider > div .caption > p {
 	margin-top: 21px;
+}
+
+.screens .row #screens-slider > div video {
+	position: relative;
+	float: left;
+	width: 58.33333333%;
+	min-height: 1px;
+	padding-left: 0;
+	padding-right: 0;
+	margin-left: 8.33333333%;
+	height: 400px;
+	padding-right: 21px;
 }
 
 .changelog {
@@ -4486,6 +4678,7 @@ header[role=banner] span.icon-upcom-logo {
 
 .inside .row #new-content {
 	margin-top: 50px;
+	margin-bottom: 0;
 	position: relative;
 	min-height: 1px;
 	padding-left: 0;
@@ -4526,37 +4719,9 @@ header[role=banner] span.icon-upcom-logo {
 	width: 100%;
 }
 
-.screens .row > div {
+.screens .row #screens-slider > div {
 	float: left;
-	width: 83.33333333%;
-}
-
-.screens .row > div {
-	margin-left: 8.33333333%;
-}
-
-.screens .row > div {
-	margin-top: 120px;
-}
-
-.screens .row > div img {
-	float: left;
-	width: 50%;
-}
-
-.screens .row > div video {
-	float: left;
-	width: 50%;
-}
-
-.screens .row > div > div {
-	float: left;
-	width: 50%;
-}
-
-.screens .row > div:nth-of-type(3) > div,
-.screens .row > div:last-of-type > div {
-	padding-top: 15%;
+	width: 100%;
 }
 
 .changelog #log {
@@ -5271,6 +5436,10 @@ nav > div .social-nav {
 	padding-top: 21px;
 }
 
+.updroid-move .row > div > div {
+	height: 450px;
+}
+
 .inside {
 	padding-bottom: 30px;
 	padding-top: 112px;
@@ -5378,33 +5547,9 @@ nav > div .social-nav {
 	margin-left: 8.33333333%;
 }
 
-.screens .row > div {
-	margin-left: 16.66666667%;
-}
-
-.screens .row > div {
+.screens .row #screens-slider > div {
 	float: left;
-	width: 66.66666667%;
-}
-
-.screens .row > div img {
-	float: left;
-	width: 50%;
-}
-
-.screens .row > div video {
-	float: left;
-	width: 50%;
-}
-
-.screens .row > div > div {
-	float: left;
-	width: 50%;
-}
-
-.screens .row > div:nth-of-type(3) > div,
-.screens .row > div:last-of-type > div {
-	padding-top: 18%;
+	width: 100%;
 }
 
 .changelog #log {

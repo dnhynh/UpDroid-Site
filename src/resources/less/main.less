@@ -762,7 +762,7 @@ header[role=banner] {
             >div:nth-of-type(2) {
                 width: 100%;
                 position: absolute;
-                bottom: 11vw;
+                bottom: 6vw;
 
                 @media (min-width: @screen-sm-min) {
                     bottom: -15px;
@@ -1223,7 +1223,12 @@ header[role=banner] {
             padding-top: 21px;
             >div {
                 border: 5px solid #fff;
-                height: 500px;
+                height: 400px;
+                margin-bottom: 30px;
+
+                @media (min-width: @screen-md-min) {
+                    height: 450px;
+                }
             }
 
             >div:first-of-type {
@@ -1461,9 +1466,11 @@ header[role=banner] {
         #new-content {
             .make-xs-column(12);
             margin-top: 21px;
+            margin-bottom: 21px;
 
             @media (min-width: @screen-sm-min) {
                 margin-top: 50px;
+                margin-bottom: 0;
                 .make-sm-column(5);
                 .make-sm-column-offset(1);
             }
@@ -1831,6 +1838,10 @@ header[role=banner] {
 
     background-color: #ffffff;
 
+    .slick-arrow {
+        background-color: @brand-red !important;
+    }
+
     h3 {
         .font-size(1.9);
         line-height: 25px;
@@ -1838,50 +1849,41 @@ header[role=banner] {
     }
 
     .row {
-        >div {
-            .make-xs-column-offset(1);
-            .make-xs-column(10);
-            .make-sm-column(10);
-            .make-sm-column-offset(1);
-            .make-md-column-offset(2);
-            .make-md-column(8);
+        padding: 30px 30px;
+        #screens-slider {
+            .make-xs-column(12);
             margin-top: 50px;
-            @media (min-width: @screen-sm-min) {
-                margin-top: 120px;
-            }
-            img {
-                .make-xs-column(12);
-                .make-sm-column(6);
-                .make-md-column(6);
-                padding: 25px;
-            }
-            video {
-                .make-xs-column(12);
-                .make-sm-column(6);
-                .make-md-column(6);
-                padding: 25px;
-            }
+            height: 400px;
+
             >div {
                 .make-xs-column(12);
-                .make-sm-column(6);
-                .make-md-column(6);   
-                padding: 25px;
+                .make-sm-column(12);
+                .make-md-column(12);
 
-                p {
-                    margin-top: 21px;
+                .slick-slide {
+                    outline: none;
+                }
+
+                .caption {
+                    .make-xs-column(4);
+                    position: relative;
+                    padding-left: 21px;
+                    top: 50%;
+
+                    >p {
+                        margin-top: 21px;
+                    }
+
+                }
+
+                video {
+                    .make-xs-column(7);
+                    .make-xs-column-offset(1);
+                    height: 400px;
+                    padding-right: 21px;
                 }
             }
-            &:nth-of-type(3), &:last-of-type {
-                > div {
-                    @media (min-width: @screen-sm-min) {
-                        padding-top: 15%;
-                    }
 
-                    @media (min-width: @screen-md-min) {
-                        padding-top: 18%;
-                    }
-                }        
-            }
         }
     }
 }

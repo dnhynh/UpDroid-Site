@@ -453,7 +453,6 @@ var Homepage =
     },
 
     "Commander": function () {
-        console.log('firing');
         $('.commander-slider').slick({
             autoplay: false,
             pauseOnDotsHover: true,
@@ -587,8 +586,7 @@ var UpCom =
 {
     "Init": function () {
         this.installClick();
-        this.loadView();
-        this.resizeListen();
+        this.slideScreens();
         this.typeScene();
         this.animateWings();
     },
@@ -661,29 +659,17 @@ var UpCom =
         }
     },
 
-    "loadView": function () {
-        $(document).ready(function(){
-        if($(window).width()< 768)
-            {
-                $("#tidy").remove().insertBefore($("#tidy-switch"));
-                $("#controls").remove().insertBefore($("#controls-switch"));
-            }
+    "slideScreens": function () {
+        $('#screens-slider').slick({
+            autoplay: false,
+            pauseOnDotsHover: true,
+            adaptiveHeight: true,
+            dots: true,
+             afterRender: function () {
+                    //playing the video
+                    $('video').get(0).play();
+                }
         });
-    },
-
-    "resizeListen": function () {
-        $(document).load($(window).bind("resize", listenWidth));
-
-        function listenWidth( e ) {
-        if($(window).width()<768)
-            {
-                $("#tidy").remove().insertBefore($("#tidy-switch"));
-                $("#controls").remove().insertBefore($("#controls-switch"));
-            } else {
-                $("#tidy").remove().insertAfter($("#tidy-switch"));
-                $("#controls").remove().insertAfter($("#controls-switch"));
-            }
-        }
     },
 
     "animateWings": function () {
