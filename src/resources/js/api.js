@@ -670,7 +670,16 @@ var UpCom =
             } else {
                 this.setAttribute("controls", "controls")
             }
-        })
+        });
+
+        var video = $('#screens-slider .slick-active').find('video');
+        video.get(0).play();
+    
+        $('#screens-slider').on('afterChange', function(event, slick, currentSlide, nextSlide){
+            video.get(0).pause();
+            video = $('#screens-slider .slick-active').find('video');
+            video.get(0).play();
+        });
     },
 
     "animateWings": function () {
