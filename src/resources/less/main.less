@@ -1836,11 +1836,11 @@ header[role=banner] {
 
 .screens {
 
-    background-color: #ffffff;
-
-    .slick-arrow {
-        background-color: @brand-red !important;
+    @media (min-width: @screen-lg-min) {
+        padding-bottom: 80px;
     }
+
+    background-color: #ffffff;
 
     h3 {
         .font-size(1.9);
@@ -1853,11 +1853,12 @@ header[role=banner] {
         #screens-slider {
             .make-xs-column(12);
             margin-top: 50px;
-            height: 400px;
 
             >div {
-                .make-xs-column(12);
+                .make-xs-column(10);
+                .make-xs-column-offset(1);
                 .make-sm-column(12);
+                .make-sm-column-offset(0);
                 .make-md-column(12);
 
                 .slick-slide {
@@ -1865,22 +1866,34 @@ header[role=banner] {
                 }
 
                 .caption {
-                    .make-xs-column(4);
+                    .make-xs-column(12);
+                    .make-sm-column-offset(1);
+                    .make-sm-column(3);
                     position: relative;
-                    padding-left: 21px;
-                    top: 50%;
+
+                    @media (min-width: @screen-sm-min) {
+                        padding-left: 21px;
+                    }
+
+                    @media (min-width: @screen-md-min) {
+                        margin-top: 50px;
+                    }
 
                     >p {
                         margin-top: 21px;
                     }
-
                 }
 
                 video {
-                    .make-xs-column(7);
-                    .make-xs-column-offset(1);
-                    height: 400px;
-                    padding-right: 21px;
+                    .make-xs-column(12);
+                    .make-sm-column(7);
+                    .make-sm-column-offset(1);
+                    margin-top: 21px;
+
+                    @media (min-width: @screen-sm-min) {
+                        margin-top: 0;
+                        padding-right: 21px;
+                    }
                 }
             }
 
@@ -1890,7 +1903,7 @@ header[role=banner] {
 
 .changelog {
     .hidden-xs;
-    background-color: #ffffff;
+    background-color: #f1f4f4;
     #log {
         h1 {
             padding-bottom: 50px;
@@ -1907,7 +1920,7 @@ header[role=banner] {
     pre {
         overflow: auto;
         text-align: left;
-        background-color: #f1f4f4;
+        background-color: #ffffff;
         height: 500px;
         .font-monosten-a();
         line-height: 18px;

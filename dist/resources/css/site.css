@@ -1731,7 +1731,7 @@ html.remodal-is-locked {
 	font-size: 20px;
 	line-height: 1;
 	opacity: .75;
-	color: white;
+	color: #ff2919;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
@@ -3522,10 +3522,6 @@ header[role=banner].inactive span {
 	background-color: #ffffff;
 }
 
-.screens .slick-arrow {
-	background-color: #ff2919 !important;
-}
-
 .screens h3 {
 	font-size: 19px;
 	font-size: 1.9rem;
@@ -3545,12 +3541,12 @@ header[role=banner].inactive span {
 	padding-left: 0;
 	padding-right: 0;
 	margin-top: 50px;
-	height: 400px;
 }
 
 .screens .row #screens-slider > div {
 	float: left;
-	width: 100%;
+	width: 83.33333333%;
+	margin-left: 8.33333333%;
 	position: relative;
 	min-height: 1px;
 	padding-left: 0;
@@ -3563,13 +3559,11 @@ header[role=banner].inactive span {
 
 .screens .row #screens-slider > div .caption {
 	float: left;
-	width: 33.33333333%;
+	width: 100%;
 	min-height: 1px;
 	padding-left: 0;
 	padding-right: 0;
 	position: relative;
-	padding-left: 21px;
-	top: 50%;
 }
 
 .screens .row #screens-slider > div .caption > p {
@@ -3577,19 +3571,17 @@ header[role=banner].inactive span {
 }
 
 .screens .row #screens-slider > div video {
-	position: relative;
 	float: left;
-	width: 58.33333333%;
+	width: 100%;
+	position: relative;
 	min-height: 1px;
 	padding-left: 0;
 	padding-right: 0;
-	margin-left: 8.33333333%;
-	height: 400px;
-	padding-right: 21px;
+	margin-top: 21px;
 }
 
 .changelog {
-	background-color: #ffffff;
+	background-color: #f1f4f4;
 }
 
 .changelog #log {
@@ -3610,7 +3602,7 @@ header[role=banner].inactive span {
 .changelog pre {
 	overflow: auto;
 	text-align: left;
-	background-color: #f1f4f4;
+	background-color: #ffffff;
 	height: 500px;
 	font-family: "Monosten A";
 	line-height: 18px;
@@ -4724,6 +4716,37 @@ header[role=banner] span.icon-upcom-logo {
 	width: 100%;
 }
 
+.screens .row #screens-slider > div {
+	margin-left: 0%;
+}
+
+.screens .row #screens-slider > div .caption {
+	margin-left: 8.33333333%;
+}
+
+.screens .row #screens-slider > div .caption {
+	float: left;
+	width: 25%;
+}
+
+.screens .row #screens-slider > div .caption {
+	padding-left: 21px;
+}
+
+.screens .row #screens-slider > div video {
+	float: left;
+	width: 58.33333333%;
+}
+
+.screens .row #screens-slider > div video {
+	margin-left: 8.33333333%;
+}
+
+.screens .row #screens-slider > div video {
+	margin-top: 0;
+	padding-right: 21px;
+}
+
 .changelog #log {
 	margin-left: 8.33333333%;
 }
@@ -5552,6 +5575,10 @@ nav > div .social-nav {
 	width: 100%;
 }
 
+.screens .row #screens-slider > div .caption {
+	margin-top: 50px;
+}
+
 .changelog #log {
 	margin-left: 8.33333333%;
 }
@@ -6129,6 +6156,10 @@ header[role=banner] span.icon-upcom-logo {
 
 .inside .row > div:nth-of-type(3) {
 	padding-left: 80px;
+}
+
+.screens {
+	padding-bottom: 80px;
 }
 
 .about-header .row {

@@ -1565,15 +1565,16 @@ var UpCom =
 
     "slideScreens": function () {
         $('#screens-slider').slick({
-            autoplay: false,
-            pauseOnDotsHover: true,
-            adaptiveHeight: true,
-            dots: true,
-             afterRender: function () {
-                    //playing the video
-                    $('video').get(0).play();
-                }
+            autoplay: false
         });
+
+        $('video').hover(function toggleControls() {
+            if (this.hasAttribute("controls")) {
+                this.removeAttribute("controls")
+            } else {
+                this.setAttribute("controls", "controls")
+            }
+        })
     },
 
     "animateWings": function () {
