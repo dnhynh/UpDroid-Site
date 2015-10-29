@@ -6162,6 +6162,10 @@ header[role=banner] span.icon-upcom-logo {
 	padding-bottom: 80px;
 }
 
+.screens .row #screens-slider > div .caption {
+	margin-top: 100px;
+}
+
 .about-header .row {
 	padding-bottom: 210px;
 	padding-top: 329px;
