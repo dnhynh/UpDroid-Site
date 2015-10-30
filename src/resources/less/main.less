@@ -1098,7 +1098,6 @@ header[role=banner] {
                         -o-transition:      all 1000ms ease;
                         -webkit-transition: all 1000ms ease;
 
-
                     &:hover {
                         background: black;
                     }
@@ -1834,6 +1833,11 @@ header[role=banner] {
     100% { opacity:1; }
 }
 
+.slick-slide {
+    outline: none;
+}
+
+
 .screens {
 
     @media (min-width: @screen-lg-min) {
@@ -1860,10 +1864,6 @@ header[role=banner] {
                 .make-sm-column(12);
                 .make-sm-column-offset(0);
                 .make-md-column(12);
-
-                .slick-slide {
-                    outline: none;
-                }
 
                 .caption {
                     .make-xs-column(12);
