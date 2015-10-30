@@ -86,6 +86,7 @@ var Homepage =
         this.Exploded();
         this.Parallax();
         this.DIYkit();
+        this.Youtube();
         this.Video();
         this.Commander();
     },
@@ -116,6 +117,26 @@ var Homepage =
             });
         }
     },
+    
+    "Youtube": function () {
+        var trigger = $("#play-video");
+        trigger.click(function () {
+          var theModal = $('.up1-video'),
+              videoSRC = 'https://www.youtube.com/embed/uxpDa-c-4Mc',
+              videoSRCauto = videoSRC + "?autoplay=1";
+          $(theModal).find('iframe').attr('src', videoSRCauto);
+          var closeButton = $(theModal).find('.icon-cross')
+          closeButton.click(function () {
+              $(theModal, 'iframe').attr('src', videoSRC);
+            });
+        });
+
+        $(document).on('closing', '.remodal', function (e) {
+          // Reason: 'confirmation', 'cancellation'
+          console.log('Modal is closing' + (e.reason ? ', reason: ' + e.reason : ''));
+        });
+    },
+
     "Video": function () {
         $('.play-center').hover(function () {
             $('.play-icon-center').addClass('red');
