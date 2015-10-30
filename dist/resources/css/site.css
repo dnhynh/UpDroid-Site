@@ -2810,14 +2810,15 @@ header[role=banner].inactive span {
 #exploded .row > div:last-of-type > div .pager { /* override normal button styling */
 	padding: 0 0;
 	border: 0;
+	outline: 0;
 	margin: 33px auto;
 	border-radius: 50%;
 	display: block;
-	width: 15px;
-	height: 15px;
-	background-color: #fff;
-	border: 1px solid #cdcfcf;
-	cursor: pointer;
+	width: 18px;
+	height: 18px;
+	background-color: transparent;
+	cursor: default;
+	border: 2px solid #fff;
 	transition: all 1000ms ease;
 	-moz-transition: all 1000ms ease;
 	-ms-transition: all 1000ms ease;
@@ -2825,12 +2826,8 @@ header[role=banner].inactive span {
 	-webkit-transition: all 1000ms ease;
 }
 
-#exploded .row > div:last-of-type > div .pager:hover {
-	background: black;
-}
-
-#exploded .row > div:last-of-type > div .pager:focus {
-	background: black;
+#exploded .row > div:last-of-type > div .pager.active {
+	background-color: #fff;
 	outline: 0;
 }
 

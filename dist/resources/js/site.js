@@ -989,8 +989,6 @@ var Homepage =
     "Init": function () {
         this.Exploded();
         this.Parallax();
-        // this.Cycle();
-        this.ScrollConfig();
         this.DIYkit();
         this.Video();
         this.Commander();
@@ -1045,6 +1043,10 @@ var Homepage =
     //     });
     // },
     "Exploded": function () {
+        var arm = $("#sArm");
+        var io = $("#sIO");
+        var cpu = $("#sCPU");
+        var base = $("#sBase");
 
         var controller = new ScrollMagic.Controller();
 
@@ -1052,7 +1054,7 @@ var Homepage =
             new ScrollMagic.Scene({
               triggerElement: "#exploded", 
               offset: 310,
-              duration: 2900 
+              duration: 3000
             })
             .setPin('#exploded')
             .addTo(controller);
@@ -1063,7 +1065,7 @@ var Homepage =
             new ScrollMagic.Scene({
               triggerElement: "#exploded", 
               offset: 240,
-              duration: 2900 
+              duration: 3000 
             })
             .setPin('#exploded')
             .addTo(controller);
@@ -1093,34 +1095,63 @@ var Homepage =
         }).setTween("#arm-copy", {opacity: 1})
         .addTo(controller);
 
-        
+        // arm scene duration, highlight pagination button
+
+        var armScene = new ScrollMagic.Scene({
+            triggerElement: "#exploded",
+            offset: 540,
+            duration: 500
+        }).addTo(controller);
+
+        armScene.on('enter', function(event) {
+            arm.addClass('active');
+        });
+
+        armScene.on('leave', function(event) {
+            arm.removeClass('active');
+        });
+
 
         new ScrollMagic.Scene({
             triggerElement: "#exploded",
-            offset: 850,
+            offset: 950,
             duration: 200
         }).setTween("#arm", {x: "-=15%", y: "+=30%"})
         .addTo(controller);
 
         new ScrollMagic.Scene({
             triggerElement: "#exploded",
-            offset: 850,
+            offset: 950,
             duration: 100
         }).setTween("#arm-copy", {opacity: 0})
         .addTo(controller);
 
+        // Io scene duration, highlight pagination button
 
+        var ioScene = new ScrollMagic.Scene({
+            triggerElement: "#exploded",
+            offset: 1150,
+            duration: 500
+        }).addTo(controller);
+
+        ioScene.on('enter', function(event) {
+            io.addClass('active');
+        });
+
+        ioScene.on('leave', function(event) {
+            io.removeClass('active');
+        });
 
         new ScrollMagic.Scene({
             triggerElement: "#exploded",
-            offset: 950,
+            offset: 1150,
             duration: 200
         }).setTween("#io", {y: "-5%", x: "-12%"})
         .addTo(controller);
 
         new ScrollMagic.Scene({
             triggerElement: "#exploded",
-            offset: 950,
+            offset: 1150,
             duration: 100
         }).setTween("#io-copy", {opacity: 1})
         .addTo(controller);
@@ -1129,84 +1160,114 @@ var Homepage =
 
         new ScrollMagic.Scene({
             triggerElement: "#exploded",
-            offset: 1350,
+            offset: 1550,
             duration: 200
         }).setTween("#io", {y: "+=5%", x: "+=12%"})
         .addTo(controller);
 
         new ScrollMagic.Scene({
             triggerElement: "#exploded",
-            offset: 1350,
+            offset: 1550,
             duration: 100
         }).setTween("#io-copy", {opacity: 0})
         .addTo(controller);
+
+        // CPU scene duration, highlight pagination button
+
+        var cpuScene = new ScrollMagic.Scene({
+            triggerElement: "#exploded",
+            offset: 1750,
+            duration: 500
+        }).addTo(controller);
+
+        cpuScene.on('enter', function(event) {
+            cpu.addClass('active');
+        });
+
+        cpuScene.on('leave', function(event) {
+            cpu.removeClass('active');
+        });
 
 
 
         new ScrollMagic.Scene({
             triggerElement: "#exploded",
-            offset: 1450,
+            offset: 1750,
             duration: 200
         }).setTween("#cpu", {x: "15%", y: "-30%"})
         .addTo(controller);
 
         new ScrollMagic.Scene({
             triggerElement: "#exploded",
-            offset: 1450,
+            offset: 1750,
             duration: 100
         }).setTween("#cpu-copy", {opacity: 1})
         .addTo(controller);
 
         new ScrollMagic.Scene({
             triggerElement: "#exploded",
-            offset: 1850,
+            offset: 2150,
             duration: 200
         }).setTween("#cpu", {x: "-=15%", y: "+=30%"})
         .addTo(controller);
 
         new ScrollMagic.Scene({
             triggerElement: "#exploded",
-            offset: 1850,
+            offset: 2150,
             duration: 100
         }).setTween("#cpu-copy", {opacity: 0})
         .addTo(controller);
 
-
+        // Remove cpu to make animation simpler
 
         new ScrollMagic.Scene({
             triggerElement: "#exploded",
-            offset: 2050,
+            offset: 2350,
             duration: 5
         }).setTween("#cpu", {opacity: 0})
         .addTo(controller);
 
 
-        // Base 
+        // Base scene start, highlight pagination button
+
+        var baseScene = new ScrollMagic.Scene({
+            triggerElement: "#exploded",
+            offset: 2350,
+            duration: 500
+        }).addTo(controller);
+
+        baseScene.on('enter', function(event) {
+            base.addClass('active');
+        });
+
+        baseScene.on('leave', function(event) {
+            base.removeClass('active');
+        });
 
         new ScrollMagic.Scene({
             triggerElement: "#exploded",
-            offset: 2050,
+            offset: 2350,
             duration: 200
         }).setTween("#arm", {y: "-40%"})
         .addTo(controller);
 
         new ScrollMagic.Scene({
             triggerElement: "#exploded",
-            offset: 2050,
+            offset: 2350,
             duration: 200
         }).setTween("#io", {y: "-40%"})
         .addTo(controller);
 
         new ScrollMagic.Scene({
             triggerElement: "#exploded",
-            offset: 2050,
+            offset: 2350,
             duration: 200
         }).setTween("#base", {y: "-20%"})
         .addTo(controller);
 
         new ScrollMagic.Scene({
             triggerElement: "#exploded",
-            offset: 1950,
+            offset: 2250,
             duration: 100
         }).setTween("#base-copy", {opacity: 1})
         .addTo(controller);
@@ -1215,35 +1276,35 @@ var Homepage =
 
         new ScrollMagic.Scene({
             triggerElement: "#exploded",
-            offset: 2450,
+            offset: 2750,
             duration: 200
         }).setTween("#arm", {y: "+=40%"})
         .addTo(controller);
 
         new ScrollMagic.Scene({
             triggerElement: "#exploded",
-            offset: 2450,
+            offset: 2750,
             duration: 200
         }).setTween("#io", {y: "+=40%"})
         .addTo(controller);
 
         new ScrollMagic.Scene({
             triggerElement: "#exploded",
-            offset: 2450,
+            offset: 2750,
             duration: 200
         }).setTween("#base", {y: "+=20%"})
         .addTo(controller);
 
         new ScrollMagic.Scene({
             triggerElement: "#exploded",
-            offset: 2450,
+            offset: 2750,
             duration: 100
         }).setTween("#base-copy", {opacity: 0})
         .addTo(controller);
 
         new ScrollMagic.Scene({
             triggerElement: "#exploded",
-            offset: 2550,
+            offset: 2850,
             duration: 100
         }).setTween("#close-copy", {opacity: 1})
         .addTo(controller);
@@ -1367,104 +1428,6 @@ var Homepage =
             arrows: false,
         });
     },
-
-    "ScrollConfig": function() {
-        var arm = $("#sArm");
-        var io = $("#sIO");
-        var cpu = $("#sCPU");
-        var base = $("#sBase");
-
-        $(window).scroll(function (event) {
-            var scroll = $(window).scrollTop();
-            console.log("scroll: " + scroll);
-            console.log($(document).height());
-        });
-
-        arm.on('click', function() {
-
-            if($(window).width() < 977) {
-                $('html, body').animate({
-                    scrollTop: .33 * $(document).height()
-                }, 1000);
-            }
-
-            else if($(window).width() < 1185 && $(window).width() >= 977) {
-                $('html, body').animate({
-                    scrollTop: .3459 * $(document).height()
-                }, 1000);
-            }
-
-            if($(window).width() >= 1185) {
-                $('html, body').animate({
-                    scrollTop: .367 * $(document).height()
-                }, 1000);
-            }
-        });
-
-        io.on('click', function() {
-
-            if($(window).width() < 977) {
-                $('html, body').animate({
-                    scrollTop: .389 * $(document).height()
-                }, 1000);
-            }
-
-            else if($(window).width() < 1185 && $(window).width() >= 977) {
-                $('html, body').animate({
-                    scrollTop: .3969 * $(document).height()
-                }, 1000);
-            }
-
-            else if($(window).width() >= 1185) {
-                $('html, body').animate({
-                    scrollTop: .4323 * $(document).height()
-                }, 1000);
-            }
-        });
-
-        cpu.on('click', function() {
-
-            if($(window).width() < 977) {
-                $('html, body').animate({
-                    scrollTop: .4677 * $(document).height()
-                }, 1000);
-            }
-
-            else if($(window).width() < 1185 && $(window).width() >= 977) {
-                $('html, body').animate({
-                    scrollTop: .4679 * $(document).height()
-                }, 1000);
-            }
-
-            else if($(window).width() >= 1185) {
-                $('html, body').animate({
-                    scrollTop: .498 * $(document).height()
-                }, 1000);
-            }
-        });
-
-        base.on('click', function() {
-
-            if($(window).width() < 977) {
-                $('html, body').animate({
-                    scrollTop: .55 * $(document).height()
-                }, 1000);
-            }
-
-            else if($(window).width() < 1185 && $(window).width() >= 977) {
-                $('html, body').animate({
-                    scrollTop: .5505 * $(document).height()
-                }, 1000);
-            }
-
-            else if($(window).width() >= 1185) {
-                $('html, body').animate({
-                    scrollTop: .570 * $(document).height()
-                }, 1000);
-            }
-        });
-
-    }
 };
 
 /*****************************************************/
