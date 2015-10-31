@@ -307,7 +307,7 @@ updroid.arm(0, 0, 1, 0)
         <span data-remodal-action="close" class="icon-cross"></span>
         <div>
             <div class="video-container">
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/uxpDa-c-4Mc" frameborder="0" allowfullscreen></iframe>
+              <div id="player"></div>
             </div>
         </div>
     </div>
@@ -349,13 +349,37 @@ updroid.arm(0, 0, 1, 0)
     $(document).ready(function () {
         Homepage.Init();
     });
-</script>
-<script>
-    var editor = ace.edit("editor");
-    editor.setTheme("ace/theme/kuroir");
-    editor.getSession().setMode("ace/mode/python");
-    editor.setFontSize(16);
-    editor.setReadOnly(true);
+
+    // 2. This code loads the IFrame Player API code asynchronously.
+    var tag = document.createElement('script');
+
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+      // 3. This function creates an <iframe> (and YouTube player)
+      //    after the API code downloads.
+      var player;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          height: '315',
+          width: '560',
+          videoId: 'uxpDa-c-4Mc',
+          startSeconds: "32"
+        });
+      }
+
+      $(document).on('closing', '.up1-video', function (e) {
+          // Reason: 'confirmation', 'cancellation'
+          player.stopVideo();
+      });
+
+      var trigger = $("#play-video");
+        trigger.click(function () {
+          player.seekTo(32, true);
+          player.playVideo();
+      });
+
 </script>
 </body>
 </html>
