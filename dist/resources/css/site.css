@@ -2411,7 +2411,7 @@ header[role=banner].inactive span {
 	z-index: 100;
 	width: 70%;
 	left: 35px;
-	bottom: 205px;
+	top: 175px;
 	width: 50%;
 }
 
