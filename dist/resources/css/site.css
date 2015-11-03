@@ -2423,6 +2423,7 @@ header[role=banner].inactive span {
 }
 
 .video {
+	display: none;
 	background-color: #f1f4f4;
 }
 
@@ -2934,6 +2935,50 @@ header[role=banner].inactive span {
 }
 
 .updroid-move .row > div > div:nth-of-type(2) {
+	float: left;
+	width: 100%;
+	position: relative;
+	min-height: 1px;
+	padding-left: 0;
+	padding-right: 0;
+	background-color: #eaecec;
+	padding-left: 10px;
+}
+
+.updroid-view {
+	background-color: #fff;
+}
+
+.updroid-view .row {
+	margin: 0 0 80px;
+	padding: 0 21px;
+}
+
+.updroid-view .row > h1 {
+	margin-top: 50px;
+}
+
+.updroid-view .row > div {
+	padding-top: 21px;
+}
+
+.updroid-view .row > div > div {
+	border: 5px solid #fff;
+	height: 400px;
+	margin-bottom: 30px;
+}
+
+.updroid-view .row > div > div:first-of-type {
+	float: left;
+	width: 100%;
+	position: relative;
+	min-height: 1px;
+	padding-left: 0;
+	padding-right: 0;
+	padding-right: 10px;
+}
+
+.updroid-view .row > div > div:nth-of-type(2) {
 	float: left;
 	width: 100%;
 	position: relative;
@@ -3466,55 +3511,53 @@ header[role=banner].inactive span {
 	color: #7e7e7e;
 }
 
-.screens .row {
-	padding: 30px 30px;
-}
-
-.screens .row #screens-slider {
-	position: relative;
+.screens .row > div {
+	margin-left: 8.33333333%;
 	float: left;
-	width: 100%;
+	width: 83.33333333%;
+	position: relative;
 	min-height: 1px;
 	padding-left: 0;
 	padding-right: 0;
 	margin-top: 50px;
 }
 
-.screens .row #screens-slider > div {
-	float: left;
-	width: 83.33333333%;
-	margin-left: 8.33333333%;
-	position: relative;
-	min-height: 1px;
-	padding-left: 0;
-	padding-right: 0;
-}
-
-.screens .row #screens-slider > div .caption {
-	float: left;
-	width: 100%;
-	min-height: 1px;
-	padding-left: 0;
-	padding-right: 0;
-	position: relative;
-}
-
-.screens .row #screens-slider > div .caption > p {
-	margin-top: 21px;
-}
-
-.screens .row #screens-slider > div video {
+.screens .row > div img {
 	float: left;
 	width: 100%;
 	position: relative;
 	min-height: 1px;
 	padding-left: 0;
 	padding-right: 0;
+	padding: 25px;
+}
+
+.screens .row > div video {
+	float: left;
+	width: 100%;
+	position: relative;
+	min-height: 1px;
+	padding-left: 0;
+	padding-right: 0;
+	padding: 25px;
+}
+
+.screens .row > div > div {
+	float: left;
+	width: 100%;
+	position: relative;
+	min-height: 1px;
+	padding-left: 0;
+	padding-right: 0;
+	padding: 25px;
+}
+
+.screens .row > div > div p {
 	margin-top: 21px;
 }
 
 .changelog {
-	background-color: #f1f4f4;
+	background-color: #ffffff;
 }
 
 .changelog #log {
@@ -3535,7 +3578,7 @@ header[role=banner].inactive span {
 .changelog pre {
 	overflow: auto;
 	text-align: left;
-	background-color: #ffffff;
+	background-color: #f1f4f4;
 	height: 500px;
 	font-family: "Monosten A";
 	line-height: 18px;
@@ -4518,10 +4561,24 @@ header[role=banner] span.icon-upcom-logo {
 
 .updroid-move .row > div > div:first-of-type {
 	float: left;
-	width: 50%;
+	width: 41.66666667%;
 }
 
 .updroid-move .row > div > div:nth-of-type(2) {
+	margin-left: 8.33333333%;
+}
+
+.updroid-move .row > div > div:nth-of-type(2) {
+	float: left;
+	width: 50%;
+}
+
+.updroid-view .row > div > div:first-of-type {
+	float: left;
+	width: 50%;
+}
+
+.updroid-view .row > div > div:nth-of-type(2) {
 	float: left;
 	width: 50%;
 }
@@ -4648,40 +4705,37 @@ header[role=banner] span.icon-upcom-logo {
 	width: 100%;
 }
 
-.screens .row #screens-slider > div {
+.screens .row > div {
 	float: left;
-	width: 100%;
+	width: 83.33333333%;
 }
 
-.screens .row #screens-slider > div {
-	margin-left: 0%;
-}
-
-.screens .row #screens-slider > div .caption {
+.screens .row > div {
 	margin-left: 8.33333333%;
 }
 
-.screens .row #screens-slider > div .caption {
+.screens .row > div {
+	margin-top: 120px;
+}
+
+.screens .row > div img {
 	float: left;
-	width: 25%;
+	width: 50%;
 }
 
-.screens .row #screens-slider > div .caption {
-	padding-left: 21px;
-}
-
-.screens .row #screens-slider > div video {
+.screens .row > div video {
 	float: left;
-	width: 58.33333333%;
+	width: 50%;
 }
 
-.screens .row #screens-slider > div video {
-	margin-left: 8.33333333%;
+.screens .row > div > div {
+	float: left;
+	width: 50%;
 }
 
-.screens .row #screens-slider > div video {
-	margin-top: 0;
-	padding-right: 21px;
+.screens .row > div:nth-of-type(3) > div,
+.screens .row > div:last-of-type > div {
+	padding-top: 15%;
 }
 
 .changelog #log {
@@ -5400,6 +5454,10 @@ nav > div .social-nav {
 	height: 450px;
 }
 
+.updroid-view .row > div > div {
+	height: 450px;
+}
+
 .inside {
 	padding-bottom: 30px;
 	padding-top: 112px;
@@ -5507,13 +5565,33 @@ nav > div .social-nav {
 	margin-left: 8.33333333%;
 }
 
-.screens .row #screens-slider > div {
-	float: left;
-	width: 100%;
+.screens .row > div {
+	margin-left: 16.66666667%;
 }
 
-.screens .row #screens-slider > div .caption {
-	margin-top: 50px;
+.screens .row > div {
+	float: left;
+	width: 66.66666667%;
+}
+
+.screens .row > div img {
+	float: left;
+	width: 50%;
+}
+
+.screens .row > div video {
+	float: left;
+	width: 50%;
+}
+
+.screens .row > div > div {
+	float: left;
+	width: 50%;
+}
+
+.screens .row > div:nth-of-type(3) > div,
+.screens .row > div:last-of-type > div {
+	padding-top: 18%;
 }
 
 .changelog #log {
@@ -6093,14 +6171,6 @@ header[role=banner] span.icon-upcom-logo {
 
 .inside .row > div:nth-of-type(3) {
 	padding-left: 80px;
-}
-
-.screens {
-	padding-bottom: 80px;
-}
-
-.screens .row #screens-slider > div .caption {
-	margin-top: 100px;
 }
 
 .about-header .row {

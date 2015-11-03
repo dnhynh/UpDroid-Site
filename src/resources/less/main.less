@@ -631,7 +631,7 @@ header[role=banner] {
 // Video Section
 
 .video {
-
+    display: none;
     background-color: #f1f4f4;
     
     .container {
@@ -1209,6 +1209,49 @@ header[role=banner] {
 }
 
 .updroid-move {
+    background-color: #fff;
+
+    .container {
+
+    }
+
+    .row {
+        margin: 0 0 80px;
+        padding: 0 21px;
+        >h1 {
+            margin-top: 50px;
+        }
+        >div {
+            padding-top: 21px;
+            >div {
+                border: 5px solid #fff;
+                height: 400px;
+                margin-bottom: 30px;
+
+                @media (min-width: @screen-md-min) {
+                    height: 450px;
+                }
+            }
+
+            >div:first-of-type {
+                .make-xs-column(12);
+                .make-sm-column(5);
+
+                padding-right: 10px;
+            }
+
+            >div:nth-of-type(2) {
+                .make-xs-column(12);
+                .make-sm-column-offset(1);
+                .make-sm-column(6);
+                background-color: #eaecec;
+                padding-left: 10px;
+            }
+        }
+    }
+}
+
+.updroid-view {
     background-color: #fff;
 
     .container {
@@ -1843,10 +1886,6 @@ header[role=banner] {
 
 .screens {
 
-    @media (min-width: @screen-lg-min) {
-        padding-bottom: 80px;
-    }
-
     background-color: #ffffff;
 
     h3 {
@@ -1856,61 +1895,57 @@ header[role=banner] {
     }
 
     .row {
-        padding: 30px 30px;
-        #screens-slider {
-            .make-xs-column(12);
+        >div {
+            .make-xs-column-offset(1);
+            .make-xs-column(10);
+            .make-sm-column(10);
+            .make-sm-column-offset(1);
+            .make-md-column-offset(2);
+            .make-md-column(8);
             margin-top: 50px;
-
+            @media (min-width: @screen-sm-min) {
+                margin-top: 120px;
+            }
+            img {
+                .make-xs-column(12);
+                .make-sm-column(6);
+                .make-md-column(6);
+                padding: 25px;
+            }
+            video {
+                .make-xs-column(12);
+                .make-sm-column(6);
+                .make-md-column(6);
+                padding: 25px;
+            }
             >div {
-                .make-xs-column(10);
-                .make-xs-column-offset(1);
-                .make-sm-column(12);
-                .make-sm-column-offset(0);
-                .make-md-column(12);
+                .make-xs-column(12);
+                .make-sm-column(6);
+                .make-md-column(6);   
+                padding: 25px;
 
-                .caption {
-                    .make-xs-column(12);
-                    .make-sm-column-offset(1);
-                    .make-sm-column(3);
-                    position: relative;
-
+                p {
+                    margin-top: 21px;
+                }
+            }
+            &:nth-of-type(3), &:last-of-type {
+                > div {
                     @media (min-width: @screen-sm-min) {
-                        padding-left: 21px;
+                        padding-top: 15%;
                     }
 
                     @media (min-width: @screen-md-min) {
-                        margin-top: 50px;
+                        padding-top: 18%;
                     }
-
-                    @media (min-width: @screen-lg-min) {
-                        margin-top: 100px;
-                    }
-
-                    >p {
-                        margin-top: 21px;
-                    }
-                }
-
-                video {
-                    .make-xs-column(12);
-                    .make-sm-column(7);
-                    .make-sm-column-offset(1);
-                    margin-top: 21px;
-
-                    @media (min-width: @screen-sm-min) {
-                        margin-top: 0;
-                        padding-right: 21px;
-                    }
-                }
+                }        
             }
-
         }
     }
 }
 
 .changelog {
     .hidden-xs;
-    background-color: #f1f4f4;
+    background-color: #ffffff;
     #log {
         h1 {
             padding-bottom: 50px;
@@ -1927,7 +1962,7 @@ header[role=banner] {
     pre {
         overflow: auto;
         text-align: left;
-        background-color: #ffffff;
+        background-color: #f1f4f4;
         height: 500px;
         .font-monosten-a();
         line-height: 18px;

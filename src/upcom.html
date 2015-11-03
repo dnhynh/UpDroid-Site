@@ -31,6 +31,47 @@
                         </div>
                     </div>
                     <div class="right">
+                        <div>
+                            <h3>UpCom β</h3>
+                            <p>UpCom's alpha run is sadly over. However, our beta launch is coming soon so check back for updates.</p>
+                            <a id="install" class="btn btn-red">Stay Tuned</a>
+                            <a id="dummy" class="btn btn-red">Stay Tuned</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="instructions">
+            <div class="container">
+                <div class="row">
+                    <div>
+                        <h1> To install UpCom run in console: </h1>
+                        <span id="close-instructions" class="icon-cross"></span>
+                        <code>
+                    <!--(bake includes/install.html)-->
+                        </code>
+                    </div>
+                </div>    
+            </div>
+        </div>
+
+        <div id="app">
+            <div class="container">
+                <div class="row">
+                    <div id="terminal">
+                        <div id="toolbar">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                        <div id="window">
+                            <p class="type">$ </p><span class="type typing"></span>
+                        </div>
+                    </div>
+                    <div>
+                        <img id="upcom-empty" src="../resources/images/screens/upcom_empty.png" />
+                        <a id="upcom-pop-link" href="../resources/images/screens/upcom_populated.png" data-lightbox="upcom_populated.png" data-title="UpCom"><img id="upcom-pop" src="../resources/images/screens/upcom_populated.png"/></a>
                     </div>
                 </div>
             </div>
@@ -52,47 +93,38 @@
             <div>
                 <div class="container">            
                     <div class='row'>
-                        <div id="screens-slider">
+                        <div>
                             <div>
-                                <div class="caption">
-                                    <h3>Workflow</h3>
-                                    <p>By default, UpCom will watch a folder called UpRoot which is created on its first launch unless you specify another workspace path. The explorer will show the file system which can be manipulated from within the browser.</p>
-                                </div>
-                                <video autoplay loop>
-                                    <source src="../resources/video/workflow.mp4" type="video/mp4">
-                                </video>
+                                <h3>Workflow</h3>
+                                <p>By default, UpCom will watch a folder called UpRoot which is created on its first launch unless you specify another workspace path. The explorer will show the file system which can be manipulated from within the browser.</p>
                             </div>
+                            <a href="../resources/images/screens/workflow.png" data-lightbox="workflow.png" data-title="Explorer and Editor"><img src="../resources/images/screens/workflow.png"/></a>
+                        </div>
 
-                            <div>
-                                <div class="caption">
-                                    <h3>Control</h3>                        
-                                    <p>No fumbling around with multiple terminals. Start any launch file or node from within one simple menu.  UpCom consolidates all the tools you need to streamline the development process.</p>    
-                                </div>
-                                <video autoplay loop>
-                                    <source src="../resources/video/launchfile.mp4" type="video/mp4">
-                                </video>
+                        <div>
+                            <a id="controls-switch" href="../resources/images/screens/launcher-cropped.png" data-lightbox="launcher.png" data-title="Launcher"><img src="../resources/images/screens/launcher-cropped.png" /></a>
+                            <div id='controls'>
+                                <h3>Control</h3>                        
+                                <p>No fumbling around with multiple terminals.  Start any launch file or node from within one simple menu.  One of the primary advantages of UpCom is consolidating all the tools you need to streamline the development process.</p>    
                             </div>
-                                
-                            <div>
-                                <div class="caption">
-                                    <h3>Console</h3>
-                                    <p>The UpCom console is a projection of your own terminal window into the browser. Having a console integrated into the UpCom IDE means less switching between windows during development.</p>
-                                </div>
-                                <video autoplay loop>
-                                    <source src="../resources/video/launchfile.mp4" type="video/mp4">
-                                </video>
-                            </div>                        
+                        </div>
 
+                        <div>
                             <div>
-                                <div class="caption">
-                                    <h3>Tidy</h3>
-                                    <p>Have more than one project? Easily switch between them and create new ones on the fly.</p>
-                                </div>
-                                <video autoplay loop>
-                                    <source src="../resources/video/workspace.mp4" type="video/mp4">
-                                </video>
+                                <h3>Console</h3>
+                                <p>The UpCom console is a projection of your own terminal window into the browser. Having a console integrated into the UpCom IDE means less switching between windows during development.</p>
                             </div>
-                        
+                            <a href="../resources/images/screens/console.png" data-lightbox="console.png" data-title="console"><img src="../resources/images/screens/console.png" /></a>
+                        </div>
+
+                        <div>
+                            <video id="tidy-switch" controls autoplay loop>
+                                <source src="../resources/video/workspace.mp4" type="video/mp4">
+                            </video>
+                            <div id='tidy'>
+                                <h3>Tidy</h3>
+                                <p>Have more than one project? Easily switch between them and create new ones on the fly.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
