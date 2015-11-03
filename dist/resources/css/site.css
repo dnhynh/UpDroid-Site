@@ -2411,7 +2411,7 @@ header[role=banner].inactive span {
 	z-index: 100;
 	width: 70%;
 	left: 35px;
-	top: 175px;
+	bottom: 205px;
 	width: 50%;
 }
 
@@ -2576,7 +2576,7 @@ header[role=banner].inactive span {
 }
 
 .image-gallery .row > div:nth-of-type(even) {
-	background-color: #eaecec;
+	background-color: #f1f4f4;
 }
 
 .image-gallery .row > div header {
@@ -2604,7 +2604,6 @@ header[role=banner].inactive span {
 
 .image-gallery .row > div .images img {
 	width: 100%;
-	padding: 10% 10%;
 }
 
 .image-gallery .row > div .images .cycle-pager {
@@ -3932,6 +3931,10 @@ footer[role=contentinfo] p {
 
 .home-header .row > div p {
 	width: 60%;
+}
+
+.home-header .row img {
+	bottom: 175px;
 }
 
 .commander-info .row .left {
