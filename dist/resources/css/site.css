@@ -2561,7 +2561,7 @@ header[role=banner].inactive span {
 
 .video .row > div:nth-of-type(2) > div:nth-of-type(2) > img:first-of-type {
 	z-index: 0;
-	left: 4px;
+	left: 3px;
 }
 
 .image-gallery .row > div {
@@ -2576,7 +2576,7 @@ header[role=banner].inactive span {
 }
 
 .image-gallery .row > div:nth-of-type(even) {
-	background-color: #f1f4f4;
+	background-color: #eaecec;
 }
 
 .image-gallery .row > div header {
@@ -2600,6 +2600,7 @@ header[role=banner].inactive span {
 	position: absolute;
 	top: 0;
 	width: 100%;
+	padding: 10% 10%;
 }
 
 .image-gallery .row > div .images img {
