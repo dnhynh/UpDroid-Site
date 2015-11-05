@@ -525,7 +525,11 @@ var Homepage =
                     showCursor: true,
                     startDelay: 1000,
                     backDelay: 3000,
-                    loop: true
+                    loop: true,
+
+                    callback: function() {
+                        
+                    }
                 });
             }
 
@@ -536,7 +540,10 @@ var Homepage =
                     showCursor: true,
                     startDelay: 1000,
                     backDelay: 3000,
-                    loop: true
+                    loop: true,
+                    callback: function() {
+
+                    }
                 });
             }
         }
