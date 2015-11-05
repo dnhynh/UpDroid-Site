@@ -523,16 +523,20 @@ var Homepage =
                     strings: ["updroid.move(2)"],
                     typeSpeed: 50,
                     showCursor: true,
-                    backDelay: 1000,
+                    startDelay: 1000,
+                    backDelay: 3000,
+                    loop: true
                 });
             }
 
             else if (num == 2) {
                 $("#editor2").typed({
-                    strings: ["UpCom starts with one command.", "cmdr gui"],
+                    strings: ["updroid.view(depth)"],
                     typeSpeed: 50,
                     showCursor: true,
-                    backDelay: 1000,
+                    startDelay: 1000,
+                    backDelay: 3000,
+                    loop: true
                 });
             }
         }
@@ -547,8 +551,11 @@ var Homepage =
 
         $('.commander-slider').on('afterChange', function(event, slick, currentSlide){
             console.log(currentSlide);
-            if(currentSlide = 1) {
+            if(currentSlide == 1) {
                 startTyping(1);
+            }
+            else if (currentSlide == 2) {
+                startTyping(2);
             }
         });
     },

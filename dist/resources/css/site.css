@@ -2959,16 +2959,17 @@ header[role=banner].inactive span {
 .editor > div:nth-of-type(4) {
 	padding-left: 40px;
 	padding-right: 15px;
+	margin-bottom: 2px;
 }
 
 .editor > div:nth-of-type(4) > br {
-	line-height: 2.0;
+	line-height: 1.8;
 }
 
 .editor > div:nth-of-type(4) > p {
 	font-size: 13px;
 	font-size: 1.3rem;
-	line-height: 1.6;
+	line-height: 1.4;
 }
 
 .editor > div:nth-of-type(4) > p .yellow {
@@ -2980,7 +2981,6 @@ header[role=banner].inactive span {
 }
 
 .editor .type {
-	padding-top: 2px;
 	font-family: "Monosten A";
 	font-size: 13px;
 	font-size: 1.3rem;
@@ -2990,6 +2990,7 @@ header[role=banner].inactive span {
 
 .updroid-move {
 	background-color: #fff;
+	padding-top: 100px;
 }
 
 .updroid-move .row {
@@ -3031,6 +3032,7 @@ header[role=banner].inactive span {
 
 .updroid-view {
 	background-color: #fff;
+	padding-top: 100px;
 }
 
 .updroid-view .row {
@@ -6250,6 +6252,14 @@ header[role=banner] span.icon-upcom-logo {
 	font-size: 14px;
 	font-size: 1.4rem;
 	line-height: 20px;
+}
+
+.editor > div:nth-of-type(4) > br {
+	line-height: 2.0;
+}
+
+.editor > div:nth-of-type(4) > p {
+	line-height: 1.6;
 }
 
 .inside .row > div:nth-of-type(3) {
