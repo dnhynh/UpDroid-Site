@@ -996,7 +996,6 @@ var Homepage =
         this.Parallax();
         this.DIYkit();
         this.Video();
-        this.Ace();
         this.Commander();
     },
     "Parallax": function () {
@@ -1025,20 +1024,6 @@ var Homepage =
                 $parallax4.css("transform", "translateY(-" + (scrollTop / 3) + "px)");
             });
         }
-    },
-    
-    "Ace": function () {
-        var editor = ace.edit("editor1");
-        editor.setTheme("ace/theme/kuroir");
-        editor.getSession().setMode("ace/mode/python");
-        editor.setFontSize(16);
-        editor.setReadOnly(true);
-
-        var editor2 = ace.edit("editor2");
-        editor2.setTheme("ace/theme/kuroir");
-        editor2.getSession().setMode("ace/mode/python");
-        editor2.setFontSize(16);
-        editor2.setReadOnly(true);
     },
 
     "Video": function () {
@@ -1441,12 +1426,39 @@ var Homepage =
     },
 
     "Commander": function () {
+        function startTyping (num) {
+            if(num == 1) {
+                $("#editor1").typed({
+                    strings: ["updroid.move(2)"],
+                    typeSpeed: 50,
+                    showCursor: true,
+                    backDelay: 1000,
+                });
+            }
+
+            else if (num == 2) {
+                $("#editor2").typed({
+                    strings: ["UpCom starts with one command.", "cmdr gui"],
+                    typeSpeed: 50,
+                    showCursor: true,
+                    backDelay: 1000,
+                });
+            }
+        }
+
         $('.commander-slider').slick({
             autoplay: false,
             pauseOnDotsHover: true,
             adaptiveHeight: true,
             dots: true,
             arrows: false,
+        });
+
+        $('.commander-slider').on('afterChange', function(event, slick, currentSlide){
+            console.log(currentSlide);
+            if(currentSlide = 1) {
+                startTyping(1);
+            }
         });
     },
 };
@@ -1480,7 +1492,6 @@ var UpCom =
 {
     "Init": function () {
         this.installClick();
-        this.typeScene();
         this.loadView();
         this.resizeListen();
         this.animateWings();
@@ -1512,46 +1523,6 @@ var UpCom =
         //     }, 500);
         //   });
         // }
-    },
-
-    "typeScene": function () {
-        function startTyping () {
-            $(".typing").typed({
-                strings: ["UpCom starts with one command.", "cmdr gui"],
-                typeSpeed: 50,
-                showCursor: true,
-                backDelay: 1000,
-            });
-        }
-
-        $(document).ready(function () {
-            $("#upcom-pop").bind('click', false),
-            $(window).bind("scroll", checkHeight)
-        });
-
-        function checkHeight () {
-            var height = $(window).scrollTop();
-            if (height >= $(".type").offset().top - 300) {
-                startTyping();
-
-                $(window).unbind("scroll", checkHeight);
-                setTimeout(function () {
-                    $("#terminal").velocity({
-                        translateX: "-100%"
-                    });
-                }, 7000);
-                setTimeout(showUpCom, 8000);
-            }
-        }
-
-        function showUpCom () {
-            $("#upcom-empty").velocity("fadeIn", {duration: 500});
-            setTimeout(function() {
-                $("#upcom-pop").velocity("fadeIn", {duration: 500},
-                    {complete: $("#upcom-pop").unbind('click', false)}
-                    );
-            }, 2000);
-        }
     },
 
     "loadView": function () {

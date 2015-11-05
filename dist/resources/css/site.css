@@ -2901,6 +2901,93 @@ header[role=banner].inactive span {
 	margin-bottom: 21px;
 }
 
+.editor {
+	background-color: #272822;
+	border-radius: 3px 3px 0 0;
+}
+
+.editor > div:first-of-type {
+	width: 100%;
+	background-color: #3f3d3a;
+	border-radius: 3px 3px 0 0;
+	padding: 2px 0;
+}
+
+.editor > div:first-of-type > div {
+	width: 12px;
+	height: 12px;
+	border-radius: 50%;
+	background-color: #82817b;
+	display: inline-block;
+	margin: 3px 1px 0px 1px;
+}
+
+.editor > div:first-of-type > div:first-of-type {
+	margin-left: 5px;
+	background-color: #e96b41;
+}
+
+.editor > div:nth-of-type(2) {
+	width: 100%;
+	height: 19px;
+	background-color: #353535;
+	padding-top: 2px;
+	margin-bottom: 5px;
+}
+
+.editor > div:nth-of-type(2) > div:first-of-type {
+	background-color: #4c4c4c;
+	width: 100px;
+	height: 100%;
+}
+
+.editor > div:nth-of-type(2) > div:nth-of-type(2) {
+	background-color: #4c4c4c;
+	width: 100%;
+	height: 3px;
+}
+
+.editor > div:nth-of-type(3) {
+	padding-left: 10px;
+	float: left;
+}
+
+.editor > div:nth-of-type(3) > p {
+	color: #8f908a;
+}
+
+.editor > div:nth-of-type(4) {
+	padding-left: 40px;
+	padding-right: 15px;
+}
+
+.editor > div:nth-of-type(4) > br {
+	line-height: 2.0;
+}
+
+.editor > div:nth-of-type(4) > p {
+	font-size: 13px;
+	font-size: 1.3rem;
+	line-height: 1.6;
+}
+
+.editor > div:nth-of-type(4) > p .yellow {
+	color: #e6d85e;
+}
+
+.editor > div:nth-of-type(5) {
+	padding-left: 20px;
+}
+
+.editor .type {
+	padding-top: 2px;
+	font-family: "Monosten A";
+	font-size: 13px;
+	font-size: 1.3rem;
+	display: inline;
+	color: #fff;
+}
+
 .updroid-move {
 	background-color: #fff;
 }
@@ -2919,7 +3006,6 @@ header[role=banner].inactive span {
 }
 
 .updroid-move .row > div > div {
-	border: 5px solid #fff;
 	height: 400px;
 	margin-bottom: 30px;
 }
@@ -2931,7 +3017,6 @@ header[role=banner].inactive span {
 	min-height: 1px;
 	padding-left: 0;
 	padding-right: 0;
-	padding-right: 10px;
 }
 
 .updroid-move .row > div > div:nth-of-type(2) {
@@ -2942,7 +3027,6 @@ header[role=banner].inactive span {
 	padding-left: 0;
 	padding-right: 0;
 	background-color: #eaecec;
-	padding-left: 10px;
 }
 
 .updroid-view {
@@ -2963,7 +3047,6 @@ header[role=banner].inactive span {
 }
 
 .updroid-view .row > div > div {
-	border: 5px solid #fff;
 	height: 400px;
 	margin-bottom: 30px;
 }
@@ -4561,11 +4644,7 @@ header[role=banner] span.icon-upcom-logo {
 
 .updroid-move .row > div > div:first-of-type {
 	float: left;
-	width: 41.66666667%;
-}
-
-.updroid-move .row > div > div:nth-of-type(2) {
-	margin-left: 8.33333333%;
+	width: 50%;
 }
 
 .updroid-move .row > div > div:nth-of-type(2) {
@@ -5448,6 +5527,10 @@ nav > div .social-nav {
 
 .commander .row > div p {
 	padding-top: 21px;
+}
+
+.editor > div:nth-of-type(2) > div:first-of-type {
+	width: 130px;
 }
 
 .updroid-move .row > div > div {
