@@ -11,7 +11,7 @@ var Global =
     },
     "Navigation": function () {
         // Setup push navigation using slidebars plugin
-        var navigationSlidebar = new $.slidebars();
+        var navigationSlidebar = new $.slidebars({scrollLock: true});
 
         // Intercept the navigation link clicks so the nav is closed before redirecting
         $("#main-navigation").on("click", "a", function (event) {
