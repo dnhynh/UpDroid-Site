@@ -2423,7 +2423,6 @@ header[role=banner].inactive span {
 }
 
 .video {
-	display: none;
 	background-color: #f1f4f4;
 }
 
@@ -3429,72 +3428,6 @@ header[role=banner].inactive span {
 	min-height: 1px;
 	padding-left: 0;
 	padding-right: 0;
-}
-
-#app {
-	height: 42vw;
-}
-
-#app .row {
-	height: 100%;
-	margin: 50px 0;
-	padding: 0 30px;
-}
-
-#app .row #terminal {
-	position: absolute;
-	left: 35%;
-	width: 30%;
-	height: 50%;
-}
-
-#app .row #terminal #toolbar {
-	border-top-right-radius: 5px;
-	border-top-left-radius: 5px;
-	width: 100%;
-	height: 1.5vw;
-	padding-left: .5vw;
-	background-color: #cccccc;
-}
-
-#app .row #terminal #toolbar > div {
-	padding-top: .1vw;
-	margin-right: .3vw;
-	display: inline-block;
-	position: relative;
-	top: 25%;
-	border-radius: 50% 50% 50% 50%;
-	background-color: white;
-	height: .8vw;
-	width: .8vw;
-}
-
-#app .row #terminal #window {
-	background-color: #1c1c1c;
-	height: 20vw;
-	max-height: 250px;
-	padding: 1vw 1vw;
-}
-
-#app .row > div:nth-of-type(2) {
-	padding-left: 50px;
-}
-
-#app .row > div:nth-of-type(2) img {
-	width: 55vw;
-	position: absolute;
-	right: 5%;
-	opacity: 0;
-}
-
-#app .row .type {
-	font-family: "Monosten A";
-	font-size: 13px;
-	font-size: 1.3rem;
-	display: inline-block;
-	margin-left: 5px;
-	margin-top: 5px;
-	color: #839496;
 }
 
 #upcom-video {
@@ -4780,7 +4713,7 @@ header[role=banner] span.icon-upcom-logo {
 
 .screens .row > div:nth-of-type(3) > div,
 .screens .row > div:last-of-type > div {
-	padding-top: 15%;
+	padding-top: 10%;
 }
 
 .changelog #log {
@@ -5105,10 +5038,6 @@ td.visible-sm {
 }
 
 .home-header .icon-arrow-down {
-	display: none !important;
-}
-
-#app {
 	display: none !important;
 }
 
@@ -5632,11 +5561,6 @@ nav > div .social-nav {
 .screens .row > div > div {
 	float: left;
 	width: 50%;
-}
-
-.screens .row > div:nth-of-type(3) > div,
-.screens .row > div:last-of-type > div {
-	padding-top: 18%;
 }
 
 .changelog #log {
@@ -6363,10 +6287,6 @@ td.visible-xs {
 }
 
 .expanded {
-	display: none !important;
-}
-
-#app {
 	display: none !important;
 }
 
