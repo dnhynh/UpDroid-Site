@@ -2355,6 +2355,10 @@ header[role=banner].inactive span {
 	margin-top: 14px;
 }
 
+.home-header .row a {
+	border-radius: 3px;
+}
+
 .home-header .row h1 {
 	font: 0/0 a;
 	color: transparent;
@@ -3129,6 +3133,7 @@ header[role=banner].inactive span {
 
 .inside .row > div:nth-of-type(3) > a {
 	margin-top: 14px;
+	border-radius: 3px;
 }
 
 .inside .row > div:nth-of-type(3) > a:nth-of-type(2) {
