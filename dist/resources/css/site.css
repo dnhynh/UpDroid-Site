@@ -2838,13 +2838,13 @@ header[role=banner].inactive span {
 	position: absolute;
 	left: 50%;
 	transform: translateX(-50%);
-	bottom: 50px;
+	bottom: 20px;
 }
 
 .slick-dots > li {
 	display: inline;
-	padding-left: 20px;
-	padding-right: 20px;
+	padding-left: 5px;
+	padding-right: 5px;
 }
 
 .slick-dots > li > button {
@@ -2988,30 +2988,26 @@ header[role=banner].inactive span {
 	color: #fff;
 }
 
-.updroid-move {
+.updroid-api {
 	background-color: #fff;
-	padding-top: 100px;
+	padding-top: 16px;
 }
 
-.updroid-move .row {
-	margin: 0 0 80px;
+.updroid-api .row {
 	padding: 0 21px;
+	margin: 0 0 40px;
 }
 
-.updroid-move .row > h1 {
-	margin-top: 50px;
-}
-
-.updroid-move .row > div {
+.updroid-api .row > div {
 	padding-top: 21px;
 }
 
-.updroid-move .row > div > div {
-	height: 400px;
-	margin-bottom: 30px;
+.updroid-api .row > div > div {
+	height: 350px;
+	margin-bottom: 20px;
 }
 
-.updroid-move .row > div > div:first-of-type {
+.updroid-api .row > div > div:first-of-type {
 	float: left;
 	width: 100%;
 	position: relative;
@@ -3020,7 +3016,7 @@ header[role=banner].inactive span {
 	padding-right: 0;
 }
 
-.updroid-move .row > div > div:nth-of-type(2) {
+.updroid-api .row > div > div:nth-of-type(2) {
 	float: left;
 	width: 100%;
 	position: relative;
@@ -3028,50 +3024,6 @@ header[role=banner].inactive span {
 	padding-left: 0;
 	padding-right: 0;
 	background-color: #eaecec;
-}
-
-.updroid-view {
-	background-color: #fff;
-	padding-top: 100px;
-}
-
-.updroid-view .row {
-	margin: 0 0 80px;
-	padding: 0 21px;
-}
-
-.updroid-view .row > h1 {
-	margin-top: 50px;
-}
-
-.updroid-view .row > div {
-	padding-top: 21px;
-}
-
-.updroid-view .row > div > div {
-	height: 400px;
-	margin-bottom: 30px;
-}
-
-.updroid-view .row > div > div:first-of-type {
-	float: left;
-	width: 100%;
-	position: relative;
-	min-height: 1px;
-	padding-left: 0;
-	padding-right: 0;
-	padding-right: 10px;
-}
-
-.updroid-view .row > div > div:nth-of-type(2) {
-	float: left;
-	width: 100%;
-	position: relative;
-	min-height: 1px;
-	padding-left: 0;
-	padding-right: 0;
-	background-color: #eaecec;
-	padding-left: 10px;
 }
 
 .inside {
@@ -4620,6 +4572,15 @@ header[role=banner] span.icon-upcom-logo {
 	margin-top: 120px;
 }
 
+.slick-dots {
+	bottom: 50px;
+}
+
+.slick-dots > li {
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
 .commander {
 	background-position: right center;
 	background-size: 138%;
@@ -4644,22 +4605,25 @@ header[role=banner] span.icon-upcom-logo {
 	padding-right: 35px;
 }
 
-.updroid-move .row > div > div:first-of-type {
+.updroid-api {
+	padding-top: 100px;
+}
+
+.updroid-api .row {
+	margin: 0 0 80px;
+}
+
+.updroid-api .row > div > div {
+	height: 400px;
+	margin-bottom: 40px;
+}
+
+.updroid-api .row > div > div:first-of-type {
 	float: left;
 	width: 50%;
 }
 
-.updroid-move .row > div > div:nth-of-type(2) {
-	float: left;
-	width: 50%;
-}
-
-.updroid-view .row > div > div:first-of-type {
-	float: left;
-	width: 50%;
-}
-
-.updroid-view .row > div > div:nth-of-type(2) {
+.updroid-api .row > div > div:nth-of-type(2) {
 	float: left;
 	width: 50%;
 }
@@ -5535,11 +5499,7 @@ nav > div .social-nav {
 	width: 130px;
 }
 
-.updroid-move .row > div > div {
-	height: 450px;
-}
-
-.updroid-view .row > div > div {
+.updroid-api .row > div > div {
 	height: 450px;
 }
 

@@ -1119,12 +1119,21 @@ header[role=banner] {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    bottom: 50px;
+    bottom: 20px;
+    @media (min-width: @screen-sm-min) {
+        bottom: 50px;
+    }
 
     >li {
         display: inline;
-        padding-left: 20px;
-        padding-right: 20px;
+        padding-left: 5px;
+        padding-right: 5px;
+
+        @media (min-width: @screen-sm-min) {
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
         > button {
             .font-monosten-a;
             border-radius: 50%;
@@ -1307,25 +1316,36 @@ header[role=banner] {
     }
 }
 
-.updroid-move {
+.updroid-api {
     background-color: #fff;
-    padding-top: 100px;
+    padding-top: 16px;
+
+    @media (min-width: @screen-sm-min) {
+        padding-top: 100px;
+    }
 
     .container {
 
     }
 
     .row {
-        margin: 0 0 80px;
         padding: 0 21px;
-        >h1 {
-            margin-top: 50px;
+        margin: 0 0 40px;
+
+        @media (min-width: @screen-sm-min) {
+            margin: 0 0 80px;
         }
+
         >div {
             padding-top: 21px;
             >div {
-                height: 400px;
-                margin-bottom: 30px;
+                height: 350px;
+                margin-bottom: 20px;
+
+                @media (min-width: @screen-sm-min) {
+                    height: 400px;
+                    margin-bottom: 40px;
+                }
 
                 @media (min-width: @screen-md-min) {
                     height: 450px;
@@ -1335,55 +1355,12 @@ header[role=banner] {
             >div:first-of-type {
                 .make-xs-column(12);
                 .make-sm-column(6);
-
             }
 
             >div:nth-of-type(2) {
                 .make-xs-column(12);
                 .make-sm-column(6);
                 background-color: #eaecec;
-            }
-        }
-    }
-}
-
-.updroid-view {
-    background-color: #fff;
-    padding-top: 100px;
-
-    .container {
-
-    }
-
-    .row {
-        margin: 0 0 80px;
-        padding: 0 21px;
-        >h1 {
-            margin-top: 50px;
-        }
-        >div {
-            padding-top: 21px;
-            >div {
-                height: 400px;
-                margin-bottom: 30px;
-
-                @media (min-width: @screen-md-min) {
-                    height: 450px;
-                }
-            }
-
-            >div:first-of-type {
-                .make-xs-column(12);
-                .make-sm-column(6);
-
-                padding-right: 10px;
-            }
-
-            >div:nth-of-type(2) {
-                .make-xs-column(12);
-                .make-sm-column(6);
-                background-color: #eaecec;
-                padding-left: 10px;
             }
         }
     }

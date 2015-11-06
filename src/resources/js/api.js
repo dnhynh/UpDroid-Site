@@ -557,7 +557,6 @@ var Homepage =
         });
 
         $('.commander-slider').on('afterChange', function(event, slick, currentSlide){
-            console.log(currentSlide);
             if(currentSlide == 1) {
                 startTyping(1);
             }
