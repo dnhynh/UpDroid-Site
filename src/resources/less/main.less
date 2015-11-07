@@ -27,6 +27,15 @@ body {
     }
 }
 
+.link {
+    color: @brand-red;
+    &:hover {
+        text-decoration: none;
+        font-weight: bold;
+        color: @brand-red;
+    }
+}
+
 .no-wrap {
     white-space: nowrap;
 }
@@ -1304,12 +1313,12 @@ header[role=banner] {
 
     @media (min-width: @screen-sm-min) {
         padding-bottom: 30px;
-        padding-top: 91px;
+        padding-top: 71px;
     }
 
     @media (min-width: @screen-md-min) {
         padding-bottom: 30px;
-        padding-top: 112px;
+        padding-top: 91px;
     }
 
     .row {
@@ -1317,7 +1326,7 @@ header[role=banner] {
         padding: 0 21px;
 
         @media(min-width: @screen-md-min) {
-            padding: 0 100px;
+            padding: 0 50px;
         }
 
         h1 {
@@ -1328,100 +1337,107 @@ header[role=banner] {
             }
         }
 
-        >div:first-of-type, >div:nth-of-type(2) {
-            padding: 21px 21px;
-
-            @media (min-width: @screen-sm-min) {
-                padding: 0 0;
-            }
-
-            h1 {
-                @media (min-width: @screen-sm-min) {
-                    padding-right: 35px;
-                }
-            }
-
-            >div {
-                .make-xs-column(12);
-                margin-top: 5px;
-                margin-left: 30px;
-                ul {
-                    >li {
-                        .font-monosten-a;
-                        .font-size(1.2);
-                        margin-top: 5px;
-                    }                    
-                }
-            }
-
-            .bullet {
-                .make-xs-column(1);
-            }
-
-            .bullet-desc {
-                .make-xs-column(11);
-            }
-
-            p {
-                padding-top: 14px;
-
-                @media (min-width: @screen-sm-min) {
-                    padding-right: 35px;
-                }
-
-                @media (min-width: @screen-md-min) {
-                    padding-top: 21px;
-                    .font-size(1.2);
-                }
-            }
-        }
-
         >div:first-of-type {
             .make-xs-column(12);
-            .make-sm-column(4);
-            .make-md-column(3);
-            >div:first-of-type {
-                margin: 0 0 21px 0;
+            .make-sm-column(10);
+            .make-md-column(9);
+            >div {
+                padding: 21px 21px;
+
                 @media (min-width: @screen-sm-min) {
-                    .hidden;
+                    padding: 0 0;
                 }
-                >img {
-                    .make-xs-column(6);
+
+                >div {
+                    .make-xs-column(12);
+                    margin-left: 30px;
+                    ul {
+                        >li {
+                            .font-monosten-a;
+                            .font-size(1.2);
+                            line-height: 1.2;
+                        }                    
+                    }
                 }
+
+                .bullet {
+                    .make-xs-column(1);
+                }
+
+                .bullet-desc {
+                    .make-xs-column(11);
+                }
+
+                p {
+                    padding-top: 10px;
+                    @media (min-width: @screen-sm-min) {
+                        padding-right: 35px;
+                        padding-top: 8px;
+                        .font-size(1.2);
+                    }
+
+                    @media (min-width: @screen-md-min) {
+                        padding-top: 10px;
+                    }
+
+                    @media(min-width: @screen-lg-min) {
+                        padding-top: 14px;
+                        .font-size(1.3);
+                    }
+                }
+
+                &:first-of-type {
+                    .make-xs-column(12);
+                    .make-sm-column(4);
+
+                    >div:first-of-type {
+                        @media (min-width: @screen-sm-min) {
+                            .hidden;
+                        }
+                        >img {
+                            .make-xs-column(10);
+                        }
+                    }
+                }
+
+                &:nth-of-type(2) {
+                    .make-xs-column(12);
+                    .make-sm-column(5);
+                    .make-md-column(5);
+                    @media(min-width: @screen-sm-min) {
+                        padding-left: 21px;
+                    }
+
+                    @media(min-width: @screen-md-min) {
+                        padding-left: 21px;
+                        padding-right: 21px;
+                    }
+                }
+            }
+
+            >img {
+                .make-xs-column(9);
+                .hidden-xs;
             }
         }
 
         >div:nth-of-type(2) {
             .make-xs-column(12);
-            .make-sm-column(4);
-            .make-md-column(4);
-            @media(min-width: @screen-sm-min) {
-                padding-right: 21px
-            }
-
-            @media(min-width: @screen-md-min) {
-                padding-right: 0;
-                margin-left: 21px;
-            }
-        }
-
-        >div:nth-of-type(3) {
-            .make-xs-column(12);
             .make-sm-column(3);
             .make-md-column(3);
 
             @media (min-width: @screen-sm-min) {
-                top: 0;
+                bottom: 10px;
+                right: 21px;
                 padding: 0 0;
                 position: absolute;
                 right: 2%;
             }
 
             @media (min-width: @screen-md-min) {
-                padding-left: 50px;
-                top: 0;
                 position: absolute;
-                right: 100px;
+                right: 50px;
+                padding-left: 30px;
             }
 
             @media (min-width: @screen-lg-min) {
@@ -1451,13 +1467,25 @@ header[role=banner] {
 
             p {
                 .make-xs-column(12);
-                &:first-of-type {
+                &:first-of-type, &:last-of-type {
                     padding-top: 14px;
                 }
 
-                @media(min-width: @screen-md-min) {
+                @media(min-width: @screen-sm-min) {
                     .font-size(1.2);
                 }
+
+                @media(min-width: @screen-lg-min) {
+                    .font-size(1.3);
+                }
+            }
+
+            .red {
+                color: @brand-red;
+            }
+
+            >div {
+                .make-sm-column(10);
             }
 
             >a {
@@ -1467,79 +1495,6 @@ header[role=banner] {
                 @media (min-width: @screen-md-min) {
                     margin-top: 21px;
                 }
-
-                &:nth-of-type(2) {
-                    cursor: pointer;
-                    &:before {
-                        content: "UP1";
-                    }
-                    &:hover {
-                        background-color: grey;
-                        color: white;
-                        &:before {
-                        content: "Coming Soon";
-                        }
-                    }
-                }
-            }
-        }
-
-        >div:nth-of-type(4) {
-            .hidden-xs;
-            .make-xs-column(12);
-            img {
-                .make-xs-column(6);
-            }
-        }
-
-        >div:nth-of-type(6) {
-            .make-xs-column(12);
-            .hidden-xs;
-            height: 30px;
-            margin-top: 50px;
-
-            @media(min-width: @screen-sm-min) {
-                margin-top: 21px;
-                .make-sm-column(5);
-                .make-sm-column-offset(1);
-            }
-
-            h3 {
-                display: inline-block;
-            }
-            img {
-                margin-left: 30px;
-                height: 100%;
-            }
-        }
-
-        #new-content {
-            .make-xs-column(12);
-            margin-top: 21px;
-            margin-bottom: 21px;
-
-            @media (min-width: @screen-sm-min) {
-                margin-top: 50px;
-                margin-bottom: 0;
-                .make-sm-column(5);
-                .make-sm-column-offset(1);
-            }
-
-            a {
-                color: @brand-red;
-                cursor: pointer;
-
-                &:hover {
-                    text-decoration: none;
-                }
-            }
-
-            p {
-                padding-top: 21px;
-            }
-
-            .red {
-                color: @brand-red;
             }
         }
     }
@@ -2556,7 +2511,7 @@ header[role=banner] {
 
 // Footer copyright
 footer[role=contentinfo] {
-    background-color: @footer-bg-color;
+    background-color: #eaecec;
     float: left;
     padding-bottom: 21px;
     padding-left: 21px;
