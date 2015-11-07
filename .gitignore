@@ -1,3 +1,6 @@
 node_modules/
 *.DS_Store
 .idea/
+dist/resources/css/site.css
+dist/resources/css/site.min.css
+
