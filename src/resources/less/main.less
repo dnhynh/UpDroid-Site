@@ -2513,7 +2513,7 @@ header[role=banner] {
 footer[role=contentinfo] {
     background-color: #eaecec;
     float: left;
-    padding-bottom: 21px;
+    padding-bottom: 32px;
     padding-left: 21px;
     padding-top: 84px;
     position: relative;
@@ -2524,6 +2524,10 @@ footer[role=contentinfo] {
         padding-top: 70px;
     }
 
+    @media (min-width: @screen-lg-min) {
+        padding-bottom: 49px;
+    }
+
     p {
         .make-xs-column(12);
         .make-sm-column(4);
@@ -2532,6 +2536,32 @@ footer[role=contentinfo] {
         @media (min-width: @screen-sm-min) {
             .text-right;
         }
+    }
+}
+
+#powered-by {
+    height: 20px;
+    position: absolute;
+    left: 25%;
+    bottom: 32px;
+    .hidden-xs;
+
+    @media (min-width: @screen-md-min) {
+        height: 25px;
+    }
+
+    @media (min-width: @screen-lg-min) {
+        bottom: 49px;
+    }
+
+    p {
+        display: inline;
+        padding-right: 14px;
+    }
+
+    img {
+        height: 100%;
+        padding-right: 14px;
     }
 }
 

@@ -3861,7 +3861,7 @@ header[role=banner].inactive span {
 footer[role=contentinfo] {
 	background-color: #eaecec;
 	float: left;
-	padding-bottom: 21px;
+	padding-bottom: 32px;
 	padding-left: 21px;
 	padding-top: 84px;
 	position: relative;
@@ -3875,6 +3875,23 @@ footer[role=contentinfo] p {
 	min-height: 1px;
 	padding-left: 0;
 	padding-right: 0;
+}
+
+#powered-by {
+	height: 20px;
+	position: absolute;
+	left: 25%;
+	bottom: 32px;
+}
+
+#powered-by p {
+	display: inline;
+	padding-right: 14px;
+}
+
+#powered-by img {
+	height: 100%;
+	padding-right: 14px;
 }
 
 .icon-arrow-up {
@@ -5671,6 +5688,10 @@ nav > div .social-nav {
 	margin-top: 7px;
 }
 
+#powered-by {
+	height: 25px;
+}
+
 .icon-arrow-up {
 	bottom: -20px;
 	left: 28px;
@@ -6145,6 +6166,14 @@ header[role=banner] span.icon-upcom-logo {
 	padding-top: 119px;
 }
 
+footer[role=contentinfo] {
+	padding-bottom: 49px;
+}
+
+#powered-by {
+	bottom: 49px;
+}
+
 .icon-arrow-up {
 	left: 49px;
 }
@@ -6244,6 +6273,10 @@ td.visible-xs {
 }
 
 .about-header span {
+	display: none !important;
+}
+
+#powered-by {
 	display: none !important;
 }
 
