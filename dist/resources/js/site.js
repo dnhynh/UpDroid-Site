@@ -1314,99 +1314,9 @@ var Homepage =
             duration: 100
         }).setTween("#close-copy", {opacity: 1})
         .addTo(controller);
-
-        // var poochie = $("#poochie");
-
-        // poochie.on('click', function() {
-
-        //     if ($(document).width() > 992) {
-        //         new ScrollMagic.Scene({
-        //           triggerElement: "#exploded", // starting scene, when reaching this element
-        //           offset: 3310,
-        //           duration: 2000 // pin the element for a total of 400px
-        //         })
-        //         .setPin('#exploded')
-        //         .addTo(controller); // the element we want to pin
-        //     }
-
-        //     else {
-        //         new ScrollMagic.Scene({
-        //           triggerElement: "#exploded", // starting scene, when reaching this element
-        //           offset: 3240,
-        //           duration: 800 // pin the element for a total of 400px
-        //         })
-        //         .setPin('#exploded')
-        //         .addTo(controller); // the element we want to pin
-        //     }
-
-        //     new ScrollMagic.Scene({
-        //     triggerElement: "#exploded",
-        //         offset: 2850,
-        //         duration: 100
-        //     }).setTween("#close-copy", {opacity: 0})
-        //     .addTo(controller);
-
-        //     new ScrollMagic.Scene({
-        //         triggerElement: "#exploded",
-        //         offset: 3250,
-        //         duration: 100
-        //     }).setTween("#poochie-copy", {opacity: 1})
-        //     .addTo(controller);
-
-        //     new ScrollMagic.Scene({
-        //         triggerElement: "#exploded",
-        //         offset: 3300,
-        //         duration: 400
-        //     }).setTween("#base", {y: "-200%"})
-        //     .addTo(controller);
-
-        //     new ScrollMagic.Scene({
-        //         triggerElement: "#exploded",
-        //         offset: 3300,
-        //         duration: 400
-        //     }).setTween("#arm", {y: "-200%"})
-        //     .addTo(controller);
-
-        //     new ScrollMagic.Scene({
-        //         triggerElement: "#exploded",
-        //         offset: 3300,
-        //         duration: 400
-        //     }).setTween("#io", {y: "-200%"})
-        //     .addTo(controller);
-
-        //     if($(window).width() < 977) {
-        //         console.log("small");
-        //         console.log($(window).width());
-        //         $('html, body').animate({
-        //             scrollTop: .5 * $(document).height()
-        //         }, 1000);
-        //     }
-
-        //     else if($(window).width() < 1185 && $(window).width() >= 977) {
-        //         console.log('med: ' + $(window).width() );
-        //         $('html, body').animate({
-        //             scrollTop: .508 * $(document).height()
-        //         }, 1000);
-        //     }
-
-        //     else if($(window).width() >= 1185) {
-        //         console.log("large: " + $(window).width());
-        //         $('html, body').animate({
-        //             scrollTop: .5082 * $(document).height()
-        //         }, 1000);
-        //     }
-        // });
     },
 
     "DIYkit": function () {
-        // var disclaimer = document.getElementById( 'disclaimer' );
-        // var diy = $('#diy-button');
-        // diy.on("click", function (event) {
-        //     event.preventDefault();
-        //     diy.addClass('hidden');
-        //     $('#confirm-diy').removeClass('hidden');
-        //     disclaimer.className = "expand";
-        // });
         $('#confirm-diy').bind("click touchstart", function (event) {
             var apple = navigator.userAgent.match(/(iPod|iPhone|iPad)/);
             if($('#diy-agree').is(':checked') == false) {
