@@ -3381,6 +3381,35 @@ header[role=banner].inactive span {
 	padding-right: 0;
 }
 
+#app {
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+#app .row #commander {
+	position: relative;
+	float: left;
+	width: 100%;
+	min-height: 1px;
+	padding-left: 0;
+	padding-right: 0;
+	text-align: center;
+}
+
+#app .row #commander img {
+	position: relative;
+	cursor: pointer;
+	height: 120px;
+}
+
+#app .row #commander img:first-of-type {
+	left: 3px;
+}
+
+#app .row #commander img:last-of-type {
+	left: -3px;
+}
+
 #upcom-video {
 	background-color: #e4e4e4;
 }
@@ -3935,6 +3964,10 @@ h3 {
 	font-size: 16px;
 	font-size: 1.6rem;
 	line-height: 18px;
+}
+
+#app .row #commander img {
+	height: 200px;
 }
 
 }
@@ -4644,6 +4677,15 @@ header[role=banner] span.icon-upcom-logo {
 .expanded > div {
 	float: left;
 	width: 100%;
+}
+
+#app {
+	padding-top: 80px;
+	padding-bottom: 80px;
+}
+
+#app .row #commander img {
+	height: 300px;
 }
 
 .screens .row > div {
@@ -5469,6 +5511,10 @@ nav > div .social-nav {
 
 #instructions .row > div {
 	margin-left: 8.33333333%;
+}
+
+#app .row #commander img {
+	height: 400px;
 }
 
 .screens .row > div {

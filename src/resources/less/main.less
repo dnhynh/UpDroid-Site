@@ -1797,11 +1797,45 @@ header[role=banner] {
 }
 
 #app {
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    @media(min-width: @screen-sm-min) {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
     .container {
 
     }
     .row {
-        
+        #commander {
+            .make-xs-column(12);
+            text-align: center;
+            img {
+                position: relative;
+                cursor: pointer;
+                height: 120px;
+
+                @media (min-width: @screen-xs-min) {
+                    height: 200px;
+                }
+
+                @media (min-width: @screen-sm-min) {
+                    height: 300px;
+                }
+
+                @media (min-width: @screen-md-min) {
+                    height: 400px;
+                }
+                &:first-of-type {
+                    left: 3px;
+                }
+                &:last-of-type {
+                    left: -3px;
+                }
+            }
+        }
     }
 }
 
