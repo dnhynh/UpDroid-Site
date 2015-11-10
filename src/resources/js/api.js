@@ -87,8 +87,8 @@ var Homepage =
         this.Parallax();
         this.DIYkit();
         this.Video();
-        this.Ace();
         this.Commander();
+        this.footer();
     },
     "Parallax": function () {
         // Simple test for Mobile Safari
@@ -118,18 +118,9 @@ var Homepage =
         }
     },
     
-    "Ace": function () {
-        var editor = ace.edit("editor1");
-        editor.setTheme("ace/theme/kuroir");
-        editor.getSession().setMode("ace/mode/python");
-        editor.setFontSize(16);
-        editor.setReadOnly(true);
-
-        var editor2 = ace.edit("editor2");
-        editor2.setTheme("ace/theme/kuroir");
-        editor2.getSession().setMode("ace/mode/python");
-        editor2.setFontSize(16);
-        editor2.setReadOnly(true);
+    "footer": function () {
+        $("#powered-by")[0].style.display = "inline";
+        $("#footer")[0].style.backgroundColor = "#eaecec";
     },
 
     "Video": function () {

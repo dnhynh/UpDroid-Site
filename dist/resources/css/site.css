@@ -3859,7 +3859,7 @@ header[role=banner].inactive span {
 }
 
 footer[role=contentinfo] {
-	background-color: #eaecec;
+	background-color: #fff;
 	float: left;
 	padding-bottom: 32px;
 	padding-left: 21px;
@@ -3882,6 +3882,7 @@ footer[role=contentinfo] p {
 	position: absolute;
 	left: 25%;
 	bottom: 32px;
+	display: none;
 }
 
 #powered-by p {
