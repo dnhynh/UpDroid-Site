@@ -1026,11 +1026,14 @@ var Homepage =
             });
         }
     },
+<<<<<<< HEAD
+=======
     
     "footer": function () {
         $("#powered-by")[0].style.display = "inline";
         $("#footer")[0].style.backgroundColor = "#eaecec";
     },
+>>>>>>> master
 
     "Video": function () {
         $('.play-center').hover(function () {
