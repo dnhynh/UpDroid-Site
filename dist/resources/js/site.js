@@ -1418,6 +1418,7 @@ var UpCom =
         this.loadView();
         this.resizeListen();
         this.animateWings();
+        this.app();
     },
 
     "installClick": function () {
@@ -1471,6 +1472,35 @@ var UpCom =
                 $("#controls").remove().insertAfter($("#controls-switch"));
             }
         }
+    },
+
+    "app": function () {
+        var explorer = $("#explorer");
+        var editor = $("#editor");
+        var terminal = $("#console");
+
+        var controller = new ScrollMagic.Controller();
+
+        // new ScrollMagic.Scene({
+        //   triggerElement: "#app", 
+        //   offset: 200,
+        // }).setTween(explorer, 0.2, {x: "-30px", height: "+=100px"}).addTo(controller);
+        
+        // new ScrollMagic.Scene({
+        //   triggerElement: "#app", 
+        //   offset: 200,
+        // }).setTween(editor, .2, {height: "+=100px"}).addTo(controller);
+        
+        // new ScrollMagic.Scene({
+        //   triggerElement: "#app", 
+        //   offset: 200,
+        // }).setTween(terminal, .2, {x: "30px", height: "+=100px"}).addTo(controller);
+
+        // explorer.hover(function () {
+        //     editor[0].style.opacity = 0;
+        // }, function() {
+        //     editor[0].style.opacity = 1;
+        // });
     },
 
     // "slideScreens": function () {

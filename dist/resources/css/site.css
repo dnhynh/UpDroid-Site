@@ -3386,10 +3386,29 @@ header[role=banner].inactive span {
 	padding-bottom: 30px;
 }
 
-#app .row #commander {
-	position: relative;
+#app .row > div:first-of-type {
 	float: left;
 	width: 100%;
+	position: relative;
+	min-height: 1px;
+	padding-left: 0;
+	padding-right: 0;
+}
+
+#app .row > div:first-of-type h3 {
+	font-size: 19px;
+	font-size: 1.9rem;
+	color: #7e7e7e;
+}
+
+#app .row > div:first-of-type p {
+	padding-top: 14px;
+}
+
+#app .row #commander {
+	float: left;
+	width: 100%;
+	position: relative;
 	min-height: 1px;
 	padding-left: 0;
 	padding-right: 0;
@@ -3400,6 +3419,11 @@ header[role=banner].inactive span {
 	position: relative;
 	cursor: pointer;
 	height: 120px;
+	transition: all 500ms ease;
+	-moz-transition: all 500ms ease;
+	-ms-transition: all 500ms ease;
+	-o-transition: all 500ms ease;
+	-webkit-transition: all 500ms ease;
 }
 
 #app .row #commander img:first-of-type {
@@ -4684,8 +4708,18 @@ header[role=banner] span.icon-upcom-logo {
 	padding-bottom: 80px;
 }
 
+#app .row > div:first-of-type {
+	float: left;
+	width: 25%;
+}
+
+#app .row #commander {
+	float: left;
+	width: 75%;
+}
+
 #app .row #commander img {
-	height: 300px;
+	height: 200px;
 }
 
 .screens .row > div {
@@ -5514,7 +5548,7 @@ nav > div .social-nav {
 }
 
 #app .row #commander img {
-	height: 400px;
+	height: 300px;
 }
 
 .screens .row > div {
