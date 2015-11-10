@@ -3413,6 +3413,7 @@ header[role=banner].inactive span {
 	padding-left: 0;
 	padding-right: 0;
 	text-align: center;
+	white-space: nowrap;
 }
 
 #app .row #commander img {
@@ -4750,8 +4751,7 @@ header[role=banner] span.icon-upcom-logo {
 	width: 50%;
 }
 
-.screens .row > div:nth-of-type(3) > div,
-.screens .row > div:last-of-type > div {
+.screens .row > div > div {
 	padding-top: 10%;
 }
 
@@ -5549,15 +5549,6 @@ nav > div .social-nav {
 
 #app .row #commander img {
 	height: 300px;
-}
-
-.screens .row > div {
-	margin-left: 16.66666667%;
-}
-
-.screens .row > div {
-	float: left;
-	width: 66.66666667%;
 }
 
 .screens .row > div img {
