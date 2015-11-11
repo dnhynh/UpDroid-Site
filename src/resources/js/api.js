@@ -572,6 +572,7 @@ var UpCom =
     },
 
     "app": function () {
+        var commander = $("#commander");
         var explorer = $("#explorer");
         var editor = $("#editor");
         var terminal = $("#console");
@@ -592,12 +593,42 @@ var UpCom =
         //   triggerElement: "#app", 
         //   offset: 200,
         // }).setTween(terminal, .2, {x: "30px", height: "+=100px"}).addTo(controller);
+        
+        var origHeight = explorer[0].height + "px";
+        var transformHeight = explorer[0].height * 1.1 + "px";
+        explorer.hover(function () {
+            explorer[0].style.transform = "translateX(-20%)";
+            explorer[0].style.height = transformHeight;
+        }, function() {
+            explorer[0].style.height = origHeight;
+            explorer[0].style.transform = "translateX(0)";
+        });
 
-        // explorer.hover(function () {
-        //     editor[0].style.opacity = 0;
-        // }, function() {
-        //     editor[0].style.opacity = 1;
-        // });
+        editor.hover(function () {
+            explorer[0].style.transform = "translateX(-20%)";
+            terminal[0].style.transform = "translateX(10%)";            
+            editor[0].style.height = transformHeight;
+        }, function() {
+            editor[0].style.height = origHeight;
+            explorer[0].style.transform = "translateX(0)";
+            terminal[0].style.transform = "translateX(0)";
+        });
+
+        terminal.hover(function () {           
+            terminal[0].style.height = transformHeight;
+            terminal[0].style.transform = "translateX(10%)";
+        }, function() {
+            terminal[0].style.height = origHeight;
+            terminal[0].style.transform = "translateX(0)";
+        });
+
+        terminal.click(function() {
+            terminal.replaceWith($("#console-video"));
+            $("#console-video")[0].style.display = "inline";
+            $("#console-video")[0].play();
+            editor.css("display", "none");
+            explorer.css("display", "none");
+        });
     },
 
     // "slideScreens": function () {

@@ -3386,6 +3386,10 @@ header[role=banner].inactive span {
 	padding-bottom: 30px;
 }
 
+#app .row {
+	padding: 0 21px;
+}
+
 #app .row > div:first-of-type {
 	float: left;
 	width: 100%;
@@ -3414,6 +3418,10 @@ header[role=banner].inactive span {
 	padding-right: 0;
 	text-align: center;
 	white-space: nowrap;
+}
+
+#app .row #commander > video {
+	display: none;
 }
 
 #app .row #commander img {
