@@ -1506,29 +1506,25 @@ var UpCom =
         var origHeight = explorer[0].height + "px";
         var transformHeight = explorer[0].height * 1.1 + "px";
         explorer.hover(function () {
-            explorer[0].style.transform = "translateX(-20%)";
-            explorer[0].style.height = transformHeight;
+            explorer.css("transform", "translateX(-20%) scale(1.1)");
         }, function() {
-            explorer[0].style.height = origHeight;
-            explorer[0].style.transform = "translateX(0)";
+            explorer.css("transform", "translateX(0) scale(1.0)");
         });
 
         editor.hover(function () {
-            explorer[0].style.transform = "translateX(-20%)";
-            terminal[0].style.transform = "translateX(10%)";            
-            editor[0].style.height = transformHeight;
+            explorer.css("transform", "translateX(-30%)");
+            terminal.css("transform", "translateX(10%)");            
+            editor.css("transform", "scale(1.1)");
         }, function() {
-            editor[0].style.height = origHeight;
-            explorer[0].style.transform = "translateX(0)";
-            terminal[0].style.transform = "translateX(0)";
+            editor.css("transform", "scale(1.0)");
+            explorer.css("transform", "translateX(0)");
+            terminal.css("transform", "translateX(0)");
         });
 
         terminal.hover(function () {           
-            terminal[0].style.height = transformHeight;
-            terminal[0].style.transform = "translateX(10%)";
+            terminal.css("transform", "translateX(10%) scale(1.1)");
         }, function() {
-            terminal[0].style.height = origHeight;
-            terminal[0].style.transform = "translateX(0)";
+            terminal.css("transform", "translateX(0) scale(1.0)");
         });
 
         terminal.click(function() {
