@@ -917,7 +917,6 @@ var Global =
         this.BorderFade();
         this.HeaderIcons();
         this.BackToTop();
-        this.Events();
     },
     "Navigation": function () {
         // Setup push navigation using slidebars plugin
@@ -984,20 +983,6 @@ var Global =
         $("#sb-site").on("click", "#back-top", function () {
             $("html, body").animate({scrollTop: 0}, 800);
         });
-    },
-
-    "Events": function () {
-        document.getElementById( 'top-order' ).addEventListener( 'click', function() {
-            ga('send', 'event', 'link', 'PreOrder', 'button-top');
-        });
-
-        document.getElementById( 'bottom-order' ).addEventListener( 'click', function() {
-            ga('send', 'event', 'link', 'PreOrder', 'button-bottom');
-        });
-
-        document.getElementById( 'confirm-diy' ).addEventListener( 'click', function() {
-            ga('send', 'event', 'link', 'PreOrder', 'confirmed');
-        });
     }
 };
 
@@ -1013,6 +998,7 @@ var Homepage =
         this.Video();
         this.Commander();
         this.footer();
+        this.Events();
     },
     "Parallax": function () {
         // Simple test for Mobile Safari
@@ -1365,6 +1351,20 @@ var Homepage =
             arrows: false,
         });
     },
+
+    "Events": function () {
+        document.getElementById( 'top-order' ).addEventListener( 'click', function() {
+            ga('send', 'event', 'link', 'PreOrder', 'button-top');
+        });
+
+        document.getElementById( 'bottom-order' ).addEventListener( 'click', function() {
+            ga('send', 'event', 'link', 'PreOrder', 'button-bottom');
+        });
+
+        document.getElementById( 'confirm-diy' ).addEventListener( 'click', function() {
+            ga('send', 'event', 'link', 'PreOrder', 'confirmed');
+        });
+    }
 };
 
 /*****************************************************/
