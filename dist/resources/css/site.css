@@ -3274,38 +3274,6 @@ header[role=banner].inactive span {
 	margin-top: 21px;
 }
 
-.commander-info .row .right #commander {
-	float: left;
-	width: 100%;
-	position: relative;
-	min-height: 1px;
-	padding-left: 0;
-	padding-right: 0;
-	white-space: nowrap;
-}
-
-.commander-info .row .right #commander img {
-	position: relative;
-	text-align: center;
-	cursor: pointer;
-	height: 120px;
-	-webkit-backface-visibility: hidden;
-	-webkit-transform: translateZ(0) scale(1, 1);
-	transition: all 500ms ease;
-	-moz-transition: all 500ms ease;
-	-ms-transition: all 500ms ease;
-	-o-transition: all 500ms ease;
-	-webkit-transition: all 500ms ease;
-}
-
-.commander-info .row .right #commander img:first-of-type {
-	left: 3px;
-}
-
-.commander-info .row .right #commander img:last-of-type {
-	left: -3px;
-}
-
 #app {
 	padding-top: 30px;
 	padding-bottom: 30px;
@@ -3332,6 +3300,38 @@ header[role=banner].inactive span {
 
 #app .row > div:first-of-type p {
 	padding-top: 14px;
+}
+
+#app .row > div #commander {
+	float: left;
+	width: 100%;
+	position: relative;
+	min-height: 1px;
+	padding-left: 0;
+	padding-right: 0;
+	white-space: nowrap;
+}
+
+#app .row > div #commander img {
+	position: relative;
+	text-align: center;
+	cursor: pointer;
+	height: 120px;
+	-webkit-backface-visibility: hidden;
+	-webkit-transform: translateZ(0) scale(1, 1);
+	transition: all 500ms ease;
+	-moz-transition: all 500ms ease;
+	-ms-transition: all 500ms ease;
+	-o-transition: all 500ms ease;
+	-webkit-transition: all 500ms ease;
+}
+
+#app .row > div #commander img:first-of-type {
+	left: 3px;
+}
+
+#app .row > div #commander img:last-of-type {
+	left: -3px;
 }
 
 .typed-cursor {
@@ -3864,7 +3864,7 @@ h3 {
 	line-height: 18px;
 }
 
-.commander-info .row .right #commander img {
+#app .row > div #commander img {
 	height: 120px;
 }
 
@@ -4568,15 +4568,6 @@ header[role=banner] span.icon-upcom-logo {
 	padding: 0px 30px 0 30px;
 }
 
-.commander-info .row .right #commander {
-	float: left;
-	width: 75%;
-}
-
-.commander-info .row .right #commander img {
-	height: 330px;
-}
-
 #app {
 	padding-top: 80px;
 	padding-bottom: 80px;
@@ -4585,6 +4576,15 @@ header[role=banner] span.icon-upcom-logo {
 #app .row > div:first-of-type {
 	float: left;
 	width: 25%;
+}
+
+#app .row > div #commander {
+	float: left;
+	width: 75%;
+}
+
+#app .row > div #commander img {
+	height: 330px;
 }
 
 .screens .row > div {
@@ -5389,7 +5389,7 @@ nav > div .social-nav {
 	padding: 260px 30px 0 30px;
 }
 
-.commander-info .row .right #commander img {
+#app .row > div #commander img {
 	height: 310px;
 }
 
@@ -6018,7 +6018,7 @@ header[role=banner] span.icon-upcom-logo {
 	padding: 330px 30px 0 30px;
 }
 
-.commander-info .row .right #commander img {
+#app .row > div #commander img {
 	height: 390px;
 }
 
