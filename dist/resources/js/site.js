@@ -1526,14 +1526,6 @@ var UpCom =
         }, function() {
             terminal.css("transform", "translateX(0) scale(1.0)");
         });
-
-        terminal.click(function() {
-            terminal.replaceWith($("#console-video"));
-            $("#console-video")[0].style.display = "inline";
-            $("#console-video")[0].play();
-            editor.css("display", "none");
-            explorer.css("display", "none");
-        });
     },
 
     // "slideScreens": function () {

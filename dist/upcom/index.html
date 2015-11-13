@@ -61,95 +61,14 @@
                         <div>
                             <h3>Robotics<br>Development<br>Simplified</h3>
                             <p>UpDroid Commander (UpCom) is a customizable browser-based IDE designed to streamline robotics software development.</p>
-                            <p>It comes preinstalled on the UP1 and can be accessed via web browser.</p>
-                        </div>
-                        <div>
-                            <p></p> 
                         </div>
                     </div>
                     <div class="right">
-                        <div>
-                            <h3>UpCom β</h3>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div id="instructions">
-            <div class="container">
-                <div class="row">
-                    <div>
-                        <h1> To install UpCom run in console: </h1>
-                        <span id="close-instructions" class="icon-cross"></span>
-                        <code>
-                    <code>
-                        <br>
-                        <span class='prompt'>$ </span><span class='sudo'>wget</span> <span class='flag'>-qO</span> - http://packages.updroid.com/Release.key | <span class='sudo'>sudo</span> apt-key add -   
-                        <br><br>
-                        <span class='prompt'>$ </span><span class='sudo'>sudo</span> sh <span class='flag'>-c</span> 'echo <span class='quote'>"deb http://packages.updroid.com/ubuntu/ trusty main"</span> > /etc/apt/sources.list.d/updroid.list'
-                        <br><br>
-                        <span class='prompt'>$ </span><span class='sudo'>sudo</span> apt-get update
-                        <br><br>
-                        <span class='prompt'>$ </span><span class='sudo'>sudo</span> apt-get install cmdr
-                        <br><br>
-                        <h3>In order to update run: </h3>
-                        <br>
-                        <span class='comment'># Expect updates to be released weekly, more or less. </span>
-                        <br>
-                        <span class='prompt'>$ </span><span class='sudo'>sudo</span> apt-get update
-                        <br>
-                        <span class='prompt'>$ </span><span class='sudo'>sudo</span> apt-get install <span class='flag'>--only-upgrade</span> cmdr
-                        <br><br>   
-                        <h3>Usage</h3>
-                        <br>
-                        <span class='comment'># Set the ROS source folder</span>
-                        <br>
-                        <span class='prompt'>$ </span>. /opt/ros/indigo/setup.bash
-                        <br>
-                        <span class='comment'># Start UpCom</span>
-                        <br>
-                        <span class='prompt'>$ </span><span class='sudo'>cmdr</span> gui
-                        <br><br>
-                        <h3>To access UpCom: tune browser to <span class='quote'>localhost:12060</span></h3>
-                        <br>
-                        <span class='comment'># Note: Raspberry Pi Users need to install ffmpeg >= 2.6.2 before using UpCom</span>
-                        <br><br>
-                        <span class='comment'># Because UpCom is still in alpha, it currently doesn't have any built in 
-                        security tools. As such, please run UpCom from within a closed network.</span>
-                    </code>
-                        </code>
-                    </div>
-                </div>    
-            </div>
-        </div>
-
-        <div id="app">
-            <div class="container">
-                <div class="row">
-                    <div>
-                        <h3>UpCom</h3>
-                        <p>UpCom is a customizable browser based IDE meant to streamline your robotics development.  </p>
-                    </div>
-                    <div id="commander">
+                        <div id="commander">
                         <img id="explorer" src="../resources/images/screens/explorer.png"/>
                         <img id="editor" src="../resources/images/screens/editor.png"/>
                         <img id="console" src="../resources/images/screens/console.png"/>
-                        <video loop id="console-video">
-                            <source src="../resources/video/console.mp4" type="video/mp4">
-                        </video>
                     </div>
-                </div>    
-            </div>
-        </div>
-
-        <div id="upcom-video">
-            <div class="container">
-                <div class="row">
-                    <div>
-                        <div class="video-container">
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/_hgirrfls0c" frameborder="0" allowfullscreen></iframe>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -455,7 +374,6 @@
 <script>window.jQuery || document.write('<script src="/resources/js/jquery-1.11.1.min.js">\x3C/script>')</script>
 <script src="//cdn.jsdelivr.net/velocity/1.2.3/velocity.min.js"></script>
 <script type="text/javascript" src="/resources/js/site.min.js"></script>
-<script src="typed.js"></script>
 <script>
     $(document).ready(function () {
         UpCom.Init();

@@ -3265,120 +3265,43 @@ header[role=banner].inactive span {
 	padding-right: 0;
 }
 
-.commander-info .row .left > div:last-of-type {
-	position: relative;
-	min-height: 1px;
-	padding-left: 0;
-	padding-right: 0;
-}
-
-.commander-info .row .left > div:last-of-type img {
-	padding-top: 10px;
-	width: 80px;
-}
-
 .commander-info .row .right {
 	position: relative;
 	min-height: 1px;
 	padding-left: 0;
 	padding-right: 0;
 	padding: 0 30px;
-}
-
-.commander-info .row .right a:hover {
-	cursor: pointer;
-}
-
-.commander-info .row .right a:first-child {
-	color: #ff2919;
-}
-
-.commander-info .row .right #install {
 	margin-top: 21px;
 }
 
-.commander-info .row .right #dummy {
-	color: #fff;
-	margin-top: 21px;
-}
-
-#instructions {
-	height: 0px;
-	overflow: hidden;
-	background-color: #e4e4e4; /** alternate color: #e4e4e4 */
-	transition: height 1000ms ease, padding 1000ms ease;
-	-moz-transition: height 1000ms ease, padding 1000ms ease;
-	-ms-transition: height 1000ms ease, padding 1000ms ease;
-	-o-transition: height 1000ms ease, padding 1000ms ease;
-	-webkit-transition: height 1000ms ease, padding 1000ms ease;
-}
-
-#instructions .row > div {
-	padding: 40px 35px !important;
-	background-color: #f1f4f4;
+.commander-info .row .right #commander {
+	float: left;
+	width: 100%;
 	position: relative;
 	min-height: 1px;
 	padding-left: 0;
 	padding-right: 0;
+	white-space: nowrap;
 }
 
-#instructions .row > div .icon-cross {
-	font-size: 34px;
-	font-size: 3.4rem;
-	position: absolute;
-	top: 40px;
-	right: 35px;
-	cursor: pointer;
-	color: #0c0c0c;
-}
-
-#instructions .row > div h1 {
-	margin-bottom: 20px;
-}
-
-#instructions code {
-	font-size: 13px;
-	font-size: 1.3rem;
-	color: black;
-	font-family: "Monosten A";
-	line-height: 18px;
-}
-
-#instructions code .prompt {
-	-moz-user-select: -moz-none;
-	-khtml-user-select: none;
-	-webkit-user-select: none;
-	color: #008080;
-	-ms-user-select: none;
-	user-select: none;
-}
-
-#instructions code .sudo {
-	color: #30a;
-}
-
-#instructions code .flag {
-	color: #00c;
-}
-
-#instructions code .comment {
-	color: #a50;
-}
-
-#instructions code .quote {
-	color: #a11;
-}
-
-.expanded {
-	height: 750px !important;
-	padding: 50px 50px;
-}
-
-.expanded > div {
+.commander-info .row .right #commander img {
 	position: relative;
-	min-height: 1px;
-	padding-left: 0;
-	padding-right: 0;
+	text-align: center;
+	cursor: pointer;
+	height: 120px;
+	transition: all 500ms ease;
+	-moz-transition: all 500ms ease;
+	-ms-transition: all 500ms ease;
+	-o-transition: all 500ms ease;
+	-webkit-transition: all 500ms ease;
+}
+
+.commander-info .row .right #commander img:first-of-type {
+	left: 3px;
+}
+
+.commander-info .row .right #commander img:last-of-type {
+	left: -3px;
 }
 
 #app {
@@ -3407,67 +3330,6 @@ header[role=banner].inactive span {
 
 #app .row > div:first-of-type p {
 	padding-top: 14px;
-}
-
-#app .row #commander {
-	float: left;
-	width: 100%;
-	position: relative;
-	min-height: 1px;
-	padding-left: 0;
-	padding-right: 0;
-	text-align: center;
-	white-space: nowrap;
-}
-
-#app .row #commander > video {
-	display: none;
-}
-
-#app .row #commander img {
-	position: relative;
-	cursor: pointer;
-	height: 120px;
-	transition: all 500ms ease;
-	-moz-transition: all 500ms ease;
-	-ms-transition: all 500ms ease;
-	-o-transition: all 500ms ease;
-	-webkit-transition: all 500ms ease;
-}
-
-#app .row #commander img:first-of-type {
-	left: 3px;
-}
-
-#app .row #commander img:last-of-type {
-	left: -3px;
-}
-
-#upcom-video {
-	background-color: #e4e4e4;
-}
-
-#upcom-video .row > div {
-	padding: 5% 5%;
-	text-align: center;
-}
-
-#upcom-video .row > div .video-container {
-	position: relative;
-	padding-bottom: 56.25%;
-	padding-top: 30px;
-	height: 0;
-	overflow: hidden;
-}
-
-#upcom-video .row > div .video-container iframe,
-#upcom-video .row > div .video-container object,
-#upcom-video .row > div .video-container embed {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
 }
 
 .typed-cursor {
@@ -4000,7 +3862,7 @@ h3 {
 	line-height: 18px;
 }
 
-#app .row #commander img {
+.commander-info .row .right #commander img {
 	height: 120px;
 }
 
@@ -4696,21 +4558,21 @@ header[role=banner] span.icon-upcom-logo {
 }
 
 .commander-info .row .left {
-	padding: 220px 30px 30px 30px;
+	padding: 220px 20px 30px 30px;
 }
 
 .commander-info .row .right {
-	padding-top: 0;
+	margin-top: 0;
+	padding: 0px 30px 0 30px;
 }
 
-.commander-info .row .right #dummy {
-	display: none !important;
-	visibility: hidden !important;
-}
-
-.expanded > div {
+.commander-info .row .right #commander {
 	float: left;
-	width: 100%;
+	width: 75%;
+}
+
+.commander-info .row .right #commander img {
+	height: 330px;
 }
 
 #app {
@@ -4721,15 +4583,6 @@ header[role=banner] span.icon-upcom-logo {
 #app .row > div:first-of-type {
 	float: left;
 	width: 25%;
-}
-
-#app .row #commander {
-	float: left;
-	width: 75%;
-}
-
-#app .row #commander img {
-	height: 200px;
 }
 
 .screens .row > div {
@@ -5513,50 +5366,28 @@ nav > div .social-nav {
 
 .commander-info .row .left {
 	float: left;
-	width: 75%;
+	width: 25%;
 }
 
 .commander-info .row .left {
-	padding: 260px 30px 0 30px;
+	padding: 260px 0px 0 30px;
 }
 
 .commander-info .row .left > div:first-of-type {
 	float: left;
-	width: 33.33333333%;
-}
-
-.commander-info .row .left > div:last-of-type {
-	float: left;
-	width: 33.33333333%;
-}
-
-.commander-info .row .left > div:last-of-type {
-	margin-left: 21px;
-}
-
-.commander-info .row .left > div:last-of-type > p:first-of-type {
-	margin-top: 0;
+	width: 100%;
 }
 
 .commander-info .row .right {
 	float: left;
-	width: 25%;
+	width: 75%;
 }
 
 .commander-info .row .right {
-	padding: 260px 30px 0  30px;
+	padding: 260px 30px 0 30px;
 }
 
-#instructions .row > div {
-	float: left;
-	width: 83.33333333%;
-}
-
-#instructions .row > div {
-	margin-left: 8.33333333%;
-}
-
-#app .row #commander img {
+.commander-info .row .right #commander img {
 	height: 300px;
 }
 
@@ -6177,6 +6008,14 @@ header[role=banner] span.icon-upcom-logo {
 	font-size: 1.3rem;
 }
 
+.commander-info .row .left {
+	padding: 330px 30px 0 30px;
+}
+
+.commander-info .row .right {
+	padding: 330px 30px 0 30px;
+}
+
 .about-header .row {
 	padding-bottom: 210px;
 	padding-top: 329px;
@@ -6242,18 +6081,6 @@ footer[role=contentinfo] {
 
 }
 
-@media (min-width: 1450px) {
-
-.commander-info .row .left {
-	padding: 330px 30px 0 30px;
-}
-
-.commander-info .row .right {
-	padding: 330px 30px 0 30px;
-}
-
-}
-
 @media (max-width: 767px) {
 
 .visible-xs {
@@ -6310,14 +6137,6 @@ td.visible-xs {
 }
 
 .commander-info .hide-xs {
-	display: none !important;
-}
-
-.commander-info .row .right #install {
-	display: none !important;
-}
-
-.expanded {
 	display: none !important;
 }
 
