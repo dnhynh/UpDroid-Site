@@ -8,6 +8,7 @@ var Global =
         this.BorderFade();
         this.HeaderIcons();
         this.BackToTop();
+        this.Events();
     },
     "Navigation": function () {
         // Setup push navigation using slidebars plugin
@@ -73,6 +74,20 @@ var Global =
         // Scroll to top of page when back to top arrow is clicked
         $("#sb-site").on("click", "#back-top", function () {
             $("html, body").animate({scrollTop: 0}, 800);
+        });
+    },
+
+    "Events": function () {
+        document.getElementById( 'top-order' ).addEventListener( 'click', function() {
+            ga('send', 'event', 'link', 'PreOrder', 'button-top');
+        });
+
+        document.getElementById( 'bottom-order' ).addEventListener( 'click', function() {
+            ga('send', 'event', 'link', 'PreOrder', 'button-bottom');
+        });
+
+        document.getElementById( 'confirm-diy' ).addEventListener( 'click', function() {
+            ga('send', 'event', 'link', 'PreOrder', 'confirmed');
         });
     }
 };
