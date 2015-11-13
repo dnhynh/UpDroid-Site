@@ -1508,7 +1508,7 @@ var UpCom =
         explorer.hover(function () {
             explorer.css("transform", "translateX(-20%) scale(1.1)");
         }, function() {
-            explorer.css("transform", "translateX(0) scale(1.0)");
+            explorer.css("transform", "translateX(0) scale(1)");
         });
 
         editor.hover(function () {
@@ -1516,7 +1516,7 @@ var UpCom =
             terminal.css("transform", "translateX(10%)");            
             editor.css("transform", "scale(1.1)");
         }, function() {
-            editor.css("transform", "scale(1.0)");
+            editor.css("transform", "scale(1)");
             explorer.css("transform", "translateX(0)");
             terminal.css("transform", "translateX(0)");
         });
@@ -1524,7 +1524,7 @@ var UpCom =
         terminal.hover(function () {           
             terminal.css("transform", "translateX(10%) scale(1.1)");
         }, function() {
-            terminal.css("transform", "translateX(0) scale(1.0)");
+            terminal.css("transform", "translateX(0) scale(1)");
         });
     },
 

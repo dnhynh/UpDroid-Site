@@ -3289,6 +3289,8 @@ header[role=banner].inactive span {
 	text-align: center;
 	cursor: pointer;
 	height: 120px;
+	-webkit-backface-visibility: hidden;
+	-webkit-transform: translateZ(0) scale(1, 1);
 	transition: all 500ms ease;
 	-moz-transition: all 500ms ease;
 	-ms-transition: all 500ms ease;
@@ -5388,7 +5390,7 @@ nav > div .social-nav {
 }
 
 .commander-info .row .right #commander img {
-	height: 300px;
+	height: 310px;
 }
 
 .screens .row > div img {
@@ -6014,6 +6016,10 @@ header[role=banner] span.icon-upcom-logo {
 
 .commander-info .row .right {
 	padding: 330px 30px 0 30px;
+}
+
+.commander-info .row .right #commander img {
+	height: 390px;
 }
 
 .about-header .row {
