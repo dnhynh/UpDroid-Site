@@ -2000,46 +2000,6 @@ html.sb-active body {
 	white-space: nowrap;
 }
 
-.up1-video {
-	width: 100%;
-	max-width: 100% !important;
-	padding: 0 0;
-	background-color: transparent;
-}
-
-.up1-video .icon-cross {
-	position: absolute;
-	cursor: pointer;
-	color: #fff;
-	top: 0px;
-	right: 0px;
-	font-size: 15px;
-	font-size: 1.5rem;
-}
-
-.up1-video > div {
-	margin-top: 30px;
-	text-align: center;
-}
-
-.up1-video > div .video-container {
-	position: relative;
-	padding-bottom: 56.25%;
-	padding-top: 30px;
-	height: 0;
-	overflow: hidden;
-}
-
-.up1-video > div .video-container iframe,
-.up1-video > div .video-container object,
-.up1-video > div .video-container embed {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-}
-
 .faq {
 	text-align: left;
 }
@@ -2444,6 +2404,26 @@ header[role=banner].inactive span {
 	padding: 80px 21px;
 }
 
+.video .row #content-left,
+.video .row #content-right,
+.video .row .youtube {
+	transition: all 500ms ease;
+	-moz-transition: all 500ms ease;
+	-ms-transition: all 500ms ease;
+	-o-transition: all 500ms ease;
+	-webkit-transition: all 500ms ease;
+}
+
+.video .row .fade {
+	opacity: 0 !important;
+	z-index: 0 !important;
+}
+
+.video .row .visible {
+	opacity: 1 !important;
+	z-index: 1 !important;
+}
+
 .video .row > div:first-of-type {
 	float: left;
 	width: 100%;
@@ -2451,6 +2431,7 @@ header[role=banner].inactive span {
 	min-height: 1px;
 	padding-left: 0;
 	padding-right: 0;
+	z-index: 1;
 }
 
 .video .row > div:first-of-type p {
@@ -2523,11 +2504,6 @@ header[role=banner].inactive span {
 	height: 70vw;
 	width: 70vw;
 	z-index: 1;
-	transition: all 500ms ease;
-	-moz-transition: all 500ms ease;
-	-ms-transition: all 500ms ease;
-	-o-transition: all 500ms ease;
-	-webkit-transition: all 500ms ease;
 }
 
 .video .row > div:nth-of-type(2) > div:first-of-type:hover {
@@ -2576,6 +2552,50 @@ header[role=banner].inactive span {
 .video .row > div:nth-of-type(2) > div:nth-of-type(2) > img:first-of-type {
 	z-index: 0;
 	left: 3px;
+}
+
+.video .row .youtube {
+	opacity: 0;
+	width: 100%;
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin-left: auto;
+	margin-right: auto;
+	z-index: 0;
+}
+
+.video .row .youtube span.icon-cross {
+	position: absolute;
+	cursor: pointer;
+	color: black;
+	top: -30px;
+	right: 0px;
+	font-size: 15px;
+	font-size: 1.5rem;
+}
+
+.video .row .youtube > div .video-container {
+	position: relative;
+	padding-bottom: 56.25%;
+	padding-top: 30px;
+	height: 0;
+	overflow: hidden;
+}
+
+.video .row .youtube > div .video-container iframe,
+.video .row .youtube > div .video-container object,
+.video .row .youtube > div .video-container embed {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+	height: 100%;
+	max-width: 934px;
+	max-height: 556px;
 }
 
 .image-gallery .row > div {
@@ -3830,10 +3850,6 @@ footer[role=contentinfo] p {
 
 @media (min-width: 350px) {
 
-.up1-video > div {
-	margin-top: 0;
-}
-
 .pre-order {
 	width: 100%;
 }
@@ -3844,6 +3860,10 @@ footer[role=contentinfo] p {
 
 .home-header .row img {
 	bottom: 175px;
+}
+
+.video .row .youtube > div {
+	margin-top: 0;
 }
 
 .commander-info .row .left {
@@ -4167,18 +4187,6 @@ body {
 	padding: 0;
 }
 
-.up1-video {
-	width: 80%;
-	padding-top: 40px;
-}
-
-.up1-video .icon-cross {
-	top: 0px;
-	right: 0px;
-	font-size: 20px;
-	font-size: 2rem;
-}
-
 .pre-order {
 	width: 500px;
 }
@@ -4311,6 +4319,17 @@ header[role=banner] span.icon-upcom-logo {
 
 .video .row > div:nth-of-type(2) > div:nth-of-type(2) > img {
 	height: 270px;
+}
+
+.video .row .youtube {
+	width: 90%;
+}
+
+.video .row .youtube span.icon-cross {
+	top: -30px;
+	right: 0px;
+	font-size: 20px;
+	font-size: 2rem;
 }
 
 .image-gallery .row > div {

@@ -1042,6 +1042,11 @@ var Homepage =
 
         $('.play, .play-center').bind("click touchstart", function (event) {
             document.getElementById('play-video').click();
+            var content = $("#content-left,#content-right"); 
+            var video = $(".youtube");
+
+            content.addClass('fade');
+            video.addClass("visible");
         });
     },
     // "Cycle": function () {
