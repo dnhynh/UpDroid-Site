@@ -590,7 +590,7 @@ header[role=banner] {
 
 // Video Section
 
-.video {
+#video {
     background-color: #f1f4f4;
     
     .container {
@@ -703,6 +703,11 @@ header[role=banner] {
                 height: 70vw;
                 width: 70vw;
                 z-index: 1;
+                transition:                    all 500ms ease;
+                    -moz-transition:           all 500ms ease;
+                    -ms-transition:            all 500ms ease;
+                    -o-transition:             all 500ms ease; 
+                    -webkit-transition:        all 500ms ease;
 
                 &:hover {
                     border: 10px solid @brand-red;
@@ -776,10 +781,6 @@ header[role=banner] {
             margin-right: auto;
             z-index: 0;
 
-            @media(min-width: @screen-sm-min) {
-                width: 100%;
-            }
-
             span.icon-cross {
                 position: absolute;
                 cursor: pointer;
@@ -818,8 +819,6 @@ header[role=banner] {
                     margin-right: auto;
                     width: 100%;
                     height: 100%;
-                    max-width: 934px;
-                    max-height: 556px;
                 }
             }
         }
