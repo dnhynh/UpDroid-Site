@@ -139,8 +139,8 @@ var Homepage =
             content.addClass('fade');
             video.addClass("visible");
             setTimeout(function () {content.css({"position": "absolute", "padding": "0"})}, 500);
-            $("#video").css("height", "70vw");
-            $("#video .row").css("padding", "20px");
+            $("#video").css("height", "60vw");
+            $("#video .row").css("padding", "0");
         });
     },
     // "Cycle": function () {
