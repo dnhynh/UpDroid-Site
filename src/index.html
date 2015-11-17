@@ -399,7 +399,7 @@
     });
 
     var trigger = $("#play-video");
-    trigger.click(function () {
+    trigger.bind("click touchstart", function (event) {
         player.playVideo();
     });
 
