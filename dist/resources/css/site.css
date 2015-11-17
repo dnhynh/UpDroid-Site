@@ -2404,8 +2404,6 @@ header[role=banner].inactive span {
 	padding: 80px 21px;
 }
 
-#video .row #content-left,
-#video .row #content-right,
 #video .row .youtube {
 	transition: all 500ms ease;
 	-moz-transition: all 500ms ease;
