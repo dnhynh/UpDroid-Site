@@ -2509,10 +2509,6 @@ header[role=banner].inactive span {
 	-webkit-transition: all 500ms ease;
 }
 
-#video .row > div:nth-of-type(2) > div:first-of-type:hover {
-	border: 10px solid #ff2919;
-}
-
 #video .row > div:nth-of-type(2) > div:first-of-type .play-icon-center {
 	position: relative;
 	margin-left: auto;
@@ -3863,6 +3859,10 @@ footer[role=contentinfo] p {
 	bottom: 175px;
 }
 
+#video .row > div:nth-of-type(2) > div:first-of-type:hover {
+	border: 10px solid #fff;
+}
+
 #video .row .youtube > div {
 	margin-top: 0;
 }
@@ -3883,6 +3883,10 @@ h3 {
 	font-size: 16px;
 	font-size: 1.6rem;
 	line-height: 18px;
+}
+
+#video .row > div:nth-of-type(2) > div:first-of-type:hover {
+	border: 10px solid #ff2919;
 }
 
 #app .row > div #commander img {

@@ -710,7 +710,13 @@ header[role=banner] {
                     -webkit-transition:        all 500ms ease;
 
                 &:hover {
-                    border: 10px solid @brand-red;
+                    @media(min-width: @screen-large-mobile-min) {
+                        border: 10px solid #fff;
+                    }
+
+                    @media(min-width: @screen-xs-min) {
+                        border: 10px solid @brand-red;
+                    }
                 }
 
                 .play-icon-center {
