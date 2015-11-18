@@ -2610,6 +2610,10 @@ header[role=banner].inactive span {
 	margin-top: 21px;
 }
 
+.image-gallery .row > div #body {
+	padding: 0;
+}
+
 .image-gallery .row > div .images {
 	left: 0;
 	position: absolute;
@@ -3948,6 +3952,13 @@ footer[role=contentinfo] p {
 
 .home-header .row img {
 	bottom: 175px;
+}
+
+#exploded .row > div:nth-of-type(2) .circle img {
+	margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	right: 0;
 }
 
 .commander-info .row .left {
