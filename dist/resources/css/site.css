@@ -2422,6 +2422,10 @@ header[role=banner].inactive span {
 	z-index: 1 !important;
 }
 
+#video .row .youtube.visible {
+	width: 100%;
+}
+
 #video .row > div:first-of-type {
 	float: left;
 	width: 100%;
@@ -2555,7 +2559,7 @@ header[role=banner].inactive span {
 
 #video .row .youtube {
 	opacity: 0;
-	width: 100%;
+	width: 0;
 	position: absolute;
 	left: 0;
 	right: 0;
