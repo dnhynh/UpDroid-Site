@@ -1040,7 +1040,7 @@ var Homepage =
             $('.play-icon-center').removeClass('red');
         });
 
-        $('.play, .play-center').bind("click touchstart", function (event) {
+        $('.play, .play-center').bind("click", function (event) {
             document.getElementById('play-video').click();
             var content = $("#content-left,#content-right"); 
             var video = $(".youtube");
