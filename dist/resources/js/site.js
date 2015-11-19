@@ -997,7 +997,6 @@ var Homepage =
         this.DIYkit();
         this.Video();
         this.Commander();
-        this.footer();
         this.Events();
     },
     "Parallax": function () {
@@ -1026,11 +1025,6 @@ var Homepage =
                 $parallax4.css("transform", "translateY(-" + (scrollTop / 3) + "px)");
             });
         }
-    },
-    
-    "footer": function () {
-        $("#powered-by")[0].style.display = "inline";
-        $("#footer")[0].style.backgroundColor = "#eaecec";
     },
 
     "Video": function () {
