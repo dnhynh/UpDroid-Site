@@ -1613,6 +1613,27 @@ header[role=banner] {
                 }
             }
         }
+
+        >div:last-of-type {
+            .make-xs-column(12);
+            margin-top: 20px;
+            padding: 10px 0;
+            height: 40px;
+
+            @media (min-width: @screen-sm-min) {
+                height: 20px;
+                padding: 0;
+            }
+
+            p {
+                display: inline-block;
+            }
+            img {
+                display: inline-block;
+                height: 100%;
+                margin-left: 10px;
+            }
+        }
     }
 }
 
@@ -2515,33 +2536,6 @@ footer[role=contentinfo] {
         @media (min-width: @screen-sm-min) {
             .text-right;
         }
-    }
-}
-
-#powered-by {
-    height: 20px;
-    position: absolute;
-    left: 25%;
-    bottom: 32px;
-    display: none;
-    .hidden-xs;
-
-    @media (min-width: @screen-md-min) {
-        height: 25px;
-    }
-
-    @media (min-width: @screen-lg-min) {
-        bottom: 49px;
-    }
-
-    p {
-        display: inline;
-        padding-right: 14px;
-    }
-
-    img {
-        height: 100%;
-        padding-right: 14px;
     }
 }
 
