@@ -89,6 +89,7 @@ var Homepage =
         this.Video();
         this.Commander();
         this.Events();
+        this.Newsletter();
     },
     "Parallax": function () {
         // Simple test for Mobile Safari
@@ -116,6 +117,18 @@ var Homepage =
                 $parallax4.css("transform", "translateY(-" + (scrollTop / 3) + "px)");
             });
         }
+    },
+
+    "Newsletter": function () {
+        $(document).ready(function () {
+            console.log('firing');
+            var inst = $('[data-remodal-id=newsletter-modal]').remodal();
+
+            /**
+             * Opens the modal window
+             */
+            inst.open();
+        });
     },
 
     "Video": function () {
