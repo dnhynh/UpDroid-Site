@@ -140,9 +140,9 @@ var Homepage =
 
         $(document).ready(function () {
             var inst = $('[data-remodal-id=newsletter-modal]').remodal();
-            if(!getCookie("username") == "visited") {
+            if(getCookie("updroidVisitor") != "visited") {
                 inst.open();
-                setCookie("username", "visited", 1);
+                setCookie("updroidVisitor", "visited", 1);
             }
         });
     },
