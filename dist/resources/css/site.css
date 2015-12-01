@@ -2896,6 +2896,11 @@ header[role=banner].inactive span {
 	color: #fff;
 }
 
+.commander-slider {
+	margin-bottom: 0;
+	background-color: #fff;
+}
+
 .commander {
 	background-image: url('/resources/images/bg-commander-alt.gif');
 	background-color: #fff;
@@ -3773,9 +3778,82 @@ header[role=banner].inactive span {
 	height: 140px;
 }
 
-.form-newsletter .row {
-	padding-bottom: 77px;
-	padding-top: 91px;
+.remodal.newsletter {
+	text-align: left;
+}
+
+.remodal.newsletter .icon-cross {
+	position: absolute;
+	cursor: pointer;
+	color: black;
+	top: 10px;
+	right: 10px;
+	font-size: 15px;
+	font-size: 1.5rem;
+}
+
+.remodal.newsletter p {
+	margin-top: 14px;
+}
+
+.remodal.newsletter > div {
+	position: relative;
+	min-height: 1px;
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.remodal.newsletter form {
+	position: relative;
+	min-height: 1px;
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.remodal.newsletter input {
+	font-family: "Avenir Next LT W01 Bold";
+}
+
+.remodal.newsletter label {
+	font-family: "Avenir Next LT W01 Bold";
+	font-size: 18px;
+	font-size: 1.8rem;
+	color: #666666;
+	display: inline-block;
+	margin-bottom: 7px;
+	width: 100%;
+	margin-top: 14px;
+}
+
+.remodal.newsletter input[type=text],
+.remodal.newsletter input[type=email],
+.remodal.newsletter textarea {
+	font-family: "Avenir Next LT W01 Bold";
+	font-size: 18px;
+	font-size: 1.8rem;
+	border: solid 6px transparent;
+	background-color: #eaecec;
+	color: #1e1e1e;
+	padding: 10px;
+	width: 100%;
+	margin-bottom: 14px;
+}
+
+.remodal.newsletter input[type=text]:focus,
+.remodal.newsletter input[type=email]:focus,
+.remodal.newsletter textarea:focus {
+	border-color: #d5d6d6;
+	outline: none;
+}
+
+.remodal.newsletter input[type=text].error,
+.remodal.newsletter input[type=email].error,
+.remodal.newsletter textarea.error {
+	border-color: #ff2919;
+}
+
+.remodal.newsletter textarea {
+	height: 140px;
 }
 
 .form-contact {
@@ -4890,8 +4968,29 @@ header[role=banner] span.icon-upcom-logo {
 	margin-top: 49px;
 }
 
-.form-newsletter .row {
-	padding-top: 77px;
+.remodal.newsletter .icon-cross {
+	top: 10px;
+	right: 10px;
+	font-size: 20px;
+	font-size: 2rem;
+}
+
+.remodal.newsletter > div {
+	float: left;
+	width: 41.66666667%;
+}
+
+.remodal.newsletter form {
+	margin-left: 8.33333333%;
+}
+
+.remodal.newsletter form {
+	float: left;
+	width: 50%;
+}
+
+.remodal.newsletter label {
+	margin-top: 0;
 }
 
 footer[role=contentinfo] {
@@ -6097,10 +6196,6 @@ header[role=banner] span.icon-upcom-logo {
 
 .people .row > div img {
 	height: 310px;
-}
-
-.form-newsletter .row {
-	padding-top: 119px;
 }
 
 footer[role=contentinfo] {
