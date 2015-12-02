@@ -3260,61 +3260,39 @@ header[role=banner].inactive span {
 	padding-bottom: 50px;
 }
 
-.commander-info h1 {
-	padding-top: 100px;
-	margin-left: 30px;
-	position: relative;
-	min-height: 1px;
-	padding-left: 0;
-	padding-right: 0;
-}
-
-.commander-info h3 {
-	margin-top: 21px;
-	font-size: 19px;
-	font-size: 1.9rem;
-	line-height: 25px;
-	color: #7e7e7e;
-}
-
-.commander-info p {
-	margin-top: 21px;
-}
-
 .commander-info .container {
 	position: relative;
 }
 
 .commander-info .row {
-	position: relative;
+	padding-left: 30px;
 }
 
-.commander-info .row .left {
+.commander-info .left {
+	margin-top: 100px;
+	float: left;
+	width: 100%;
 	position: relative;
 	min-height: 1px;
 	padding-left: 0;
 	padding-right: 0;
-	padding: 0 30px;
 }
 
-.commander-info .row .left a {
+.commander-info .left h1 {
+	font-size: 26px;
+	font-size: 2.6rem;
 	white-space: nowrap;
-	color: #ff2919;
 }
 
-.commander-info .row .left > div:first-of-type {
-	position: relative;
-	min-height: 1px;
-	padding-left: 0;
-	padding-right: 0;
+.commander-info .left h3 {
+	margin-top: 21px;
+	font-size: 19px;
+	font-size: 1.9rem;
+	line-height: 20px;
+	color: #7e7e7e;
 }
 
-.commander-info .row .right {
-	position: relative;
-	min-height: 1px;
-	padding-left: 0;
-	padding-right: 0;
-	padding: 0 30px;
+.commander-info .left p {
 	margin-top: 21px;
 }
 
@@ -3328,9 +3306,9 @@ header[role=banner].inactive span {
 }
 
 #app .row > div:first-of-type {
+	position: relative;
 	float: left;
 	width: 100%;
-	position: relative;
 	min-height: 1px;
 	padding-left: 0;
 	padding-right: 0;
@@ -3354,6 +3332,7 @@ header[role=banner].inactive span {
 	padding-left: 0;
 	padding-right: 0;
 	white-space: nowrap;
+	text-align: center;
 }
 
 #app .row > div #commander img {
@@ -3954,14 +3933,6 @@ footer[role=contentinfo] p {
 	margin-right: auto;
 	left: 0;
 	right: 0;
-}
-
-.commander-info .row .left {
-	padding: 0 30px;
-}
-
-.commander-info .row .right {
-	padding: 0 30px;
 }
 
 }
@@ -4658,44 +4629,14 @@ header[role=banner] span.icon-upcom-logo {
 	padding: 0;
 }
 
-.commander-info {
-	background-image: url('/resources/images/UpCom_Header.png');
-	background-size: 100%;
-	background-repeat: no-repeat;
-	background-position: left 220px;
-	padding-bottom: 150px;
-}
-
-.commander-info h1 {
-	padding-top: 160px;
-}
-
-.commander-info h3 {
-	margin-top: 0;
-}
-
-.commander-info .row .left {
-	padding: 220px 20px 30px 30px;
-}
-
-.commander-info .row .right {
-	margin-top: 0;
-	padding: 0px 30px 0 30px;
-}
-
 #app {
 	padding-top: 80px;
 	padding-bottom: 80px;
 }
 
-#app .row > div:first-of-type {
-	float: left;
-	width: 25%;
-}
-
 #app .row > div #commander {
 	float: left;
-	width: 75%;
+	width: 100%;
 }
 
 #app .row > div #commander img {
@@ -5499,36 +5440,13 @@ nav > div .social-nav {
 	margin-top: 21px;
 }
 
-.commander-info h1 {
-	float: left;
-	width: 100%;
-}
-
-.commander-info .row .left {
+.commander-info .left {
 	float: left;
 	width: 25%;
 }
 
-.commander-info .row .left {
-	padding: 260px 0px 0 30px;
-}
-
-.commander-info .row .left > div:first-of-type {
-	float: left;
-	width: 100%;
-}
-
-.commander-info .row .right {
-	float: left;
-	width: 75%;
-}
-
-.commander-info .row .right {
-	padding: 260px 30px 0 30px;
-}
-
 #app .row > div #commander img {
-	height: 310px;
+	height: 450px;
 }
 
 .screens .row > div img {
@@ -6144,14 +6062,6 @@ header[role=banner] span.icon-upcom-logo {
 	font-size: 1.3rem;
 }
 
-.commander-info .row .left {
-	padding: 330px 30px 0 30px;
-}
-
-.commander-info .row .right {
-	padding: 330px 30px 0 30px;
-}
-
 #app .row > div #commander img {
 	height: 390px;
 }
@@ -6265,10 +6175,6 @@ td.visible-xs {
 }
 
 .inside .row > div:first-of-type > img {
-	display: none !important;
-}
-
-.commander-info .hide-xs {
 	display: none !important;
 }
 

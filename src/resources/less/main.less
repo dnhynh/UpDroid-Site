@@ -1653,104 +1653,36 @@ header[role=banner] {
     width: 100%;
     padding-bottom: 50px;
 
-    .hide-xs {
-        .hidden-xs;
-    }
-
-    @media (min-width: @screen-sm-min) {
-        background-image: url('/resources/images/UpCom_Header.png');
-        background-size: 100%;
-        background-repeat: no-repeat;
-        background-position: left 220px;
-        padding-bottom: 150px;
-    }
-
-    h1 {
-        padding-top: 100px;
-        @media (min-width: @screen-sm-min) {
-            padding-top: 160px;            
-        }    
-        margin-left: 30px;
-        .make-md-column(12);
-    }
-
-    h3 {
-        margin-top: 21px;
-        @media (min-width: @screen-sm-min) {
-            margin-top: 0;
-        }
-        .font-size(1.9);
-        line-height: 25px;
-        color: #7e7e7e;
-    }
-
-    p {
-        margin-top: 21px;
-    }
-
     .container {
         position: relative;
     }
 
     .row {
-        position: relative;
+        padding-left: 30px;
+    }
 
-        .left {
-            .make-md-column(3);
-            padding: 0 30px;
+    .left {
+        margin-top: 100px;
+        .make-xs-column(12);
+        .make-md-column(3);
 
-            @media (min-width: @screen-large-mobile-min) {
-                padding: 0 30px;
-            }
-
-            @media (min-width: @screen-sm-min) {
-                padding: 220px 20px 30px 30px;
-            }
-
-            @media (min-width: @screen-md-min) {
-                padding: 260px 0px 0 30px;
-            }
-
-            @media (min-width: @screen-lg-min) {
-                padding: 330px 30px 0 30px;
-            }
-
-            a {
-                white-space: nowrap;
-                color: #ff2919;
-            }
-
-            >div {
-                &:first-of-type {
-                    .make-md-column(12);
-                }
-            }
+        h1 {
+            .font-size(2.6);
+            white-space: nowrap;
         }
 
-        .right {
-            .make-md-column(9);
-            padding: 0 30px;
+        h3 {
             margin-top: 21px;
+            .font-size(1.9);
+            line-height: 20px;
+            color: #7e7e7e;
+        }
 
-            @media (min-width: @screen-large-mobile-min) {
-                padding: 0 30px;
-            }
-
-            @media (min-width: @screen-sm-min) {
-                margin-top: 0;
-                padding: 0px 30px 0 30px;
-            }
-
-            @media (min-width: @screen-md-min) {
-                padding: 260px 30px 0 30px;
-            }
-
-
-            @media (min-width: @screen-lg-min) {
-                padding: 330px 30px 0 30px;
-            }
+        p {
+            margin-top: 21px;
         }
     }
+
 }
 
 #app {
@@ -1770,7 +1702,6 @@ header[role=banner] {
         >div {
             &:first-of-type {
                 .make-xs-column(12);
-                .make-sm-column(3);
 
                 h3 {
                     .font-size(1.9);
@@ -1784,8 +1715,9 @@ header[role=banner] {
 
             #commander {
                 .make-xs-column(12);
-                .make-sm-column(9);
+                .make-sm-column(12);
                 white-space: nowrap;
+                text-align: center;
 
             img {
                 position: relative;
@@ -1802,7 +1734,7 @@ header[role=banner] {
                 }
 
                 @media (min-width: @screen-md-min) {
-                    height: 310px;
+                    height: 450px;
                 }
 
                 @media (min-width: @screen-lg-min) {
