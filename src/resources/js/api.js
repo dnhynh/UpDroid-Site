@@ -151,26 +151,26 @@ var Homepage =
             return "";
         }
 
-        $(document).ready(function () {
-            function validateEmail(email) {
-                var re = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i;
-                return re.test(email);
-            }
+        // $(document).ready(function () {
+        //     function validateEmail(email) {
+        //         var re = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i;
+        //         return re.test(email);
+        //     }
 
-            $("#mc-embedded-subscribe").click(function() {
-                var email = $("#mce-EMAIL").val();
+        //     $("#mc-embedded-subscribe").click(function() {
+        //         var email = $("#mce-EMAIL").val();
 
-                if(validateEmail(email) == true) {
-                    setCookie("mailingList", "subscribed", 365);
-                }
-            });
+        //         if(validateEmail(email) == true) {
+        //             setCookie("mailingList", "subscribed", 365);
+        //         }
+        //     });
 
-            var inst = $('[data-remodal-id=newsletter]').remodal();
-            if(getCookie("updroidVisitor") != "visited") {
-                inst.open();
-                setCookie("updroidVisitor", "visited", 1);
-            }
-        });
+        //     var inst = $('[data-remodal-id=newsletter]').remodal();
+        //     if(getCookie("updroidVisitor") != "visited") {
+        //         inst.open();
+        //         setCookie("updroidVisitor", "visited", 1);
+        //     }
+        // });
     },
 
     "Video": function () {
