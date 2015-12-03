@@ -592,13 +592,16 @@ header[role=banner] {
 
 #video {
     background-color: #f1f4f4;
+    background-image: url("/resources/images/photos/1.png");
+    background-size: 100%;
+    height: 54vw;
     
     .container {
 
     }
 
     .row {
-        padding: 80px 21px;
+        padding: 21px 21px;
         @media(min-width: @screen-sm-min) {
             padding: 80px 0;
         }
@@ -627,22 +630,30 @@ header[role=banner] {
             .make-md-column(3);
             z-index: 1;
 
-            @media (min-width: @screen-sm-min) {
-                margin-left: 35px;
-            }
+            margin-left: 0;
 
             @media (min-width: @screen-md-min) {
                 margin-left: 50px;
             }
 
+            >h1 {
+                color: #fff;
+                .font-size(2);
+                @media (min-width: @screen-sm-min) {
+                    .font-size(2.8);
+                }
+            }
+
             p {
                 margin-top: 21px;
+                color: #fff;
             }
 
             .play {
-
-                .hidden-xs;
-                margin-top: 21px;
+                margin-top: 9px;
+                @media (min-width: @screen-sm-min) {
+                    margin-top: 21px;                
+                }
                 border-radius: 50%;
                 width: 45px;
                 height: 45px;
@@ -656,14 +667,11 @@ header[role=banner] {
                     -webkit-transition:        all 500ms ease;
 
                 &:hover {
-                    background-color: #fff;
-                }
-
-                &:hover {
+                    background-color: transparent;
                     .play-icon {
                         border-left: 10px solid @brand-red;
                     }
-                } 
+                }
 
                 .play-icon {
                     position: relative;
@@ -848,6 +856,13 @@ header[role=banner] {
             background-color: #eaecec;
         }
 
+        &:last-of-type {
+            text-align: center;
+            @media(min-width: @screen-sm-min) {
+                text-align: left;
+            }
+        }
+
         header {
             .transform(translateY(-50%));
             padding-left: 21px;
@@ -887,6 +902,7 @@ header[role=banner] {
             }
 
             .cycle-pager {
+
                 .text-center;
                 bottom: 27px;
                 display: block;

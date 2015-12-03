@@ -898,6 +898,12 @@ table {
 
 /* REM Font size with Pixel fallback */
 
+/* Add Curve to Buttons */
+
+.btn {
+	border-radius: 3px;
+}
+
 /* 100% Viewport Height */
 
 /* Triangle Right */
@@ -2398,10 +2404,13 @@ header[role=banner].inactive span {
 
 #video {
 	background-color: #f1f4f4;
+	background-image: url("/resources/images/photos/1.png");
+	background-size: 100%;
+	height: 54vw;
 }
 
 #video .row {
-	padding: 80px 21px;
+	padding: 21px 21px;
 }
 
 #video .row .fade {
@@ -2426,14 +2435,22 @@ header[role=banner].inactive span {
 	padding-left: 0;
 	padding-right: 0;
 	z-index: 1;
+	margin-left: 0;
+}
+
+#video .row > div:first-of-type > h1 {
+	color: #fff;
+	font-size: 20px;
+	font-size: 2rem;
 }
 
 #video .row > div:first-of-type p {
 	margin-top: 21px;
+	color: #fff;
 }
 
 #video .row > div:first-of-type .play {
-	margin-top: 21px;
+	margin-top: 9px;
 	border-radius: 50%;
 	width: 45px;
 	height: 45px;
@@ -2448,7 +2465,7 @@ header[role=banner].inactive span {
 }
 
 #video .row > div:first-of-type .play:hover {
-	background-color: #fff;
+	background-color: transparent;
 }
 
 #video .row > div:first-of-type .play:hover .play-icon {
@@ -2604,6 +2621,10 @@ header[role=banner].inactive span {
 
 .image-gallery .row > div:nth-of-type(even) {
 	background-color: #eaecec;
+}
+
+.image-gallery .row > div:last-of-type {
+	text-align: center;
 }
 
 .image-gallery .row > div header {
@@ -4354,8 +4375,13 @@ header[role=banner] span.icon-upcom-logo {
 	width: 25%;
 }
 
-#video .row > div:first-of-type {
-	margin-left: 35px;
+#video .row > div:first-of-type > h1 {
+	font-size: 28px;
+	font-size: 2.8rem;
+}
+
+#video .row > div:first-of-type .play {
+	margin-top: 21px;
 }
 
 #video .row > div:nth-of-type(2) {
@@ -4400,6 +4426,10 @@ header[role=banner] span.icon-upcom-logo {
 
 .image-gallery .row > div {
 	padding-bottom: 33.3%;
+}
+
+.image-gallery .row > div:last-of-type {
+	text-align: left;
 }
 
 .image-gallery .row > div header {
@@ -6159,10 +6189,6 @@ td.visible-xs {
 }
 
 .home-header .icon-arrow-down {
-	display: none !important;
-}
-
-#video .row > div:first-of-type .play {
 	display: none !important;
 }
 
