@@ -998,7 +998,7 @@ var Homepage =
         this.Video();
         // this.Commander();
         this.Events();
-        // this.Newsletter();
+        this.Newsletter();
     },
     "Parallax": function () {
         // Simple test for Mobile Safari
@@ -1028,46 +1028,59 @@ var Homepage =
         }
     },
 
-    // "Newsletter": function () {
-    //     function setCookie(cname, cvalue, exdays) {
-    //         var d = new Date();
-    //         d.setTime(d.getTime() + (exdays*24*60*60*1000));
-    //         var expires = "expires="+d.toUTCString();
-    //         document.cookie = cname + "=" + cvalue + "; " + expires;
-    //     }
+    "Newsletter": function () {
+        var inst = $('[data-remodal-id=newsletter]').remodal();
+        var bottomed = false;
 
-    //     function getCookie(cname) {
-    //         var name = cname + "=";
-    //         var ca = document.cookie.split(';');
-    //         for(var i=0; i<ca.length; i++) {
-    //             var c = ca[i];
-    //             while (c.charAt(0)==' ') c = c.substring(1);
-    //             if (c.indexOf(name) == 0) return c.substring(name.length, c.length);
-    //         }
-    //         return "";
-    //     }
+        // Detect scroll to bottom and show mailing list sign up
+        $(document).scroll(function () {
+            var height = $(document).height();
+            var scrollTop = ($(window).scrollTop() + $(window).height());
+            if (height - scrollTop <= 20 && bottomed == false) {
+                inst.open();
+                bottomed = true;
+            }
+        });
 
-    //     $(document).ready(function () {
-    //         function validateEmail(email) {
-    //             var re = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i;
-    //             return re.test(email);
-    //         }
+        function setCookie(cname, cvalue, exdays) {
+            var d = new Date();
+            d.setTime(d.getTime() + (exdays*24*60*60*1000));
+            var expires = "expires="+d.toUTCString();
+            document.cookie = cname + "=" + cvalue + "; " + expires;
+        }
 
-    //         $("#mc-embedded-subscribe").click(function() {
-    //             var email = $("#mce-EMAIL").val();
+        function getCookie(cname) {
+            var name = cname + "=";
+            var ca = document.cookie.split(';');
+            for(var i=0; i<ca.length; i++) {
+                var c = ca[i];
+                while (c.charAt(0)==' ') c = c.substring(1);
+                if (c.indexOf(name) == 0) return c.substring(name.length, c.length);
+            }
+            return "";
+        }
 
-    //             if(validateEmail(email) == true) {
-    //                 setCookie("mailingList", "subscribed", 365);
-    //             }
-    //         });
+        $(document).ready(function () {
+            function validateEmail(email) {
+                var re = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i;
+                return re.test(email);
+            }
 
-    //         var inst = $('[data-remodal-id=newsletter]').remodal();
-    //         if(getCookie("updroidVisitor") != "visited") {
-    //             inst.open();
-    //             setCookie("updroidVisitor", "visited", 1);
-    //         }
-    //     });
-    // },
+            $("#mc-embedded-subscribe").click(function() {
+                var email = $("#mce-EMAIL").val();
+
+                if(validateEmail(email) == true) {
+                    setCookie("mailingList", "subscribed", 365);
+                }
+            });
+
+            var inst = $('[data-remodal-id=newsletter]').remodal();
+            if(getCookie("updroidVisitor") != "visited") {
+                inst.open();
+                setCookie("updroidVisitor", "visited", 1);
+            }
+        });
+    },
 
     "Video": function () {
         $('.play-center').hover(function () {
@@ -1390,16 +1403,16 @@ var Homepage =
 
     "Events": function () {
         document.getElementById( 'top-order' ).addEventListener( 'click', function() {
-            ga('send', 'event', 'link', 'PreOrder', 'button-top');
+            ga('send', 'event', 'link', 'MailingList', 'button-top');
         });
 
-        document.getElementById( 'bottom-order' ).addEventListener( 'click', function() {
-            ga('send', 'event', 'link', 'PreOrder', 'button-bottom');
-        });
+        // document.getElementById( 'bottom-order' ).addEventListener( 'click', function() {
+        //     ga('send', 'event', 'link', 'PreOrder', 'button-bottom');
+        // });
 
-        document.getElementById( 'confirm-diy' ).addEventListener( 'click', function() {
-            ga('send', 'event', 'link', 'PreOrder', 'confirmed');
-        });
+        // document.getElementById( 'confirm-diy' ).addEventListener( 'click', function() {
+        //     ga('send', 'event', 'link', 'PreOrder', 'confirmed');
+        // });
     }
 };
 
