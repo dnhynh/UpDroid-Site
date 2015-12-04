@@ -2404,13 +2404,27 @@ header[role=banner].inactive span {
 
 #video {
 	background-color: #f1f4f4;
-	background-image: url("/resources/images/photos/1.png");
+	height: 75vh;
+	overflow: hidden;
+}
+
+#video .parallax-photo {
+	position: relative;
+	top: -35vw;
+	height: 150%;
+	background-image: url("/resources/images/photos/7.png");
+	background-repeat: no-repeat;
 	background-size: 100%;
-	height: 54vw;
 }
 
 #video .row {
 	padding: 21px 21px;
+}
+
+#video .row > a {
+	width: 20vw;
+	position: absolute;
+	left: 50%;
 }
 
 #video .row .fade {
@@ -2425,145 +2439,6 @@ header[role=banner].inactive span {
 
 #video .row .youtube.visible {
 	width: 100%;
-}
-
-#video .row > div:first-of-type {
-	float: left;
-	width: 100%;
-	position: relative;
-	min-height: 1px;
-	padding-left: 0;
-	padding-right: 0;
-	z-index: 1;
-	margin-left: 0;
-}
-
-#video .row > div:first-of-type > h1 {
-	color: #fff;
-	font-size: 20px;
-	font-size: 2rem;
-}
-
-#video .row > div:first-of-type p {
-	margin-top: 21px;
-	color: #fff;
-}
-
-#video .row > div:first-of-type .play {
-	margin-top: 9px;
-	border-radius: 50%;
-	width: 45px;
-	height: 45px;
-	text-align: center;
-	background-color: #ff2919;
-	cursor: pointer;
-	transition: all 500ms ease;
-	-moz-transition: all 500ms ease;
-	-ms-transition: all 500ms ease;
-	-o-transition: all 500ms ease;
-	-webkit-transition: all 500ms ease;
-}
-
-#video .row > div:first-of-type .play:hover {
-	background-color: transparent;
-}
-
-#video .row > div:first-of-type .play:hover .play-icon {
-	border-left: 10px solid #ff2919;
-}
-
-#video .row > div:first-of-type .play .play-icon {
-	position: relative;
-	margin-left: auto;
-	margin-right: auto;
-	left: 2px;
-	transform: translateY(-50%);
-	top: 50%;
-	width: 0;
-	height: 0;
-	border-top: 7px solid transparent;
-	border-bottom: 7px solid transparent;
-	border-left: 10px solid #fff;
-	transition: all 500ms ease;
-	-moz-transition: all 500ms ease;
-	-ms-transition: all 500ms ease;
-	-o-transition: all 500ms ease;
-	-webkit-transition: all 500ms ease;
-}
-
-#video .row > div:nth-of-type(2) {
-	float: left;
-	width: 100%;
-	position: relative;
-	min-height: 1px;
-	padding-left: 0;
-	padding-right: 0;
-	padding-bottom: 80px;
-}
-
-#video .row > div:nth-of-type(2) > div:first-of-type {
-	position: relative;
-	min-height: 1px;
-	padding-left: 0;
-	padding-right: 0;
-	cursor: pointer;
-	margin-top: 21px;
-	margin-left: auto;
-	margin-right: auto;
-	border-radius: 50%;
-	border: 10px solid #fff;
-	height: 70vw;
-	width: 70vw;
-	z-index: 1;
-	transition: all 500ms ease;
-	-moz-transition: all 500ms ease;
-	-ms-transition: all 500ms ease;
-	-o-transition: all 500ms ease;
-	-webkit-transition: all 500ms ease;
-}
-
-#video .row > div:nth-of-type(2) > div:first-of-type .play-icon-center {
-	position: relative;
-	margin-left: auto;
-	margin-right: auto;
-	left: 2px;
-	transform: translateY(-50%);
-	top: 50%;
-	width: 0;
-	height: 0;
-	border-top: 40px solid transparent;
-	border-bottom: 40px solid transparent;
-	border-left: 50px solid #fff;
-	transition: all 500ms ease;
-	-moz-transition: all 500ms ease;
-	-ms-transition: all 500ms ease;
-	-o-transition: all 500ms ease;
-	-webkit-transition: all 500ms ease;
-}
-
-#video .row > div:nth-of-type(2) > div:first-of-type .play-icon-center.red {
-	border-top: 40px solid transparent;
-	border-bottom: 40px solid transparent;
-	border-left: 50px solid #ff2919;
-}
-
-#video .row > div:nth-of-type(2) > div:nth-of-type(2) {
-	width: 100%;
-	position: absolute;
-	bottom: 6vw;
-}
-
-#video .row > div:nth-of-type(2) > div:nth-of-type(2) > img {
-	position: relative;
-	display: inline-block;
-	z-index: 2;
-	height: 40vw;
-	cursor: pointer;
-}
-
-#video .row > div:nth-of-type(2) > div:nth-of-type(2) > img:first-of-type {
-	z-index: 0;
-	left: 3px;
 }
 
 #video .row .youtube {
@@ -3941,10 +3816,6 @@ footer[role=contentinfo] p {
 	bottom: 175px;
 }
 
-#video .row > div:nth-of-type(2) > div:first-of-type:hover {
-	border: 10px solid #fff;
-}
-
 #video .row .youtube > div {
 	margin-top: 0;
 }
@@ -3964,10 +3835,6 @@ h3 {
 	font-size: 16px;
 	font-size: 1.6rem;
 	line-height: 18px;
-}
-
-#video .row > div:nth-of-type(2) > div:first-of-type:hover {
-	border: 10px solid #ff2919;
 }
 
 #app .row > div #commander img {
@@ -4368,48 +4235,6 @@ header[role=banner] span.icon-upcom-logo {
 
 #video .row {
 	padding: 80px 0;
-}
-
-#video .row > div:first-of-type {
-	float: left;
-	width: 25%;
-}
-
-#video .row > div:first-of-type > h1 {
-	font-size: 28px;
-	font-size: 2.8rem;
-}
-
-#video .row > div:first-of-type .play {
-	margin-top: 21px;
-}
-
-#video .row > div:nth-of-type(2) {
-	float: left;
-	width: 66.66666667%;
-}
-
-#video .row > div:nth-of-type(2) > div:first-of-type {
-	float: left;
-	width: 50%;
-}
-
-#video .row > div:nth-of-type(2) > div:first-of-type {
-	margin-left: 8.33333333%;
-}
-
-#video .row > div:nth-of-type(2) > div:first-of-type {
-	margin-top: 50px;
-	width: 400px;
-	height: 400px;
-}
-
-#video .row > div:nth-of-type(2) > div:nth-of-type(2) {
-	bottom: -15px;
-}
-
-#video .row > div:nth-of-type(2) > div:nth-of-type(2) > img {
-	height: 270px;
 }
 
 #video .row .youtube span.icon-cross {
@@ -5337,15 +5162,6 @@ nav > div .social-nav {
 .home-header .icon-arrow-down {
 	bottom: 70px;
 	left: 28px;
-}
-
-#video .row > div:first-of-type {
-	float: left;
-	width: 25%;
-}
-
-#video .row > div:first-of-type {
-	margin-left: 50px;
 }
 
 .image-gallery .row > div header {

@@ -592,9 +592,17 @@ header[role=banner] {
 
 #video {
     background-color: #f1f4f4;
-    background-image: url("/resources/images/photos/1.png");
-    background-size: 100%;
-    height: 54vw;
+    height: 75vh;
+    overflow: hidden;
+
+    .parallax-photo {
+        position: relative;
+        top: -35vw;
+        height: 150%;
+        background-image: url("/resources/images/photos/7.png");
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
     
     .container {
 
@@ -606,8 +614,10 @@ header[role=banner] {
             padding: 80px 0;
         }
 
-        .youtube {
-
+        >a {
+            width: 20vw;
+            position: absolute;
+            left: 50%;
         }
 
         .fade {
@@ -622,166 +632,6 @@ header[role=banner] {
 
         .youtube.visible {
             width: 100%;
-        }
-
-        >div:first-of-type {
-            .make-xs-column(12);
-            .make-sm-column(3);
-            .make-md-column(3);
-            z-index: 1;
-
-            margin-left: 0;
-
-            @media (min-width: @screen-md-min) {
-                margin-left: 50px;
-            }
-
-            >h1 {
-                color: #fff;
-                .font-size(2);
-                @media (min-width: @screen-sm-min) {
-                    .font-size(2.8);
-                }
-            }
-
-            p {
-                margin-top: 21px;
-                color: #fff;
-            }
-
-            .play {
-                margin-top: 9px;
-                @media (min-width: @screen-sm-min) {
-                    margin-top: 21px;                
-                }
-                border-radius: 50%;
-                width: 45px;
-                height: 45px;
-                text-align: center;
-                background-color: @brand-red;
-                cursor: pointer;
-                transition:                    all 500ms ease;
-                    -moz-transition:           all 500ms ease;
-                    -ms-transition:            all 500ms ease;
-                    -o-transition:             all 500ms ease; 
-                    -webkit-transition:        all 500ms ease;
-
-                &:hover {
-                    background-color: transparent;
-                    .play-icon {
-                        border-left: 10px solid @brand-red;
-                    }
-                }
-
-                .play-icon {
-                    position: relative;
-                    margin-left: auto;
-                    margin-right: auto;
-                    left: 2px;
-                    transform: translateY(-50%);
-                    top: 50%;
-                    width: 0;
-                    height: 0;
-                    border-top: 7px solid transparent;
-                    border-bottom: 7px solid transparent;
-                    border-left: 10px solid #fff;
-                    transition:                    all 500ms ease;
-                        -moz-transition:           all 500ms ease;
-                        -ms-transition:            all 500ms ease;
-                        -o-transition:             all 500ms ease; 
-                        -webkit-transition:        all 500ms ease;
-                }
-            }
-        }
-
-        >div:nth-of-type(2) {
-            .make-xs-column(12);
-            .make-sm-column(8);
-            padding-bottom: 80px;
-            >div:first-of-type {
-                .make-sm-column(6);
-                .make-sm-column-offset(1);
-                cursor: pointer;
-                margin-top: 21px;
-                margin-left: auto;
-                margin-right: auto;
-                border-radius: 50%;
-                border: 10px solid #fff;
-                height: 70vw;
-                width: 70vw;
-                z-index: 1;
-                transition:                    all 500ms ease;
-                    -moz-transition:           all 500ms ease;
-                    -ms-transition:            all 500ms ease;
-                    -o-transition:             all 500ms ease; 
-                    -webkit-transition:        all 500ms ease;
-
-                &:hover {
-                    @media(min-width: @screen-large-mobile-min) {
-                        border: 10px solid #fff;
-                    }
-
-                    @media(min-width: @screen-xs-min) {
-                        border: 10px solid @brand-red;
-                    }
-                }
-
-                .play-icon-center {
-                    position: relative;
-                    margin-left: auto;
-                    margin-right: auto;
-                    left: 2px;
-                    transform: translateY(-50%);
-                    top: 50%;
-                    width: 0;
-                    height: 0;
-                    border-top: 40px solid transparent;
-                    border-bottom: 40px solid transparent;
-                    border-left: 50px solid #fff;
-                    transition:                    all 500ms ease;
-                        -moz-transition:           all 500ms ease;
-                        -ms-transition:            all 500ms ease;
-                        -o-transition:             all 500ms ease; 
-                        -webkit-transition:        all 500ms ease;
-                }
-                .play-icon-center.red {
-                    border-top: 40px solid transparent;
-                    border-bottom: 40px solid transparent;
-                    border-left: 50px solid @brand-red;
-                }
-
-                @media(min-width: @screen-sm-min) {
-                    margin-top: 50px;
-                    width: 400px;
-                    height: 400px;
-                }
-            }
-            >div:nth-of-type(2) {
-                width: 100%;
-                position: absolute;
-                bottom: 6vw;
-
-                @media (min-width: @screen-sm-min) {
-                    bottom: -15px;
-                }
-
-                >img {
-                    position: relative;
-                    display: inline-block;
-                    z-index: 2;
-                    height: 40vw;
-                    cursor: pointer;
-
-                    @media (min-width: @screen-sm-min) {
-                        height: 270px;
-                    }
-
-                    &:first-of-type {
-                        z-index: 0;
-                        left: 3px;
-                    }
-                }
-            }
         }
 
         .youtube {

@@ -118,14 +118,14 @@ var Homepage =
             });
         }
 
-        // var controller = new ScrollMagic.Controller({globalSceneOptions: {triggerHook: "onEnter", duration: "200%"}});
+        var controller = new ScrollMagic.Controller({globalSceneOptions: {triggerHook: "onEnter", duration: "150%"}});
 
-        // // build scenes
-        // new ScrollMagic.Scene({triggerElement: "#video > *"})
-        //     .setTween("#parallax1", {y: "80%", ease: Linear.easeNone}).on("start", function () {
-        //         console.log("firing");
-        //     })
-        //     .addTo(controller);
+        // build scenes
+        new ScrollMagic.Scene({triggerElement: "#video"})
+            .setTween(".parallax-photo", {y: "70%", ease: Linear.easeNone}).on("start", function () {
+                console.log("firing");
+            })
+            .addTo(controller);
     },
 
     "Newsletter": function () {
