@@ -1137,28 +1137,17 @@ var Homepage =
         var base = $("#sBase");
 
         var controller = new ScrollMagic.Controller();
+        var offset = ($("#exploded").height()/2);
+        console.log(offset);
 
-        if ($(document).width() > 992) {
-            new ScrollMagic.Scene({
-              triggerElement: "#exploded", 
-              offset: 310,
-              duration: 3000
-            })
-            .setPin('#exploded')
-            .addTo(controller);
 
-        }
-
-        else {
-            new ScrollMagic.Scene({
-              triggerElement: "#exploded", 
-              offset: 240,
-              duration: 3000 
-            })
-            .setPin('#exploded')
-            .addTo(controller);
-
-        }
+        new ScrollMagic.Scene({
+          triggerElement: "#exploded", 
+          offset: offset,
+          duration: 3000
+        })
+        .setPin('#exploded')
+        .addTo(controller);
 
 
         

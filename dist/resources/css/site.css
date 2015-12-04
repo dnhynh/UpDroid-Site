@@ -2404,7 +2404,7 @@ header[role=banner].inactive span {
 
 #video {
 	background-color: #f1f4f4;
-	height: 75vh;
+	height: 45vw;
 	overflow: hidden;
 }
 
@@ -2483,117 +2483,18 @@ header[role=banner].inactive span {
 	height: 100%;
 }
 
-.image-gallery .row > div {
-	float: left;
+.up1-control {
+	background-color: #fff;
+}
+
+.up1-control img {
+	margin-top: 100px;
 	width: 100%;
-	min-height: 1px;
-	padding-left: 0;
-	padding-right: 0;
-	background-color: #ffffff;
-	padding-bottom: 100%;
-	position: relative;
-}
-
-.image-gallery .row > div:nth-of-type(even) {
-	background-color: #eaecec;
-}
-
-.image-gallery .row > div:last-of-type {
-	text-align: center;
-}
-
-.image-gallery .row > div header {
-	-webkit-transform: translateY(-50%);
-	-moz-transform: translateY(-50%);
-	-o-transform: translateY(-50%);
-	-ms-transform: translateY(-50%);
-	transform: translateY(-50%);
-	padding-left: 21px;
-	padding-right: 10%;
-	position: absolute;
-	top: 50%;
-}
-
-.image-gallery .row > div header p {
-	margin-top: 21px;
-}
-
-.image-gallery .row > div #body {
-	padding: 0;
-}
-
-.image-gallery .row > div .images {
-	left: 0;
-	position: absolute;
-	top: 0;
-	width: 100%;
-	padding: 10% 10%;
-}
-
-.image-gallery .row > div .images img {
-	width: 100%;
-}
-
-.image-gallery .row > div .images .cycle-pager {
-	text-align: center;
-	bottom: 27px;
-	display: block;
-	left: 0;
-	overflow: hidden;
-	position: absolute;
-	width: 100%;
-	z-index: 500;
-}
-
-.image-gallery .row > div .images .cycle-pager span {
-	-webkit-border-top-right-radius: 50%;
-	-webkit-border-bottom-right-radius: 50%;
-	-webkit-border-bottom-left-radius: 50%;
-	-webkit-border-top-left-radius: 50%;
-	-moz-border-radius-topright: 50%;
-	-moz-border-radius-bottomright: 50%;
-	-moz-border-radius-bottomleft: 50%;
-	-moz-border-radius-topleft: 50%;
-	border-top-right-radius: 50%;
-	border-bottom-right-radius: 50%;
-	border-bottom-left-radius: 50%;
-	border-top-left-radius: 50%;
-	-moz-background-clip: padding-box;
-	-webkit-background-clip: padding-box;
-	background-clip: padding-box;
-	font: 0/0 a;
-	color: transparent;
-	text-shadow: none;
-	background-color: transparent;
-	border: 0;
-	background-color: #cdcfcf;
-	cursor: pointer;
-	display: inline-block;
-	height: 8px;
-	margin: 0 8px;
-	width: 8px;
-}
-
-.image-gallery .row > div .images .cycle-pager span.cycle-pager-active {
-	background-color: #0c0c0c;
-}
-
-.image-gallery .row > div > span {
-	font-family: "Monosten A";
-	font-size: 14px;
-	font-size: 1.4rem;
-	line-height: 20px;
-	left: 21px;
-	position: absolute;
-}
-
-.image-gallery .row > div > span:first-of-type {
-	top: 21px;
-	z-index: 2;
 }
 
 #exploded {
 	background-color: #f1f4f4;
+	height: 100vh;
 }
 
 #exploded .row {
@@ -4244,39 +4145,6 @@ header[role=banner] span.icon-upcom-logo {
 	font-size: 2rem;
 }
 
-.image-gallery .row > div {
-	float: left;
-	width: 33.33333333%;
-}
-
-.image-gallery .row > div {
-	padding-bottom: 33.3%;
-}
-
-.image-gallery .row > div:last-of-type {
-	text-align: left;
-}
-
-.image-gallery .row > div header {
-	padding-left: 10%;
-	padding-right: 10%;
-}
-
-.image-gallery .row > div .images .cycle-pager {
-	bottom: 20px;
-}
-
-.image-gallery .row > div > span {
-	font-size: 13px;
-	font-size: 1.3rem;
-	left: 14px;
-	line-height: 18px;
-}
-
-.image-gallery .row > div > span:first-of-type {
-	top: 14px;
-}
-
 #exploded .row {
 	padding: 0 50px;
 	margin: 80px 0;
@@ -5164,23 +5032,6 @@ nav > div .social-nav {
 	left: 28px;
 }
 
-.image-gallery .row > div header {
-	padding-left: 20%;
-	padding-right: 20%;
-}
-
-.image-gallery .row > div .images .cycle-pager {
-	bottom: 27px;
-}
-
-.image-gallery .row > div > span {
-	left: 21px;
-}
-
-.image-gallery .row > div > span:first-of-type {
-	top: 21px;
-}
-
 #exploded .row > div:nth-of-type(2) .circle {
 	width: 400px;
 	height: 400px;
@@ -5877,12 +5728,6 @@ header[role=banner] span.icon-upcom-logo {
 .home-header .icon-arrow-down {
 	bottom: 140px;
 	left: 49px;
-}
-
-.image-gallery .row > div > span {
-	font-size: 14px;
-	font-size: 1.4rem;
-	line-height: 20px;
 }
 
 .editor > div:nth-of-type(4) > br {
