@@ -122,9 +122,7 @@ var Homepage =
 
         // build scenes
         new ScrollMagic.Scene({triggerElement: "#video"})
-            .setTween(".parallax-photo", {y: "70%", ease: Linear.easeNone}).on("start", function () {
-                console.log("firing");
-            })
+            .setTween(".parallax-photo", {y: "70%", ease: Linear.easeNone})
             .addTo(controller);
     },
 
@@ -229,8 +227,6 @@ var Homepage =
 
         var controller = new ScrollMagic.Controller();
         var offset = ($("#exploded").height()/2);
-        console.log(offset);
-
 
         new ScrollMagic.Scene({
           triggerElement: "#exploded", 
