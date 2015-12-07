@@ -2506,85 +2506,6 @@ header[role=banner].inactive span {
 	padding: 0 21px;
 }
 
-#exploded .row > div:nth-of-type(2) {
-	float: left;
-	width: 100%;
-	position: relative;
-	min-height: 1px;
-	padding-left: 0;
-	padding-right: 0;
-}
-
-#exploded .row > div:nth-of-type(2) > div {
-	position: relative;
-	float: left;
-	width: 100%;
-	min-height: 1px;
-	padding-left: 0;
-	padding-right: 0;
-	position: absolute;
-}
-
-#exploded .row > div:nth-of-type(2) > div > h1 {
-	float: left;
-	width: 100%;
-	position: relative;
-	min-height: 1px;
-	padding-left: 0;
-	padding-right: 0;
-}
-
-#exploded .row > div:nth-of-type(2) > div > p {
-	position: relative;
-	float: left;
-	width: 100%;
-	min-height: 1px;
-	padding-left: 0;
-	padding-right: 0;
-	font-size: 12px;
-	font-size: 1.2rem;
-}
-
-#exploded .row > div:nth-of-type(2) > div > p:first-of-type {
-	padding-top: 21px;
-}
-
-#exploded .row > div:nth-of-type(2) > div > div {
-	position: relative;
-	float: left;
-	width: 100%;
-	min-height: 1px;
-	padding-left: 0;
-	padding-right: 0;
-	padding-top: 21px;
-}
-
-#exploded .row > div:nth-of-type(2) > div > div p {
-	padding-top: 10px;
-}
-
-#exploded .row > div:nth-of-type(2) > div > div > p:nth-of-type(odd) {
-	position: relative;
-	float: left;
-	width: 8.33333333%;
-	min-height: 1px;
-	padding-left: 0;
-	padding-right: 0;
-}
-
-#exploded .row > div:nth-of-type(2) > div > div > p:nth-of-type(even) {
-	position: relative;
-	float: left;
-	width: 91.66666667%;
-	min-height: 1px;
-	padding-left: 0;
-	padding-right: 0;
-}
-
-#exploded .row > div:nth-of-type(2) > div:not(:first-child) {
-	opacity: 0;
-}
-
 #exploded .row > div:first-of-type {
 	float: left;
 	width: 100%;
@@ -2597,8 +2518,12 @@ header[role=banner].inactive span {
 
 #exploded .row > div:first-of-type img {
 	height: 70%;
-	bottom: 30px;
+	bottom: 10%;
 	position: absolute;
+	margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	right: 0;
 	-webkit-backface-visibility: hidden;
 	-webkit-transform: translateZ(0) scale(1, 1);
 }
@@ -2623,10 +2548,99 @@ header[role=banner].inactive span {
 	position: absolute;
 	width: 200px;
 	height: 200px;
-	left: -50%;
-	margin-left: 50%;
+	margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	right: 0;
 	border-radius: 50%;
 	background-color: white;
+}
+
+#exploded .row > div:nth-of-type(2) {
+	float: left;
+	width: 100%;
+	position: relative;
+	min-height: 1px;
+	padding-left: 0;
+	padding-right: 0;
+	padding-top: 50px;
+}
+
+#exploded .row > div:nth-of-type(2) .active {
+	background-color: #dae0e6;
+	box-shadow: -1px 3px 3px;
+}
+
+#exploded .row > div:nth-of-type(2) > div {
+	position: relative;
+	float: left;
+	width: 100%;
+	min-height: 1px;
+	padding-left: 0;
+	padding-right: 0;
+	padding-top: 21px;
+}
+
+#exploded .row > div:nth-of-type(2) > div > div {
+	position: relative;
+	float: left;
+	width: 50%;
+	min-height: 1px;
+	padding-left: 0;
+	padding-right: 0;
+	padding: 7px 7px;
+	min-height: 100%;
+}
+
+#exploded .row > div:nth-of-type(2) > div > div > h3 {
+	position: relative;
+	float: left;
+	width: 100%;
+	min-height: 1px;
+	padding-left: 0;
+	padding-right: 0;
+}
+
+#exploded .row > div:nth-of-type(2) > div > div > p {
+	position: relative;
+	float: left;
+	width: 100%;
+	min-height: 1px;
+	padding-left: 0;
+	padding-right: 0;
+	font-size: 12px;
+	font-size: 1.2rem;
+}
+
+#exploded .row > div:nth-of-type(2) > div > div > div {
+	position: relative;
+	float: left;
+	width: 100%;
+	min-height: 1px;
+	padding-left: 0;
+	padding-right: 0;
+}
+
+#exploded .row > div:nth-of-type(2) > div > div > div p {
+	padding-top: 10px;
+}
+
+#exploded .row > div:nth-of-type(2) > div > div > div > p:nth-of-type(odd) {
+	position: relative;
+	float: left;
+	width: 8.33333333%;
+	min-height: 1px;
+	padding-left: 0;
+	padding-right: 0;
+}
+
+#exploded .row > div:nth-of-type(2) > div > div > div > p:nth-of-type(even) {
+	position: relative;
+	float: left;
+	width: 91.66666667%;
+	min-height: 1px;
+	padding-left: 0;
+	padding-right: 0;
 }
 
 .slick-dots {
@@ -3689,13 +3703,6 @@ footer[role=contentinfo] p {
 	margin-top: 0;
 }
 
-#exploded .row > div:first-of-type img {
-	margin-left: auto;
-	margin-right: auto;
-	left: 0;
-	right: 0;
-}
-
 }
 
 @media (min-width: 480px) {
@@ -4113,29 +4120,9 @@ header[role=banner] span.icon-upcom-logo {
 	font-size: 2rem;
 }
 
-#exploded .row > div:nth-of-type(2) {
-	float: left;
-	width: 25%;
-}
-
-#exploded .row > div:nth-of-type(2) > div {
-	left: 0px;
-	top: 0px;
-}
-
-#exploded .row > div:nth-of-type(2) > div > h1 {
-	float: left;
-	width: 66.66666667%;
-}
-
-#exploded .row > div:nth-of-type(2) > div > p {
-	font-size: 13px;
-	font-size: 1.3rem;
-}
-
 #exploded .row > div:first-of-type {
 	float: left;
-	width: 75%;
+	width: 66.66666667%;
 }
 
 #exploded .row > div:first-of-type {
@@ -4145,6 +4132,16 @@ header[role=banner] span.icon-upcom-logo {
 #exploded .row > div:first-of-type .circle {
 	width: 300px;
 	height: 300px;
+}
+
+#exploded .row > div:nth-of-type(2) {
+	float: left;
+	width: 33.33333333%;
+}
+
+#exploded .row > div:nth-of-type(2) > div > div > p {
+	font-size: 13px;
+	font-size: 1.3rem;
 }
 
 .slick-dots {
@@ -5765,10 +5762,6 @@ td.visible-xs {
 }
 
 .home-header .icon-arrow-down {
-	display: none !important;
-}
-
-#exploded .row > div:nth-of-type(2) > div > div {
 	display: none !important;
 }
 
