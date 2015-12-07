@@ -2402,13 +2402,13 @@ header[role=banner].inactive span {
 	position: absolute;
 }
 
-#video {
+.parallax-photo {
 	background-color: #f1f4f4;
 	height: 45vw;
 	overflow: hidden;
 }
 
-#video .parallax-photo {
+.parallax-photo > div {
 	position: relative;
 	top: -35vw;
 	height: 150%;
@@ -2417,31 +2417,31 @@ header[role=banner].inactive span {
 	background-size: 100%;
 }
 
-#video .row {
+.parallax-photo .row {
 	padding: 21px 21px;
 }
 
-#video .row > a {
+.parallax-photo .row > a {
 	width: 20vw;
 	position: absolute;
 	left: 50%;
 }
 
-#video .row .fade {
+.parallax-photo .row .fade {
 	opacity: 0 !important;
 	z-index: 0 !important;
 }
 
-#video .row .visible {
+.parallax-photo .row .visible {
 	opacity: 1 !important;
 	z-index: 1 !important;
 }
 
-#video .row .youtube.visible {
+.parallax-photo .row .youtube.visible {
 	width: 100%;
 }
 
-#video .row .youtube {
+.parallax-photo .row .youtube {
 	opacity: 0;
 	width: 0;
 	position: absolute;
@@ -2452,7 +2452,7 @@ header[role=banner].inactive span {
 	z-index: 0;
 }
 
-#video .row .youtube span.icon-cross {
+.parallax-photo .row .youtube span.icon-cross {
 	position: absolute;
 	cursor: pointer;
 	color: black;
@@ -2462,7 +2462,7 @@ header[role=banner].inactive span {
 	font-size: 1.5rem;
 }
 
-#video .row .youtube > div .video-container {
+.parallax-photo .row .youtube > div .video-container {
 	position: relative;
 	padding-bottom: 56.25%;
 	padding-top: 30px;
@@ -2470,9 +2470,9 @@ header[role=banner].inactive span {
 	overflow: hidden;
 }
 
-#video .row .youtube > div .video-container iframe,
-#video .row .youtube > div .video-container object,
-#video .row .youtube > div .video-container embed {
+.parallax-photo .row .youtube > div .video-container iframe,
+.parallax-photo .row .youtube > div .video-container object,
+.parallax-photo .row .youtube > div .video-container embed {
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -2494,6 +2494,7 @@ header[role=banner].inactive span {
 
 #exploded {
 	background-color: #f1f4f4;
+	min-height: 500px;
 	height: 100vh;
 }
 
@@ -2518,6 +2519,7 @@ header[role=banner].inactive span {
 
 #exploded .row > div:first-of-type img {
 	height: 70%;
+	max-height: 400px;
 	bottom: 10%;
 	position: absolute;
 	margin-left: auto;
@@ -2568,7 +2570,6 @@ header[role=banner].inactive span {
 
 #exploded .row > div:nth-of-type(2) .active {
 	background-color: #dae0e6;
-	box-shadow: -1px 3px 3px;
 }
 
 #exploded .row > div:nth-of-type(2) > div {
@@ -2589,7 +2590,11 @@ header[role=banner].inactive span {
 	padding-left: 0;
 	padding-right: 0;
 	padding: 7px 7px;
-	min-height: 100%;
+	transition: all 500ms ease;
+	-moz-transition: all 500ms ease;
+	-ms-transition: all 500ms ease;
+	-o-transition: all 500ms ease;
+	-webkit-transition: all 500ms ease;
 }
 
 #exploded .row > div:nth-of-type(2) > div > div > h3 {
@@ -3699,7 +3704,7 @@ footer[role=contentinfo] p {
 	bottom: 175px;
 }
 
-#video .row .youtube > div {
+.parallax-photo .row .youtube > div {
 	margin-top: 0;
 }
 
@@ -4109,11 +4114,11 @@ header[role=banner] span.icon-upcom-logo {
 	width: 48%;
 }
 
-#video .row {
+.parallax-photo .row {
 	padding: 80px 0;
 }
 
-#video .row .youtube span.icon-cross {
+.parallax-photo .row .youtube span.icon-cross {
 	top: -30px;
 	right: 0px;
 	font-size: 20px;
@@ -4122,21 +4127,26 @@ header[role=banner] span.icon-upcom-logo {
 
 #exploded .row > div:first-of-type {
 	float: left;
-	width: 66.66666667%;
+	width: 58.33333333%;
 }
 
 #exploded .row > div:first-of-type {
 	margin-top: 0;
 }
 
+#exploded .row > div:first-of-type img {
+	left: -100px;
+}
+
 #exploded .row > div:first-of-type .circle {
+	margin-top: 100px;
 	width: 300px;
 	height: 300px;
 }
 
 #exploded .row > div:nth-of-type(2) {
 	float: left;
-	width: 33.33333333%;
+	width: 41.66666667%;
 }
 
 #exploded .row > div:nth-of-type(2) > div > div > p {
@@ -4968,9 +4978,23 @@ nav > div .social-nav {
 	left: 28px;
 }
 
+#exploded .row > div:first-of-type {
+	float: left;
+	width: 66.66666667%;
+}
+
+#exploded .row > div:first-of-type img {
+	left: 0;
+}
+
 #exploded .row > div:first-of-type .circle {
 	width: 400px;
 	height: 400px;
+}
+
+#exploded .row > div:nth-of-type(2) {
+	float: left;
+	width: 33.33333333%;
 }
 
 .commander {

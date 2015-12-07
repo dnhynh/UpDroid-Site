@@ -121,8 +121,8 @@ var Homepage =
         var controller = new ScrollMagic.Controller({globalSceneOptions: {triggerHook: "onEnter", duration: "150%"}});
 
         // build scenes
-        new ScrollMagic.Scene({triggerElement: "#video"})
-            .setTween(".parallax-photo", {y: "70%", ease: Linear.easeNone})
+        new ScrollMagic.Scene({triggerElement: ".parallax-photo"})
+            .setTween(".parallax-photo > div", {y: "70%", ease: Linear.easeNone})
             .addTo(controller);
     },
 

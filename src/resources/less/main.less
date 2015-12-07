@@ -590,12 +590,12 @@ header[role=banner] {
 
 // Video Section
 
-#video {
+.parallax-photo {
     background-color: #f1f4f4;
     height: 45vw;
     overflow: hidden;
 
-    .parallax-photo {
+    >div {
         position: relative;
         top: -35vw;
         height: 150%;
@@ -702,6 +702,7 @@ header[role=banner] {
 
 #exploded {
     background-color: #f1f4f4;
+    min-height: 500px;
     height: 100vh;
 
     .container {
@@ -714,7 +715,8 @@ header[role=banner] {
 
         >div:first-of-type {
             .make-xs-column(12);
-            .make-sm-column(8);
+            .make-sm-column(7);
+            .make-md-column(8);
             height: 100%;
 
             @media (min-width: @screen-sm-min) {
@@ -723,12 +725,21 @@ header[role=banner] {
 
             img {
                     height: 70%;
+                    max-height: 400px;
                     bottom: 10%;
                     position: absolute;
                     margin-left: auto;
                     margin-right: auto;
                     left: 0;
                     right: 0;
+
+                    @media (min-width: @screen-sm-min) {
+                        left: -100px;
+                    }
+
+                    @media(min-width: @screen-md-min) {
+                        left: 0;
+                    }
 
                     -webkit-backface-visibility: hidden;
                     -webkit-transform: translateZ(0) scale(1.0, 1.0);
@@ -764,6 +775,7 @@ header[role=banner] {
                 right: 0;
 
                 @media (min-width: @screen-sm-min) {
+                    margin-top: 100px;
                     width: 300px;
                     height: 300px;
                 }
@@ -781,21 +793,27 @@ header[role=banner] {
 
         >div:nth-of-type(2) {
             .make-xs-column(12);
-            .make-sm-column(4);
+            .make-sm-column(5);
+            .make-md-column(4);
             padding-top: 50px;
+
             .active {
                 background-color: #dae0e6;
-                box-shadow: -1px 3px 3px ;
             }
 
             >div {
                 .make-xs-column(12);
                 padding-top: 21px;
 
+
                 >div {
                     .make-xs-column(6);
                     padding: 7px 7px;
-                    min-height: 100%;
+                    transition:                    all 500ms ease;
+                        -moz-transition:           all 500ms ease;
+                        -ms-transition:            all 500ms ease;
+                        -o-transition:             all 500ms ease; 
+                        -webkit-transition:        all 500ms ease;
                     
                     >h3 {
                         .make-xs-column(12);
