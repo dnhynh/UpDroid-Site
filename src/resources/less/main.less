@@ -317,13 +317,32 @@ nav {
 }
 
 // Burger icon & UpDroid logo icon
+
+header.inactive {
+    @media(min-width: @screen-sm-min) {
+        box-shadow: 0 0 15px;
+        background-color: #eaeaec;
+        opacity: .9;
+    }
+
+}
+
 header[role=banner] {
+    .transition(all 0.5s ease-in-out);
+    position: fixed;
+        z-index: 200;
+        width: 100%;
+        height: 42px;
+        background-color: transparent;
+
     span {
-        .font-size(3.4);
-        .transition(opacity 0.5s ease-in-out);
+        color: white;
+        .font-size(2.4);
+        .transition(all 0.5s ease-in-out);
         position: absolute;
         top: 21px;
-        z-index: 100;
+        z-index: 101;
+        opacity: 1;
 
         @media (min-width: @screen-sm-min) {
             top: 28px;
@@ -336,14 +355,10 @@ header[role=banner] {
         &.icon-burger {
             color: @icon-color;
             cursor: pointer;
-            left: 21px;
+            left: 13px;
 
             @media (min-width: @screen-sm-min) {
-                left: 28px;
-            }
-
-            @media (min-width: @screen-lg-min) {
-                left: 49px;
+                left: 20px;
             }
 
             html.sb-active &:before {
@@ -357,14 +372,14 @@ header[role=banner] {
 
         &.icon-updroid-logo {
             color: @icon-color;
-            right: 21px;
+            right: 13px;
 
             @media (min-width: @screen-sm-min) {
-                right: 28px;
+                right: 20px;
             }
 
             @media (min-width: @screen-lg-min) {
-                right: 49px;
+                right: 41px;
             }
         }
 
@@ -383,7 +398,7 @@ header[role=banner] {
     }
 
     &.inactive span {
-        opacity: 0;
+        top: 10px;
     }
 
 }

@@ -2260,23 +2260,38 @@ html.no-touch nav > div .social-nav li a:hover {
 	position: relative;
 }
 
+header[role=banner] {
+	-webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	-ms-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+	position: fixed;
+	z-index: 200;
+	width: 100%;
+	height: 42px;
+	background-color: transparent;
+}
+
 header[role=banner] span {
-	font-size: 34px;
-	font-size: 3.4rem;
-	-webkit-transition: opacity 0.5s ease-in-out;
-	-moz-transition: opacity 0.5s ease-in-out;
-	-o-transition: opacity 0.5s ease-in-out;
-	-ms-transition: opacity 0.5s ease-in-out;
-	transition: opacity 0.5s ease-in-out;
+	color: white;
+	font-size: 24px;
+	font-size: 2.4rem;
+	-webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	-ms-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
 	position: absolute;
 	top: 21px;
-	z-index: 100;
+	z-index: 101;
+	opacity: 1;
 }
 
 header[role=banner] span.icon-burger {
 	color: #0c0c0c;
 	cursor: pointer;
-	left: 21px;
+	left: 13px;
 }
 
 html.sb-active header[role=banner] span.icon-burger:before {
@@ -2289,7 +2304,7 @@ header[role=banner] span img {
 
 header[role=banner] span.icon-updroid-logo {
 	color: #0c0c0c;
-	right: 21px;
+	right: 13px;
 }
 
 header[role=banner] span.icon-upcom-logo {
@@ -2298,7 +2313,7 @@ header[role=banner] span.icon-upcom-logo {
 }
 
 header[role=banner].inactive span {
-	opacity: 0;
+	top: 10px;
 }
 
 .home-header {
@@ -4052,16 +4067,22 @@ nav > div .social-nav {
 	margin-top: 42px;
 }
 
+header.inactive {
+	box-shadow: 0 0 15px;
+	background-color: #eaeaec;
+	opacity: .9;
+}
+
 header[role=banner] span {
 	top: 28px;
 }
 
 header[role=banner] span.icon-burger {
-	left: 28px;
+	left: 20px;
 }
 
 header[role=banner] span.icon-updroid-logo {
-	right: 28px;
+	right: 20px;
 }
 
 header[role=banner] span.icon-upcom-logo {
@@ -5627,12 +5648,8 @@ header[role=banner] span {
 	top: 49px;
 }
 
-header[role=banner] span.icon-burger {
-	left: 49px;
-}
-
 header[role=banner] span.icon-updroid-logo {
-	right: 49px;
+	right: 41px;
 }
 
 header[role=banner] span.icon-upcom-logo {

@@ -948,7 +948,7 @@ var Global =
     "BorderFade": function () {
         // Fade the red site border in, 2 seconds after the page has finished loading
         setTimeout(function () {
-            $("body").addClass("padding-active");
+            // $("body").addClass("padding-active");
         }, 2000);
     },
     "HeaderIcons": function () {
