@@ -11,20 +11,22 @@ body {
     .transition(padding 0.5s ease-in); // Fade in border
     background-color: @container-border-color;
     color: @text-color;
-    padding: 8px;
 
-    @media (min-width: @screen-sm-min) {
-        padding: 0;
-    }
+    // Uncomment for original 8 px border
+    // padding: 8px;
 
-    &.padding-active {
-        padding: 8px;
-    }
+    // @media (min-width: @screen-sm-min) {
+    //     padding: 0;
+    // }
 
-    html.sb-active & {
-        padding-left: 0;
-        .transition(none);
-    }
+    // &.padding-active {
+    //     padding: 8px;
+    // }
+
+    // html.sb-active & {
+    //     padding-left: 0;
+    //     .transition(none);
+    // }
 }
 
 .link {
@@ -319,7 +321,7 @@ nav {
 // Burger icon & UpDroid logo icon
 
 header.inactive {
-    @media(min-width: @screen-sm-min) {
+    @media(min-width: @screen-xs-min) {
         box-shadow: 0 0 15px;
         background-color: #eaeaec;
         opacity: .9;

@@ -1976,20 +1976,6 @@ body {
 	transition: padding 0.5s ease-in;
 	background-color: #ff2919;
 	color: #7e7e7e;
-	padding: 8px;
-}
-
-body.padding-active {
-	padding: 8px;
-}
-
-html.sb-active body {
-	padding-left: 0;
-	-webkit-transition: none;
-	-moz-transition: none;
-	-o-transition: none;
-	-ms-transition: none;
-	transition: none;
 }
 
 .link {
@@ -3745,6 +3731,12 @@ h3 {
 	line-height: 18px;
 }
 
+header.inactive {
+	box-shadow: 0 0 15px;
+	background-color: #eaeaec;
+	opacity: .9;
+}
+
 #app .row > div #commander img {
 	height: 120px;
 }
@@ -4044,10 +4036,6 @@ p {
 	font-size: 1.7rem;
 }
 
-body {
-	padding: 0;
-}
-
 .pre-order {
 	width: 500px;
 }
@@ -4077,12 +4065,6 @@ nav > div .follow-us {
 
 nav > div .social-nav {
 	margin-top: 42px;
-}
-
-header.inactive {
-	box-shadow: 0 0 15px;
-	background-color: #eaeaec;
-	opacity: .9;
 }
 
 header[role=banner] span {
