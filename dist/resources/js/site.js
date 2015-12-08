@@ -1030,8 +1030,12 @@ var Homepage =
         var controller = new ScrollMagic.Controller({globalSceneOptions: {triggerHook: "onEnter", duration: "150%"}});
 
         // build scenes
-        new ScrollMagic.Scene({triggerElement: ".parallax-photo"})
-            .setTween(".parallax-photo > div", {y: "70%", ease: Linear.easeNone})
+        new ScrollMagic.Scene({triggerElement: "#first-parallax"})
+            .setTween("#first-parallax > div", {y: "70%", ease: Linear.easeNone})
+            .addTo(controller);
+
+        new ScrollMagic.Scene({triggerElement: "#second-parallax"})
+            .setTween("#second-parallax > div", {y: "70%", ease: Linear.easeNone})
             .addTo(controller);
     },
 

@@ -338,7 +338,7 @@ header[role=banner] {
     span {
         color: white;
         .font-size(2.4);
-        .transition(all 0.5s ease-in-out);
+        .transition(all 0.25s ease-in-out);
         position: absolute;
         top: 21px;
         z-index: 101;
@@ -603,7 +603,15 @@ header[role=banner] {
     }
 }
 
-// Video Section
+// Parallax photos
+
+#first-parallax > div {
+    background-image: url("/resources/images/photos/7.png");
+}
+
+#second-parallax > div {
+    background-image: url("/resources/images/photos/5.png");
+}
 
 .parallax-photo {
     background-color: #f1f4f4;
@@ -614,7 +622,6 @@ header[role=banner] {
         position: relative;
         top: -35vw;
         height: 150%;
-        background-image: url("/resources/images/photos/7.png");
         background-repeat: no-repeat;
         background-size: 100%;
     }
@@ -782,23 +789,14 @@ header[role=banner] {
 
             .circle {
                 position: absolute;
-                width: 200px;
-                height: 200px;
+                width: 70vh;
+                height: 70vh;
+                bottom: 10%;
                 margin-left: auto;
                 margin-right: auto;
                 left: 0;
                 right: 0;
 
-                @media (min-width: @screen-sm-min) {
-                    margin-top: 100px;
-                    width: 300px;
-                    height: 300px;
-                }
-
-                @media (min-width: @screen-md-min) {
-                    width: 400px;
-                    height: 400px;
-                }
                 
                 border-radius: 50%;
                 background-color: white;
@@ -810,7 +808,7 @@ header[role=banner] {
             .make-xs-column(12);
             .make-sm-column(5);
             .make-md-column(4);
-            padding-top: 50px;
+            padding-top: 92px;
 
             .active {
                 background-color: #dae0e6;
