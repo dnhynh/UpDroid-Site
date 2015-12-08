@@ -2298,6 +2298,10 @@ header[role=banner] span.icon-upcom-logo {
 	right: 21px;
 }
 
+header[role=banner].mobile-inactive span {
+	opacity: 0;
+}
+
 header[role=banner].inactive span {
 	top: 10px;
 }
