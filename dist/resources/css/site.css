@@ -1945,6 +1945,14 @@ p {
 	text-decoration: none;
 }
 
+.btn-xs {
+	font-family: "Avenir Next LT W01 Bold";
+	font-size: 13px !important;
+	font-size: 1.3rem !important;
+	height: 30px;
+	line-height: 30px;
+}
+
 .btn-red {
 	background-color: #ff2919;
 	color: #ffffff;
@@ -2259,6 +2267,18 @@ header[role=banner] {
 	background-color: transparent;
 }
 
+header[role=banner] #top-order {
+	position: absolute;
+	top: 18px;
+	right: 52px;
+	width: 100px;
+	-webkit-transition: all 0.25s ease-in-out;
+	-moz-transition: all 0.25s ease-in-out;
+	-o-transition: all 0.25s ease-in-out;
+	-ms-transition: all 0.25s ease-in-out;
+	transition: all 0.25s ease-in-out;
+}
+
 header[role=banner] span {
 	color: white;
 	font-size: 24px;
@@ -2298,12 +2318,23 @@ header[role=banner] span.icon-upcom-logo {
 	right: 21px;
 }
 
-header[role=banner].mobile-inactive span {
+header[role=banner].mobile-inactive span,
+header[role=banner].mobile-inactive #top-order {
 	opacity: 0;
 }
 
 header[role=banner].inactive span {
 	top: 10px;
+}
+
+header[role=banner].inactive #top-order {
+	top: 6px;
+}
+
+header.inactive {
+	box-shadow: 0 0 15px;
+	background-color: #eaeaec;
+	opacity: .9;
 }
 
 .home-header {
@@ -2334,10 +2365,6 @@ header[role=banner].inactive span {
 
 .home-header .row > div .btn {
 	margin-top: 14px;
-}
-
-.home-header .row a {
-	border-radius: 3px;
 }
 
 .home-header .row h1 {
@@ -2400,13 +2427,6 @@ header[role=banner].inactive span {
 	width: 50%;
 }
 
-.home-header .icon-arrow-down {
-	font-size: 34px;
-	font-size: 3.4rem;
-	color: #0c0c0c;
-	position: absolute;
-}
-
 #first-parallax > div {
 	background-image: url("/resources/images/photos/7.png");
 }
@@ -2418,6 +2438,7 @@ header[role=banner].inactive span {
 .parallax-photo {
 	background-color: #f1f4f4;
 	height: 45vw;
+	width: 100%;
 	overflow: hidden;
 }
 
@@ -2427,72 +2448,6 @@ header[role=banner].inactive span {
 	height: 150%;
 	background-repeat: no-repeat;
 	background-size: 100%;
-}
-
-.parallax-photo .row {
-	padding: 21px 21px;
-}
-
-.parallax-photo .row > a {
-	width: 20vw;
-	position: absolute;
-	left: 50%;
-}
-
-.parallax-photo .row .fade {
-	opacity: 0 !important;
-	z-index: 0 !important;
-}
-
-.parallax-photo .row .visible {
-	opacity: 1 !important;
-	z-index: 1 !important;
-}
-
-.parallax-photo .row .youtube.visible {
-	width: 100%;
-}
-
-.parallax-photo .row .youtube {
-	opacity: 0;
-	width: 0;
-	position: absolute;
-	left: 0;
-	right: 0;
-	margin-left: auto;
-	margin-right: auto;
-	z-index: 0;
-}
-
-.parallax-photo .row .youtube span.icon-cross {
-	position: absolute;
-	cursor: pointer;
-	color: black;
-	top: -30px;
-	right: 0px;
-	font-size: 15px;
-	font-size: 1.5rem;
-}
-
-.parallax-photo .row .youtube > div .video-container {
-	position: relative;
-	padding-bottom: 56.25%;
-	padding-top: 30px;
-	height: 0;
-	overflow: hidden;
-}
-
-.parallax-photo .row .youtube > div .video-container iframe,
-.parallax-photo .row .youtube > div .video-container object,
-.parallax-photo .row .youtube > div .video-container embed {
-	position: absolute;
-	top: 0;
-	left: 0;
-	right: 0;
-	margin-left: auto;
-	margin-right: auto;
-	width: 100%;
-	height: 100%;
 }
 
 .up1-control {
@@ -2506,7 +2461,7 @@ header[role=banner].inactive span {
 
 #exploded {
 	background-color: #f1f4f4;
-	min-height: 500px;
+	min-height: 550px;
 	height: 100vh;
 }
 
@@ -2530,14 +2485,14 @@ header[role=banner].inactive span {
 }
 
 #exploded .row > div:first-of-type img {
-	height: 70%;
 	max-height: 400px;
-	top: 20%;
 	position: absolute;
 	margin-left: auto;
 	margin-right: auto;
 	left: 0;
 	right: 0;
+	width: 100%;
+	top: 10%;
 	-webkit-backface-visibility: hidden;
 	-webkit-transform: translateZ(0) scale(1, 1);
 }
@@ -2562,13 +2517,15 @@ header[role=banner].inactive span {
 	position: absolute;
 	width: 40vw;
 	height: 40vw;
-	top: 20%;
+	max-height: 400px;
+	max-width: 400px;
 	margin-left: auto;
 	margin-right: auto;
 	left: 0;
 	right: 0;
 	border-radius: 50%;
 	background-color: white;
+	top: 10%;
 }
 
 #exploded .row > div:nth-of-type(2) {
@@ -2644,7 +2601,7 @@ header[role=banner].inactive span {
 }
 
 #exploded .row > div:nth-of-type(2) > div > div > div p {
-	padding-top: 10px;
+	padding-top: 5px;
 }
 
 #exploded .row > div:nth-of-type(2) > div > div > div > p:nth-of-type(odd) {
@@ -3021,7 +2978,6 @@ header[role=banner].inactive span {
 
 .inside .row > div:nth-of-type(2) > a {
 	margin-top: 14px;
-	border-radius: 3px;
 }
 
 .inside .row > div:last-of-type {
@@ -3558,6 +3514,46 @@ header[role=banner].inactive span {
 	height: 140px;
 }
 
+.video-modal {
+	width: 100%;
+	max-width: 100% !important;
+	padding: 0 0;
+	background-color: transparent;
+}
+
+.video-modal .icon-cross {
+	position: absolute;
+	cursor: pointer;
+	color: #fff;
+	top: 0px;
+	right: 0px;
+	font-size: 15px;
+	font-size: 1.5rem;
+}
+
+.video-modal > div {
+	margin-top: 30px;
+	text-align: center;
+}
+
+.video-modal > div .video-container {
+	position: relative;
+	padding-bottom: 56.25%;
+	padding-top: 30px;
+	height: 0;
+	overflow: hidden;
+}
+
+.video-modal > div .video-container iframe,
+.video-modal > div .video-container object,
+.video-modal > div .video-container embed {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
 .remodal.newsletter {
 	text-align: left;
 }
@@ -3721,7 +3717,7 @@ footer[role=contentinfo] p {
 	bottom: 175px;
 }
 
-.parallax-photo .row .youtube > div {
+.video-modal > div {
 	margin-top: 0;
 }
 
@@ -3733,12 +3729,6 @@ h3 {
 	font-size: 16px;
 	font-size: 1.6rem;
 	line-height: 18px;
-}
-
-header.inactive {
-	box-shadow: 0 0 15px;
-	background-color: #eaeaec;
-	opacity: .9;
 }
 
 #app .row > div #commander img {
@@ -4071,6 +4061,11 @@ nav > div .social-nav {
 	margin-top: 42px;
 }
 
+header[role=banner] #top-order {
+	top: 25px;
+	right: 60px;
+}
+
 header[role=banner] span {
 	top: 28px;
 }
@@ -4133,17 +4128,6 @@ header[role=banner] span.icon-upcom-logo {
 	width: 48%;
 }
 
-.parallax-photo .row {
-	padding: 80px 0;
-}
-
-.parallax-photo .row .youtube span.icon-cross {
-	top: -30px;
-	right: 0px;
-	font-size: 20px;
-	font-size: 2rem;
-}
-
 #exploded .row > div:first-of-type {
 	float: left;
 	width: 58.33333333%;
@@ -4154,7 +4138,14 @@ header[role=banner] span.icon-upcom-logo {
 }
 
 #exploded .row > div:first-of-type img {
+	top: 20%;
 	left: -100px;
+	height: 70%;
+	width: auto;
+}
+
+#exploded .row > div:first-of-type .circle {
+	top: 15%;
 }
 
 #exploded .row > div:nth-of-type(2) {
@@ -4591,6 +4582,18 @@ header[role=banner] span.icon-upcom-logo {
 	margin-top: 49px;
 }
 
+.video-modal {
+	width: 80%;
+	padding-top: 40px;
+}
+
+.video-modal .icon-cross {
+	top: 0px;
+	right: 0px;
+	font-size: 20px;
+	font-size: 2rem;
+}
+
 .remodal.newsletter .icon-cross {
 	top: 10px;
 	right: 10px;
@@ -4674,10 +4677,6 @@ td.visible-sm {
 }
 
 .hidden-sm {
-	display: none !important;
-}
-
-.home-header .icon-arrow-down {
 	display: none !important;
 }
 
@@ -4986,9 +4985,8 @@ nav > div .social-nav {
 	width: 44%;
 }
 
-.home-header .icon-arrow-down {
-	bottom: 70px;
-	left: 28px;
+#exploded .row {
+	min-height: 540px;
 }
 
 #exploded .row > div:first-of-type {
@@ -5650,6 +5648,11 @@ nav > div .social-nav {
 	margin-top: 56px;
 }
 
+header[role=banner] #top-order {
+	top: 45px;
+	right: 73px;
+}
+
 header[role=banner] span {
 	top: 49px;
 }
@@ -5684,9 +5687,14 @@ header[role=banner] span.icon-upcom-logo {
 	width: 44%;
 }
 
-.home-header .icon-arrow-down {
-	bottom: 140px;
-	left: 49px;
+#exploded .row > div:first-of-type {
+	float: left;
+	width: 58.33333333%;
+}
+
+#exploded .row > div:nth-of-type(2) {
+	float: left;
+	width: 41.66666667%;
 }
 
 .editor > div:nth-of-type(4) > br {
@@ -5805,10 +5813,6 @@ td.visible-xs {
 }
 
 .hidden-xs {
-	display: none !important;
-}
-
-.home-header .icon-arrow-down {
 	display: none !important;
 }
 

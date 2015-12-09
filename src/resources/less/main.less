@@ -320,15 +320,6 @@ nav {
 
 // Burger icon & UpDroid logo icon
 
-header.inactive {
-    @media(min-width: @screen-xs-min) {
-        box-shadow: 0 0 15px;
-        background-color: #eaeaec;
-        opacity: .9;
-    }
-
-}
-
 header[role=banner] {
     .transition(all 0.5s ease-in-out);
     position: fixed;
@@ -336,6 +327,24 @@ header[role=banner] {
         width: 100%;
         height: 42px;
         background-color: transparent;
+
+    #top-order {
+        position: absolute;
+        top: 18px;
+        right: 52px;
+        width: 100px;
+        .transition(all .25s ease-in-out);
+
+        @media (min-width: @screen-sm-min) {
+            top: 25px;
+            right: 60px;
+        }
+
+        @media (min-width: @screen-lg-min) {
+            top: 45px;
+            right: 73px;
+        }
+    }
 
     span {
         color: white;
@@ -399,14 +408,23 @@ header[role=banner] {
         }
     }
 
-    &.mobile-inactive span {
+    &.mobile-inactive span, &.mobile-inactive #top-order {
         opacity: 0;
     }
 
-    &.inactive span {
+    &.inactive span{
         top: 10px;
     }
 
+    &.inactive #top-order {
+        top: 6px;
+    }
+}
+
+header.inactive {
+    box-shadow: 0 0 15px;
+    background-color: #eaeaec;
+    opacity: .9;
 }
 
 // Home logo & image of UpDroid - includes sign up feature
@@ -476,10 +494,6 @@ header[role=banner] {
                     margin-top: 21px;
                 }
             }
-        }
-
-        a {
-            border-radius: 3px;
         }
 
         // Logo text & parallax effect (desktop only)
@@ -589,24 +603,6 @@ header[role=banner] {
             }
         }
     }
-
-    .icon-arrow-down {
-        .font-size(3.4);
-        .hidden-xs;
-        .hidden-sm;
-        color: @icon-color;
-        position: absolute;
-
-        @media (min-width: @screen-md-min) {
-            bottom: 70px;
-            left: 28px;
-        }
-
-        @media (min-width: @screen-lg-min) {
-            bottom: 140px;
-            left: 49px;
-        }
-    }
 }
 
 // Parallax photos
@@ -622,6 +618,7 @@ header[role=banner] {
 .parallax-photo {
     background-color: #f1f4f4;
     height: 45vw;
+    width: 100%;
     overflow: hidden;
 
     >div {
@@ -630,89 +627,6 @@ header[role=banner] {
         height: 150%;
         background-repeat: no-repeat;
         background-size: 100%;
-    }
-    
-    .container {
-
-    }
-
-    .row {
-        padding: 21px 21px;
-        @media(min-width: @screen-sm-min) {
-            padding: 80px 0;
-        }
-
-        >a {
-            width: 20vw;
-            position: absolute;
-            left: 50%;
-        }
-
-        .fade {
-            opacity: 0 !important;
-            z-index: 0 !important;
-        }
-
-        .visible {
-            opacity: 1 !important;
-            z-index: 1 !important;
-        }
-
-        .youtube.visible {
-            width: 100%;
-        }
-
-        .youtube {
-            opacity: 0;
-            width: 0;
-            position: absolute;
-            left: 0;
-            right: 0;
-            margin-left: auto;
-            margin-right: auto;
-            z-index: 0;
-
-            span.icon-cross {
-                position: absolute;
-                cursor: pointer;
-                color:  black;
-                top: -30px;
-                right: 0px;
-                .font-size(1.5);
-
-                @media (min-width: @screen-sm-min) {
-                    top: -30px;
-                    right: 0px;
-                    .font-size(2.0);
-                }
-            }
-
-            >div {
-
-                @media (min-width: @screen-large-mobile-min) {
-                    margin-top: 0;
-                }
-
-                .video-container {
-                    position: relative;
-                    padding-bottom: 56.25%;
-                    padding-top: 30px; height: 0; overflow: hidden;
-                }
-                 
-                .video-container iframe,
-                .video-container object,
-                .video-container embed {
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    right: 0;
-                    margin-left: auto;
-                    margin-right: auto;
-                    width: 100%;
-                    height: 100%;
-                }
-            }
-        }
     }
 }
 
@@ -730,7 +644,7 @@ header[role=banner] {
 
 #exploded {
     background-color: #f1f4f4;
-    min-height: 500px;
+    min-height: 550px;
     height: 100vh;
 
     .container {
@@ -740,11 +654,15 @@ header[role=banner] {
     .row {
         height: 100%;
         padding: 0 21px;
+        @media (min-width: @screen-md-min) {
+            min-height: 540px;
+        }
 
         >div:first-of-type {
             .make-xs-column(12);
             .make-sm-column(7);
             .make-md-column(8);
+            .make-lg-column(7);
             height: 100%;
 
             @media (min-width: @screen-sm-min) {
@@ -752,17 +670,20 @@ header[role=banner] {
             }
 
             img {
-                    height: 70%;
                     max-height: 400px;
-                    top: 20%;
                     position: absolute;
                     margin-left: auto;
                     margin-right: auto;
                     left: 0;
                     right: 0;
+                    width: 100%;
+                    top: 10%;
 
                     @media (min-width: @screen-sm-min) {
+                        top: 20%;
                         left: -100px;
+                        height: 70%;
+                        width: auto;
                     }
 
                     @media(min-width: @screen-md-min) {
@@ -797,15 +718,19 @@ header[role=banner] {
                 position: absolute;
                 width: 40vw;
                 height: 40vw;
-                top: 20%;
+                max-height: 400px;
+                max-width: 400px;
                 margin-left: auto;
                 margin-right: auto;
                 left: 0;
                 right: 0;
-
-                
                 border-radius: 50%;
                 background-color: white;
+                top: 10%;
+
+                @media (min-width: @screen-sm-min) {
+                    top: 15%;
+                }
             }
         }
 
@@ -813,6 +738,7 @@ header[role=banner] {
             .make-xs-column(12);
             .make-sm-column(5);
             .make-md-column(4);
+            .make-lg-column(5);
             padding-top: 92px;
             padding-left: 60px;
             @media (min-width: @screen-md-min) {
@@ -868,7 +794,7 @@ header[role=banner] {
                     >div {
                         .make-xs-column(12);
                         p {
-                            padding-top: 10px;
+                            padding-top: 5px;
                         }
 
                         >p:nth-of-type(odd) {
@@ -1324,7 +1250,6 @@ header[role=banner] {
 
             >a {
                 margin-top: 14px;
-                border-radius: 3px;
 
                 @media (min-width: @screen-md-min) {
                     margin-top: 21px;
@@ -2123,6 +2048,59 @@ header[role=banner] {
             textarea {
                 height: 140px;
             }
+        }
+    }
+}
+
+// Video Modal
+
+.video-modal{
+    width: 100%;
+    max-width: 100% !important;
+    padding: 0 0;
+    background-color: transparent;
+
+    @media (min-width: @screen-sm-min) {
+        width: 80%;
+        padding-top: 40px;
+    }
+
+    .icon-cross {
+        position: absolute;
+        cursor: pointer;
+        color:  #fff;
+        top: 0px;
+        right: 0px;
+        .font-size(1.5);
+
+        @media (min-width: @screen-sm-min) {
+            top: 0px;
+            right: 0px;
+            .font-size(2.0);
+        }
+    }
+
+    >div {
+        margin-top: 30px;
+        text-align: center;
+
+        @media (min-width: @screen-large-mobile-min) {
+            margin-top: 0;
+        }
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            padding-top: 30px; height: 0; overflow: hidden;
+        }
+         
+        .video-container iframe,
+        .video-container object,
+        .video-container embed {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
         }
     }
 }

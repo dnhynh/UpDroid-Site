@@ -25,7 +25,7 @@
                     <div>
                         <h2>Introducing <span class="no-wrap">The UP1</span></h2>
                         <p>Easy to program. Incredibly powerful.</p>
-                        <a id="top-order" href="#" data-remodal-target="newsletter" class="btn btn-red">Learn More</a>
+                        <a id="play-video" href="#" data-remodal-target="video" class="btn btn-red">Watch Video</a>
                     </div>
                     <img src="/resources/images/top-droid.png" alt="Updroid" />
                 </header>
@@ -290,6 +290,16 @@
         </div>
     </div>
 
+
+    <div class="remodal video-modal" data-remodal-id="video">
+        <span data-remodal-action="close" class="icon-cross"></span>
+        <div>
+            <div class="video-container">
+              <div id="player"></div>
+            </div>
+        </div>
+    </div>
+
     <div class="remodal faq" data-remodal-id="faq-modal">
         <span data-remodal-action="close" class="icon-cross"></span>
         <h1>FAQ</h1>
@@ -339,14 +349,14 @@
     //    after the API code downloads.
     var player;
     function onYouTubeIframeAPIReady() {
-    player = new YT.Player('player', {
-        height: '315',
-        width: '560',
-        videoId: 'WcBLX4v8rfw',
-    });
+        player = new YT.Player('player', {
+            height: '315',
+            width: '560',
+            videoId: 't_LJtG2gXSc',
+        });
     }
 
-    $(document).on('closing', '.up1-video', function (e) {
+    $(document).on('closing', '.video-modal', function (e) {
         // Reason: 'confirmation', 'cancellation'
         player.stopVideo();
     });
