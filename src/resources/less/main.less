@@ -679,6 +679,9 @@ header.inactive {
                     right: 0;
                     width: 100%;
                     top: 35%;
+                    // Prevents blur caused by translate property
+                    -webkit-backface-visibility: hidden;
+                    -webkit-transform: translateZ(0) scale(1.0, 1.0);
 
                     @media (min-width: @screen-large-mobile-min) {
                         top: 35%;
@@ -707,9 +710,6 @@ header.inactive {
                     @media (min-width: @screen-lg-min) {
                         top: 30%;
                     }
-
-                    -webkit-backface-visibility: hidden;
-                    -webkit-transform: translateZ(0) scale(1.0, 1.0);
                 }
 
                 #cpu {
@@ -807,6 +807,12 @@ header.inactive {
 
             >div {
                 .make-xs-column(12);
+                border-top: 2px solid @brand-red;
+
+                @media(min-width: @screen-xs-min) {
+                    border-top: none;
+                }
+
                 @media(min-width: @screen-md-min) {
                     padding-top: 21px;
                 }

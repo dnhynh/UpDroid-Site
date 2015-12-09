@@ -250,7 +250,7 @@ var Homepage =
         new ScrollMagic.Scene({
           triggerElement: "#exploded", 
           offset: offset,
-          duration: 3000
+          duration: 2700
         })
         .setPin('#exploded')
         .addTo(controller);
