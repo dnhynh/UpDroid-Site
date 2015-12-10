@@ -2437,17 +2437,14 @@ header.inactive {
 
 .parallax-photo {
 	background-color: #f1f4f4;
-	height: 45vw;
+	height: 50vw;
 	width: 100%;
-	overflow: hidden;
 }
 
 .parallax-photo > div {
-	position: relative;
-	top: -35vw;
-	height: 150%;
 	background-repeat: no-repeat;
 	background-size: 100%;
+	height: 100%;
 }
 
 .up1-control {
@@ -2492,7 +2489,7 @@ header.inactive {
 	left: 0;
 	right: 0;
 	width: 100%;
-	top: 35%;
+	top: 55%;
 	-webkit-backface-visibility: hidden;
 	-webkit-transform: translateZ(0) scale(1, 1);
 }
@@ -2525,7 +2522,7 @@ header.inactive {
 	right: 0;
 	border-radius: 50%;
 	background-color: white;
-	top: 40%;
+	top: 60%;
 }
 
 #exploded .row > div:nth-of-type(2) {
@@ -2535,7 +2532,7 @@ header.inactive {
 	min-height: 1px;
 	padding-left: 0;
 	padding-right: 0;
-	padding-top: 60px;
+	padding-top: 75px;
 }
 
 #exploded .row > div:nth-of-type(2) h1 {
@@ -3722,7 +3719,7 @@ footer[role=contentinfo] p {
 }
 
 #exploded .row > div:first-of-type img {
-	top: 35%;
+	top: 55%;
 	margin-left: auto;
 	margin-right: auto;
 	left: 0;
@@ -4155,6 +4152,17 @@ header[role=banner] span.icon-upcom-logo {
 	left: 90px;
 	bottom: 95px;
 	width: 48%;
+}
+
+.parallax-photo {
+	height: 45vw;
+	overflow: hidden;
+}
+
+.parallax-photo > div {
+	position: relative;
+	top: -35vw;
+	height: 150%;
 }
 
 #exploded .row > div:first-of-type {

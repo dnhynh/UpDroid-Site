@@ -617,16 +617,25 @@ header.inactive {
 
 .parallax-photo {
     background-color: #f1f4f4;
-    height: 45vw;
+    height: 50vw;
     width: 100%;
-    overflow: hidden;
+
+    @media(min-width: @screen-sm-min) {
+        height: 45vw;
+        overflow: hidden;
+        
+    }
 
     >div {
-        position: relative;
-        top: -35vw;
-        height: 150%;
         background-repeat: no-repeat;
         background-size: 100%;
+        height: 100%;
+
+        @media(min-width: @screen-sm-min) {
+            position: relative;
+            top: -35vw;
+            height: 150%;
+        }
     }
 }
 
@@ -678,13 +687,13 @@ header.inactive {
                     left: 0;
                     right: 0;
                     width: 100%;
-                    top: 35%;
+                    top: 55%;
                     // Prevents blur caused by translate property
                     -webkit-backface-visibility: hidden;
                     -webkit-transform: translateZ(0) scale(1.0, 1.0);
 
                     @media (min-width: @screen-large-mobile-min) {
-                        top: 35%;
+                        top: 55%;
                         margin-left: auto;
                         margin-right: auto;
                         left: 0;
@@ -744,7 +753,7 @@ header.inactive {
                 right: 0;
                 border-radius: 50%;
                 background-color: white;
-                top: 40%;
+                top: 60%;
 
                 @media (min-width: @screen-xs-min) {
                     top: 35%;
@@ -774,7 +783,7 @@ header.inactive {
             }
 
             // Mobile Styling
-            padding-top: 60px;
+            padding-top: 75px;
 
 
             @media (min-width: @screen-xs-min) {
