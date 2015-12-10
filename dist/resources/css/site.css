@@ -2439,6 +2439,7 @@ header.inactive {
 	background-color: #f1f4f4;
 	height: 50vw;
 	width: 100%;
+	overflow: hidden;
 }
 
 .parallax-photo > div {
@@ -2477,7 +2478,7 @@ header.inactive {
 	min-height: 1px;
 	padding-left: 0;
 	padding-right: 0;
-	height: 200px;
+	height: 60vw;
 }
 
 #mobile-modules .module > div:first-of-type .clear {
@@ -3830,6 +3831,12 @@ h3 {
 	line-height: 18px;
 }
 
+.parallax-photo > div {
+	position: relative;
+	top: -35vw;
+	height: 150%;
+}
+
 #exploded .row > div:first-of-type img {
 	top: 35%;
 	width: 90%;
@@ -4246,13 +4253,6 @@ header[role=banner] span.icon-upcom-logo {
 
 .parallax-photo {
 	height: 45vw;
-	overflow: hidden;
-}
-
-.parallax-photo > div {
-	position: relative;
-	top: -35vw;
-	height: 150%;
 }
 
 #mobile-modules {
