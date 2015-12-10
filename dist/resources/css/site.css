@@ -2456,6 +2456,96 @@ header.inactive {
 	width: 100%;
 }
 
+#mobile-modules {
+	padding-top: 50px;
+}
+
+#mobile-modules .module {
+	position: relative;
+	float: left;
+	width: 100%;
+	min-height: 1px;
+	padding-left: 0;
+	padding-right: 0;
+	padding-bottom: 8vh;
+}
+
+#mobile-modules .module > div:first-of-type {
+	position: relative;
+	float: left;
+	width: 100%;
+	min-height: 1px;
+	padding-left: 0;
+	padding-right: 0;
+	height: 200px;
+}
+
+#mobile-modules .module > div:first-of-type .clear {
+	opacity: .1;
+}
+
+#mobile-modules .module > div:first-of-type img {
+	z-index: 2;
+	margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	right: 0;
+	width: 90%;
+	position: absolute;
+}
+
+#mobile-modules .module > div:first-of-type img:last-of-type {
+	z-index: 1;
+}
+
+#mobile-modules .module > div:nth-of-type(2) {
+	position: relative;
+	float: left;
+	width: 100%;
+	min-height: 1px;
+	padding-left: 0;
+	padding-right: 0;
+	padding: 0 8vw;
+}
+
+#mobile-modules .module > div:nth-of-type(2) h3 {
+	border-bottom: 2px solid #ff2919;
+	padding-bottom: 4px;
+}
+
+#mobile-modules .module > div:nth-of-type(2) > div {
+	position: relative;
+	float: left;
+	width: 100%;
+	min-height: 1px;
+	padding-left: 0;
+	padding-right: 0;
+	padding-top: 10px;
+}
+
+#mobile-modules .module > div:nth-of-type(2) > div p {
+	line-height: 1.3;
+	padding-top: 7px;
+}
+
+#mobile-modules .module > div:nth-of-type(2) > div p:nth-of-type(odd) {
+	position: relative;
+	float: left;
+	width: 8.33333333%;
+	min-height: 1px;
+	padding-left: 0;
+	padding-right: 0;
+}
+
+#mobile-modules .module > div:nth-of-type(2) > div p:nth-of-type(even) {
+	position: relative;
+	float: left;
+	width: 91.66666667%;
+	min-height: 1px;
+	padding-left: 0;
+	padding-right: 0;
+}
+
 #exploded {
 	background-color: #f1f4f4;
 	min-height: 550px;
@@ -4163,6 +4253,11 @@ header[role=banner] span.icon-upcom-logo {
 	position: relative;
 	top: -35vw;
 	height: 150%;
+}
+
+#mobile-modules {
+	display: none !important;
+	visibility: hidden !important;
 }
 
 #exploded .row > div:first-of-type {
@@ -5882,6 +5977,10 @@ td.visible-xs {
 }
 
 .hidden-xs {
+	display: none !important;
+}
+
+#exploded {
 	display: none !important;
 }
 
