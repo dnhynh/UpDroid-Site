@@ -2428,7 +2428,7 @@ header.inactive {
 }
 
 #first-parallax > div {
-	background-image: url("/resources/images/photos/7.png");
+	background-image: url("/resources/images/photos/coding2.png");
 }
 
 #second-parallax > div {
@@ -2449,7 +2449,7 @@ header.inactive {
 }
 
 .up1-control {
-	background-color: #fff;
+	background-color: #eaeaec;
 }
 
 .up1-control img {
@@ -2458,6 +2458,7 @@ header.inactive {
 }
 
 #mobile-modules {
+	background-color: #f1f4f4;
 	padding-top: 50px;
 }
 
@@ -3809,14 +3810,6 @@ footer[role=contentinfo] p {
 	bottom: 175px;
 }
 
-#exploded .row > div:first-of-type img {
-	top: 55%;
-	margin-left: auto;
-	margin-right: auto;
-	left: 0;
-	right: 0;
-}
-
 .video-modal > div {
 	margin-top: 0;
 }
@@ -3835,11 +3828,6 @@ h3 {
 	position: relative;
 	top: -35vw;
 	height: 150%;
-}
-
-#exploded .row > div:first-of-type img {
-	top: 35%;
-	width: 90%;
 }
 
 #exploded .row > div:first-of-type .circle {
@@ -4271,14 +4259,15 @@ header[role=banner] span.icon-upcom-logo {
 }
 
 #exploded .row > div:first-of-type img {
-	top: 20%;
+	top: 30%;
 	left: -50px;
 	height: 60%;
 	width: auto;
 }
 
 #exploded .row > div:first-of-type .circle {
-	top: 15%;
+	top: 30%;
+	left: 80px;
 }
 
 #exploded .row > div:nth-of-type(2) {
@@ -5977,6 +5966,10 @@ td.visible-xs {
 }
 
 .hidden-xs {
+	display: none !important;
+}
+
+.scrollmagic-pin-spacer {
 	display: none !important;
 }
 

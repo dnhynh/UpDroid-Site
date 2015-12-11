@@ -608,7 +608,7 @@ header.inactive {
 // Parallax photos
 
 #first-parallax > div {
-    background-image: url("/resources/images/photos/7.png");
+    background-image: url("/resources/images/photos/coding2.png");
 }
 
 #second-parallax > div {
@@ -640,7 +640,7 @@ header.inactive {
 }
 
 .up1-control {
-    background-color: #fff;
+    background-color: #eaeaec;
     .container {
 
     }
@@ -652,6 +652,7 @@ header.inactive {
 }
 
 #mobile-modules {
+    background-color: #f1f4f4;
     padding-top: 50px;
     @media(min-width: @screen-sm-min) {
         .hidden;
@@ -712,6 +713,12 @@ header.inactive {
 
 }
 
+// Hide exploded scene on resize to xs viewport
+
+.scrollmagic-pin-spacer {
+    .hidden-xs;
+}
+
 #exploded {
     background-color: #f1f4f4;
     min-height: 550px;
@@ -725,6 +732,7 @@ header.inactive {
     .row {
         height: 100%;
         padding: 0 21px;
+        
         @media (min-width: @screen-md-min) {
             min-height: 540px;
         }
@@ -754,21 +762,9 @@ header.inactive {
                     -webkit-backface-visibility: hidden;
                     -webkit-transform: translateZ(0) scale(1.0, 1.0);
 
-                    @media (min-width: @screen-large-mobile-min) {
-                        top: 55%;
-                        margin-left: auto;
-                        margin-right: auto;
-                        left: 0;
-                        right: 0;
-                    }
-
-                    @media (min-width: @screen-xs-min) {
-                        top: 35%;
-                        width: 90%;
-                    }
 
                     @media (min-width: @screen-sm-min) {
-                        top: 20%;
+                        top: 30%;
                         left: -50px;
                         height: 60%;
                         width: auto;
@@ -822,7 +818,8 @@ header.inactive {
                 }
 
                 @media (min-width: @screen-sm-min) {
-                    top: 15%;
+                    top: 30%;
+                    left: 80px;
                 }
 
                 @media (min-width: @screen-lg-min) {
