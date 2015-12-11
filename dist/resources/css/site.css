@@ -2445,6 +2445,7 @@ header.inactive {
 .parallax-photo > div {
 	background-repeat: no-repeat;
 	background-size: 100%;
+	position: relative;
 	height: 100%;
 }
 
@@ -3825,7 +3826,6 @@ h3 {
 }
 
 .parallax-photo > div {
-	position: relative;
 	top: -35vw;
 	height: 150%;
 }
