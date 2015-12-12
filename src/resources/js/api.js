@@ -238,23 +238,29 @@ var Homepage =
         var offset = ($("#exploded").height()/2);
 
         var active = false;
-        $(window).resize(function () {
-            console.log($(window).scrollTop());
-            if($(window).width() >= 768 && active == false) {
-                scrollScene();
-                active = true;
-                console.log('fired');
-            }
-        });
+        var scene;
 
         if ($(window).width() >= 768 ) {
             scrollScene();
             active = true;
         }
         
+        $(window).resize(function () {
+            if($(window).width() >= 768 && active == false) {
+                scrollScene();
+                active = true;
+                console.log('fired');
+            }
+
+            if(active == true) {
+                scene.offset($(window).height() / 2);
+                console.log(scene.offset());
+            }
+        });
+        
         function scrollScene () {
 
-            new ScrollMagic.Scene({
+            scene = new ScrollMagic.Scene({
               triggerElement: "#exploded", 
               offset: offset,
               duration: 2700
