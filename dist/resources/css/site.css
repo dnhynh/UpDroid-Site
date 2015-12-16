@@ -1946,11 +1946,30 @@ p {
 }
 
 .btn-xs {
+	border-radius: 3px;
+	font-size: 18px;
+	font-size: 1.8rem;
+	text-align: center;
+	-webkit-transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+	-moz-transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+	-o-transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+	-ms-transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+	transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+	border: none;
+	display: inline-block;
+	height: 50px;
+	line-height: 50px;
+	text-decoration: none;
+	width: 100%;
 	font-family: "Avenir Next LT W01 Bold";
 	font-size: 13px !important;
 	font-size: 1.3rem !important;
 	height: 30px;
 	line-height: 30px;
+}
+
+.btn-xs:hover {
+	text-decoration: none;
 }
 
 .btn-red {
@@ -3743,21 +3762,90 @@ header.inactive {
 
 footer[role=contentinfo] {
 	background-color: #fff;
-	float: left;
 	padding-bottom: 32px;
 	padding-left: 21px;
 	padding-top: 84px;
 	position: relative;
+	float: left;
 	width: 100%;
+	min-height: 1px;
+	padding-left: 0;
+	padding-right: 0;
 }
 
-footer[role=contentinfo] p {
+footer[role=contentinfo] .row {
+	position: relative;
+}
+
+footer[role=contentinfo] .row > div {
 	float: left;
 	width: 100%;
 	position: relative;
 	min-height: 1px;
 	padding-left: 0;
 	padding-right: 0;
+}
+
+footer[role=contentinfo] .row > div a {
+	font-family: "Monosten A";
+	font-size: 16px;
+	font-size: 1.6rem;
+	color: #7e7e7e;
+	display: block;
+}
+
+footer[role=contentinfo] .row > div label {
+	font-family: "Monosten A";
+	font-size: 13px;
+	font-size: 1.3rem;
+}
+
+footer[role=contentinfo] .row > div p {
+	position: relative;
+	float: left;
+	width: 100%;
+	min-height: 1px;
+	padding-left: 0;
+	padding-right: 0;
+}
+
+footer[role=contentinfo] .row > div ol {
+	margin-top: 7px;
+}
+
+footer[role=contentinfo] .row > div li:first-of-type {
+	position: relative;
+	float: left;
+	width: 66.66666667%;
+	min-height: 1px;
+	padding-left: 0;
+	padding-right: 0;
+}
+
+footer[role=contentinfo] .row > div li:first-of-type > input {
+	font-size: 18px;
+	font-size: 1.8rem;
+	font-family: "Avenir Next LT W01 Bold";
+	height: 30px;
+	width: 100%;
+}
+
+footer[role=contentinfo] .row > div li:last-of-type {
+	position: relative;
+	float: left;
+	width: 33.33333333%;
+	min-height: 1px;
+	padding-left: 0;
+	padding-right: 0;
+}
+
+footer[role=contentinfo] .row > div li:last-of-type > input {
+	border-radius: 0 3px 3px 0;
+}
+
+footer[role=contentinfo] .row .bold {
+	font-weight: bold;
+	color: black;
 }
 
 .icon-arrow-up {
@@ -4137,6 +4225,11 @@ p {
 }
 
 .btn {
+	font-size: 17px;
+	font-size: 1.7rem;
+}
+
+.btn-xs {
 	font-size: 17px;
 	font-size: 1.7rem;
 }
@@ -4755,22 +4848,14 @@ header[role=banner] span.icon-upcom-logo {
 	margin-top: 0;
 }
 
+footer[role=contentinfo] .row > div {
+	float: left;
+	width: 25%;
+}
+
 footer[role=contentinfo] {
 	padding-left: 0;
 	padding-top: 70px;
-}
-
-footer[role=contentinfo] p {
-	float: left;
-	width: 33.33333333%;
-}
-
-footer[role=contentinfo] p {
-	margin-left: 58.33333333%;
-}
-
-footer[role=contentinfo] p {
-	text-align: right;
 }
 
 .icon-arrow-up {
@@ -5064,6 +5149,11 @@ h3 {
 }
 
 .btn {
+	font-size: 16px;
+	font-size: 1.6rem;
+}
+
+.btn-xs {
 	font-size: 16px;
 	font-size: 1.6rem;
 }
@@ -5433,7 +5523,10 @@ nav > div .social-nav {
 
 .icon-arrow-up.active {
 	bottom: 28px;
-	left: 28px;
+	left: 0;
+	right: 0;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 }
@@ -5767,6 +5860,11 @@ p {
 }
 
 .btn {
+	font-size: 18px;
+	font-size: 1.8rem;
+}
+
+.btn-xs {
 	font-size: 18px;
 	font-size: 1.8rem;
 }

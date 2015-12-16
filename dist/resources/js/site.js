@@ -998,7 +998,7 @@ var Homepage =
         this.Video();
         this.Commander();
         this.Events();
-        this.Newsletter();
+        // this.Newsletter();
     },
     "Parallax": function () {
         // Simple test for Mobile Safari
