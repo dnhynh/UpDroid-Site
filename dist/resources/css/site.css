@@ -3830,6 +3830,10 @@ footer[role=contentinfo] .row > div li:first-of-type > input {
 	width: 100%;
 }
 
+footer[role=contentinfo] .row > div li:first-of-type > input:focus {
+	outline: none;
+}
+
 footer[role=contentinfo] .row > div li:last-of-type {
 	position: relative;
 	float: left;
@@ -3840,7 +3844,7 @@ footer[role=contentinfo] .row > div li:last-of-type {
 }
 
 footer[role=contentinfo] .row > div li:last-of-type > input {
-	border-radius: 0 3px 3px 0;
+	border-radius: 0;
 }
 
 footer[role=contentinfo] .row .bold {
@@ -5523,10 +5527,7 @@ nav > div .social-nav {
 
 .icon-arrow-up.active {
 	bottom: 28px;
-	left: 0;
-	right: 0;
-	margin-left: auto;
-	margin-right: auto;
+	left: 28px;
 }
 
 }

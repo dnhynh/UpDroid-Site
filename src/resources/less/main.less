@@ -2376,13 +2376,16 @@ footer[role=contentinfo] {
                         .font-avenir-next-bold;
                         height: 30px;
                         width: 100%;
+                        &:focus {
+                            outline: none;
+                        }
                     }
                 }
 
                 &:last-of-type {
                     .make-xs-column(4);
                     >input {
-                        border-radius: 0 3px 3px 0;
+                        border-radius: 0;
                     }
                 }
             }
@@ -2439,10 +2442,7 @@ footer[role=contentinfo] {
 
         @media (min-width: @screen-md-min) {
             bottom: 28px;
-            left: 0;
-            right: 0;
-            margin-left: auto;
-            margin-right: auto;
+            left: 28px;
         }
 
         @media (min-width: @screen-lg-min) {
