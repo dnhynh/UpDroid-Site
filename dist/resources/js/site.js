@@ -1158,12 +1158,10 @@ var Homepage =
             if($(window).width() >= 768 && active == false) {
                 scrollScene();
                 active = true;
-                console.log('fired');
             }
 
             if(active == true) {
                 scene.offset($(window).height() / 2);
-                console.log(scene.offset());
             }
         });
         

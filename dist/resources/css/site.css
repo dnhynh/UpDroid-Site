@@ -3765,10 +3765,8 @@ header.inactive {
 }
 
 footer[role=contentinfo] {
-	background-color: #fff;
-	padding-bottom: 32px;
-	padding-left: 21px;
-	padding-top: 84px;
+	background-color: #f7f8fa;
+	padding: 21px 0 32px 21px;
 	position: relative;
 	float: left;
 	width: 100%;
@@ -3781,13 +3779,82 @@ footer[role=contentinfo] .row {
 	position: relative;
 }
 
+footer[role=contentinfo] .row .copyright {
+	position: relative;
+	float: left;
+	width: 100%;
+	min-height: 1px;
+	padding-left: 0;
+	padding-right: 0;
+	margin: 21px 0 100px 21px;
+}
+
 footer[role=contentinfo] .row > div {
+	padding: 21px 21px !important;
+	position: relative;
+	min-height: 1px;
+	padding-left: 0;
+	padding-right: 0;
+	text-align: center;
+}
+
+footer[role=contentinfo] .row > div:nth-of-type(3) {
 	float: left;
 	width: 100%;
 	position: relative;
 	min-height: 1px;
 	padding-left: 0;
 	padding-right: 0;
+	text-align: center;
+}
+
+footer[role=contentinfo] .row > div:nth-of-type(3) ul {
+	position: relative;
+	float: left;
+	width: 100%;
+	min-height: 1px;
+	padding-left: 0;
+	padding-right: 0;
+}
+
+footer[role=contentinfo] .row > div:nth-of-type(3) ul a {
+	position: relative;
+	float: left;
+	width: 100%;
+	min-height: 1px;
+	padding-left: 0;
+	padding-right: 0;
+}
+
+footer[role=contentinfo] .row > div:nth-of-type(3) ul a > li {
+	display: inline-block;
+}
+
+footer[role=contentinfo] .row > div:nth-of-type(3) ul a > li:nth-of-type(odd) {
+	position: relative;
+	min-height: 1px;
+	padding-left: 0;
+	padding-right: 0;
+}
+
+footer[role=contentinfo] .row > div:nth-of-type(3) ul a > li:nth-of-type(even) {
+	position: relative;
+	min-height: 1px;
+	padding-left: 0;
+	padding-right: 0;
+}
+
+footer[role=contentinfo] .row > div:last-of-type {
+	float: left;
+	width: 100%;
+	position: relative;
+	min-height: 1px;
+	padding-left: 0;
+	padding-right: 0;
+}
+
+footer[role=contentinfo] .row > div h3 {
+	text-align: center;
 }
 
 footer[role=contentinfo] .row > div a {
@@ -3796,6 +3863,12 @@ footer[role=contentinfo] .row > div a {
 	font-size: 1.6rem;
 	color: #7e7e7e;
 	display: block;
+	margin-top: 7px;
+}
+
+footer[role=contentinfo] .row > div a:hover {
+	text-decoration: none;
+	font-weight: bold;
 }
 
 footer[role=contentinfo] .row > div label {
@@ -3804,20 +3877,11 @@ footer[role=contentinfo] .row > div label {
 	font-size: 1.3rem;
 }
 
-footer[role=contentinfo] .row > div p {
-	position: relative;
-	float: left;
-	width: 100%;
-	min-height: 1px;
-	padding-left: 0;
-	padding-right: 0;
+footer[role=contentinfo] .row > div form ol {
+	margin-top: 14px;
 }
 
-footer[role=contentinfo] .row > div ol {
-	margin-top: 7px;
-}
-
-footer[role=contentinfo] .row > div li:first-of-type {
+footer[role=contentinfo] .row > div form ol > li:first-of-type {
 	position: relative;
 	float: left;
 	width: 66.66666667%;
@@ -3826,7 +3890,7 @@ footer[role=contentinfo] .row > div li:first-of-type {
 	padding-right: 0;
 }
 
-footer[role=contentinfo] .row > div li:first-of-type > input {
+footer[role=contentinfo] .row > div form ol > li:first-of-type > input {
 	font-size: 18px;
 	font-size: 1.8rem;
 	font-family: "Avenir Next LT W01 Bold";
@@ -3834,11 +3898,11 @@ footer[role=contentinfo] .row > div li:first-of-type > input {
 	width: 100%;
 }
 
-footer[role=contentinfo] .row > div li:first-of-type > input:focus {
+footer[role=contentinfo] .row > div form ol > li:first-of-type > input:focus {
 	outline: none;
 }
 
-footer[role=contentinfo] .row > div li:last-of-type {
+footer[role=contentinfo] .row > div form ol > li:last-of-type {
 	position: relative;
 	float: left;
 	width: 33.33333333%;
@@ -3847,7 +3911,7 @@ footer[role=contentinfo] .row > div li:last-of-type {
 	padding-right: 0;
 }
 
-footer[role=contentinfo] .row > div li:last-of-type > input {
+footer[role=contentinfo] .row > div form ol > li:last-of-type > input {
 	border-radius: 0;
 }
 
@@ -3857,8 +3921,8 @@ footer[role=contentinfo] .row .bold {
 }
 
 .icon-arrow-up {
-	font-size: 34px;
-	font-size: 3.4rem;
+	font-size: 24px;
+	font-size: 2.4rem;
 	-webkit-transition: bottom 0.3s ease-in-out, opacity 0.3s ease-in-out;
 	-moz-transition: bottom 0.3s ease-in-out, opacity 0.3s ease-in-out;
 	-o-transition: bottom 0.3s ease-in-out, opacity 0.3s ease-in-out;
@@ -3911,6 +3975,15 @@ footer[role=contentinfo] .row .bold {
 	margin-top: 0;
 }
 
+footer[role=contentinfo] .row > div {
+	position: relative;
+	float: left;
+	width: 100%;
+	min-height: 1px;
+	padding-left: 0;
+	padding-right: 0;
+}
+
 }
 
 @media (min-width: 480px) {
@@ -3940,6 +4013,30 @@ h3 {
 
 #app .row > div #commander img {
 	height: 120px;
+}
+
+footer[role=contentinfo] .row > div {
+	text-align: left;
+	position: relative;
+	float: left;
+	width: 33.33333333%;
+	min-height: 1px;
+	padding-left: 0;
+	padding-right: 0;
+}
+
+footer[role=contentinfo] .row > div:nth-of-type(3) {
+	text-align: left;
+	position: relative;
+	float: left;
+	width: 33.33333333%;
+	min-height: 1px;
+	padding-left: 0;
+	padding-right: 0;
+}
+
+footer[role=contentinfo] .row > div h3 {
+	text-align: left;
 }
 
 }
@@ -4856,19 +4953,50 @@ header[role=banner] span.icon-upcom-logo {
 	margin-top: 0;
 }
 
+footer[role=contentinfo] {
+	padding-left: 0;
+}
+
+footer[role=contentinfo] .row .copyright {
+	margin-bottom: 21px;
+}
+
 footer[role=contentinfo] .row > div {
+	float: left;
+	width: 16.66666667%;
+}
+
+footer[role=contentinfo] .row > div {
+	margin-bottom: 0;
+	margin-top: 0;
+}
+
+footer[role=contentinfo] .row > div:nth-of-type(3) {
+	float: left;
+	width: 16.66666667%;
+}
+
+footer[role=contentinfo] .row > div:nth-of-type(3) ul a > li:nth-of-type(odd) {
 	float: left;
 	width: 25%;
 }
 
-footer[role=contentinfo] {
-	padding-left: 0;
-	padding-top: 70px;
+footer[role=contentinfo] .row > div:nth-of-type(3) ul a > li:nth-of-type(even) {
+	float: left;
+	width: 75%;
+}
+
+footer[role=contentinfo] .row > div:last-of-type {
+	margin-left: 8.33333333%;
+}
+
+footer[role=contentinfo] .row > div:last-of-type {
+	float: left;
+	width: 41.66666667%;
 }
 
 .icon-arrow-up {
-	bottom: 28px;
-	left: 28px;
+	bottom: -28px;
 	margin-left: 0;
 }
 
@@ -5525,13 +5653,11 @@ nav > div .social-nav {
 
 .icon-arrow-up {
 	bottom: -20px;
-	left: 28px;
 	opacity: 0;
 }
 
 .icon-arrow-up.active {
 	bottom: 28px;
-	left: 28px;
 }
 
 }
@@ -6026,13 +6152,8 @@ footer[role=contentinfo] {
 	padding-bottom: 49px;
 }
 
-.icon-arrow-up {
-	left: 49px;
-}
-
 .icon-arrow-up.active {
 	bottom: 49px;
-	left: 49px;
 }
 
 }
