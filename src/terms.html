@@ -15,14 +15,24 @@
 		<div class="container">
 			<div class="row">
 				<div>
-					<h1>Terms</h1>
-					<div>
-						
+					<h1>Legal Stuff</h1>
+					<ul class="tabs">
+						<li class="tab active"><a>Privacy Policy</a></li>
+						<li class="tab"><a>Terms of Service</a></li>
+						<li class="tab"><a>Terms and Conditions</a></li>
+					</ul>
+					<div class="content-container">
+						<div id="privacy" class="tab-content active">
+							<!--(bake includes/privacy.html)-->
+						</div>
+						<div id="service" class="tab-content"></div>
+						<div id="conditions" class="tab-content"></div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
+	<!--(bake includes/footer.html)-->
 </div>
 
 <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
@@ -30,6 +40,7 @@
 <script>window.jQuery || document.write('<script src="/resources/js/jquery-1.11.1.min.js">\x3C/script>')</script>
 <script type="text/javascript">
     $(document).ready(function () {
+    	Terms.Init();
     });
 </script>
 </body>

@@ -7,7 +7,6 @@ var Global =
         this.Navigation();
         this.BorderFade();
         this.HeaderIcons();
-        this.BackToTop();
     },
     "Navigation": function () {
         // Setup push navigation using slidebars plugin
@@ -55,26 +54,6 @@ var Global =
             }
         });
     },
-    "BackToTop": function () {
-        var windowHeight = $(window).height(),
-            documentHeight = $(document).height(),
-            $backTop = $("#back-top");
-
-        $(window).scroll(function () {
-            // Animate in the back to top arrow when the scrollbar is at the bottom of the page (offset 20 pixels)
-            if ($(this).scrollTop() + windowHeight >= documentHeight - 20) {
-                $backTop.addClass("active");
-            }
-            else {
-                $backTop.removeClass("active");
-            }
-        });
-
-        // Scroll to top of page when back to top arrow is clicked
-        $("#sb-site").on("click", "#back-top", function () {
-            $("html, body").animate({scrollTop: 0}, 800);
-        });
-    }
 };
 
 /*****************************************************/
@@ -710,3 +689,25 @@ $(document).ready(function () {
     Global.Init();
 });
 
+/************************************************/
+/*                   Terms                      */
+/************************************************/
+
+var Terms = 
+{
+    "Init": function () {
+        this.tabs();
+    },
+
+    "tabs": function () {
+        var tabs = $(".tab");
+        var content = $(".tab-content");
+        $(".tab").click(function () {
+            var index = $(this).index();
+            tabs.removeClass('active');
+            $(this).addClass('active');
+            content.removeClass('active');
+            $(".content-container").children().eq(index).addClass('active');
+        });
+    }
+}
