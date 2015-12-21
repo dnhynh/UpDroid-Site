@@ -1777,18 +1777,33 @@ header.inactive {
 
         .tab-content {
             opacity: 0;
+            height: 0;
+            overflow: hidden;
             .transition(all 0.5s ease);
 
             >h3 {
-                margin-top: 21px;
+                padding-top: 21px;
             }
             >p {
-                margin-top: 21px;
+                padding-top: 21px;
+            }
+            >ul {
+                padding-top: 21px;
+
+                li {
+                    list-style: circle;
+                    .font-size(1.6);
+                    .font-monosten-a;
+                    padding-top: 7px;
+                    margin-left: 35px;
+                }
             }
         }
 
         .tab-content.active {
+            height: auto;
             opacity: 1;
+            z-index: 1;
         }
     }
 }
