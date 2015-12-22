@@ -2060,141 +2060,6 @@ body {
 	color: #7e7e7e;
 }
 
-.pre-order {
-	text-align: left;
-	margin-left: auto;
-	margin-right: auto;
-	padding: 0;
-}
-
-.pre-order .icon-cross {
-	position: absolute;
-	right: 21px;
-	top: 15px;
-	float: right;
-	font-size: 34px;
-	font-size: 3.4rem;
-	cursor: pointer;
-}
-
-.pre-order hr {
-	margin: 0;
-	position: relative;
-	float: left;
-	width: 100%;
-	min-height: 1px;
-	padding-left: 0;
-	padding-right: 0;
-}
-
-.pre-order h1 {
-	font-size: 40px;
-	font-size: 4rem;
-	padding: 21px 21px;
-}
-
-.pre-order > div {
-	position: relative;
-	float: left;
-	width: 100%;
-	min-height: 1px;
-	padding-left: 0;
-	padding-right: 0;
-	padding: 21px 21px;
-}
-
-.pre-order > div > p {
-	font-size: 11px;
-	font-size: 1.1rem;
-	margin-top: 21px;
-	position: relative;
-	float: left;
-	width: 100%;
-	min-height: 1px;
-	padding-left: 0;
-	padding-right: 0;
-}
-
-.pre-order > div > p:first-of-type {
-	margin-top: 0;
-	font-size: 13px;
-	font-size: 1.3rem;
-}
-
-.pre-order > div a {
-	position: relative;
-	float: left;
-	width: 100%;
-	min-height: 1px;
-	padding-left: 0;
-	padding-right: 0;
-	margin-top: 21px;
-}
-
-.pre-order > div #buy-diy {
-	display: none;
-}
-
-.pre-order > div .expand {
-	height: 240px;
-}
-
-.pre-order > div .expand > div:first-of-type {
-	height: 200px;
-	overflow: auto;
-}
-
-.pre-order > div .expand > div:last-of-type {
-	height: 20px;
-}
-
-.pre-order > div > div {
-	position: relative;
-	float: left;
-	width: 100%;
-	min-height: 1px;
-	padding-left: 0;
-	padding-right: 0;
-	height: 310px;
-}
-
-.pre-order > div > div > div:first-of-type {
-	height: 200px;
-	overflow: auto;
-}
-
-.pre-order > div > div > div:last-of-type {
-	height: 20px;
-}
-
-.pre-order > div > div form {
-	margin-top: 21px;
-}
-
-.pre-order > div > div form input {
-	display: inline;
-}
-
-.pre-order > div > div form > p {
-	display: inline-block;
-	margin-left: 11px;
-}
-
-.pre-order > div > div > a {
-	margin-top: 21px;
-}
-
-.pre-order > div > div p {
-	font-size: 12px;
-	font-size: 1.2rem;
-	padding-top: 21px;
-	padding-right: 21px;
-}
-
-.pre-order > div > div p:first-of-type {
-	padding-top: 0;
-}
-
 ::selection {
 	background-color: #ff2919;
 	color: #ffffff;
@@ -4040,10 +3905,6 @@ footer[role=contentinfo] .row > div form ol > li:last-of-type > input {
 
 @media (min-width: 350px) {
 
-.pre-order {
-	width: 100%;
-}
-
 .home-header .row > div p {
 	width: 60%;
 }
@@ -4418,15 +4279,6 @@ p {
 .btn-xs {
 	font-size: 17px;
 	font-size: 1.7rem;
-}
-
-.pre-order {
-	width: 500px;
-}
-
-.pre-order > div {
-	float: left;
-	width: 100%;
 }
 
 nav > div {
