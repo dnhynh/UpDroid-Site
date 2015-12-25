@@ -1,4 +1,4 @@
-﻿/*****************************************************/
+/*****************************************************/
 /*                    Global                         */
 /*****************************************************/
 var Global =
@@ -109,6 +109,10 @@ var Homepage =
 
             new ScrollMagic.Scene({triggerElement: "#second-parallax"})
                 .setTween("#second-parallax > div", {y: "70%", ease: Linear.easeNone})
+                .addTo(controller);
+
+            new ScrollMagic.Scene({triggerElement: "#third-parallax"})
+                .setTween("#third-parallax > div", {y: "70%", ease: Linear.easeNone})
                 .addTo(controller);
         }
 
@@ -685,10 +689,6 @@ var UpCom =
     }
 };
 
-$(document).ready(function () {
-    Global.Init();
-});
-
 /************************************************/
 /*                   Terms                      */
 /************************************************/
@@ -711,3 +711,7 @@ var Terms =
         });
     }
 }
+
+$(document).ready(function () {
+    Global.Init();
+});
