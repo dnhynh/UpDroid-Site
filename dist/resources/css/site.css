@@ -2350,8 +2350,39 @@ header.inactive {
 	background-color: #eaeaec;
 }
 
-.up1-control img {
+.up1-control .container {
+	position: relative;
+}
+
+.up1-control .row {
+	padding: 0 21px 50px 21px;
+}
+
+.up1-control .row img {
+	position: relative;
+	float: left;
 	width: 100%;
+	min-height: 1px;
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.up1-control .row > div {
+	float: left;
+	width: 100%;
+	position: relative;
+	min-height: 1px;
+	padding-left: 0;
+	padding-right: 0;
+	position: inline-block;
+	text-align: center;
+	right: 5%;
+	top: 15%;
+}
+
+.up1-control .row > div > h3 {
+	margin-top: 14px;
+	color: #7e7e7e;
 }
 
 #mobile-modules {
@@ -4371,6 +4402,20 @@ header[role=banner] span.icon-upcom-logo {
 
 .parallax-photo {
 	height: 45vw;
+}
+
+.up1-control .row {
+	padding-bottom: 0;
+}
+
+.up1-control .row > div {
+	float: left;
+	width: 25%;
+}
+
+.up1-control .row > div {
+	position: absolute;
+	text-align: left;
 }
 
 #mobile-modules {
