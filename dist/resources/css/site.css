@@ -2352,23 +2352,25 @@ header.inactive {
 
 .up1-control {
 	background-color: #eaeaec;
+	height: 100vh;
 }
 
 .up1-control .container {
 	position: relative;
+	height: 100%;
 }
 
 .up1-control .row {
 	padding: 0 21px 50px 21px;
+	height: 100%;
 }
 
 .up1-control .row img {
-	position: relative;
-	float: left;
-	width: 100%;
-	min-height: 1px;
-	padding-left: 0;
-	padding-right: 0;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	max-height: 100%;
+	max-width: 100%;
 }
 
 .up1-control .row > div {
