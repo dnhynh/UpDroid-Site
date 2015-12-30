@@ -234,6 +234,14 @@ header[role=banner] {
             top: 45px;
             right: 73px;
         }
+
+        &.upcom-header {
+            right: 83px;
+
+            @media(min-width: @screen-sm-min) {
+                right: 93px;
+            }
+        }
     }
 
     span {
@@ -271,6 +279,10 @@ header[role=banner] {
             width: 80px;
         }
 
+        svg {
+            width: 60px;
+        }
+
         &.icon-updroid-logo {
             color: @icon-color;
             right: 13px;
@@ -286,14 +298,17 @@ header[role=banner] {
 
         &.icon-upcom-logo {
             color: @icon-color;
-            right: 21px;
+            top: 18px;
+            right: 13px;
 
             @media (min-width: @screen-sm-min) {
-                right: 28px;
+                top: 25px;
+                right: 20px;
             }
 
             @media (min-width: @screen-lg-min) {
-                right: 49px;
+                top: 45px;
+                right: 21px;
             }
         }
     }
@@ -304,6 +319,10 @@ header[role=banner] {
 
     &.inactive span{
         top: 10px;
+    }
+
+    &.inactive .icon-upcom-logo {
+        top: 7px;
     }
 
     &.inactive #top-order {
@@ -1355,17 +1374,16 @@ header.inactive {
     }
 
     .row {
-        padding-left: 30px;
+        margin-top: 100px;
+        padding: 0 30px;
     }
 
     .left {
-        margin-top: 100px;
         .make-xs-column(12);
         .make-md-column(3);
 
         h1 {
             .font-size(2.6);
-            white-space: nowrap;
         }
 
         h3 {
@@ -1377,6 +1395,23 @@ header.inactive {
 
         p {
             margin-top: 21px;
+        }
+    }
+
+    .right {
+        .make-xs-column(12);
+        .make-md-column-offset(1);
+        .make-md-column(8);
+        a {
+            .make-xs-column(12);
+
+            img {
+                .make-xs-column(12);
+            }
+            margin-top: 21px;
+            @media(min-width: @screen-md-min) {
+                margin-top: 0;
+            }
         }
     }
 

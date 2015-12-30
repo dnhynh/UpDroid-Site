@@ -2176,6 +2176,10 @@ header[role=banner] #top-order {
 	transition: all 0.25s ease-in-out;
 }
 
+header[role=banner] #top-order.upcom-header {
+	right: 83px;
+}
+
 header[role=banner] span {
 	color: white;
 	font-size: 24px;
@@ -2205,6 +2209,10 @@ header[role=banner] span img {
 	width: 80px;
 }
 
+header[role=banner] span svg {
+	width: 60px;
+}
+
 header[role=banner] span.icon-updroid-logo {
 	color: #0c0c0c;
 	right: 13px;
@@ -2212,7 +2220,8 @@ header[role=banner] span.icon-updroid-logo {
 
 header[role=banner] span.icon-upcom-logo {
 	color: #0c0c0c;
-	right: 21px;
+	top: 18px;
+	right: 13px;
 }
 
 header[role=banner].mobile-inactive span,
@@ -2222,6 +2231,10 @@ header[role=banner].mobile-inactive #top-order {
 
 header[role=banner].inactive span {
 	top: 10px;
+}
+
+header[role=banner].inactive .icon-upcom-logo {
+	top: 7px;
 }
 
 header[role=banner].inactive #top-order {
@@ -3049,11 +3062,11 @@ header.inactive {
 }
 
 .commander-info .row {
-	padding-left: 30px;
+	margin-top: 100px;
+	padding: 0 30px;
 }
 
 .commander-info .left {
-	margin-top: 100px;
 	float: left;
 	width: 100%;
 	position: relative;
@@ -3065,7 +3078,6 @@ header.inactive {
 .commander-info .left h1 {
 	font-size: 26px;
 	font-size: 2.6rem;
-	white-space: nowrap;
 }
 
 .commander-info .left h3 {
@@ -3078,6 +3090,34 @@ header.inactive {
 
 .commander-info .left p {
 	margin-top: 21px;
+}
+
+.commander-info .right {
+	float: left;
+	width: 100%;
+	position: relative;
+	min-height: 1px;
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.commander-info .right a {
+	position: relative;
+	float: left;
+	width: 100%;
+	min-height: 1px;
+	padding-left: 0;
+	padding-right: 0;
+	margin-top: 21px;
+}
+
+.commander-info .right a img {
+	position: relative;
+	float: left;
+	width: 100%;
+	min-height: 1px;
+	padding-left: 0;
+	padding-right: 0;
 }
 
 #app {
@@ -4344,6 +4384,10 @@ header[role=banner] #top-order {
 	right: 60px;
 }
 
+header[role=banner] #top-order.upcom-header {
+	right: 93px;
+}
+
 header[role=banner] span {
 	top: 28px;
 }
@@ -4357,7 +4401,8 @@ header[role=banner] span.icon-updroid-logo {
 }
 
 header[role=banner] span.icon-upcom-logo {
-	right: 28px;
+	top: 25px;
+	right: 20px;
 }
 
 .home-header .row {
@@ -5453,6 +5498,19 @@ nav > div .social-nav {
 	width: 25%;
 }
 
+.commander-info .right {
+	margin-left: 8.33333333%;
+}
+
+.commander-info .right {
+	float: left;
+	width: 66.66666667%;
+}
+
+.commander-info .right a {
+	margin-top: 0;
+}
+
 #app .row > div #commander img {
 	height: 450px;
 }
@@ -6006,7 +6064,8 @@ header[role=banner] span.icon-updroid-logo {
 }
 
 header[role=banner] span.icon-upcom-logo {
-	right: 49px;
+	top: 45px;
+	right: 21px;
 }
 
 .home-header .row {
