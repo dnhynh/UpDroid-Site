@@ -443,6 +443,9 @@ var Homepage =
     },
 
     "Commander": function () {
+        var vid1 = document.getElementById("move-video");
+        var vid2 = document.getElementById("point-cloud-vid"); 
+
         function startTyping (num) {
             if(num == 1) {
                 $("#editor1").typed({
@@ -468,7 +471,7 @@ var Homepage =
                     backDelay: 3000,
                     loop: true,
                     callback: function() {
-
+                        vid2.play();
                     }
                 });
             }

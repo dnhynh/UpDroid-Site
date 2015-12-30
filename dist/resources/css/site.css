@@ -2018,6 +2018,10 @@ body {
 	color: #7e7e7e;
 }
 
+.lb-close {
+	display: none !important;
+}
+
 .link {
 	color: #ff2919;
 }
@@ -2857,6 +2861,11 @@ header.inactive {
 	padding-left: 0;
 	padding-right: 0;
 	background-color: #eaecec;
+	text-align: center;
+}
+
+.updroid-api .row > div > div:nth-of-type(2) video {
+	height: 100%;
 }
 
 .inside {
