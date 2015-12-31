@@ -1353,7 +1353,9 @@ var Homepage =
 
     "Commander": function () {
         var vid1 = document.getElementById("move-video");
-        var vid2 = document.getElementById("point-cloud-vid"); 
+        var vid2 = document.getElementById("point-cloud-vid");
+        var played1 = false;
+        var played2 = false; 
 
         function startTyping (num) {
             if(num == 1) {
@@ -1366,7 +1368,7 @@ var Homepage =
                     loop: true,
 
                     callback: function() {
-                        
+
                     }
                 });
             }
@@ -1380,7 +1382,10 @@ var Homepage =
                     backDelay: 3000,
                     loop: true,
                     callback: function() {
-                        vid2.play();
+                        if (played2 == false) {
+                            vid2.play();
+                            played2 = true;
+                        }
                     }
                 });
             }

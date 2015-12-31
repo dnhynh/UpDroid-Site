@@ -82,7 +82,7 @@
                         </div>
 
                         <div>
-                            <video id="controls-switch" autoplay loop controls>
+                            <video id="controls-switch" autoplay loop>
                                 <source src="../resources/video/node.mp4" type="video/mp4">
                             </video>
                             <div id='controls'>
@@ -394,6 +394,52 @@
             </div>
         </footer>
     </article>
+    <div class="remodal faq" data-remodal-id="faq">
+        <span data-remodal-action="close" class="icon-cross"></span>
+        <h1>FAQ</h1>
+        <h3>General:</h3>
+        <p class="question">
+        Q. What is UP1?</p>
+        <p>A. UP1 is a robotics platform for software development. It has hardware configured for manipulation, mobility, and sensing. It also has a software framework for developing applications that can make use of the hardware. <span class="bold">In other words, it’s a programmable robot</span>.</p>
+
+        <p class="question">Q. What can I do with UP1?</p>
+        <p>A. Out of the box, it comes with an app for <span class="bold">remote control</span> over a network. The app allows you to see through its cameras and control driving or the arm with a keyboard, game console controller (e.g. Xbox or PS3), or mobile device. Of course, the remote control app is like any other <span class="bold">apps that you can write yourself</span> (we will provide documentation on this).</p>
+
+        <p class="question">Q. It sounds like a computer, what’s that about?</p>
+        <p>A. UP1 has an Intel Atom processor at its core - a full embedded computer. It runs a Debian-based Linux OS that you have full access to. SSH, bash, nodejs, ROS… all that good stuff! We designed it this way to maximize the potential of creative users integrating robotics software with the usual services and libraries associated with regular PC-based development.</p>
+
+        <p class="question">Q. What are some things the UP1 can do that are not depicted in the video?</p>
+        <p>A. In terms of autonomous behavior, that is limited only to what you can think up and what the UP1 itself is physically capable of.  On our end, we will post up new ideas and applications on our blog as we develop them.  You can keep up to date with our blog by following our twitter feed or joining our mailing list.</p>
+
+        <h3>Development:</h3>
+        <p class="question">Q. I have experience with ROS and don’t feel like I need the UpCom IDE. Is it the only way I can use UP1?</p>
+        <p>A. Definitely not. We designed the UP1 software architecture to follow the conventions established on other popular ROS platforms and you can expect it to work in a familiar way. See our publicly available UP1 packages at https://www.github.com/updroidinc for more details and documentation.</p>
+        
+        <p class="question">Q. Is the software for UP1 open-source?</p>
+        <p>A. For the most part. The firmware on the motor controllers is proprietary, as is the core of UpDroid Commander - the things that probably wouldn’t satisfy anything but pure curiosity. The meat of the robotics software contained in ROS packages is all open-source. The UpCom SDK and example plugins are all open-source as well. You can find all our open-source software at <a href="https://www.github.com/updroidinc" target="_blank">https://www.github.com/updroidinc</a>. For more details, please see the various licenses that accompany our software.</p>
+
+        <p class="question">Q. Is UP1’s hardware open-source?</p>
+        <p>A. We don’t want to upset anyone by misusing the term “open-source hardware”, so we won’t go that far. That said, the interfaces for third party and custom modules are thoroughly detailed and released under the (TAPR Open Hardware License?). These interfaces include dimensional outlines for the mating surfaces between module enclosures and pinout descriptions for the power/signal connectors.</p>
+        <h3>Launch:</h3>
+        <p class="question">Q. Is UP1’s battery removable?</p>
+        <p>A. Yes, it is removable and user-replaceable. We will provide replacement batteries through our store.</p>
+
+        <p class="question">Q. Will UP1 be able to do everything as depicted your videos by the time it ships?</p>
+        <p>A. It is certainly capable of completing the actions that are shown. However, they may only be interpreted as end use-cases for the purpose of stimulating the imagination. As UP1 is not only a recreational gadget, but a development platform as well, it will be up to the user to develop these into fully autonomous behaviors. That’s the real fun part :)</p>
+
+        <p class="question">Q. Are cloud services involved in any core UP1 functionality?</p>
+        <p>A. UP1 was designed to be a standalone device at the bare minimum, requiring only one other device (e.g. PC, mobile) on a local network to access it over Wi-Fi. Remote-controlling UP1 or programming it  requires no Internet connection. However, as with most other devices - you will be able to download software updates and expand its library of applications by connecting it to the Internet.</p>
+
+        <p class="question">Q. Will other modules be available at launch?</p>
+       <p> A. No, but they are currently in development and will be released periodically post-launch.</p>
+
+        <p class="question">Q. What is the cancellation policy for pre-ordering UP1?</p>
+        <p>A. You will be refunded for the full amount that we charged you at original checkout as long as you cancel your order before we notify you that your UP1 has shipped, should you choose to do so.</p>
+
+        <h3>Misc:</h3>
+        <p class="question">Q. What are the warranties and details for defective product and maintenance?  Return policy?</p>
+        <p>A. These details are currently TBA, but they will be in line with similar technology products. We expect to have these details well before UP1 starts shipping.</p>
+    </div>
 </div>
 
 <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
