@@ -2373,8 +2373,12 @@ header.inactive {
 }
 
 .up1-control .container {
-	position: relative;
 	height: 100%;
+	position: relative;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
 }
 
 .up1-control .row {
@@ -2383,6 +2387,7 @@ header.inactive {
 }
 
 .up1-control .row img {
+	margin-top: 18vh;
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
@@ -2864,6 +2869,11 @@ header.inactive {
 }
 
 .updroid-api .row > div > div:nth-of-type(2) video {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+.updroid-api .row > div > div:nth-of-type(2) img {
 	max-width: 100%;
 	max-height: 100%;
 }
@@ -4468,6 +4478,10 @@ header[role=banner] span.icon-upcom-logo {
 	padding-bottom: 0;
 }
 
+.up1-control .row img {
+	margin-top: 0;
+}
+
 .up1-control .row > div {
 	float: left;
 	width: 25%;
@@ -4583,6 +4597,11 @@ header[role=banner] span.icon-upcom-logo {
 .updroid-api .row > div > div:nth-of-type(2) {
 	float: left;
 	width: 50%;
+}
+
+.updroid-api .row > div > div:nth-of-type(2) img {
+	display: none !important;
+	visibility: hidden !important;
 }
 
 .inside {
@@ -6236,6 +6255,10 @@ td.visible-xs {
 }
 
 #exploded {
+	display: none !important;
+}
+
+.updroid-api .row > div > div:nth-of-type(2) video {
 	display: none !important;
 }
 

@@ -563,6 +563,7 @@ header.inactive {
     .container {
         position: relative;
         height: 100%;
+        .vertical-align();
     }
 
     .row {
@@ -574,6 +575,11 @@ header.inactive {
         }
 
         img {
+            margin-top: 18vh;
+
+            @media (min-width: @screen-sm-min) {
+                margin-top: 0;
+            }
             display: block;
             margin-left: auto;
             margin-right: auto;
@@ -1147,6 +1153,15 @@ header.inactive {
                 video {
                     max-width: 100%;
                     max-height: 100%;
+                    .hidden-xs;
+                }
+
+                img {
+                    max-width: 100%;
+                    max-height: 100%;
+                    @media(min-width: @screen-sm-min) {
+                        .hidden;
+                    }
                 }
             }
         }
