@@ -2883,6 +2883,12 @@ header.inactive {
 }
 
 .updroid-api .row > div > div:nth-of-type(2) img {
+	position: relative;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+	display: none;
 	left: 0;
 	right: 0;
 	margin-left: auto;
@@ -4559,11 +4565,6 @@ header[role=banner] span.icon-upcom-logo {
 .updroid-api .row > div > div:nth-of-type(2) {
 	float: left;
 	width: 50%;
-}
-
-.updroid-api .row > div > div:nth-of-type(2) img {
-	display: none !important;
-	visibility: hidden !important;
 }
 
 .inside {
