@@ -592,9 +592,12 @@ header.inactive {
             .make-sm-column(3);
             position: inline-block;
             text-align: center;
+            padding-bottom: 50px;
+
             @media(min-width: @screen-sm-min) {
                 position: absolute;
                 text-align: left;
+                padding-bottom: none;
             }
             right: 5%;
             top: 15%;
@@ -1143,26 +1146,44 @@ header.inactive {
             >div:first-of-type {
                 .make-xs-column(12);
                 .make-sm-column(6);
+                border-right: 5px solid #fff;
             }
 
             >div:nth-of-type(2) {
                 .make-xs-column(12);
                 .make-sm-column(6);
                 text-align: center;
+                border-left: 5px solid #fff;
 
                 video {
                     max-width: 100%;
                     max-height: 100%;
-                    .hidden-xs;
                 }
 
                 img {
+                    left: 0;
+                    right: 0;
+                    margin-left: auto;
+                    margin-right: auto;
                     max-width: 100%;
                     max-height: 100%;
                     @media(min-width: @screen-sm-min) {
                         .hidden;
                     }
                 }
+            }
+
+            #move {
+                position: relative;
+                background-color: #aaaaaa;
+            }
+
+            #move-vid {
+                .vertical-align;
+            }
+
+            #point-cloud-vid {
+                .hidden-xs;
             }
         }
     }
@@ -1439,83 +1460,6 @@ header.inactive {
         }
     }
 
-}
-
-#app {
-    padding-top: 30px;
-    padding-bottom: 30px;
-
-    @media(min-width: @screen-sm-min) {
-        padding-top: 80px;
-        padding-bottom: 80px;
-    }
-
-    .container {
-
-    }
-    .row {
-        padding: 0 21px;
-        >div {
-            &:first-of-type {
-                .make-xs-column(12);
-
-                h3 {
-                    .font-size(1.9);
-                    color: #7e7e7e;
-                }
-
-                p {
-                    padding-top: 14px;
-                }
-            }
-
-            #commander {
-                .make-xs-column(12);
-                .make-sm-column(12);
-                white-space: nowrap;
-                text-align: center;
-
-            img {
-                position: relative;
-                text-align: center;
-                cursor: pointer;
-                height: 120px;
-
-                @media (min-width: @screen-xs-min) {
-                    height: 120px;
-                }
-
-                @media (min-width: @screen-sm-min) {
-                    height: 330px;
-                }
-
-                @media (min-width: @screen-md-min) {
-                    height: 450px;
-                }
-
-                @media (min-width: @screen-lg-min) {
-                    height: 390px;
-                }
-
-                &:first-of-type {
-                    left: 3px;
-                }
-                &:last-of-type {
-                    left: -3px;
-                }
-
-                -webkit-backface-visibility: hidden;
-                -webkit-transform: translateZ(0) scale(1.0, 1.0);
-
-                transition:                    all 500ms ease;
-                    -moz-transition:           all 500ms ease;
-                    -ms-transition:            all 500ms ease;
-                    -o-transition:             all 500ms ease; 
-                    -webkit-transition:        all 500ms ease;
-                }
-            }
-        }
-    }
 }
 
 .typed-cursor{

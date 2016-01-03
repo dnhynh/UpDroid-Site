@@ -2404,6 +2404,7 @@ header.inactive {
 	padding-right: 0;
 	position: inline-block;
 	text-align: center;
+	padding-bottom: 50px;
 	right: 5%;
 	top: 15%;
 }
@@ -2856,6 +2857,7 @@ header.inactive {
 	min-height: 1px;
 	padding-left: 0;
 	padding-right: 0;
+	border-right: 5px solid #fff;
 }
 
 .updroid-api .row > div > div:nth-of-type(2) {
@@ -2866,6 +2868,7 @@ header.inactive {
 	padding-left: 0;
 	padding-right: 0;
 	text-align: center;
+	border-left: 5px solid #fff;
 }
 
 .updroid-api .row > div > div:nth-of-type(2) video {
@@ -2874,8 +2877,25 @@ header.inactive {
 }
 
 .updroid-api .row > div > div:nth-of-type(2) img {
+	left: 0;
+	right: 0;
+	margin-left: auto;
+	margin-right: auto;
 	max-width: 100%;
 	max-height: 100%;
+}
+
+.updroid-api .row > div #move {
+	position: relative;
+	background-color: #aaaaaa;
+}
+
+.updroid-api .row > div #move-vid {
+	position: relative;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
 }
 
 .inside {
@@ -3137,67 +3157,6 @@ header.inactive {
 	min-height: 1px;
 	padding-left: 0;
 	padding-right: 0;
-}
-
-#app {
-	padding-top: 30px;
-	padding-bottom: 30px;
-}
-
-#app .row {
-	padding: 0 21px;
-}
-
-#app .row > div:first-of-type {
-	position: relative;
-	float: left;
-	width: 100%;
-	min-height: 1px;
-	padding-left: 0;
-	padding-right: 0;
-}
-
-#app .row > div:first-of-type h3 {
-	font-size: 19px;
-	font-size: 1.9rem;
-	color: #7e7e7e;
-}
-
-#app .row > div:first-of-type p {
-	padding-top: 14px;
-}
-
-#app .row > div #commander {
-	float: left;
-	width: 100%;
-	position: relative;
-	min-height: 1px;
-	padding-left: 0;
-	padding-right: 0;
-	white-space: nowrap;
-	text-align: center;
-}
-
-#app .row > div #commander img {
-	position: relative;
-	text-align: center;
-	cursor: pointer;
-	height: 120px;
-	-webkit-backface-visibility: hidden;
-	-webkit-transform: translateZ(0) scale(1, 1);
-	transition: all 500ms ease;
-	-moz-transition: all 500ms ease;
-	-ms-transition: all 500ms ease;
-	-o-transition: all 500ms ease;
-	-webkit-transition: all 500ms ease;
-}
-
-#app .row > div #commander img:first-of-type {
-	left: 3px;
-}
-
-#app .row > div #commander img:last-of-type {
-	left: -3px;
 }
 
 .typed-cursor {
@@ -4048,10 +4007,6 @@ h3 {
 	border-top: none;
 }
 
-#app .row > div #commander img {
-	height: 120px;
-}
-
 footer[role=contentinfo] .row > div {
 	text-align: left;
 	position: relative;
@@ -4490,6 +4445,7 @@ header[role=banner] span.icon-upcom-logo {
 .up1-control .row > div {
 	position: absolute;
 	text-align: left;
+	padding-bottom: none;
 }
 
 #mobile-modules {
@@ -4690,20 +4646,6 @@ header[role=banner] span.icon-upcom-logo {
 .inside .row > div:last-of-type {
 	height: 20px;
 	padding: 0;
-}
-
-#app {
-	padding-top: 80px;
-	padding-bottom: 80px;
-}
-
-#app .row > div #commander {
-	float: left;
-	width: 100%;
-}
-
-#app .row > div #commander img {
-	height: 330px;
 }
 
 .screens .row > div {
@@ -5539,10 +5481,6 @@ nav > div .social-nav {
 	margin-top: 0;
 }
 
-#app .row > div #commander img {
-	height: 450px;
-}
-
 .screens .row > div img {
 	float: left;
 	width: 50%;
@@ -6163,10 +6101,6 @@ header[role=banner] span.icon-upcom-logo {
 	font-size: 1.3rem;
 }
 
-#app .row > div #commander img {
-	height: 390px;
-}
-
 .about-header .row {
 	padding-bottom: 210px;
 	padding-top: 329px;
@@ -6258,7 +6192,7 @@ td.visible-xs {
 	display: none !important;
 }
 
-.updroid-api .row > div > div:nth-of-type(2) video {
+.updroid-api .row > div #point-cloud-vid {
 	display: none !important;
 }
 

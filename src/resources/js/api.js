@@ -443,7 +443,7 @@ var Homepage =
     },
 
     "Commander": function () {
-        var vid1 = document.getElementById("move-video");
+        var vid1 = document.getElementById("move-vid");
         var vid2 = document.getElementById("point-cloud-vid");
         var played1 = false;
         var played2 = false; 
@@ -459,7 +459,10 @@ var Homepage =
                     loop: true,
 
                     callback: function() {
-
+                        if (played1 == false) {
+                            vid1.play();
+                            played1 = true;
+                        }
                     }
                 });
             }
@@ -483,7 +486,7 @@ var Homepage =
         }
 
         $('.commander-slider').slick({
-            autoplay: false,
+            autoplay: true,
             pauseOnDotsHover: true,
             adaptiveHeight: true,
             dots: true,
