@@ -445,62 +445,40 @@ var Homepage =
     "Commander": function () {
         var vid1 = document.getElementById("move-vid");
         var vid2 = document.getElementById("point-cloud-vid");
-        var played1 = false;
-        var played2 = false; 
+
+        startTyping(1);
+
+        function swapVideo() {
+            if($("#move-vid").css("display") == "none") {
+                $("#point-cloud-vid").css("display", "none");
+                $("#move-vid").css("display", "inline");
+                vid2.pause();
+                vid1.play();
+            }
+            else {
+                $("#move-vid").css("display", "none");
+                $("#point-cloud-vid").css("display", "inline");
+                vid1.pause();
+                vid2.play();
+            }
+        }
 
         function startTyping (num) {
             if(num == 1) {
                 $("#editor1").typed({
-                    strings: ["updroid.move(2)"],
+                    strings: ["updroid.move('forward', 3)", "updroid.pointCloud()"],
                     typeSpeed: 50,
                     showCursor: true,
                     startDelay: 1000,
-                    backDelay: 3000,
+                    backDelay: 4000,
                     loop: true,
 
-                    callback: function() {
-                        if (played1 == false) {
-                            vid1.play();
-                            played1 = true;
-                        }
-                    }
-                });
-            }
-
-            else if (num == 2) {
-                $("#editor2").typed({
-                    strings: ["updroid.view(depth)"],
-                    typeSpeed: 50,
-                    showCursor: true,
-                    startDelay: 1000,
-                    backDelay: 3000,
-                    loop: true,
-                    callback: function() {
-                        if (played2 == false) {
-                            vid2.play();
-                            played2 = true;
-                        }
+                    onStringTyped: function() {
+                        swapVideo();
                     }
                 });
             }
         }
-
-        $('.commander-slider').slick({
-            autoplay: true,
-            pauseOnDotsHover: true,
-            adaptiveHeight: true,
-            dots: true,
-            arrows: false,
-        });
-
-        $('.commander-slider').on('afterChange', function(event, slick, currentSlide){
-            if(currentSlide == 1) {
-                startTyping(1);
-            }
-            else if (currentSlide == 2) {
-                startTyping(2);
-            }
-        });
     },
 
     "Events": function () {

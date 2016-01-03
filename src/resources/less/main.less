@@ -1108,7 +1108,7 @@ header.inactive {
 }
 
 .updroid-api {
-    background-color: #fff;
+    background-color: #eaecec;
     padding-top: 16px;
 
     @media (min-width: @screen-sm-min) {
@@ -1146,16 +1146,18 @@ header.inactive {
             >div:first-of-type {
                 .make-xs-column(12);
                 .make-sm-column(6);
-                border-right: 5px solid #fff;
+                border-right: 5px solid #eaecec;
             }
 
             >div:nth-of-type(2) {
                 .make-xs-column(12);
                 .make-sm-column(6);
                 text-align: center;
-                border-left: 5px solid #fff;
+                border-left: 5px solid #eaecec;
 
                 video {
+                    .vertical-align;
+                    display: none;
                     max-width: 100%;
                     max-height: 100%;
                 }
@@ -1180,10 +1182,6 @@ header.inactive {
 
             #move-vid {
                 .vertical-align;
-            }
-
-            #point-cloud-vid {
-                .hidden-xs;
             }
         }
     }

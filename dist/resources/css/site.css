@@ -2832,7 +2832,7 @@ header.inactive {
 }
 
 .updroid-api {
-	background-color: #fff;
+	background-color: #eaecec;
 	padding-top: 16px;
 }
 
@@ -2857,7 +2857,7 @@ header.inactive {
 	min-height: 1px;
 	padding-left: 0;
 	padding-right: 0;
-	border-right: 5px solid #fff;
+	border-right: 5px solid #eaecec;
 }
 
 .updroid-api .row > div > div:nth-of-type(2) {
@@ -2868,10 +2868,16 @@ header.inactive {
 	padding-left: 0;
 	padding-right: 0;
 	text-align: center;
-	border-left: 5px solid #fff;
+	border-left: 5px solid #eaecec;
 }
 
 .updroid-api .row > div > div:nth-of-type(2) video {
+	position: relative;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+	display: none;
 	max-width: 100%;
 	max-height: 100%;
 }
@@ -6189,10 +6195,6 @@ td.visible-xs {
 }
 
 #exploded {
-	display: none !important;
-}
-
-.updroid-api .row > div #point-cloud-vid {
 	display: none !important;
 }
 
