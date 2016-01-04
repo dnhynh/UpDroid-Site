@@ -2369,16 +2369,12 @@ header.inactive {
 
 .up1-control {
 	background-color: #eaeaec;
-	height: 100vh;
+	height: auto;
 }
 
 .up1-control .container {
-	height: 100%;
 	position: relative;
-	top: 50%;
-	-webkit-transform: translateY(-50%);
-	-ms-transform: translateY(-50%);
-	transform: translateY(-50%);
+	height: 100%;
 }
 
 .up1-control .row {
@@ -2839,6 +2835,10 @@ header.inactive {
 .updroid-api .row {
 	padding: 0 21px;
 	margin: 0 0 40px;
+}
+
+.updroid-api .row h1 {
+	margin-bottom: 21px;
 }
 
 .updroid-api .row > div {
@@ -4007,6 +4007,10 @@ h3 {
 	height: 150%;
 }
 
+.up1-control {
+	height: 100vh;
+}
+
 #exploded .row > div:first-of-type .circle {
 	top: 35%;
 }
@@ -4545,7 +4549,7 @@ header[role=banner] span.icon-upcom-logo {
 }
 
 .updroid-api {
-	padding-top: 100px;
+	padding-top: 50px;
 }
 
 .updroid-api .row {

@@ -558,12 +558,15 @@ header.inactive {
 
 .up1-control {
     background-color: #eaeaec;
-    height: 100vh;
+    height: auto;
+    
+    @media (min-width: @screen-xs-min) {
+        height: 100vh;
+    }
 
     .container {
         position: relative;
         height: 100%;
-        .vertical-align();
     }
 
     .row {
@@ -1112,7 +1115,7 @@ header.inactive {
     padding-top: 16px;
 
     @media (min-width: @screen-sm-min) {
-        padding-top: 100px;
+        padding-top: 50px;
     }
 
     .container {
@@ -1125,6 +1128,10 @@ header.inactive {
 
         @media (min-width: @screen-sm-min) {
             margin: 0 0 80px;
+        }
+
+        h1 {
+            margin-bottom: 21px;
         }
 
         >div {
