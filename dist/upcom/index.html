@@ -28,24 +28,23 @@
         ga('create', 'UA-43672097-1', 'auto');
         ga('send', 'pageview');
     </script>
-    <!-- Facebook Pixel Code -->
-    <script>
-    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-    n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
-    n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
-    t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
-    document,'script','//connect.facebook.net/en_US/fbevents.js');
+    <!-- Facebook Conversion Code for Checkouts - UpDroid -->
+    <script>(function() {
+    var _fbq = window._fbq || (window._fbq = []);
+    if (!_fbq.loaded) {
+    var fbds = document.createElement('script');
+    fbds.async = true;
+    fbds.src = '//connect.facebook.net/en_US/fbds.js';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(fbds, s);
+    _fbq.loaded = true;
+    }
+    })();
+    window._fbq = window._fbq || [];
+    window._fbq.push(['track', '6041726221045', {'value':'0.00','currency':'USD'}]);
+    </script>
+    <noscript><img height="1" width="1" alt="" style="display:none" src="https://www.facebook.com/tr?ev=6041726221045&amp;cd[value]=0.00&amp;cd[currency]=USD&amp;noscript=1" /></noscript>
     
-    fbq('init', '1703903906508613');
-    fbq('track', "PageView");
-    fbq('track', 'AddToCart');
-    fbq('track', 'InitiateCheckout');
-    fbq('track', 'AddPaymentInfo');
-    fbq('track', 'CompleteRegistration');</script>
-    <noscript><img height="1" width="1" style="display:none"
-    src="https://www.facebook.com/tr?id=1703903906508613&ev=PageView&noscript=1"
-    /></noscript>
-    <!-- End Facebook Pixel Code -->
 </head>
 <body>
 <nav class="sb-slidebar sb-left sb-style-push">
@@ -371,7 +370,7 @@
                 	<div>
                 		<h3>Related</h3>
                 		<a href="http://notebook.updroid.com" target ="_blank">Blog</a>
-                		<a href="#" target="_blank">Youtube</a>
+                		<!-- <a href="#" target="_blank">Youtube</a> -->
                 	</div>
                 	<div>
                 		<h3>Media</h3>
